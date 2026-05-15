@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分红终身寿险 - Insured618</title>
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <meta name="description" content="分红终身寿险 (Participating Life) 不仅提供终身保障，更能积累免税复利增长的现金价值。了解如何通过 Insured618 利用分红保险实现资产增值、避税与财富传承。">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4C8DFF', // Soft Blue
+                        secondary: '#55D6A9', // Mint Green
+                        dark: '#1A1D21',
+                        light: '#F7F9FC',
+                        accent: '#FF7A59', // Warm Orange
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans SC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(to right, #4C8DFF, #55D6A9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-gold {
+            background: linear-gradient(to right, #FF7A59, #FFB347);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white">
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-primary">Insured618</a>
+                </div>
+
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-primary focus:outline-none p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition">主页</a>
+                    <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary transition">核心保障</a>
+                    <a href="wealth.html" class="text-gray-600 hover:text-primary transition">财富积累</a>
+                    <a href="business.html" class="text-gray-600 hover:text-primary transition">企业方案</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary transition">关于我们</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg shadow-blue-500/30">预约咨询</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white shadow-lg border-t border-gray-100">
+            <div class="flex flex-col px-4 py-4 space-y-4">
+                <a href="index.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">主页</a>
+                <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">核心保障</a>
+                <a href="wealth.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">财富积累</a>
+                <a href="business.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">企业方案</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">关于我们</a>
+                <a href="index.html#contact" class="text-primary font-bold">预约咨询 &rarr;</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-24 bg-dark overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-primary/10 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-accent/10 blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-gray-800 border border-gray-700 text-gray-300 text-xs font-bold mb-6 tracking-wide uppercase">
+                终身资产与家族传承基石
+            </span>
+            <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                不仅仅是保险，<br>
+                更是 <span class="gradient-gold">稳健增值的资产</span>
+            </h1>
+            <p class="max-w-3xl mx-auto text-lg text-gray-400 mb-10 leading-relaxed">
+                锁定终身保障，共享分红收益，为您的财富构建税务优惠的避风港。
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="index.html#contact" class="bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-600 transition shadow-lg shadow-blue-500/20">
+                    预约免费咨询
+                </a>
+                <a href="#solutions" class="bg-transparent border border-gray-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-dark transition">
+                    查看产品方案
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-dark mb-8">什么是分红保险 (Participating Life)?</h2>
+            <p class="text-xl text-gray-600 leading-relaxed">
+                分红保险是一种兼具 <span class="text-primary font-bold">“终身保障”</span> 与 <span class="text-secondary font-bold">“资产增值”</span> 功能的保险产品。
+            </p>
+            <p class="mt-4 text-gray-500">
+                它不仅为您提供伴随终身的身故赔偿，还让您有机会参与保险公司的利润分配（分红），在保单内积累<span class="border-b-2 border-accent/50">延税增长的现金价值</span>。
+            </p>
+        </div>
+    </section>
+
+    <section class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">为什么选择分红保险？</h2>
+                <div class="w-16 h-1 bg-accent mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-2xl mb-4">🛡️</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">终身保证 (Lifetime Guarantees)</h3>
+                    <p class="text-gray-600 text-sm">无论市场如何波动，您的身故赔偿金、保费和基本现金价值均由保险公司提供保证。</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-2xl mb-4">📈</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">红利潜力 (Dividend Potential)</h3>
+                    <p class="text-gray-600 text-sm">虽然红利非保证，但顶级保险公司（如永明金融）自 1877 年以来每年都向保单持有人派发红利。</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-2xl mb-4">💰</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">资产增值 (Tax-Preferred Growth)</h3>
+                    <p class="text-gray-600 text-sm">保单内的现金价值在税务优惠的环境下复利增长。这是一种独立于股票市场之外的稳健资产类别。</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-2xl mb-4">💧</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">资金灵活 (Access to Cash)</h3>
+                    <p class="text-gray-600 text-sm">您可以通过保单贷款或提取现金价值，用于补充退休收入、支付教育费用或应对紧急情况。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-dark mb-4 text-center">精选三大策略方案</h2>
+            <p class="text-gray-500 text-center mb-12">基于永明金融 (Sun Life) 旗舰产品系列</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="border border-gray-200 rounded-2xl p-6 hover:-translate-y-2 transition duration-300 relative bg-white">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-primary rounded-t-2xl"></div>
+                    <h3 class="text-xl font-bold text-dark mt-4">A. 遗产传承型</h3>
+                    <p class="text-xs text-primary font-bold uppercase mb-4 tracking-wide">Estate Protection</p>
+                    <p class="text-gray-500 text-sm mb-6 border-b border-gray-100 pb-4">对标: Sun Par Protector II</p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start"><span class="text-primary mr-2">●</span> <strong>特点：</strong> 以较低的保费获得较高的终身保障。</li>
+                        <li class="flex items-start"><span class="text-primary mr-2">●</span> <strong>适合：</strong> 希望通过时间积累实现长期红利高增长，为子女或孙辈留下丰厚遗产的家庭。</li>
+                    </ul>
+                </div>
+
+                <div class="border border-gray-200 rounded-2xl p-6 hover:-translate-y-2 transition duration-300 relative bg-white shadow-xl ring-1 ring-gray-100">
+                    <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-3 py-1 rounded-bl-lg">企业主首选</div>
+                    <div class="absolute top-0 left-0 w-full h-2 bg-accent rounded-t-2xl"></div>
+                    <h3 class="text-xl font-bold text-dark mt-4">B. 资产配置型</h3>
+                    <p class="text-xs text-accent font-bold uppercase mb-4 tracking-wide">Asset Diversification</p>
+                    <p class="text-gray-500 text-sm mb-6 border-b border-gray-100 pb-4">对标: Sun Par Accumulator II</p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start"><span class="text-accent mr-2">●</span> <strong>特点：</strong> 拥有更高的早期现金价值。</li>
+                        <li class="flex items-start"><span class="text-accent mr-2">●</span> <strong>适合：</strong> 企业主或高净值人士。将保单作为资产负债表的一部分，需要更强的资产流动性。</li>
+                    </ul>
+                </div>
+
+                <div class="border border-gray-200 rounded-2xl p-6 hover:-translate-y-2 transition duration-300 relative bg-white">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-secondary rounded-t-2xl"></div>
+                    <h3 class="text-xl font-bold text-dark mt-4">C. 快速付清型</h3>
+                    <p class="text-xs text-secondary font-bold uppercase mb-4 tracking-wide">Quick Pay</p>
+                    <p class="text-gray-500 text-sm mb-6 border-b border-gray-100 pb-4">对标: Sun Par Accelerator</p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start"><span class="text-secondary mr-2">●</span> <strong>特点：</strong> 只需缴付 8 年保费，即可享受终身保障。</li>
+                        <li class="flex items-start"><span class="text-secondary mr-2">●</span> <strong>适合：</strong> 希望尽快完成缴费义务，不想背负长期供款压力的客户。</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-primary/5">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-dark mb-4">算一算：税务如何影响您的最终财富？</h2>
+                <p class="text-gray-600">比较“免税/延税增长账户（如分红保险）”与“传统应税投资（资本利得）”在数年后的净得差距。</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    
+                    <div class="p-8 space-y-5">
+                        <h4 class="font-bold text-lg text-dark border-b border-gray-100 pb-2">设定您的参数</h4>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">初始投入本金 ($)</label>
+                            <input type="number" id="principal" value="100000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateTax()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">每年追加投入 ($)</label>
+                            <input type="number" id="annual" value="20000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateTax()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">投资时长 (年)</label>
+                            <input type="range" id="years" min="5" max="40" value="20" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer" oninput="calculateTax()">
+                            <div class="flex justify-between text-xs text-gray-500 mt-1">
+                                <span>5年</span>
+                                <span id="yearsVal" class="font-bold text-primary">20年</span>
+                                <span>40年</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">年化回报率 (%)</label>
+                                <input type="number" id="rate" value="6.0" step="0.1" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateTax()">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">边际税率 (%)</label>
+                                <input type="number" id="taxRate" value="53.53" step="0.1" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateTax()">
+                                <p class="text-[10px] text-gray-400 mt-1">安省最高税率约为 53.53%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark p-8 text-white flex flex-col justify-center relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
+                        <div class="absolute bottom-0 left-0 w-40 h-40 bg-accent/10 rounded-full blur-3xl"></div>
+                        
+                        <div class="relative z-10 space-y-8">
+                            <div class="bg-white/10 p-4 rounded-xl border border-white/10">
+                                <p class="text-xs text-gray-300 uppercase tracking-wider mb-1">方案 A: 避税增长 (如分红保险)</p>
+                                <div class="flex items-baseline">
+                                    <span class="text-3xl font-bold text-secondary" id="valA">$0</span>
+                                    <span class="text-sm text-gray-400 ml-2">净到手</span>
+                                </div>
+                                <p class="text-xs text-gray-400 mt-1">假设通过借贷或免税方式使用资金</p>
+                            </div>
+
+                            <div class="bg-white/5 p-4 rounded-xl border border-white/5">
+                                <p class="text-xs text-gray-300 uppercase tracking-wider mb-1">方案 B: 传统投资 (资本利得税后)</p>
+                                <div class="flex items-baseline">
+                                    <span class="text-3xl font-bold text-gray-300" id="valB">$0</span>
+                                    <span class="text-sm text-gray-400 ml-2">净到手</span>
+                                </div>
+                                <p class="text-xs text-gray-400 mt-1">假设 50% 纳入率，期末一次性变现缴税</p>
+                            </div>
+
+                            <div class="pt-4 border-t border-gray-700">
+                                <p class="text-sm text-gray-400 mb-1">利用税务优势，您多获得了：</p>
+                                <h3 class="text-4xl font-bold text-accent" id="diff">$0</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function calculateTax() {
+            // 获取数值
+            let P = parseFloat(document.getElementById('principal').value) || 0;
+            let C = parseFloat(document.getElementById('annual').value) || 0;
+            let t = parseFloat(document.getElementById('years').value) || 0;
+            let r = (parseFloat(document.getElementById('rate').value) || 0) / 100;
+            let taxRate = (parseFloat(document.getElementById('taxRate').value) || 0) / 100;
+
+            // 更新滑块显示
+            document.getElementById('yearsVal').innerText = t + "年";
+
+            // 总投入成本 (用于计算资本利得)
+            let totalCost = P + (C * t);
+
+            // 1. 计算复利终值 (Gross Future Value)
+            // 公式: FV = P*(1+r)^t + C * [((1+r)^t - 1) / r]
+            let compoundFactor = Math.pow(1 + r, t);
+            let fv_P = P * compoundFactor;
+            let fv_C = 0;
+            if(r > 0) {
+                fv_C = C * ((compoundFactor - 1) / r);
+            } else {
+                fv_C = C * t;
+            }
+            let grossFV = fv_P + fv_C;
+
+            // 方案 A: 避税策略 (假设无税或完全延税)
+            // 分红险如果身故赔付是免税的；如果用 CSV 抵押贷款花销也是免税的。
+            // 这里展示的是“账户里的钱完全属于你”的效果
+            let valA = grossFV;
+
+            // 方案 B: 应税投资 (资本利得 Capital Gains)
+            // 假设期末一次性卖出。
+            // 收益 = 总市值 - 总成本
+            let gain = grossFV - totalCost;
+            if (gain < 0) gain = 0;
+            
+            // 加拿大资本利得税：50% 的收益纳入应税收入
+            let taxableIncome = gain * 0.50;
+            let taxToPay = taxableIncome * taxRate;
+            let valB = grossFV - taxToPay;
+
+            // 差额
+            let difference = valA - valB;
+
+            // 格式化输出
+            const format = (num) => '$' + Math.round(num).toLocaleString('en-US');
+
+            document.getElementById('valA').innerText = format(valA);
+            document.getElementById('valB').innerText = format(valB);
+            document.getElementById('diff').innerText = format(difference);
+        }
+
+        // 初始化计算一次
+        window.addEventListener('DOMContentLoaded', calculateTax);
+    </script>
+
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-dark mb-8 text-center">红利可以怎么用？(Dividend Options)</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <div class="flex items-start bg-white p-5 rounded-xl border-l-4 border-primary shadow-sm">
+                    <div class="mr-4 text-2xl">🚀</div>
+                    <div>
+                        <h4 class="font-bold text-dark">购买增额保险 (PUA)</h4>
+                        <p class="text-sm text-gray-500 mt-1">自动购买更多保额，利滚利，加速资产增值（最推荐）。</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start bg-white p-5 rounded-xl border-l-4 border-secondary shadow-sm">
+                    <div class="mr-4 text-2xl">📉</div>
+                    <div>
+                        <h4 class="font-bold text-dark">抵扣保费</h4>
+                        <p class="text-sm text-gray-500 mt-1">用红利支付每年的保费，降低开支。</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start bg-white p-5 rounded-xl border-l-4 border-accent shadow-sm">
+                    <div class="mr-4 text-2xl">💵</div>
+                    <div>
+                        <h4 class="font-bold text-dark">现金提取</h4>
+                        <p class="text-sm text-gray-500 mt-1">每年直接领取现金，作为被动收入流。</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start bg-white p-5 rounded-xl border-l-4 border-gray-400 shadow-sm">
+                    <div class="mr-4 text-2xl">🏦</div>
+                    <div>
+                        <h4 class="font-bold text-dark">积存生息</h4>
+                        <p class="text-sm text-gray-500 mt-1">像储蓄账户一样留在公司赚取利息。</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <span class="text-2xl font-bold text-white">Insured618</span>
+            </div>
+            <p class="text-gray-400 mb-8">守护今天，富足未来</p>
+            <div class="flex justify-center gap-4 mb-8">
+                <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-bold transition text-sm">
+                    立即联系顾问
+                </a>
+            </div>
+            <div class="text-gray-500 text-xs space-y-2 max-w-2xl mx-auto">
+                <p>免责声明：保单红利基于公司业绩，非保证项目。过往表现不代表未来收益。具体条款以合同为准。</p>
+                <p>© 2025 Insured618. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btn && menu) {
+            // 1. 点击按钮切换菜单显示状态
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation(); // 阻止点击事件冒泡到 document
+                menu.classList.toggle('hidden');
+            });
+
+            // 2. 点击页面其他地方关闭菜单
+            document.addEventListener('click', (e) => {
+                // 如果菜单是打开的，且点击的目标既不是菜单本身，也不是按钮，则关闭菜单
+                if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !btn.contains(e.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+
+            // 3. 点击菜单内部的链接后自动关闭
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+
+</body>
+</html>

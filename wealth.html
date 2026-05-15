@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>财富与退休规划 - Insured618</title>
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <meta name="description" content="财富与退休规划服务助您构建终身有保证的收入流。Insured618 提供年金、保本基金及遗产配置方案，平衡市场风险与资产增长，确保您拥有无忧的退休生活。">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4C8DFF', // Index Blue
+                        dark: '#1A1D21',
+                        light: '#F7F9FC',
+                        gold: '#D4AF37', // Wealth Gold
+                        goldlight: '#F9F1D8',
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans SC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .text-gold-gradient {
+            background: linear-gradient(to right, #D4AF37, #F2C94C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white">
+
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-primary">Insured618</a>
+                </div>
+
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-primary focus:outline-none p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition">首页</a>
+                    <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary transition">核心保障</a>
+                    <a href="#" class="text-primary font-bold transition">财富积累</a>
+                    <a href="business.html" class="text-gray-600 hover:text-primary transition">企业方案</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary transition">关于我们</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg">预约咨询</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white shadow-lg border-t border-gray-100">
+            <div class="flex flex-col px-4 py-4 space-y-4">
+                <a href="index.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">主页</a>
+                <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">核心保障</a>
+                <a href="wealth.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">财富积累</a>
+                <a href="business.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">企业方案</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">关于我们</a>
+                <a href="index.html#contact" class="text-primary font-bold">预约咨询 &rarr;</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-24 bg-dark overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-gray-800 to-transparent opacity-30"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-gold/10 blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-gray-800 border border-gold/30 text-gold text-xs font-bold mb-6 tracking-wide uppercase">
+                从容驾驭未来
+            </span>
+            <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                退休不是终点，<br>
+                而是 <span class="text-gold-gradient">新生活的起点</span>
+            </h1>
+            <p class="max-w-3xl mx-auto text-lg text-gray-400 mb-10 leading-relaxed">
+                许多人担心退休后面临“人还在，钱没了”的风险。我们助您构建耐用且灵活的财务组合，确保基本生活无忧，同时实现资产的稳健增长与高效传承。
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="index.html#contact" class="bg-gold hover:bg-yellow-600 text-dark px-8 py-4 rounded-xl font-bold transition shadow-lg shadow-yellow-500/20">
+                    立即预约咨询
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl font-bold text-dark mb-6">1. 打造终身领取的“私人养老金”</h2>
+                    <p class="text-xl text-gray-500 mb-6 font-light">
+                        核心理念：退休后的首要任务是确保“基本生活开支”由“有保证的收入”来覆盖。
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-blue-50 text-primary rounded-xl flex items-center justify-center text-2xl mr-4 flex-shrink-0">🗓️</div>
+                            <div>
+                                <h4 class="font-bold text-dark text-lg">给付年金 (Payout Annuities)</h4>
+                                <p class="text-gray-600 text-sm mt-1">
+                                    将您的积蓄转化为源源不断的现金流。您可以选择终身年金，保证每月收到固定支票，直到终老，哪怕活到 100 岁也不用担心没钱花。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-50 text-green-600 rounded-xl flex items-center justify-center text-2xl mr-4 flex-shrink-0">🛡️</div>
+                            <div>
+                                <h4 class="font-bold text-dark text-lg">消除市场风险</h4>
+                                <p class="text-gray-600 text-sm mt-1">
+                                    您的收入一旦设定，就不会受股市下跌或利率波动的影响，为您提供真正的内心安宁。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 bg-light p-8 rounded-3xl border border-gray-100 shadow-xl">
+                    <div class="text-center mb-6">
+                        <span class="text-5xl">👴👵</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl mb-4 shadow-sm flex justify-between items-center">
+                        <span class="font-bold text-gray-600">退休后的每一月</span>
+                        <span class="font-bold text-green-600">+ $ 固定收入 ✅</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl mb-4 shadow-sm flex justify-between items-center">
+                        <span class="font-bold text-gray-600">股市暴跌 30%</span>
+                        <span class="font-bold text-green-600">收入不变 ✅</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm flex justify-between items-center">
+                        <span class="font-bold text-gray-600">活到 105 岁</span>
+                        <span class="font-bold text-green-600">持续支付 ✅</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">2. 增长与保障并重的资产配置</h2>
+                <p class="text-gray-600">核心理念：在确保本金安全的前提下，追求市场增长，以抵御通货膨胀。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-gold relative overflow-hidden group hover:-translate-y-2 transition">
+                    <div class="absolute top-0 right-0 bg-gold/10 text-gold text-xs font-bold px-3 py-1 rounded-bl-lg">热门选择</div>
+                    <div class="text-4xl mb-4">📈</div>
+                    <h3 class="text-2xl font-bold text-dark mb-3">保本基金 (Segregated Funds)</h3>
+                    <p class="text-gray-500 mb-6 text-sm">结合了共同基金的增长潜力和保险合同的保障功能。</p>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="text-gold mr-2 font-bold">✓</span>
+                            <span><strong>本金保证：</strong>提供到期和身故时 75% 至 100% 的本金保证，让您敢于投资市场而无惧崩盘。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gold mr-2 font-bold">✓</span>
+                            <span><strong>锁定收益 (Resets)：</strong>部分产品允许每年锁定市场收益，如果市场上涨，您的保障额也随之提高，且终身不降。</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-gray-400 hover:-translate-y-2 transition">
+                    <div class="text-4xl mb-4">🔒</div>
+                    <h3 class="text-2xl font-bold text-dark mb-3">保险 GIC (Insurance GICs)</h3>
+                    <p class="text-gray-500 mb-6 text-sm">提供 100% 的本金和利息保证，适合风险厌恶型投资者。</p>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="text-primary mr-2 font-bold">✓</span>
+                            <span><strong>绝对安全：</strong>本金与利息完全受保，无视市场波动。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-primary mr-2 font-bold">✓</span>
+                            <span><strong>遗产优势：</strong>与银行 GIC 不同，它允许指定受益人，从而保护资产免受遗嘱认证费用的影响。</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-4 text-center">3. 税务优化与高效传承</h2>
+            <p class="text-gray-400 text-center mb-12">这是一个关于“留住多少”而非“赚了多少”的游戏。</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/10">
+                    <div class="text-gold text-3xl mb-4">⚖️</div>
+                    <h4 class="text-xl font-bold mb-3">绕过遗嘱认证 (Bypass Probate)</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        通过指定受益人，您的资产在身故后可直接、快速、私密地支付给家人，无需经过漫长昂贵的遗嘱认证程序 (Probate)，且无需公开遗嘱内容。
+                    </p>
+                </div>
+
+                <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/10">
+                    <div class="text-gold text-3xl mb-4">📝</div>
+                    <h4 class="text-xl font-bold mb-3">遗产配置方案 (Legacy Settlement)</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        您可以控制受益人如何领钱（例如：不一次性给付，而是分期 10 年领取），防止挥霍，特别适合复杂的混合家庭或有特殊需求的子女。
+                    </p>
+                </div>
+
+                <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/10">
+                    <div class="text-gold text-3xl mb-4">🏢</div>
+                    <h4 class="text-xl font-bold mb-3">企业主策略 (Corporate)</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        利用企业资产转移策略，将盈余转入免税保险。减少被动投资税负，并利用资本红利账户 (CDA) 将资产免税传给股东及家人。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-dark mb-10 text-center">为什么需要专业的规划？</h2>
+            <p class="text-center text-gray-600 mb-12">我们为您定制策略，助您平衡流动性、通胀与长寿风险。一个完善的退休计划通常采用 <span class="text-primary font-bold">“分桶策略”</span>：</p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-end gap-4 md:gap-8">
+                <div class="w-full md:w-1/3 bg-gray-100 rounded-t-2xl p-6 text-center border-b-8 border-gray-400 h-48 flex flex-col justify-end">
+                    <div class="text-3xl mb-2">🏛️</div>
+                    <h4 class="font-bold text-gray-700">政府福利桶</h4>
+                    <p class="text-xs text-gray-500 mt-2">CPP / OAS</p>
+                    <p class="text-xs font-bold text-gray-600 mt-1">基础保障</p>
+                </div>
+
+                <div class="w-full md:w-1/3 bg-blue-50 rounded-t-2xl p-6 text-center border-b-8 border-primary h-64 flex flex-col justify-end shadow-lg transform md:-translate-y-2">
+                    <div class="text-3xl mb-2">💧</div>
+                    <h4 class="font-bold text-primary">保证收入桶</h4>
+                    <p class="text-xs text-gray-500 mt-2">年金 / 保险 GIC</p>
+                    <p class="text-xs font-bold text-primary mt-1">覆盖刚需开支</p>
+                </div>
+
+                <div class="w-full md:w-1/3 bg-goldlight rounded-t-2xl p-6 text-center border-b-8 border-gold h-56 flex flex-col justify-end">
+                    <div class="text-3xl mb-2">🚀</div>
+                    <h4 class="font-bold text-yellow-800">增长桶</h4>
+                    <p class="text-xs text-gray-600 mt-2">保本基金 / 投资</p>
+                    <p class="text-xs font-bold text-yellow-700 mt-1">对抗通胀与享乐</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-50 border-t border-gray-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <span class="text-2xl font-bold text-dark">Insured618</span>
+            </div>
+            <p class="text-gray-500 mb-8">守护今天，富足未来</p>
+            <div class="flex justify-center gap-4 mb-8">
+                <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-bold transition text-sm">
+                    预约退休规划咨询
+                </a>
+            </div>
+            <div class="text-gray-500 text-xs space-y-2 max-w-2xl mx-auto">
+                <p>免责声明：保本基金与年金产品的具体条款以合同为准。过往表现不代表未来收益。</p>
+                <p>© 2025 Insured618. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btn && menu) {
+            // 1. 点击按钮切换菜单显示状态
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation(); // 阻止点击事件冒泡到 document
+                menu.classList.toggle('hidden');
+            });
+
+            // 2. 点击页面其他地方关闭菜单
+            document.addEventListener('click', (e) => {
+                // 如果菜单是打开的，且点击的目标既不是菜单本身，也不是按钮，则关闭菜单
+                if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !btn.contains(e.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+
+            // 3. 点击菜单内部的链接后自动关闭
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+
+</body>
+</html>

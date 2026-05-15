@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企业主专区 - Insured618</title>
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <meta name="description" content="企业主专区提供从关键人物保障到企业资产转移 (Corporate Asset Transfer) 的全方位税务优化策略。利用公司盈余构建免税资产，通过 CDA 账户实现高效传承。">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4C8DFF', // Standard Blue
+                        dark: '#1A1D21',    // Dark Background
+                        light: '#F7F9FC',
+                        gold: '#D4AF37',    // Luxury Gold
+                        goldlight: '#F9F1D8',
+                        slate: '#334155'
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans SC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .text-gold-gradient {
+            background: linear-gradient(to right, #D4AF37, #F2C94C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #B49018 100%);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white">
+
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-primary">Insured618</a>
+                </div>
+
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-primary focus:outline-none p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition">首页</a>
+                    <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary transition">核心保障</a>
+                    <a href="wealth.html" class="text-gray-600 hover:text-primary transition">财富积累</a>
+                    <a href="#" class="text-primary font-bold transition">企业方案</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary transition">关于我们</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg">预约咨询</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white shadow-lg border-t border-gray-100">
+            <div class="flex flex-col px-4 py-4 space-y-4">
+                <a href="index.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">主页</a>
+                <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">核心保障</a>
+                <a href="wealth.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">财富积累</a>
+                <a href="business.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">企业方案</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">关于我们</a>
+                <a href="index.html#contact" class="text-primary font-bold">预约咨询 &rarr;</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-24 bg-dark overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center opacity-20"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/90 to-transparent"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-gray-800 border border-gold/40 text-gold text-xs font-bold mb-6 tracking-wide uppercase">
+                企业主专区 (Business Owner Zone)
+            </span>
+            <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                让您的公司盈余<br>
+                为您 <span class="text-gold-gradient">创造更多价值</span>
+            </h1>
+            <p class="max-w-3xl mx-auto text-lg text-gray-400 mb-10 leading-relaxed">
+                从降低被动投资税负到保障关键人物，我们利用人寿保险的独特税务属性，为您构建坚实的企业护城河。
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="index.html#contact" class="bg-gold-gradient hover:opacity-90 text-white px-8 py-4 rounded-xl font-bold transition shadow-lg shadow-yellow-500/20">
+                    预约企业税务评估
+                </a>
+                <a href="#strategies" class="bg-transparent border border-gray-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-dark transition">
+                    了解企业资产转移
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-light rounded-3xl p-8 md:p-12 border border-gray-100 shadow-sm flex flex-col md:flex-row items-center gap-8">
+                <div class="w-full md:w-1/3 text-center">
+                    <div class="text-6xl mb-4">⚖️</div>
+                    <h3 class="text-xl font-bold text-dark">税务挑战</h3>
+                </div>
+                <div class="w-full md:w-2/3">
+                    <h2 class="text-2xl font-bold text-dark mb-4">为什么企业主需要特殊规划？</h2>
+                    <p class="text-gray-600 mb-4">
+                        <strong>挑战：</strong> 2018年税改后，公司被动投资收入（如房租、利息）过高可能削减您的小企业税率抵扣 (SBD)，导致更高的企业税。
+                    </p>
+                    <p class="text-gray-600">
+                        <strong>机遇：</strong> 人寿保险是 CRA 认可的少数几个能够提供<span class="text-primary font-bold">延税增长</span>且身故赔偿<span class="text-gold font-bold">免税进入资本红利账户 (CDA)</span> 的工具之一。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">核心保障与风险管理</h2>
+                <p class="text-gray-500">保护企业免受意外冲击，确保业务连续性。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">🔑</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">关键人物保障 (Key Person)</h3>
+                    <p class="text-gray-600 text-sm">如果核心员工或股东因故无法工作，保险金可用于弥补收入损失、偿还贷款或寻找替代人选，防止银行收紧信贷。</p>
+                </div>
+                <div class="group bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-14 h-14 bg-goldlight rounded-xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">🤝</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">买卖协议融资 (Buy-Sell)</h3>
+                    <p class="text-gray-600 text-sm">利用免税的身故赔偿金买下离世合伙人的股份。既保住公司控制权，又为家属提供公平现金赔偿，避免外行介入管理。</p>
+                </div>
+                <div class="group bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-14 h-14 bg-gray-100 rounded-xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">🛡️</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">商业贷款保障 (Loan Protection)</h3>
+                    <p class="text-gray-600 text-sm">利用定期寿险或重疾险作为商业贷款的抵押品，确保在发生意外时债务不会拖累企业或家人。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="strategies" class="py-20 bg-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-4 text-center">高级税务与财富策略</h2>
+            <p class="text-gray-400 text-center mb-16">利用公司盈余构建免税资产，实现财富最大化。</p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-gold/50 transition">
+                    <div class="text-gold text-sm font-bold uppercase tracking-wider mb-2">基础策略</div>
+                    <h3 class="text-2xl font-bold mb-4">A. 企业资产转移</h3>
+                    <p class="text-gray-300 text-sm mb-6">将公司账上的应税投资（如 GIC）重新分配到分红保单中。</p>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>延税增长：</strong> 现金值增长无需每年缴税。</li>
+                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>CDA 账户：</strong> 赔偿金通过资本红利账户免税分发给股东家人，大幅减少遗产税。</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-gold/50 transition">
+                    <div class="text-gold text-sm font-bold uppercase tracking-wider mb-2">进阶策略</div>
+                    <h3 class="text-2xl font-bold mb-4">B. 企业退休策略</h3>
+                    <p class="text-gray-300 text-sm mb-6">利用公司资金购买保险，退休时通过保单抵押贷款补充收入。</p>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>更高净收入：</strong> 相比传统红利提取，税后到手更多。</li>
+                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>保留保障：</strong> 同时保留了保单的身故赔偿功能。</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-gold/20 to-transparent p-8 rounded-2xl border border-gold/40 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-gold text-dark text-xs font-bold px-3 py-1 rounded-bl">高净值首选</div>
+                    <div class="text-gold text-sm font-bold uppercase tracking-wider mb-2">高级策略</div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">C. 立即融资安排 (IFA)</h3>
+                    <p class="text-gray-200 text-sm mb-6">购买保单后立即抵押给银行贷款，资金用于企业再投资。</p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>一笔钱两用：</strong> 既获保障又保留流动性。</li>
+                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>利息抵税：</strong> 贷款利息通常可作为商业开支抵扣。</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                
+                <div>
+                    <h2 class="text-2xl font-bold text-dark mb-6">股东与高管福利</h2>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <h4 class="font-bold text-primary mb-2">分摊所有权 (Shared Ownership)</h4>
+                            <p class="text-sm text-gray-600">
+                                企业与关键员工共同持有保单。例如，公司支付保障保费，员工支付现金值保费。这是高效的留才手段。
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <h4 class="font-bold text-primary mb-2">重疾险保费返还 (Corporate ROP)</h4>
+                            <p class="text-sm text-gray-600">
+                                公司购买重疾险，若受保人健康退休，公司可获得保费返还，作为资产提取策略的一部分。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border-l-4 border-gold p-8 rounded-r-xl shadow-lg">
+                    <h3 class="text-xl font-bold text-dark mb-4">📂 成功案例：安东尼的故事</h3>
+                    <div class="space-y-4 text-sm">
+                        <p><strong class="text-gray-900">情景：</strong> 安东尼，45岁，小企业主。</p>
+                        <p><strong class="text-gray-900">挑战：</strong> 担心如果自己患重病，公司收入将中断，且退休储蓄会受损。</p>
+                        <p><strong class="text-gray-900">方案：</strong> 购买一份带有保费返还功能的重疾险。</p>
+                        <div class="bg-gray-50 p-4 rounded-lg mt-4">
+                            <strong class="text-primary block mb-2">结果：</strong>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li>如果患病：获得免税赔付维持公司运营。</li>
+                                <li>如果健康退休：拿回 100% 保费补充养老金，资产无损。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <span class="text-2xl font-bold text-white">Insured618</span>
+            </div>
+            <p class="text-gray-400 mb-8">您的企业财富管家</p>
+            <div class="flex justify-center gap-4 mb-8">
+                <a href="index.html#contact" class="bg-gold hover:opacity-90 text-dark px-6 py-2 rounded-full font-bold transition text-sm">
+                    预约企业税务评估
+                </a>
+            </div>
+            <div class="text-gray-500 text-xs space-y-2 max-w-2xl mx-auto">
+                <p>免责声明：企业税务策略较为复杂，涉及法律和税务后果。请务必在您的会计师和律师的协助下进行规划。本文仅供参考，不构成税务建议。</p>
+                <p>© 2025 Insured618. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btn && menu) {
+            // 1. 点击按钮切换菜单显示状态
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation(); // 阻止点击事件冒泡到 document
+                menu.classList.toggle('hidden');
+            });
+
+            // 2. 点击页面其他地方关闭菜单
+            document.addEventListener('click', (e) => {
+                // 如果菜单是打开的，且点击的目标既不是菜单本身，也不是按钮，则关闭菜单
+                if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !btn.contains(e.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+
+            // 3. 点击菜单内部的链接后自动关闭
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+
+</body>
+</html>

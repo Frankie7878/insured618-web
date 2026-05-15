@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insured618 | 守护今天，富足未来</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <meta name="description" content="Insured618 为加拿大华人提供专业的定期人寿、分红保险、重疾险及企业税务策划服务。作为独立经纪，我们代理 Sun Life, Manulife 等顶级公司产品，助您守护今天，富足未来。">
+    <meta name="keywords" content="加拿大保险, 人寿保险, 重疾险, 分红保险, 退休规划, Insured618, 安省保险经纪">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4C8DFF', // Soft Blue
+                        secondary: '#55D6A9', // Mint Green
+                        dark: '#1A1D21',
+                        light: '#F7F9FC',
+                        accent: '#FF7A59', // Warm Orange
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans SC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 平滑滚动 */
+        html { scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(to right, #4C8DFF, #55D6A9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white">
+
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-primary">Insured618</a>
+                </div>
+
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-primary focus:outline-none p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition">主页</a>
+                    <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary transition">核心保障</a>
+                    <a href="wealth.html" class="text-gray-600 hover:text-primary transition">财富积累</a>
+                    <a href="business.html" class="text-gray-600 hover:text-primary transition">企业方案</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary transition">关于我们</a>
+                    
+                    <a href="en/index.html" class="text-sm font-bold text-gray-500 hover:text-primary border border-gray-300 px-3 py-1 rounded transition">
+                        EN
+                    </a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg shadow-blue-500/30">预约咨询</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white shadow-lg border-t border-gray-100">
+            <div class="flex flex-col px-4 py-4 space-y-4">
+                <a href="#home" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">主页</a>
+                <a href="#core-solutions" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">核心保障</a>
+                <a href="wealth.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">财富积累</a>
+                <a href="business.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">企业方案</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">关于我们</a>
+
+                <a href="en/index.html" class="text-gray-500 font-bold border-t border-gray-100 pt-2 mt-2 flex items-center">
+                    <span class="mr-2">🇺🇸</span> Switch to English
+                </a>
+
+                <a href="#contact" class="text-primary font-bold">预约咨询 &rarr;</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-dark mb-6 tracking-tight">
+                守护今天，<span class="gradient-text">富足未来</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-500 mb-4 font-light">
+                Protecting Today, Prospering Tomorrow
+            </p>
+            <p class="max-w-2xl mx-auto text-lg text-gray-600 mb-10">
+                量身定制的财务安全网。从高性价比的定期寿险到终身分红资产，我们助您从容应对人生每个阶段。
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-primary text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-blue-600 transition shadow-xl shadow-blue-500/20">
+                    免费获取报价
+                </a>
+                <a href="par.html" class="bg-white text-primary border border-gray-200 px-8 py-4 rounded-xl text-lg font-bold hover:bg-gray-50 transition">
+                    了解分红保险
+                </a>
+            </div>
+        </div>
+        <div class="absolute top-0 left-0 -ml-20 mt-20 w-64 h-64 rounded-full bg-secondary/10 blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 -mr-20 mb-20 w-80 h-80 rounded-full bg-primary/10 blur-3xl"></div>
+    </section>
+
+    <section id="core-solutions" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">我们的核心保障方案</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-8 rounded-2xl bg-white border border-gray-100 shadow-xl shadow-gray-200/50 hover:-translate-y-2 transition duration-300 group">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6 text-2xl">🛡️</div>
+                    <h3 class="text-2xl font-bold text-dark mb-2">
+                        <a href="term.html" class="hover:text-primary transition decoration-secondary underline decoration-2 underline-offset-4 group-hover:text-primary">
+                            定期人寿保险 (Term Life) &rarr;
+                        </a>
+                    </h3>
+                    <p class="text-sm text-primary font-medium mb-4">适合：年轻单身人士、家庭、房贷持有者</p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start"><span class="text-secondary mr-2">✓</span> 高性价比：用最低保费撬动最高杠杆。</li>
+                        <li class="flex items-start"><span class="text-secondary mr-2">✓</span> 灵活：10-40年期限，未来可免体检转终身。</li>
+                        <li class="flex items-start"><span class="text-secondary mr-2">✓</span> 特色：糖尿病患者也有机会承保。</li>
+                    </ul>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800 text-white shadow-xl hover:-translate-y-2 transition duration-300 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 bg-accent text-xs font-bold px-3 py-1 rounded-bl-lg">热门推荐</div>
+                    <div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-6 text-2xl">💰</div>
+                    <h3 class="text-2xl font-bold mb-2">
+                        <a href="par.html" class="hover:text-accent transition decoration-white underline decoration-2 underline-offset-4 group-hover:text-accent">
+                            分红终身寿险 (Par Life) &rarr;
+                        </a>
+                    </h3>
+                    <p class="text-sm text-gray-300 font-medium mb-4">适合：资产增值、遗产传承</p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start"><span class="text-accent mr-2">✓</span> 终身资产：有保证的现金价值与保障。</li>
+                        <li class="flex items-start"><span class="text-accent mr-2">✓</span> 红利潜力：分享收益，利滚利。</li>
+                        <li class="flex items-start"><span class="text-accent mr-2">✓</span> 8年付清：Sun Par Accelerator 选项。</li>
+                    </ul>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-white border border-gray-100 shadow-xl shadow-gray-200/50 hover:-translate-y-2 transition duration-300 group">
+                    <div class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6 text-2xl">🏥</div>
+                    <h3 class="text-2xl font-bold text-dark mb-2">
+                        <a href="ci.html" class="hover:text-primary transition decoration-secondary underline decoration-2 underline-offset-4 group-hover:text-primary">
+                            重大疾病保险 (Critical Illness) &rarr;
+                        </a>
+                    </h3>
+                    <p class="text-sm text-primary font-medium mb-4">适合：所有人，家庭支柱</p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start"><span class="text-secondary mr-2">✓</span> 专注康复：确诊即赔一次性免税现金。</li>
+                        <li class="flex items-start"><span class="text-secondary mr-2">✓</span> 全面覆盖：承保 26 种全额 + 8 种部分疾病。</li>
+                        <li class="flex items-start"><span class="text-secondary mr-2">✓</span> 保费返还：无理赔可退还保费养老。</li>
+                    </ul>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-white border border-gray-100 shadow-xl shadow-gray-200/50 hover:-translate-y-2 transition duration-300 group">
+                    <div class="w-14 h-14 bg-teal-100 rounded-full flex items-center justify-center mb-6 text-2xl">🦷</div>
+                    <h3 class="text-2xl font-bold text-dark mb-2">
+                        <a href="health.html" class="hover:text-teal-600 transition decoration-secondary underline decoration-2 underline-offset-4 group-hover:text-teal-600">
+                            健康与牙科保险 (Health & Dental) &rarr;
+                        </a>
+                    </h3>
+                    <p class="text-sm text-primary font-medium mb-4">适合：自雇人士、退休人员、无团保家庭</p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start"><span class="text-secondary mr-2">✓</span> <strong>日常报销：</strong> 覆盖处方药、洗牙补牙、视力检查等。</li>
+                        <li class="flex items-start"><span class="text-secondary mr-2">✓</span> <strong>灵活定制：</strong> 可根据预算选择仅药费、仅牙科或全套。</li>
+                        <li class="flex items-start"><span class="text-secondary mr-2">✓</span> <strong>税务优惠：</strong> 自雇人士保费可抵税。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="wealth" class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                
+                <div>
+                    <h2 class="text-3xl font-bold text-dark mb-6">财富与退休规划</h2>
+                    <p class="text-gray-600 mb-8">
+                        退休不是终点，而是新生活的起点。我们助您构建耐用且灵活的财务组合。
+                    </p>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 border-l-4 border-primary">
+                            <h4 class="font-bold text-lg text-dark mb-2">
+                                <a href="wealth.html" class="hover:text-primary transition">给付年金 (Payout Annuities) &rarr;</a>
+                            </h4>
+                            <p class="text-sm text-gray-600">像养老金一样，为您提供终身有保证的收入流，无需担心市场波动。</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 border-l-4 border-secondary">
+                            <h4 class="font-bold text-lg text-dark mb-2">
+                                <a href="wealth.html" class="hover:text-primary transition">保本基金 & GIC &rarr;</a>
+                            </h4>
+                            <p class="text-sm text-gray-600">提供本金保证与潜在的市场增长，并可指定受益人规避遗产认证费。</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 border-l-4 border-accent">
+                            <h4 class="font-bold text-lg text-dark mb-2">
+                                <a href="wealth.html" class="hover:text-primary transition">遗产配置 (Legacy Settlement) &rarr;</a>
+                            </h4>
+                            <p class="text-sm text-gray-600">私密、快捷地将资产传给下一代，轻松应对复杂的家庭情况。</p>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <a href="wealth.html" class="text-primary font-bold hover:underline">查看完整退休规划方案 &rarr;</a>
+                    </div>
+                </div>
+
+                <div id="business">
+                    <h2 class="text-3xl font-bold text-dark mb-6">企业主专区</h2>
+                    <p class="text-gray-600 mb-8">
+                        利用企业盈余为您的未来铺路，同时降低税务负担。
+                    </p>
+                    <div class="bg-blue-50 p-8 rounded-2xl border border-blue-100 shadow-sm">
+                        <div class="mb-8">
+                            <h4 class="font-bold text-xl text-dark mb-3">
+                                <a href="business.html" class="hover:text-primary transition">🏢 企业资产转移 (Corporate Asset Transfer)</a>
+                            </h4>
+                            <p class="text-gray-600 text-sm">将公司盈余资金转移至免税人寿保险，减少被动投资税负，并增加资本红利账户 (CDA) 额度。</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl text-dark mb-3">
+                                <a href="business.html" class="hover:text-primary transition">🔑 关键人物保障 (Key Person)</a>
+                            </h4>
+                            <p class="text-gray-600 text-sm">利用定期寿险或重疾险，保护企业免受关键股东或员工离世/患病带来的财务冲击。</p>
+                        </div>
+                        <div class="mt-8 pt-8 border-t border-blue-200">
+                            <p class="text-sm text-blue-800 font-medium mb-4">我们深入了解加拿大税务与保险法规，为您提供合规的企业规划。</p>
+                            <a href="business.html" class="text-primary font-bold hover:underline text-sm">了解更多企业策略 &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">客户的声音</h2>
+                <p class="text-gray-500">听听大家如何评价 Insured618 的专业服务</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="bg-gray-50 p-8 rounded-2xl relative hover:shadow-md transition duration-300">
+                    <div class="text-6xl text-primary/10 absolute -top-2 left-4 font-serif">“</div>
+                    <p class="text-gray-600 italic mb-6 relative z-10 leading-relaxed">
+                        非常专业的建议，帮我理清了多年的旧保单。不仅保障范围更全面了，每年还帮我家省下了不少保费。强烈推荐！
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-primary font-bold mr-3">王</div>
+                        <div>
+                            <p class="font-bold text-dark text-sm">王先生</p>
+                            <p class="text-xs text-gray-500">IT 工程师，万锦</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl relative hover:shadow-md transition duration-300">
+                    <div class="text-6xl text-primary/10 absolute -top-2 left-4 font-serif">“</div>
+                    <p class="text-gray-600 italic mb-6 relative z-10 leading-relaxed">
+                        作为小企业主，我对税务这块很头疼。顾问非常有耐心地解释了资产转移策略，帮公司做了很好的税务优化规划。
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold mr-3">L</div>
+                        <div>
+                            <p class="font-bold text-dark text-sm">Lisa Chen</p>
+                            <p class="text-xs text-gray-500">企业主，列治文山</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl relative hover:shadow-md transition duration-300">
+                    <div class="text-6xl text-primary/10 absolute -top-2 left-4 font-serif">“</div>
+                    <p class="text-gray-600 italic mb-6 relative z-10 leading-relaxed">
+                        这是我见过的最客观的保险顾问。没有推销，只有基于数据的分析。终于给孩子买到了满意的分红险，很安心。
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center text-accent font-bold mr-3">周</div>
+                        <div>
+                            <p class="font-bold text-dark text-sm">周女士</p>
+                            <p class="text-xs text-gray-500">会计师，北约克</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-dark text-white text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12">为什么选择 Insured618？</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="text-4xl mb-4">🤝</div>
+                    <h4 class="text-xl font-bold mb-2">专业建议</h4>
+                    <p class="text-gray-400 text-sm">深入了解安省税务与法规，提供客观合规的规划。</p>
+                </div>
+                <div>
+                    <div class="text-4xl mb-4">🏛️</div>
+                    <h4 class="text-xl font-bold mb-2">实力后盾</h4>
+                    <p class="text-gray-400 text-sm">代理永明金融 (Sun Life) 等顶级公司，百年信誉保障。</p>
+                </div>
+                <div>
+                    <div class="text-4xl mb-4">∞</div>
+                    <h4 class="text-xl font-bold mb-2">终身服务</h4>
+                    <p class="text-gray-400 text-sm">
+                        保单交付只是开始。我们提供年度保单检视、理赔协助及资源支持，伴您人生每个阶段。
+                    </p>
+                </div>
+            </div>
+            <div class="mt-12">
+                <a href="about.html" class="inline-block border border-white px-6 py-2 rounded-full hover:bg-white hover:text-dark transition">了解我们的故事</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">预约免费咨询</h2>
+                <p class="text-gray-600">填写下方表格，我们将在 24 小时内联系您。</p>
+            </div>
+            
+            <form name="contact" method="POST" data-netlify="true" action="success.html" class="space-y-6 bg-light p-8 rounded-2xl shadow-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">您的姓名</label>
+                        <input type="text" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">联系电话</label>
+                        <input type="tel" name="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">电子邮箱</label>
+                    <input type="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">感兴趣的内容</label>
+                    <select name="interest" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none">
+                        <option>定期寿险</option>
+                        <option>分红保险</option>
+                        <option>重疾险</option>
+                        <option>个人健康险</option>
+                        <option>年金,保本基金&GIC</option>
+                        <option>企业税务规划</option>
+                        <option>其他</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-primary hover:bg-blue-600 text-white font-bold py-4 rounded-xl transition shadow-lg">
+                    提交申请
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-50 border-t border-gray-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <span class="text-2xl font-bold text-dark">Insured618</span>
+            </div>
+            <p class="text-gray-500 mb-8">守护今天，富足未来</p>
+            <div class="text-gray-400 text-sm space-y-2">
+                <p>地址：[您的地址] | 电话：[您的电话] | 邮箱：[您的邮箱]</p>
+                <p class="mt-4 max-w-2xl mx-auto">免责声明：本文仅供参考，不构成法律或税务建议。具体产品条款以保单合同为准。</p>
+                <p class="mt-4">© 2025 Insured618. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btn && menu) {
+            // 1. 点击按钮切换菜单显示状态
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation(); // 阻止点击事件冒泡到 document
+                menu.classList.toggle('hidden');
+            });
+
+            // 2. 点击页面其他地方关闭菜单
+            document.addEventListener('click', (e) => {
+                // 如果菜单是打开的，且点击的目标既不是菜单本身，也不是按钮，则关闭菜单
+                if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !btn.contains(e.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+
+            // 3. 点击菜单内部的链接后自动关闭
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+
+</body>
+</html>

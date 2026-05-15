@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定期人寿保险 - Insured618</title>
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <meta name="description" content="定期人寿保险 (Term Life) 为您的房贷和家庭提供高性价比的财务保障。Insured618 提供 10-30 年灵活期限选择，保费固定，适合年轻家庭、房贷持有者及企业主。">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4C8DFF', // Soft Blue
+                        secondary: '#55D6A9', // Mint Green
+                        dark: '#1A1D21',
+                        light: '#F7F9FC',
+                        accent: '#FF7A59', // Warm Orange
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans SC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(to right, #4C8DFF, #55D6A9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white">
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-primary">Insured618</a>
+                </div>
+
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-primary focus:outline-none p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition">主页</a>
+                    <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary transition">核心保障</a>
+                    <a href="wealth.html" class="text-gray-600 hover:text-primary transition">财富积累</a>
+                    <a href="business.html" class="text-gray-600 hover:text-primary transition">企业方案</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary transition">关于我们</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg shadow-blue-500/30">预约咨询</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white shadow-lg border-t border-gray-100">
+            <div class="flex flex-col px-4 py-4 space-y-4">
+                <a href="index.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">主页</a>
+                <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">核心保障</a>
+                <a href="wealth.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">财富积累</a>
+                <a href="business.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">企业方案</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">关于我们</a>
+                <a href="index.html#contact" class="text-primary font-bold">预约咨询 &rarr;</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold text-dark mb-6">
+                定期人寿保险 <br>
+                <span class="gradient-text text-2xl md:text-4xl mt-2 block">为您的未来提供经济实惠的保障</span>
+            </h1>
+            <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-8">
+                在您最需要的时候，为您的家人和企业提供高杠杆的财务保护。
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="index.html#contact" class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-600 transition shadow-lg">获取报价</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-dark mb-6">什么是定期人寿保险 (Term Life)？</h2>
+                    <p class="text-gray-600 mb-4 text-lg leading-relaxed">
+                        定期人寿保险是一种在特定时间内（例如 10 年、20 年或 30 年）为您提供保障的产品。如果您在保单有效期内不幸身故，您的受益人将获得一笔免税的赔付金。
+                    </p>
+                    <div class="space-y-4 mt-8">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-primary mr-4 text-xl">💲</div>
+                            <div>
+                                <h4 class="font-bold text-dark">经济实惠</h4>
+                                <p class="text-sm text-gray-500">初始保费通常远低于终身保险，用小钱换大保障。</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-secondary mr-4 text-xl">🔒</div>
+                            <div>
+                                <h4 class="font-bold text-dark">保费固定</h4>
+                                <p class="text-sm text-gray-500">在您选择的期限内，保费保证保持不变。</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center text-accent mr-4 text-xl">⏳</div>
+                            <div>
+                                <h4 class="font-bold text-dark">灵活期限</h4>
+                                <p class="text-sm text-gray-500">提供从 10 年到 40 年的多种期限选择。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-light rounded-3xl p-8 border border-gray-100 shadow-xl">
+                    <h3 class="text-xl font-bold text-dark mb-6">为什么您需要它？</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-xl shadow-sm">
+                            <span class="text-2xl block mb-2">🏠</span>
+                            <h4 class="font-bold text-dark">房贷保障</h4>
+                            <p class="text-xs text-gray-500 mt-1">确保家人能偿还房贷，保住家园。</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm">
+                            <span class="text-2xl block mb-2">💰</span>
+                            <h4 class="font-bold text-dark">收入替代</h4>
+                            <p class="text-xs text-gray-500 mt-1">替代您的收入，支付日常开支。</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm">
+                            <span class="text-2xl block mb-2">🏢</span>
+                            <h4 class="font-bold text-dark">企业保护</h4>
+                            <p class="text-xs text-gray-500 mt-1">偿还商业贷款或关键人物保障。</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm">
+                            <span class="text-2xl block mb-2">🎓</span>
+                            <h4 class="font-bold text-dark">子女教育</h4>
+                            <p class="text-xs text-gray-500 mt-1">保障孩子的教育基金。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-primary/5">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-dark mb-4">算一算：您需要多少保障？</h2>
+                <p class="text-gray-600">使用这个简单的计算器，只需 1 分钟，估算您的家庭财务安全缺口。</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    
+                    <div class="p-8 space-y-6">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">1. 尚未还清的房贷 ($)</label>
+                            <input type="number" id="mortgage" placeholder="例如: 500000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateNeed()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">2. 其他债务 (车贷/卡债) ($)</label>
+                            <input type="number" id="debts" placeholder="例如: 20000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateNeed()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">3. 您希望预留的子女教育金 ($)</label>
+                            <input type="number" id="education" placeholder="例如: 100000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateNeed()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">4. 需替代的年收入 ($) x 10年</label>
+                            <div class="flex gap-2">
+                                <input type="number" id="income" placeholder="年收入" class="w-2/3 px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateNeed()">
+                                <div class="w-1/3 flex items-center justify-center bg-gray-100 rounded-lg text-gray-500 text-sm font-bold">x 10 年</div>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">5. 现有存款与保险 (-)</label>
+                            <input type="number" id="savings" placeholder="例如: 50000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateNeed()">
+                        </div>
+                    </div>
+
+                    <div class="bg-dark p-8 text-white flex flex-col justify-center items-center text-center relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-3xl"></div>
+                        <div class="absolute bottom-0 left-0 w-32 h-32 bg-secondary/20 rounded-full blur-3xl"></div>
+                        
+                        <p class="text-gray-400 text-sm uppercase tracking-widest mb-2 relative z-10">建议的总保额</p>
+                        <h3 class="text-5xl font-bold text-white mb-2 relative z-10" id="totalNeed">$0</h3>
+                        <p class="text-gray-400 text-xs mb-8 relative z-10">这是一个估算值，具体需根据通胀调整</p>
+                        
+                        <a href="#contact" class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-full font-bold transition shadow-lg w-full relative z-10">
+                            获取此额度的报价
+                        </a>
+                        
+                        <div class="mt-8 text-xs text-gray-500 text-left border-t border-gray-700 pt-4 w-full relative z-10">
+                            <p>计算公式：</p>
+                            <p>房贷 + 债务 + 教育金 + (年收入 x 10) - 现有资产 = 您的保障缺口</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function calculateNeed() {
+            // 获取输入值，如果为空则默认为0
+            let mortgage = parseFloat(document.getElementById('mortgage').value) || 0;
+            let debts = parseFloat(document.getElementById('debts').value) || 0;
+            let education = parseFloat(document.getElementById('education').value) || 0;
+            let income = parseFloat(document.getElementById('income').value) || 0;
+            let savings = parseFloat(document.getElementById('savings').value) || 0;
+
+            // 计算逻辑: (负债 + 教育 + 10年收入) - 存款
+            let total = (mortgage + debts + education + (income * 10)) - savings;
+
+            // 结果不能小于0
+            if (total < 0) total = 0;
+
+            // 格式化数字 (例如 1,000,000)
+            document.getElementById('totalNeed').innerText = '$' + total.toLocaleString('en-US');
+        }
+    </script>
+
+    <section id="products" class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">我们的产品系列</h2>
+                <p class="text-gray-600">根据您的需求和预算，提供灵活的解决方案 (以 Sun Life 产品为例)</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-t-4 border-primary">
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold text-dark">Sun Life Evolve</h3>
+                            <span class="bg-blue-100 text-primary px-3 py-1 rounded-full text-xs font-bold">最灵活</span>
+                        </div>
+                        <p class="text-gray-500 mb-6">功能最全，适合未来可能调整保单的人群。</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center text-gray-700"><span class="text-secondary mr-2">✓</span> 期限：5 - 40 年可选</li>
+                            <li class="flex items-center text-gray-700"><span class="text-secondary mr-2">✓</span> <strong>可转换为终身寿险</strong> (75岁前无体检)</li>
+                            <li class="flex items-center text-gray-700"><span class="text-secondary mr-2">✓</span> 可续保至 85 岁</li>
+                            <li class="flex items-center text-gray-700"><span class="text-secondary mr-2">✓</span> 可增加保额 (结婚/生子时)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-t-4 border-gray-400">
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold text-dark">Sun Life Essential</h3>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-bold">最实惠</span>
+                        </div>
+                        <p class="text-gray-500 mb-6">价格最低，适合预算有限只需基本保障的人群。</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center text-gray-700"><span class="text-secondary mr-2">✓</span> 期限：5 - 20 年可选</li>
+                            <li class="flex items-center text-gray-700"><span class="text-gray-300 mr-2">✕</span> 不可转换为终身寿险</li>
+                            <li class="flex items-center text-gray-700"><span class="text-gray-300 mr-2">✕</span> 不可续保</li>
+                            <li class="flex items-center text-gray-700"><span class="text-secondary mr-2">✓</span> 价格极具竞争力</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-blue-50 border border-blue-100 rounded-2xl p-8">
+                <h3 class="text-xl font-bold text-dark mb-4">🩺 特色解决方案：糖尿病患者定期保险</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <p class="text-gray-700 mb-2 font-medium">Sun Life Term Insurance for Diabetes</p>
+                        <p class="text-sm text-gray-600">为糖尿病患者提供更易获批的保险，保费合理，并包含糖尿病管理资源。</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-700 mb-2 font-medium">Achievers 奖励计划</p>
+                        <p class="text-sm text-gray-600">激励您控制糖尿病，达到健康目标可维持优惠保费。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-dark mb-8 text-center">产品对比一览</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="py-4 px-6 text-left text-sm font-bold text-gray-600">特性</th>
+                            <th class="py-4 px-6 text-left text-sm font-bold text-primary">Evolve 定期保险</th>
+                            <th class="py-4 px-6 text-left text-sm font-bold text-gray-600">Essential 定期保险</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr>
+                            <td class="py-4 px-6 text-sm font-medium text-gray-900">适合人群</td>
+                            <td class="py-4 px-6 text-sm text-gray-600">需灵活性、未来可能调整保单</td>
+                            <td class="py-4 px-6 text-sm text-gray-600">预算有限、只需短期简单保障</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-sm font-medium text-gray-900">保险期限</td>
+                            <td class="py-4 px-6 text-sm text-gray-600">5 - 40 年</td>
+                            <td class="py-4 px-6 text-sm text-gray-600">5 - 20 年</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-sm font-medium text-gray-900">转换为终身寿险</td>
+                            <td class="py-4 px-6 text-sm text-secondary font-bold">是 (75岁前)</td>
+                            <td class="py-4 px-6 text-sm text-gray-400">否</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-sm font-medium text-gray-900">可续保</td>
+                            <td class="py-4 px-6 text-sm text-secondary font-bold">是 (至 85 岁)</td>
+                            <td class="py-4 px-6 text-sm text-gray-400">否</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-sm font-medium text-gray-900">可选附加险</td>
+                            <td class="py-4 px-6 text-sm text-gray-600">全面 (儿童、意外、豁免等)</td>
+                            <td class="py-4 px-6 text-sm text-gray-400">无</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-right text-xs text-gray-400 mt-4">[参考来源: 2314, 2300, 2301, 2312]</p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-50 border-t border-gray-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <span class="text-2xl font-bold text-dark">Insured618</span>
+            </div>
+            <p class="text-gray-500 mb-8">为您量身定制保障方案</p>
+            <div class="text-gray-400 text-sm space-y-2">
+                <p>地址：[您的地址] | 电话：[您的电话] | 邮箱：[您的邮箱]</p>
+                <p class="mt-4 max-w-2xl mx-auto">免责声明：本文仅供参考，不构成法律或税务建议。具体产品条款以保单合同为准。</p>
+                <p class="mt-4">© 2025 Insured618. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btn && menu) {
+            // 1. 点击按钮切换菜单显示状态
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation(); // 阻止点击事件冒泡到 document
+                menu.classList.toggle('hidden');
+            });
+
+            // 2. 点击页面其他地方关闭菜单
+            document.addEventListener('click', (e) => {
+                // 如果菜单是打开的，且点击的目标既不是菜单本身，也不是按钮，则关闭菜单
+                if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !btn.contains(e.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+
+            // 3. 点击菜单内部的链接后自动关闭
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+
+</body>
+</html>
