@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>给付年金 (Payout Annuities) - 无忧退休的终身现金流</title>
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <meta name="description" content="将您的积蓄转化为源源不断的现金流。了解加拿大给付年金 (Payout Annuities)，无论市场如何波动，保证您拥有稳定、持续的终身退休收入。">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4C8DFF', // Index Blue
+                        dark: '#1A1D21',
+                        light: '#F7F9FC',
+                        gold: '#D4AF37', // Wealth Gold
+                        goldlight: '#F9F1D8',
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans SC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .text-gold-gradient {
+            background: linear-gradient(to right, #D4AF37, #F2C94C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(26, 29, 33, 0.8), rgba(26, 29, 33, 0.9)), url('https://images.unsplash.com/photo-1473186578172-c141e6798cf4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-grid-pattern {
+            background-size: 30px 30px;
+            background-image: linear-gradient(to right, rgba(0,0,0,0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(0,0,0,0.03) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white">
+
+    <!-- 导航栏 -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-primary">Insured618</a>
+                </div>
+
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-primary focus:outline-none p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition">首页</a>
+                    <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary transition">核心保障</a>
+                    <a href="wealth.html" class="text-primary font-bold transition">财富积累</a>
+                    <a href="business.html" class="text-gray-600 hover:text-primary transition">企业方案</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary transition">关于我们</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg">预约咨询</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white shadow-lg border-t border-gray-100">
+            <div class="flex flex-col px-4 py-4 space-y-4">
+                <a href="index.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">主页</a>
+                <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">核心保障</a>
+                <a href="wealth.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">财富积累</a>
+                <a href="business.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">企业方案</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">关于我们</a>
+                <a href="index.html#contact" class="text-primary font-bold">预约咨询 &rarr;</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区块 (Hero Section) -->
+    <section class="relative pt-32 pb-24 hero-bg overflow-hidden">
+        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block py-1 px-4 rounded-full bg-primary/20 border border-primary/40 text-primary text-sm font-bold mb-6 tracking-wide uppercase">
+                打造您的私人养老金
+            </span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                给付年金 <br><span class="text-primary text-4xl md:text-5xl lg:text-6xl">(Payout Annuities)</span>
+            </h1>
+            <p class="max-w-3xl mx-auto text-xl text-gray-300 mb-10 font-light leading-relaxed">
+                无需再为股市的涨跌而提心吊胆。只需一次性存入，即可换取一份源源不断的现金流，为您构建一个无忧、安稳的黄金退休期。
+            </p>
+        </div>
+    </section>
+
+    <!-- 为什么需要年金 -->
+    <section class="py-20 bg-white bg-grid-pattern">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-dark mb-8">释放您的时间，享受真正的生活</h2>
+            <p class="text-lg text-gray-600 leading-relaxed mb-12">
+                退休的意义不应是每天精打细算或是对衰退的市场担惊受怕。给付年金 (Payout Annuity) 能将您的积蓄转化为有竞争力的、极度安全的退休收入。<strong>您将获得保证的、永远不会减少的支付金额</strong>，如果是终身年金，这份收入将伴随您一生。它是解决基本生活开支、构建“无忧退休”的完美地基。
+            </p>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-light p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition text-center">
+                    <div class="w-16 h-16 bg-blue-100 text-primary rounded-full flex items-center justify-center text-3xl mx-auto mb-6">🛡️</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">绝对的安全 (Security)</h3>
+                    <p class="text-gray-600">提供终身或特定期限的保证收入，无需承担任何市场崩盘的风险。</p>
+                </div>
+                <div class="bg-light p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition text-center">
+                    <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-6">☕</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">极致的简单 (Simplicity)</h3>
+                    <p class="text-gray-600">您无需进行任何主动的投资组合管理，收入完全不受利率下降或市场波动的影响。</p>
+                </div>
+                <div class="bg-light p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition text-center">
+                    <div class="w-16 h-16 bg-goldlight text-gold rounded-full flex items-center justify-center text-3xl mx-auto mb-6">⚖️</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">安稳的现金流 (Stability)</h3>
+                    <p class="text-gray-600">享受每个月准时到账的“工资条”，让您对生活预算拥有100%的掌控感和内心的平静。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 定制您的年金计划 -->
+    <section class="py-20 bg-dark text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-gold/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 text-gold-gradient">按您的规则生活，按您的需求定制</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    不同的人对退休有不同的规划，但没有人想为最基础的开销发愁。我们可以使用您的 RRSP、RRIF、TFSA 或是非注册资金，为您量身打造最合适的提取策略。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- 年金类型 -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center"><span class="text-primary mr-3">1.</span> 选择年金的生命周期</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white/5 border border-white/10 p-6 rounded-xl backdrop-blur-sm">
+                            <h4 class="text-lg font-bold text-white mb-2">终身年金 (Life Annuity)</h4>
+                            <p class="text-gray-400 text-sm">提供终身保证的支付。只要您在世，保险公司就一直支付，哪怕您活到 110 岁，完美解决“人活着，钱没了”的长寿风险。</p>
+                        </div>
+                        <div class="bg-white/5 border border-white/10 p-6 rounded-xl backdrop-blur-sm">
+                            <h4 class="text-lg font-bold text-white mb-2">联合终身年金 (Joint Life Annuity)</h4>
+                            <p class="text-gray-400 text-sm">保证两人的终身支付。非常适合夫妻，只要其中一人在世，收入就不会中断。</p>
+                        </div>
+                        <div class="bg-white/5 border border-white/10 p-6 rounded-xl backdrop-blur-sm">
+                            <h4 class="text-lg font-bold text-white mb-2">定期年金 (Term Certain Annuity)</h4>
+                            <p class="text-gray-400 text-sm">在您指定的特定期限内（例如10年或20年）提供保证支付。如果您在期限内去世，剩余的支付将由您的受益人继续领取。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 收入发放选项 -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center"><span class="text-gold mr-3">2.</span> 自由配置收入增长模式</h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <span class="w-6 h-6 rounded-full bg-gold/20 text-gold flex items-center justify-center font-bold text-xs">✓</span>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold">固定收入 (Level Income)</h4>
+                                <p class="text-gray-400 text-sm mt-1">每个月的收入金额始终保持不变，便于进行绝对精准的预算管理。</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <span class="w-6 h-6 rounded-full bg-gold/20 text-gold flex items-center justify-center font-bold text-xs">✓</span>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold">指数化/递增收入 (Indexed Payments)</h4>
+                                <p class="text-gray-400 text-sm mt-1">您的收入每年按指定的百分比（如2%）增加，用以有效抵御长期的通货膨胀侵蚀。</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <span class="w-6 h-6 rounded-full bg-gold/20 text-gold flex items-center justify-center font-bold text-xs">✓</span>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold">整合收入 (Integrated Income)</h4>
+                                <p class="text-gray-400 text-sm mt-1">如果您选择提前退休，年金在您领取政府退休金（OAS/CPP）前支付较高的金额；当政府福利开始后，年金金额降低，让您的总体现金流始终平稳衔接。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 保证期保护功能 -->
+    <section class="py-20 bg-light">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white p-10 md:p-12 rounded-3xl shadow-xl border border-gray-100 flex flex-col md:flex-row items-center gap-10">
+                <div class="w-full md:w-1/3">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Family protection" class="rounded-2xl shadow-lg object-cover h-64 w-full">
+                </div>
+                <div class="w-full md:w-2/3">
+                    <h2 class="text-2xl md:text-3xl font-bold text-dark mb-4">“如果我刚买年金就过世了怎么办？”</h2>
+                    <h3 class="text-lg font-bold text-primary mb-4">了解“保证期”功能 (Guaranteed Period Feature)</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        这是客户最常问的问题。为了防止这种情况，您可以为终身年金添加一个<strong>“保证期”</strong>（例如 10 年或 15 年）。<br><br>
+                        如果在保证期结束前，您（或联合年金中的两人）不幸离世，保险公司绝不会将钱据为己有！我们会向您指定的受益人支付<strong>死亡抚恤金</strong>（根据资金来源和合约规定，可能是继续支付剩余的月供，或是一次性发放一笔现金）。
+                    </p>
+                    <div class="inline-flex items-center text-sm font-bold text-gray-800 bg-gray-100 px-4 py-2 rounded-lg">
+                        ✌️ 既享有活到老的无限保障，又保住了早期身故的本金底线。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-24 bg-primary text-center">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">让专家帮您测算退休“工资”</h2>
+            <p class="text-xl text-blue-100 mb-10 font-light">
+                给付年金的每月支付额度取决于您的年龄、性别、投入资金大小、当前市场利率等诸多因素。现在的市场利率处于何种水平？您能领到多少钱？
+            </p>
+            <a href="index.html#contact" class="inline-block bg-white text-primary px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-50 transition shadow-xl transform hover:-translate-y-1">
+                获取免费的年金收益报价单
+            </a>
+        </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <span class="text-2xl font-bold text-white">Insured618</span>
+            </div>
+            <p class="text-gray-500 mb-8">守护今天，富足未来</p>
+            <div class="text-gray-600 text-xs space-y-2 max-w-2xl mx-auto">
+                <p>免责声明：年金的给付金额一经锁定即不可撤销。立法要求可能会影响您可购买的年金类型。具体条款以保险公司最终签发的合约为准。</p>
+                <p>© 2025 Insured618. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btn && menu) {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                menu.classList.toggle('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !btn.contains(e.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+
+</body>
+</html>
