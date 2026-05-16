@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>保本基金 (Segregated Funds) 深度解析 - Insured618</title>
+    <title>保本基金 (Segregated Funds) 全面解析 - Insured618</title>
     
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     
-    <meta name="description" content="加拿大五大主要保险公司保本基金 (Segregated Funds) 75%/100% 产品横向深度对比。涵盖 Canada Life, Sun Life, Manulife, iA, Equitable Life 核心优势、保证锁利、优选定价及销售费结构对比。">
+    <meta name="description" content="守护您的财富，投资您的未来。全面解析加拿大保本基金 (Segregated Funds)，结合了互惠基金的增长潜力与保险合约的终极安全保障。">
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -36,19 +36,10 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .bg-grid-pattern {
-            background-size: 30px 30px;
-            background-image: linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
-                              linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
-        }
-        /* Hide scrollbar for Chrome, Safari and Opera */
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        /* Hide scrollbar for IE, Edge and Firefox */
-        .no-scrollbar {
-            -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  /* Firefox */
+        .hero-bg {
+            background-image: linear-gradient(rgba(26, 29, 33, 0.8), rgba(26, 29, 33, 0.9)), url('https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
         }
     </style>
 </head>
@@ -96,447 +87,334 @@
     </nav>
 
     <!-- 英雄区块 (Hero Section) -->
-    <section class="relative pt-32 pb-20 bg-dark overflow-hidden bg-grid-pattern">
-        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/10 to-transparent"></div>
-        <div class="absolute bottom-0 left-0 w-72 h-72 rounded-full bg-gold/5 blur-3xl"></div>
-
+    <section class="relative pt-32 pb-24 hero-bg overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <div class="mb-6 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30">
-                <span class="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
-                <span class="text-primary text-xs font-bold tracking-wide uppercase">行业横向深度研究</span>
-            </div>
-            <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight tracking-tight">
-                保本基金 <span class="text-gold-gradient">(Segregated Funds)</span><br>
-                <span class="text-xl md:text-2xl font-light text-gray-400 block mt-3">加拿大五大保险公司 75%/100% 产品横向深度对比 (含 EQ Life)</span>
+            <span class="inline-block py-1 px-4 rounded-full bg-gold/20 border border-gold/40 text-gold text-sm font-bold mb-6 tracking-wide uppercase">
+                加拿大保本基金 (Segregated Funds) 全面解析
+            </span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                守护您的财富，<br><span class="text-gold-gradient">投资您的未来</span>
             </h1>
-            <p class="max-w-3xl mx-auto text-gray-400 text-base md:text-lg mb-8 leading-relaxed">
-                保本基金是一项结合了保险保障条款与共同基金增长潜力的投资合同。通过在身故或到期时提供高达 100% 的本金保证及锁利机制，它不仅为您的投资筑起了坚实的安全网，更拥有绕过遗嘱认证实现极速私密传承的独特法律属性。
+            <p class="max-w-3xl mx-auto text-xl md:text-2xl text-gray-300 mb-10 font-light leading-relaxed">
+                结合了互惠基金的增长潜力与保险合约的终极安全保障。
             </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#comparison-chart" class="bg-primary hover:bg-blue-600 text-white px-6 py-3 rounded-xl font-bold transition flex items-center">
-                    📊 查看核心对比
-                </a>
-                <a href="#f-class-advantage" class="bg-gray-800 border border-gray-700 text-white hover:bg-gray-700 px-6 py-3 rounded-xl font-bold transition">
-                    💡 A-Class vs F-Class 架构优势
+            <div class="flex justify-center">
+                <a href="#contact" class="bg-gold hover:bg-yellow-600 text-dark px-8 py-4 rounded-full font-bold text-lg transition shadow-xl shadow-yellow-600/20 transform hover:-translate-y-1">
+                    开始规划安稳未来
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- 核心亮点快速导航 -->
-    <section class="bg-light py-8 border-b border-gray-200">
+    <!-- 什么是保本基金 -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-50 text-primary mb-6">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h2 class="text-3xl font-bold text-dark mb-8">🌟 什么是保本基金？</h2>
+            <p class="text-lg text-gray-600 leading-relaxed text-justify md:text-center">
+                保本基金（Segregated Funds）是加拿大保险公司独家提供的一种特殊投资工具。它在底层运作上类似于互惠基金（Mutual Funds），资金由专业经理人分散投资于股票、债券等市场以获取增长。但作为一种<strong>个人可变保险合约</strong>，它内置了强大的“保险安全网”，为您提供本金保底、避开遗嘱认证以及潜在的债权人保护。
+            </p>
+        </div>
+    </section>
+
+    <!-- 四大核心优势 -->
+    <section class="py-20 bg-light">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-wrap justify-center items-center gap-4 text-sm font-medium">
-                <span class="text-gray-500">涵盖机构：</span>
-                <div class="flex flex-wrap gap-3">
-                    <span class="bg-white px-3 py-1 rounded-lg border border-gray-200 shadow-sm text-dark flex items-center gap-1.5">
-                        <span class="w-2 h-2 bg-blue-600 rounded-full"></span> Canada Life (理寿)
-                    </span>
-                    <span class="bg-white px-3 py-1 rounded-lg border border-gray-200 shadow-sm text-dark flex items-center gap-1.5">
-                        <span class="w-2 h-2 bg-yellow-500 rounded-full"></span> Sun Life (永明)
-                    </span>
-                    <span class="bg-white px-3 py-1 rounded-lg border border-gray-200 shadow-sm text-dark flex items-center gap-1.5">
-                        <span class="w-2 h-2 bg-green-600 rounded-full"></span> Manulife (宏利)
-                    </span>
-                    <span class="bg-white px-3 py-1 rounded-lg border border-gray-200 shadow-sm text-dark flex items-center gap-1.5">
-                        <span class="w-2 h-2 bg-red-600 rounded-full"></span> iA Financial (工业联盟)
-                    </span>
-                    <span class="bg-white px-3 py-1 rounded-lg border border-gray-200 shadow-sm text-dark flex items-center gap-1.5">
-                        <span class="w-2 h-2 bg-blue-400 rounded-full"></span> Equitable Life (EQ)
-                    </span>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">🛡️ 为什么选择保本基金？</h2>
+                <p class="text-gray-500">四大核心优势为您保驾护航</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- 优势 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition group">
+                    <div class="w-14 h-14 bg-green-50 text-green-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">💎</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">1. 绝不妥协的本金保障</h3>
+                    <p class="text-gray-500 text-sm font-medium mb-3">(Principal Guarantees)</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        无论市场如何动荡，您的投资始终拥有底线。当合约到期或投资者身故时，保险公司将<strong>保证赔付您初始投资本金的 75% 至 100%</strong>（扣除已提取部分）。
+                    </p>
+                </div>
+
+                <!-- 优势 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition group">
+                    <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">📈</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">2. 锁定收益的“重置”功能</h3>
+                    <p class="text-gray-500 text-sm font-medium mb-3">(Reset Option)</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        不仅保本，还能保利润！许多保本基金允许您每年主动“重置”一次合约的保证价值（通常直至80岁）。<strong>当市场上涨时，您可以将赚到的利润锁定，变成新的保底本金</strong>。
+                    </p>
+                </div>
+
+                <!-- 优势 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition group">
+                    <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">🕊️</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">3. 高效、私密的财富传承</h3>
+                    <p class="text-gray-500 text-sm font-medium mb-3">(Estate Bypass & Probate-Free)</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        与普通投资不同，保本基金的身故理赔金会<strong>直接、快速且私密地支付给您指定的受益人</strong>，完全绕过漫长且昂贵的遗嘱认证（Probate）程序，为您省下高昂的法律和会计费用。
+                    </p>
+                </div>
+
+                <!-- 优势 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition group">
+                    <div class="w-14 h-14 bg-red-50 text-red-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">🏛️</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">4. 潜在的债权人保护</h3>
+                    <p class="text-gray-500 text-sm font-medium mb-3">(Potential Creditor Protection)</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        对于企业主、自雇人士和专业人士而言，这是一层无价的防护衣。只要您指定了合格的家庭成员作为受益人，您的保本基金资产在发生诉讼或破产时，<strong>可能完全免受债权人的追索</strong>。
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 横向对比表格区块 -->
-    <section id="comparison-chart" class="py-20 bg-white scroll-mt-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- 案例对比 -->
+    <section class="py-20 bg-dark text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-dark mb-4">一、核心横向对比概览</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">我们精选了 22 个最核心的对比维度，帮助您全方位解析各家产品的优劣势，选择最契合您家庭财务规划目标的方案。</p>
+                <h2 class="text-3xl font-bold mb-4">📊 真人案例对比：保本基金 vs 互惠基金</h2>
+                <p class="text-gray-400 max-w-3xl mx-auto">
+                    假设 Jim 和 Joan 各投资了 <strong>$250,000</strong>，两人都在投资下跌 10%（市场价值变为 $225,000）后不幸离世。看看他们家人的最终结果：
+                </p>
             </div>
 
-            <!-- 大表包装层 -->
-            <div class="overflow-x-auto shadow-2xl rounded-2xl border border-gray-200 no-scrollbar md:no-scrollbar-none">
-                <table class="w-full min-w-[900px] text-left border-collapse bg-white">
+            <div class="bg-white/10 rounded-2xl backdrop-blur-md border border-white/10 overflow-hidden shadow-2xl">
+                <table class="w-full text-left">
                     <thead>
-                        <tr class="bg-dark text-white">
-                            <th class="p-5 font-bold text-base border-b border-gray-800 w-1/6 bg-gray-900 sticky left-0 z-10 shadow-[1px_0_5px_rgba(0,0,0,0.1)]">对比维度</th>
-                            <th class="p-5 font-bold text-base border-b border-gray-800 w-1/6">Canada Life (理寿)</th>
-                            <th class="p-5 font-bold text-base border-b border-gray-800 w-1/6">Sun Life (永明)</th>
-                            <th class="p-5 font-bold text-base border-b border-gray-800 w-1/6">Manulife (宏利)</th>
-                            <th class="p-5 font-bold text-base border-b border-gray-800 w-1/6">iA Financial (工业联盟)</th>
-                            <th class="p-5 font-bold text-base border-b border-gray-800 w-1/6 bg-blue-900/20 text-blue-400 border-l border-blue-900/20">Equitable Life (EQ)</th>
+                        <tr class="bg-black/40">
+                            <th class="p-6 font-bold text-gray-300 w-1/3">对比项目</th>
+                            <th class="p-6 font-bold text-red-400 w-1/3 border-l border-white/5">Jim 的互惠基金<br><span class="text-sm font-normal text-gray-400">(Mutual Fund)</span></th>
+                            <th class="p-6 font-bold text-green-400 w-1/3 border-l border-white/5">Joan 的保本基金<br><span class="text-sm font-normal text-gray-400">(100%身故保证)</span></th>
                         </tr>
                     </thead>
-                    <tbody class="text-sm text-gray-600">
-                        <!-- 第一板块：定位与保证 -->
-                        <tr class="bg-gray-50"><td colspan="6" class="px-5 py-3 font-bold text-dark bg-gray-100">1. 产品系列与核心保证</td></tr>
-                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition">
-                            <td class="p-4 font-bold text-dark bg-white sticky left-0 z-10 shadow-[1px_0_3px_rgba(0,0,0,0.05)]">产品系列名称</td>
-                            <td class="p-4">Canada Life Segregated Funds</td>
-                            <td class="p-4">Sun GIF Solutions</td>
-                            <td class="p-4">Manulife GIF Select (InvestmentPlus)</td>
-                            <td class="p-4">IAG Savings and Retirement Plan</td>
-                            <td class="p-4 font-semibold bg-blue-50/20">Equitable Guaranteed Investment Funds (GIF)</td>
+                    <tbody class="divide-y divide-white/5">
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="p-6 font-medium text-gray-300">去世时的市场价值</td>
+                            <td class="p-6 border-l border-white/5">$225,000</td>
+                            <td class="p-6 border-l border-white/5">$225,000</td>
                         </tr>
-                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition">
-                            <td class="p-4 font-bold text-dark bg-white sticky left-0 z-10 shadow-[1px_0_3px_rgba(0,0,0,0.05)]">主要投资者目标</td>
-                            <td class="p-4">- 75/75: 低费成长<br>- 75/100: 核心平衡<br>- 100/100: 极端避险</td>
-                            <td class="p-4">- Investment: 积累增值<br>- Income: 终生保证收入<br>- Estate: 锁定遗产增值</td>
-                            <td class="p-4">- 75/75: 最大市场成长<br>- 75/100: 实现增值与身故金的平衡</td>
-                            <td class="p-4">- Classic: 最低费成长<br>- 75/100: 遗产锁增值<br>- Ecoflex: 频繁锁利避险</td>
-                            <td class="p-4 bg-blue-50/20">- Investment(75/75): 低费成长<br>- Estate(75/100): 资产积累<br>- Protection(100/100): 极限保本</td>
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="p-6 font-medium text-gray-300">保险公司“补足金额”</td>
+                            <td class="p-6 border-l border-white/5 text-gray-500">不适用</td>
+                            <td class="p-6 border-l border-white/5 text-green-400 font-bold">+$25,000</td>
                         </tr>
-                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition">
-                            <td class="p-4 font-bold text-dark bg-white sticky left-0 z-10 shadow-[1px_0_3px_rgba(0,0,0,0.05)]">到期利益保证</td>
-                            <td class="p-4">75/75 & 75/100: <strong>75%</strong><br>100/100: 15年以上保证 <strong>100%</strong></td>
-                            <td class="p-4">提供净存款的 <strong>75%</strong> 到期保证。</td>
-                            <td class="p-4">提供净存款的 <strong>75%</strong> 到期保证。</td>
-                            <td class="p-4">Classic & 75/100: <strong>75%</strong><br>Ecoflex: 存满15年保证 <strong>100%</strong></td>
-                            <td class="p-4 bg-blue-50/20">75/75 & 75/100: <strong>75%</strong><br>100/100: 15年以上保证 <strong>100%</strong> (部分条件)</td>
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="p-6 font-medium text-gray-300">遗嘱认证与律师/会计费</td>
+                            <td class="p-6 border-l border-white/5 text-red-400">-$22,875</td>
+                            <td class="p-6 border-l border-white/5 text-green-400 font-bold">$0 <span class="text-sm text-gray-400 font-normal">(绕过遗嘱认证)</span></td>
                         </tr>
-                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition">
-                            <td class="p-4 font-bold text-dark bg-white sticky left-0 z-10 shadow-[1px_0_3px_rgba(0,0,0,0.05)]">身故利益保证</td>
-                            <td class="p-4">75/75: 75%<br>75/100: 80岁前存入 <strong>100%</strong> 保证</td>
-                            <td class="p-4">Investment/Income: 75%<br>Estate 系列享 <strong>100%</strong> 保证</td>
-                            <td class="p-4">75/75: 75%<br>75/100享 <strong>100%</strong> (受80岁前限制)</td>
-                            <td class="p-4">Classic: 75%<br>75/100: 85岁前存享 <strong>100%</strong><br>Ecoflex: 80岁前享 <strong>100%</strong></td>
-                            <td class="p-4 bg-blue-50/20 font-semibold text-dark">75/75: 75%<br>Estate(75/100): <strong>100%</strong><br>Protection: <strong>100%</strong></td>
-                        </tr>
-                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition">
-                            <td class="p-4 font-bold text-dark bg-white sticky left-0 z-10 shadow-[1px_0_3px_rgba(0,0,0,0.05)]">保证重置锁利<br>(Guar. Resets)</td>
-                            <td class="p-4">75/100 & 100/100:<br><span class="bg-green-50 text-green-700 text-xs px-1.5 py-0.5 rounded">自动年度身故重置</span> 至80岁。</td>
-                            <td class="p-4">Estate系列:<br><span class="bg-green-50 text-green-700 text-xs px-1.5 py-0.5 rounded">自动年度身故重置</span> 至80岁。</td>
-                            <td class="p-4">75/100系列:<br><span class="bg-green-50 text-green-700 text-xs px-1.5 py-0.5 rounded">自动年度身故重置</span> 至80岁。</td>
-                            <td class="p-4">75/100: 每年1次<span class="bg-blue-50 text-blue-700 text-xs px-1.5 py-0.5 rounded">自主身故重置</span> 至85岁。<br>Ecoflex: 每年最高4次自主。</td>
-                            <td class="p-4 bg-blue-50/20">Estate: <span class="bg-blue-50 text-blue-700 text-xs px-1.5 py-0.5 rounded">每年1次自主身故重置</span> 至80岁。<br>Protection: 每年1次自主双重重置。</td>
-                        </tr>
-
-                        <!-- 第二板块：存取 -->
-                        <tr class="bg-gray-50"><td colspan="6" class="px-5 py-3 font-bold text-dark bg-gray-100">2. 准入与存取限额</td></tr>
-                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition">
-                            <td class="p-4 font-bold text-dark bg-white sticky left-0 z-10 shadow-[1px_0_3px_rgba(0,0,0,0.05)]">最低首存/追加要求</td>
-                            <td class="p-4">首存 <strong>$500</strong> / 追加 <strong>$100</strong><br>定投(PAC)最低 $25/月</td>
-                            <td class="p-4">首存 <strong>$500</strong> / 追加 <strong>$100</strong><br>定投(PAC)最低 $50/月</td>
-                            <td class="p-4">首存 <strong>$1,000</strong> / 追加 <strong>$100</strong><br>定投(PAC)最低 $50/月</td>
-                            <td class="p-4 font-semibold text-green-600">首存 <strong>$100</strong> / 追加 <strong>$100</strong><br>定投(PAC)最低 <strong>$25/月</strong></td>
-                            <td class="p-4 bg-blue-50/20 font-semibold text-green-600">首存 <strong>$100</strong> / 追加 <strong>$25</strong><br>定投(PAC)最低 <strong>$25/月</strong></td>
-                        </tr>
-                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition">
-                            <td class="p-4 font-bold text-dark bg-white sticky left-0 z-10 shadow-[1px_0_3px_rgba(0,0,0,0.05)]">单支基金最低限额</td>
-                            <td class="p-4">$25</td>
-                            <td class="p-4">$50 到 $100</td>
-                            <td class="p-4">$1,000</td>
-                            <td class="p-4 font-semibold text-green-600">行业最低 <strong>$5</strong></td>
-                            <td class="p-4 bg-blue-50/20 font-semibold text-green-600">亲民 <strong>$25</strong></td>
-                        </tr>
-                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition">
-                            <td class="p-4 font-bold text-dark bg-white sticky left-0 z-10 shadow-[1px_0_3px_rgba(0,0,0,0.05)]">最高存款年龄限制</td>
-                            <td class="p-4">RRSP至71岁；TFSA/非注册至 <strong>90岁</strong>。</td>
-                            <td class="p-4">一般至90岁；Heritage专供 81-85 岁。</td>
-                            <td class="p-4">注册至71岁；非注册可达 <strong>90岁</strong>。</td>
-                            <td class="p-4">Classic最高 90 岁；Ecoflex最高 85岁。</td>
-                            <td class="p-4 bg-blue-50/20">75/75最高 90岁；Estate & Protection最高 <strong>80岁</strong>。</td>
-                        </tr>
-
-                        <!-- 第三板块：销售费率 -->
-                        <tr class="bg-gray-50"><td colspan="6" class="px-5 py-3 font-bold text-dark bg-gray-100">3. 销售费率结构与佣金</td></tr>
-                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition">
-                            <td class="p-4 font-bold text-dark bg-white sticky left-0 z-10 shadow-[1px_0_3px_rgba(0,0,0,0.05)]">销售费用结构 (Loads)</td>
-                            <td class="p-4">FEL(前收费), CB2/CB4(两年/四年退费), F-Class</td>
-                            <td class="p-4">FEL(0-5%), F-Class</td>
-                            <td class="p-4">FEL, F-Class, NL (No-Load)</td>
-                            <td class="p-4">FEL, NSC (无销售费带回佣), F-Class</td>
-                            <td class="p-4 bg-blue-50/20 font-semibold">FEL, <span class="text-blue-600">CB3 (三年退费), CB5 (五年退费)</span></td>
-                        </tr>
-                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition">
-                            <td class="p-4 font-bold text-dark bg-white sticky left-0 z-10 shadow-[1px_0_3px_rgba(0,0,0,0.05)]">频繁交易惩罚费</td>
-                            <td class="p-4">30-90天内收交易额 <strong>2%</strong> 短线费。</td>
-                            <td class="p-4">30天内交易触发最高 <strong>2%</strong> 短线费。</td>
-                            <td class="p-4">频繁转换可收最高 <strong>2%</strong>。</td>
-                            <td class="p-4">限制频繁交易，一般最高 <strong>2%</strong>。</td>
-                            <td class="p-4 bg-blue-50/20 text-red-600 font-medium">最严格：<strong>90天内</strong>提取或转换课征 <strong>2%</strong> 惩罚费。</td>
-                        </tr>
-                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition">
-                            <td class="p-4 font-bold text-dark bg-white sticky left-0 z-10 shadow-[1px_0_3px_rgba(0,0,0,0.05)]">身故豁免赎回费用</td>
-                            <td class="p-4 font-semibold text-dark">完全豁免</td>
-                            <td class="p-4 font-semibold text-dark">完全豁免</td>
-                            <td class="p-4 font-semibold text-dark">完全豁免</td>
-                            <td class="p-4 font-semibold text-dark">完全豁免</td>
-                            <td class="p-4 bg-blue-50/20 font-bold text-dark">完全豁免 (CB3/CB5身故不扣赎回费)</td>
-                        </tr>
-
-                        <!-- 第四板块：优选定价 -->
-                        <tr class="bg-gray-50"><td colspan="6" class="px-5 py-3 font-bold text-dark bg-gray-100">4. 优选定价计划门槛 (Preferred Pricing)</td></tr>
-                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition">
-                            <td class="p-4 font-bold text-dark bg-white sticky left-0 z-10 shadow-[1px_0_3px_rgba(0,0,0,0.05)]">优选门槛金额</td>
-                            <td class="p-4"><strong>$500,000</strong> (Preferred Series)<br>或 $100K起提供部分折扣</td>
-                            <td class="p-4"><strong>$100,000</strong> (Private Client)<br>在 $250K, $500K 有阶梯性递增优惠</td>
-                            <td class="p-4 text-red-500">极高门槛：<strong>$1,000,000</strong> (Elite Pricing)</td>
-                            <td class="p-4 font-semibold text-green-600"><strong>$300,000</strong> (Prestige 300)<br>或 $500,000 (Prestige 500)</td>
-                            <td class="p-4 bg-blue-50/20 font-bold text-blue-600">极亲民：<strong>$250,000</strong><br>且支持强大的 Householding 家庭叠加。</td>
+                        <tr class="bg-white/5">
+                            <td class="p-6 font-bold text-lg">最终支付给家人的金额</td>
+                            <td class="p-6 border-l border-white/5">
+                                <div class="text-xl font-bold text-red-400">$189,625</div>
+                                <div class="text-sm text-gray-400 mt-1">耗时数月至数年</div>
+                            </td>
+                            <td class="p-6 border-l border-white/5">
+                                <div class="text-xl font-bold text-green-400">$250,000</div>
+                                <div class="text-sm text-gray-400 mt-1">数日内直接支付</div>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="text-right text-xs text-gray-400 mt-2">* 滑动表格可查看所有公司细节</div>
-        </div>
-    </section>
 
-    <!-- Equitable Life 亮点板块 -->
-    <section class="py-20 bg-light relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-32 h-full bg-blue-500/5"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="flex flex-col md:flex-row md:items-center justify-between mb-12">
-                <div class="mb-6 md:mb-0">
-                    <span class="text-primary text-xs font-bold tracking-wider uppercase">深研精选</span>
-                    <h2 class="text-3xl font-bold text-dark mt-1">二、Equitable Life (EQ) 差异化亮点总结</h2>
-                </div>
-                <div class="bg-white px-6 py-4 rounded-2xl shadow-sm border border-gray-200 inline-flex items-center">
-                    <div class="text-3xl mr-3">🏆</div>
-                    <div>
-                        <div class="text-xs text-gray-500 font-medium">优选定价起始门槛仅</div>
-                        <div class="text-2xl font-bold text-blue-600">$250,000</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- 亮点 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-blue-500 group hover:-translate-y-2 transition duration-300">
-                    <div class="text-blue-600 text-3xl mb-4">👨‍👩‍👧‍👦</div>
-                    <h4 class="text-lg font-bold text-dark mb-3">家庭资产叠加 (Householding)</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        不仅门槛亲民 ($25万)，EQ 还支持家庭成员资产合并计入！住在同一屋檐下的家庭成员可以合并投资额来共同推高资产级别，享受更高的管理费率折扣，是家庭财富统一打理的“隐形福利”。
-                    </p>
-                </div>
-                
-                <!-- 亮点 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-indigo-500 group hover:-translate-y-2 transition duration-300">
-                    <div class="text-indigo-600 text-3xl mb-4">🔄</div>
-                    <h4 class="text-lg font-bold text-dark mb-3">创新的“自主锁利重置”</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        与全自动按固定日期的重置不同，EQ 提供了<strong>每年 1 次自主选择锁利 (Client-initiated Resets)</strong> 机制直到80岁。允许您或顾问在市场短期波段高点进行“手动锁定”，抓住真正的获利了结期。
-                    </p>
-                </div>
-
-                <!-- 亮点 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-green-500 group hover:-translate-y-2 transition duration-300">
-                    <div class="text-green-600 text-3xl mb-4">💸</div>
-                    <h4 class="text-lg font-bold text-dark mb-3">独特 CB3/CB5 退费架构</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        在行业逐步叫停 DSC 的趋势下，EQ 提供了极具折衷优势的 <strong>CB3 (3年退费)</strong> 与 <strong>CB5 (5年退费)</strong> 结构。让投资者首存时完全不扣手续费 (FEL 0%)，存满3或5年后实现百分百零门槛自由进出。
-                    </p>
-                </div>
-
-                <!-- 亮点 4 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-yellow-500 group hover:-translate-y-2 transition duration-300">
-                    <div class="text-yellow-600 text-3xl mb-4">🌱</div>
-                    <h4 class="text-lg font-bold text-dark mb-3">极低操作门槛 $25 起</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        极其亲民的理财敲门砖：注册/非注册账户首存仅需 <strong>$100</strong> 即可开户，甚至 <strong>$25/月</strong> 的 PAC 定投即可开门办妥！后续追加最低每支基金 <strong>$25</strong>，极大降低资金分散配置成本。
-                    </p>
-                </div>
-
-                <!-- 亮点 5 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border-b-4 border-red-500 group hover:-translate-y-2 transition duration-300">
-                    <div class="text-red-600 text-3xl mb-4">⚠️</div>
-                    <h4 class="text-lg font-bold text-dark mb-3">防守型防频密交易期</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        EQ 采取严厉的防守机制防范恶意套利：若在交易后 <strong>90 天内</strong> 进行提取或转换，可能会课征最高高达 <strong>2%</strong> 的惩罚费。建议长线资金进入前三个月避免频繁短线调动。
-                    </p>
-                </div>
-
-                <!-- 亮点 6 -->
-                <div class="bg-dark text-white p-8 rounded-2xl shadow-lg relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full -translate-y-10 translate-x-10"></div>
-                    <h4 class="text-lg font-bold text-gold mb-3">总结：完美适配防御性资产</h4>
-                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
-                        特别是对于 <strong>Protection Class (100/100)</strong>，重置锁利后会重新计算锁定至未来 15 年又 1 天的到期，极高契合有绝对保本需求的长线资产规划。
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FEL vs F-Class 区块 -->
-    <section id="f-class-advantage" class="py-20 bg-white scroll-mt-20 border-t border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-dark mb-4">三、A-Class 与 F-Class 的底层架构对比</h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">
-                    对于高净值投资人及家庭账户，理解 <strong>FEL (前收费/内含尾佣)</strong> 与 <strong>F-Class (费率分离模式)</strong> 的底层逻辑至关重要，它将深刻影响您的持有费率与税务规划。
+            <div class="mt-8 bg-gold/20 border border-gold/30 rounded-xl p-6 text-center shadow-lg">
+                <p class="text-gold text-lg md:text-xl font-bold">
+                    结果：得益于 100% 保底和免除遗产费用，Joan 的家人比 Jim 的家人多拿了超过 <span class="text-2xl">$60,000</span>！
                 </p>
             </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <!-- 左侧：对比表 -->
-                <div>
-                    <div class="overflow-hidden rounded-2xl border border-gray-200 shadow-lg">
-                        <table class="w-full text-left border-collapse">
-                            <thead>
-                                <tr class="bg-gray-50 border-b border-gray-200">
-                                    <th class="p-4 font-bold text-dark text-sm w-1/3">对比维度</th>
-                                    <th class="p-4 font-bold text-dark text-sm w-1/3">A-Class (FEL / CB)</th>
-                                    <th class="p-4 font-bold text-primary text-sm w-1/3">F-Class (Fee-Based)</th>
-                                </tr>
-                            </thead>
-                            <tbody class="text-sm text-gray-600">
-                                <tr class="border-b border-gray-100">
-                                    <td class="p-4 font-medium text-dark">顾问服务补偿</td>
-                                    <td class="p-4"><strong>内含 (Embedded)</strong> 于基金内部管理费中</td>
-                                    <td class="p-4 font-medium text-primary"><strong>剥离 (Unbundled)</strong> 由客户与顾问签署协议单独支付</td>
-                                </tr>
-                                <tr class="border-b border-gray-100">
-                                    <td class="p-4 font-medium text-dark">基金内部净 MER</td>
-                                    <td class="p-4 text-red-500"><strong>较高</strong> (含 0.5%-1.0% 佣金)</td>
-                                    <td class="p-4 text-green-600 font-bold"><strong>显著降低</strong> (仅为纯管理/保险费用)</td>
-                                </tr>
-                                <tr class="border-b border-gray-100">
-                                    <td class="p-4 font-medium text-dark">对账单收费可见度</td>
-                                    <td class="p-4">由基金内部直接扣除 (账单隐形)</td>
-                                    <td class="p-4 font-semibold">账单逐笔清晰可见</td>
-                                </tr>
-                                <tr class="border-b border-gray-100 bg-blue-50/40">
-                                    <td class="p-4 font-bold text-dark">税务抵扣优势<br>(非注册账户)</td>
-                                    <td class="p-4 text-gray-400"><strong>不可显性抵扣</strong><br>(无法在税表直接抵扣)</td>
-                                    <td class="p-4 text-blue-700 font-bold bg-blue-50">
-                                        🌟 <strong>100% 全额抵扣</strong><br>基于所得税法第 20(1)(bb)
-                                    </td>
-                                </tr>
-                                <tr class="border-b border-gray-100">
-                                    <td class="p-4 font-medium text-dark">买卖锁定或回撤处罚</td>
-                                    <td class="p-4">CB/NSC 条款可能有年期锁死限制</td>
-                                    <td class="p-4"><strong>完全无任何锁定期</strong></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- 右侧：核心税务优势解释 -->
-                <div class="bg-light p-8 rounded-3xl border border-gray-200 relative">
-                    <div class="absolute -top-4 -right-4 bg-gold text-white font-bold text-xs px-4 py-2 rounded-full shadow-lg">
-                        高净值必看核心
-                    </div>
-                    <h3 class="text-xl font-bold text-dark mb-4 flex items-center">
-                        <span class="text-blue-600 mr-2">🇨🇦</span> 核心核武器：Section 20(1)(bb) 的降税威力
-                    </h3>
-                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
-                        在加拿大，这是 <strong>F-Class</strong> 在非注册 (Non-Registered) 账户中最为压倒性的优势。
-                    </p>
-
-                    <!-- 对比盒子 -->
-                    <div class="space-y-4 mb-6">
-                        <div class="bg-white p-4 rounded-xl border border-gray-200">
-                            <div class="text-xs font-bold text-gray-400 mb-1">传统 A-Class (内扣式)</div>
-                            <p class="text-xs text-gray-600">
-                                若您在 A-Class 支付了 2.80% 的内部 MER，这笔费用完全在基金底池内被消化，您在年度报税时，<strong>完全无法</strong>列为个人的投资支出项目，白白丧失了抵税机会。
-                            </p>
-                        </div>
-                        <div class="bg-blue-600 text-white p-4 rounded-xl shadow-md">
-                            <div class="text-xs font-bold text-blue-200 mb-1">费率分离 F-Class (外部付费模式)</div>
-                            <p class="text-xs mb-2">
-                                若您支付 1.80% 内部 MER ＋ 1.00% 外部顾问管理费：
-                            </p>
-                            <div class="p-2.5 bg-blue-700 rounded-lg text-xs border border-blue-500/40">
-                                外部支付的 <strong>1.00% 顾问费 (如 $30万本金对应 $3,000/年)</strong> 被归类为“投资咨询顾问费用”，可合法在税单 <strong class="text-gold">Line 22100 (Interest and Carrying Charges)</strong> 全额申报减除！
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-goldlight/40 border border-gold/30 rounded-xl p-4 text-sm">
-                        <strong>💰 净现金省税测算：</strong><br>
-                        对于一名边际税率在 <strong>40%</strong> 的投资者，这 $3,000 的利息费用抵减，每年将为您的口袋直接带来 <strong>$1,200</strong> 的真金白银退税返还！这是传统 FEL 模式绝对无法获取的纯现金收益。
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
-    <!-- 实操与专家总结 -->
-    <section class="py-20 bg-dark text-white overflow-hidden relative">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl translate-x-48 -translate-y-48"></div>
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gold-gradient">专家组最终实操建议与组合策略</h2>
+    <!-- 保障级别 -->
+    <section class="py-20 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">🛠️ 量身定制的保障级别</h2>
+                <p class="text-gray-600">我们提供三种主流的保证级别，满足不同人生阶段的需求：</p>
+            </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- 建议 1 -->
-                <div class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-md">
-                    <div class="text-4xl mb-4">📈</div>
-                    <h3 class="text-xl font-bold mb-4 text-primary">若以“总净管理费率”为绝对核心：</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                        <strong>iA Financial (Prestige 300)</strong> 将毫无疑问地胜出。
-                    </p>
-                    <div class="space-y-3 text-sm text-gray-300">
-                        <div class="flex justify-between p-3 rounded-lg bg-white/5">
-                            <span>iA Prestige F-Class 组合净费率</span>
-                            <span class="font-bold text-green-400">~1.86%</span>
-                        </div>
-                        <div class="flex justify-between p-3 rounded-lg bg-white/5">
-                            <span>EQ Pivot F-Class 组合净费率</span>
-                            <span class="font-bold text-gray-400">~2.13%</span>
-                        </div>
-                    </div>
-                    <p class="text-xs text-gray-500 mt-4">
-                        *注：得益于 iA Prestige 极其激进的费用直减体系，对于追求极致长期持仓成本的用户，其可带来每年 0.27% 左右的成本优势。
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 75/75 -->
+                <div class="bg-gray-50 p-8 rounded-3xl border-t-8 border-gray-300 text-center hover:shadow-lg transition transform hover:-translate-y-2">
+                    <div class="inline-block px-4 py-1 bg-gray-200 text-gray-700 font-bold rounded-full text-sm mb-4">投资类 (Investment Class)</div>
+                    <div class="text-4xl font-black text-dark mb-2">75 / 75</div>
+                    <p class="text-gray-500 text-sm mb-6 pb-6 border-b border-gray-200">75% 到期保底 | 75% 身故保底</p>
+                    <p class="text-gray-600 text-left">
+                        成本最低，适合追求长期资产增值，且仍希望拥有基础 75% 身故保底的投资者。
                     </p>
                 </div>
 
-                <!-- 建议 2 -->
-                <div class="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-md">
-                    <div class="text-4xl mb-4">🔒</div>
-                    <h3 class="text-xl font-bold mb-4 text-gold">若以“传承便利性与全天候锁利”为核心：</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                        <strong>Equitable Life Estate Class</strong> 拥有无可替代的高光时刻。
+                <!-- 75/100 -->
+                <div class="bg-blue-50 p-8 rounded-3xl border-t-8 border-primary text-center hover:shadow-lg transition transform hover:-translate-y-2 shadow-md relative">
+                    <div class="absolute -top-4 right-8 bg-gold text-white text-xs font-bold px-3 py-1 rounded-full shadow">最受欢迎</div>
+                    <div class="inline-block px-4 py-1 bg-blue-200 text-blue-800 font-bold rounded-full text-sm mb-4">遗产类 (Estate Class)</div>
+                    <div class="text-4xl font-black text-primary mb-2">75 / 100</div>
+                    <p class="text-gray-500 text-sm mb-6 pb-6 border-b border-blue-200">75% 到期保底 | 100% 身故保底</p>
+                    <p class="text-gray-700 text-left">
+                        100% 身故保险金保证，无论市场表现如何，确保您的财富在传承给下一代时一分不少。
                     </p>
-                    <div class="bg-gold/10 border border-gold/20 p-4 rounded-xl mb-4">
-                        <h4 class="text-sm font-bold text-gold mb-1">⭐ 顶格特权：全自动年度身故重置 (80岁前)</h4>
-                        <p class="text-xs text-gray-300 leading-relaxed">
-                            每到合同周年日，系统会自动对标高水位重置 100% 身故保障，无需投资者或顾问手动发起任何指令！
-                        </p>
-                    </div>
-                    <p class="text-xs text-gray-400">
-                        这确保了即便客户在老年阶段出现精力有限或遗忘打理账户的情况，其过往累积的所有投资浮盈，也将通过系统底层协议自动为继承人结结实实地“锁死在高点”。
+                </div>
+
+                <!-- 100/100 -->
+                <div class="bg-goldlight p-8 rounded-3xl border-t-8 border-gold text-center hover:shadow-lg transition transform hover:-translate-y-2">
+                    <div class="inline-block px-4 py-1 bg-yellow-200 text-yellow-800 font-bold rounded-full text-sm mb-4">保障类 (Protection Class)</div>
+                    <div class="text-4xl font-black text-yellow-700 mb-2">100 / 100</div>
+                    <p class="text-gray-500 text-sm mb-6 pb-6 border-b border-yellow-200">100% 到期保底 | 100% 身故保底</p>
+                    <p class="text-gray-700 text-left">
+                        终极防护！提供 100% 到期与 100% 身故保底，专为手握大额资金（如卖房款、遗产）且极度厌恶风险的客户设计。
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 核心免责声明 -->
-    <section class="py-12 bg-gray-50 border-t border-gray-200">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl">
-                <div class="flex items-start">
-                    <div class="text-2xl mr-4">⚠️</div>
+    <!-- 顶尖供应商 -->
+    <section class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">🏆 加拿大顶尖供应商与独家特色</h2>
+                <p class="text-gray-600">我们为您精选加拿大市场上最顶级的保险公司保本基金产品</p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Equitable Life -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row items-start md:items-center gap-6 hover:shadow-md transition">
+                    <div class="w-16 h-16 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-2xl font-bold flex-shrink-0">EQ</div>
                     <div>
-                        <h4 class="font-bold text-amber-800 text-sm mb-2">重要免责声明 (Disclaimer)</h4>
-                        <p class="text-xs text-amber-700 leading-relaxed">
-                            保本基金是一项包含保险保障条款的投资合同。虽然保险公司提供了 75% 或 100% 的保证安全网，但在合同到期前提取资金（Withdrawals）将按比例减少保证金额度 (Reduced Proportionately)。此外，不同省份的监管细则、最新的费用减免政策以及不同渠道顾问可提供的佣金折扣均可能有所调整。在进行任何大额投资配置前，务必参考各家保险公司最新官方发布的《信息资料夹 (Information Folder)》、《基金事实 (Fund Facts)》以及具体《年金合同条款》，或直接与 Insured618 持有正规执照的资深财富顾问进行一对一定制化深度沟通。
+                        <h3 class="text-xl font-bold text-dark mb-2">Equitable Life (恒信保险) —— <span class="text-blue-600">极致的降费门槛</span></h3>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            独家提供 <strong>“家庭合并计算 (Householding)”</strong> 计划。只需全家人同住地址的资产总和达到 $250,000，即可全家自动享受管理费减免折扣。同时拥有业内最清晰的 15 年保底条款。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Canada Life -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row items-start md:items-center gap-6 hover:shadow-md transition">
+                    <div class="w-16 h-16 rounded-full bg-red-100 text-red-600 flex items-center justify-center text-2xl font-bold flex-shrink-0">CL</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-dark mb-2">Canada Life (加拿大人寿) —— <span class="text-red-600">最优的灵活性</span></h3>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            提供创新的 <strong>CB2(两年期) 和 CB4(四年期) 佣金回扣选项</strong>，不仅让客户投资“零前期费用”，更大幅缩短了资金锁定周期。针对高净值客户提供费用彻底透明解绑的 <strong>N Series (N系列)</strong>。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- iA Financial -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row items-start md:items-center gap-6 hover:shadow-md transition">
+                    <div class="w-16 h-16 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-2xl font-bold flex-shrink-0">iA</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-dark mb-2">iA Financial Group (国联人寿) —— <span class="text-green-600">退休收入与透明度王者</span></h3>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            旗下 <strong>FORLIFE 终身收入系列</strong> 能为您提供退而不休的终身保证现金流。同时全面提供 <strong>F-Class (收费型模式)</strong>，没有隐藏销售费，让您的投资成本降至最低。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sun Life -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row items-start md:items-center gap-6 hover:shadow-md transition">
+                    <div class="w-16 h-16 rounded-full bg-yellow-100 text-yellow-600 flex items-center justify-center text-2xl font-bold flex-shrink-0">SL</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-dark mb-2">Sun Life (永明人寿) —— <span class="text-yellow-600">全生命周期方案</span></h3>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            其 <strong>Sun GIF Solutions</strong> 平台分为四大系列（投资、收入、遗产、遗产传承），允许客户随着年龄和需求的变化，在不同系列间无缝转换。
                         </p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- 友好的收费结构 -->
+    <section class="py-20 bg-primary text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-2xl"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-3xl font-bold mb-8">💡 对客户“最友好”的收费结构</h2>
+            <div class="text-lg leading-relaxed space-y-6 text-blue-50">
+                <p>我们深知资金流动性的重要。通过为客户精心挑选的 <strong>Chargeback (佣金回扣)</strong> 模式（如 Equitable Life 的 CB3/CB5 或 Canada Life 的 CB2/CB4）：</p>
+                <div class="bg-white text-primary p-6 rounded-xl shadow-lg font-bold text-xl my-8">
+                    您的每一分钱都直接投入市场运作，且提前取款时“客户零罚金”！
+                </div>
+                <p>流动性惩罚由理财顾问承担，将最大的自由还给您。</p>
+                <p class="bg-black/20 p-6 rounded-2xl text-base mt-6">
+                    如果您是高净值客户（投资额 > 30万-50万加元），我们还能为您接入 <strong>F-Class</strong> 或 <strong>Preferred Pricing (优惠定价)</strong>，享受接近传统互惠基金的超低费率。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 适合谁 -->
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">🎯 保本基金适合您吗？</h2>
+                <p class="text-gray-600">如果您属于以下任何一种情况，保本基金将是您的不二之选：</p>
+            </div>
+
+            <div class="space-y-6">
+                <div class="flex items-start bg-light p-6 rounded-2xl">
+                    <div class="flex-shrink-0 mt-1">
+                        <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="ml-4">
+                        <h4 class="text-lg font-bold text-dark">临近或已退休人士</h4>
+                        <p class="text-gray-600 mt-1">害怕市场暴跌吞噬养老金，需要终身稳定的现金流。</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start bg-light p-6 rounded-2xl">
+                    <div class="flex-shrink-0 mt-1">
+                        <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="ml-4">
+                        <h4 class="text-lg font-bold text-dark">企业主及专业人士</h4>
+                        <p class="text-gray-600 mt-1">追求财富增值，同时需要强有力的潜在债权人保护。</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start bg-light p-6 rounded-2xl">
+                    <div class="flex-shrink-0 mt-1">
+                        <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="ml-4">
+                        <h4 class="text-lg font-bold text-dark">注重家庭财富传承的人</h4>
+                        <p class="text-gray-600 mt-1">希望在身故后，能将资产迅速、私密且无损地交到孩子或指定受益人手中，免除复杂的法律纠纷。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="contact" class="py-24 bg-dark text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h2 class="text-4xl font-bold text-white mb-6">开始规划您的安稳未来</h2>
+            <p class="text-xl text-gray-300 mb-4 font-light">
+                市场有风险，但您的退休生活不应有风险。
+            </p>
+            <p class="text-gray-400 mb-10 max-w-2xl mx-auto text-sm md:text-base">
+                想了解哪家公司的保本基金（75/100 或 100/100）最适合您的家庭资产情况？想知道您是否符合全家合并降费（Householding）的资格？
+            </p>
+            <a href="index.html#contact" class="inline-flex items-center justify-center bg-gold hover:bg-yellow-600 text-dark px-10 py-5 rounded-full font-bold text-lg transition shadow-xl shadow-yellow-600/20 transform hover:-translate-y-1">
+                👉 立即预约免费一对一投资组合分析
+            </a>
         </div>
     </section>
 
     <!-- 底部 -->
-    <footer class="bg-dark border-t border-gray-800 py-16 text-white">
+    <footer class="bg-gray-900 border-t border-gray-800 py-12 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="mb-4 flex justify-center items-center gap-2">
+            <div class="mb-4">
                 <span class="text-2xl font-bold text-white">Insured618</span>
             </div>
-            <p class="text-gray-400 mb-8">守护今天，富足未来 — 为您量身定制家庭资产保护盾</p>
-            <div class="flex justify-center gap-4 mb-8">
-                <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-full font-bold transition shadow-lg shadow-blue-500/30 text-sm">
-                    立即联络专家制定您的保本方案
-                </a>
-            </div>
-            <div class="text-gray-500 text-xs space-y-2 max-w-2xl mx-auto border-t border-gray-800 pt-8">
-                <p>免责声明：保本基金与年金产品的具体条款以合同为准。过往表现不代表未来收益。</p>
+            <p class="text-gray-500 mb-8">守护今天，富足未来</p>
+            <div class="text-gray-600 text-xs space-y-2 max-w-2xl mx-auto">
+                <p>免责声明：保本基金的运作受具体保单合约条款约束。本网页所列信息仅供参考，不构成具体的理财或投资建议。所有保底及收益重置功能需满足特定时间要求。</p>
                 <p>© 2025 Insured618. All rights reserved.</p>
             </div>
         </div>
