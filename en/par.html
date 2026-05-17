@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participating Whole Life Insurance - Insured618</title>
+    
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+    <meta name="description" content="Participating Whole Life Insurance (Par Life) provides lifetime guarantees and grows tax-sheltered cash value. Learn how to optimize wealth and transfer family estate assets tax-free.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4C8DFF', // Soft Blue
+                        secondary: '#55D6A9', // Mint Green
+                        dark: '#1A1D21',
+                        light: '#F7F9FC',
+                        accent: '#FF7A59', // Warm Orange
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans SC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(to right, #4C8DFF, #55D6A9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-gold {
+            background: linear-gradient(to right, #FF7A59, #FFB347);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white">
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="../insured618_profile_option2.png" alt="Insured618 Logo" class="h-16 w-16 rounded-full object-cover hover:scale-105 transition-transform duration-200 shadow-md">
+                    </a>
+                </div>
+
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-primary focus:outline-none p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition">Home</a>
+                    <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary transition">Core Solutions</a>
+                    <a href="wealth.html" class="text-gray-600 hover:text-primary transition">Wealth</a>
+                    <a href="business.html" class="text-gray-600 hover:text-primary transition">Business</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary transition">About</a>
+                    <a href="https://calculator.frank-zhang.com" target="_blank" class="text-gray-600 hover:text-accent font-bold transition flex items-center">Smart Calculator <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                    <a href="../par.html" class="text-sm font-bold text-gray-500 hover:text-primary border border-gray-300 px-3 py-1 rounded transition">中文</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg shadow-blue-500/30">Book Consultation</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white shadow-lg border-t border-gray-100">
+            <div class="flex flex-col px-4 py-4 space-y-4">
+                <a href="index.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Home</a>
+                <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Core Solutions</a>
+                <a href="wealth.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Wealth</a>
+                <a href="business.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Business</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">About</a>
+                <a href="https://calculator.frank-zhang.com" target="_blank" class="text-accent font-bold border-b border-gray-50 pb-2 flex items-center justify-between">Smart Calculator <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                <a href="../par.html" class="text-gray-500 font-bold border-t border-gray-100 pt-2 mt-2 flex items-center">中文 &rarr;</a>
+                <a href="index.html#contact" class="text-primary font-bold">Book Consultation &rarr;</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-24 bg-dark overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-primary/10 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-accent/10 blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-gray-800 border border-gray-700 text-gray-300 text-xs font-bold mb-6 tracking-wide uppercase">
+                Cornerstone of Lifetime Assets & Family Legacy
+            </span>
+            <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                Not Just Insurance,<br>
+                But a <span class="gradient-gold">Solid Growth Asset</span>
+            </h1>
+            <p class="max-w-3xl mx-auto text-lg text-gray-400 mb-10 leading-relaxed">
+                Secure lifelong protection and share corporate profits via dividends, building a highly tax-efficient shelter for your family's future.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="index.html#contact" class="bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-600 transition shadow-lg shadow-blue-500/20">
+                    Book Free Consultation
+                </a>
+                <a href="#solutions" class="bg-transparent border border-gray-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-dark transition">
+                    Explore Product Solutions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-dark mb-8">What is Participating Life Insurance?</h2>
+            <p class="text-xl text-gray-600 leading-relaxed">
+                Participating Life (Par Life) insurance is a robust model uniting <span class="text-primary font-bold">"Lifelong Protection"</span> with <span class="text-secondary font-bold">"Asset Accumulation"</span>.
+            </p>
+            <p class="mt-4 text-gray-500">
+                Along with locked-in lifetime death benefits, it allows you to participate in the carrier's profit distributions (dividends) to accumulate <span class="border-b-2 border-accent/50">tax-deferred compound cash values</span> over time.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">Why Select Participating Whole Life?</h2>
+                <div class="w-16 h-1 bg-accent mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-2xl mb-4">🛡️</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Lifetime Guarantees</h3>
+                    <p class="text-gray-600 text-sm">Regardless of stock market or interest rate volatility, your basic death benefit, base cash value, and premiums are 100% legally guaranteed by the carrier.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-2xl mb-4">📈</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Dividend Payout Potentials</h3>
+                    <p class="text-gray-600 text-sm">While dividends are not guaranteed, top Canadian insurance giants (e.g. Sun Life) have paid active annual dividends to policyholders every single year since 1877.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-2xl mb-4">💰</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Tax-sheltered Wealth Growth</h3>
+                    <p class="text-gray-600 text-sm">Cash values accumulate completely tax-deferred within the policy, establishing a stable asset class immune to stock market volatility.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-2xl mb-4">💧</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Flexible Capital Liquidity</h3>
+                    <p class="text-gray-600 text-sm">Access accumulated cash values via policy loans or bank collateralization to fund your retirement, children's universities, or corporate investments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-dark mb-4 text-center">Three Selected Strategy Options</h2>
+            <p class="text-gray-500 text-center mb-12">Based on Sun Life's flagship participating life collections</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="border border-gray-200 rounded-2xl p-6 hover:-translate-y-2 transition duration-300 relative bg-white">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-primary rounded-t-2xl"></div>
+                    <h3 class="text-xl font-bold text-dark mt-4">A. Estate Protection</h3>
+                    <p class="text-xs text-primary font-bold uppercase mb-4 tracking-wide">Legacy Inheritance Focus</p>
+                    <p class="text-gray-500 text-sm mb-6 border-b border-gray-100 pb-4">Comparable: Sun Par Protector II</p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start"><span class="text-primary mr-2">●</span> <strong>Features:</strong> Maximizes the initial death benefit coverage per premium dollar.</li>
+                        <li class="flex items-start"><span class="text-primary mr-2">●</span> <strong>Best For:</strong> Long-term estate wealth multiplication to leave substantial legacies for children or grandchildren.</li>
+                    </ul>
+                </div>
+
+                <div class="border border-gray-200 rounded-2xl p-6 hover:-translate-y-2 transition duration-300 relative bg-white shadow-xl ring-1 ring-gray-100">
+                    <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-3 py-1 rounded-bl-lg">Owner First Choice</div>
+                    <div class="absolute top-0 left-0 w-full h-2 bg-accent rounded-t-2xl"></div>
+                    <h3 class="text-xl font-bold text-dark mt-4">B. Asset Accumulation</h3>
+                    <p class="text-xs text-accent font-bold uppercase mb-4 tracking-wide">Cash Value Multiplier</p>
+                    <p class="text-gray-500 text-sm mb-6 border-b border-gray-100 pb-4">Comparable: Sun Par Accumulator II</p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start"><span class="text-accent mr-2">●</span> <strong>Features:</strong> Generates significantly higher cash values during the early years of the policy.</li>
+                        <li class="flex items-start"><span class="text-accent mr-2">●</span> <strong>Best For:</strong> High net worth individuals and corporate owners who prioritize early cash liquidity for business reinvestment.</li>
+                    </ul>
+                </div>
+
+                <div class="border border-gray-200 rounded-2xl p-6 hover:-translate-y-2 transition duration-300 relative bg-white">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-secondary rounded-t-2xl"></div>
+                    <h3 class="text-xl font-bold text-dark mt-4">C. Accelerator (Quick Pay)</h3>
+                    <p class="text-xs text-secondary font-bold uppercase mb-4 tracking-wide">8-Year Locked-In Payout</p>
+                    <p class="text-gray-500 text-sm mb-6 border-b border-gray-100 pb-4">Comparable: Sun Par Accelerator</p>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex items-start"><span class="text-secondary mr-2">●</span> <strong>Features:</strong> Fast-track premium funding. Fully paid up in only 8 years while benefits accumulate for life.</li>
+                        <li class="flex items-start"><span class="text-secondary mr-2">●</span> <strong>Best For:</strong> Clients seeking to complete premium commitments rapidly to eliminate long-term billing liabilities.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-primary/5">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-dark mb-4">Calculate: How Does Taxation Impact Your Net Wealth?</h2>
+                <p class="text-gray-600">Compare tax-deferred/tax-sheltered accounts (like Par Life) against standard taxable investments over time.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    
+                    <div class="p-8 space-y-5">
+                        <h4 class="font-bold text-lg text-dark border-b border-gray-100 pb-2">Set Your Parameters</h4>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Initial Capital ($)</label>
+                            <input type="number" id="principal" value="100000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateTax()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Annual Addition ($)</label>
+                            <input type="number" id="annual" value="20000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateTax()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Investment Horizon (Years)</label>
+                            <input type="range" id="years" min="5" max="40" value="20" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer" oninput="calculateTax()">
+                            <div class="flex justify-between text-xs text-gray-500 mt-1">
+                                <span>5 Yrs</span>
+                                <span id="yearsVal" class="font-bold text-primary">20 Yrs</span>
+                                <span>40 Yrs</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Annual Return (%)</label>
+                                <input type="number" id="rate" value="6.0" step="0.1" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateTax()">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Marginal Tax Rate (%)</label>
+                                <input type="number" id="taxRate" value="53.53" step="0.1" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateTax()">
+                                <p class="text-[10px] text-gray-400 mt-1">Ontario highest bracket is approx. 53.53%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark p-8 text-white flex flex-col justify-center relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
+                        <div class="absolute bottom-0 left-0 w-40 h-40 bg-accent/10 rounded-full blur-3xl"></div>
+                        
+                        <div class="relative z-10 space-y-8">
+                            <div class="bg-white/10 p-4 rounded-xl border border-white/10">
+                                <p class="text-xs text-gray-300 uppercase tracking-wider mb-1">Option A: Tax-Sheltered Growth (e.g. Par Life)</p>
+                                <div class="flex items-baseline">
+                                    <span class="text-3xl font-bold text-secondary" id="valA">$0</span>
+                                    <span class="text-sm text-gray-400 ml-2">Net Value</span>
+                                </div>
+                                <p class="text-xs text-gray-400 mt-1">Assuming tax-free payouts or collateralized policy loans</p>
+                            </div>
+
+                            <div class="bg-white/5 p-4 rounded-xl border border-white/5">
+                                <p class="text-xs text-gray-300 uppercase tracking-wider mb-1">Option B: Taxable Investment (After Capital Gains)</p>
+                                <div class="flex items-baseline">
+                                    <span class="text-3xl font-bold text-gray-300" id="valB">$0</span>
+                                    <span class="text-sm text-gray-400 ml-2">Net Value</span>
+                                </div>
+                                <p class="text-xs text-gray-400 mt-1">Assuming standard 50% inclusion rate liquidated at term end</p>
+                            </div>
+
+                            <div class="pt-4 border-t border-gray-700">
+                                <p class="text-sm text-gray-400 mb-1">By utilizing tax-advantaged structures, you secure:</p>
+                                <h3 class="text-4xl font-bold text-accent" id="diff">$0</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function calculateTax() {
+            let P = parseFloat(document.getElementById('principal').value) || 0;
+            let C = parseFloat(document.getElementById('annual').value) || 0;
+            let t = parseFloat(document.getElementById('years').value) || 0;
+            let r = (parseFloat(document.getElementById('rate').value) || 0) / 100;
+            let taxRate = (parseFloat(document.getElementById('taxRate').value) || 0) / 100;
+
+            document.getElementById('yearsVal').innerText = t + " Years";
+
+            let totalCost = P + (C * t);
+            let compoundFactor = Math.pow(1 + r, t);
+            let fv_P = P * compoundFactor;
+            let fv_C = r > 0 ? C * ((compoundFactor - 1) / r) : C * t;
+            let grossFV = fv_P + fv_C;
+
+            let valA = grossFV;
+
+            let gain = grossFV - totalCost;
+            if (gain < 0) gain = 0;
+            
+            let taxableIncome = gain * 0.50;
+            let taxToPay = taxableIncome * taxRate;
+            let valB = grossFV - taxToPay;
+
+            let difference = valA - valB;
+
+            const format = (num) => '$' + Math.round(num).toLocaleString('en-US');
+
+            document.getElementById('valA').innerText = format(valA);
+            document.getElementById('valB').innerText = format(valB);
+            document.getElementById('diff').innerText = format(difference);
+        }
+
+        window.addEventListener('DOMContentLoaded', calculateTax);
+    </script>
+
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-dark mb-8 text-center">How Can You Use Policy Dividends? (Dividend Options)</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <div class="flex items-start bg-white p-5 rounded-xl border-l-4 border-primary shadow-sm">
+                    <div class="mr-4 text-2xl">🚀</div>
+                    <div>
+                        <h4 class="font-bold text-dark">Paid-Up Additions (PUA)</h4>
+                        <p class="text-sm text-gray-500 mt-1">Reinvest dividends to automatically buy more death benefits and cash value—compounding your gains rapidly (Highly Recommended).</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start bg-white p-5 rounded-xl border-l-4 border-secondary shadow-sm">
+                    <div class="mr-4 text-2xl">降低</div>
+                    <div>
+                        <h4 class="font-bold text-dark">Premium Reduction</h4>
+                        <p class="text-sm text-gray-500 mt-1">Direct dividends to automatically offset your annual out-of-pocket premium costs.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start bg-white p-5 rounded-xl border-l-4 border-accent shadow-sm">
+                    <div class="mr-4 text-2xl">💵</div>
+                    <div>
+                        <h4 class="font-bold text-dark">Cash Payouts</h4>
+                        <p class="text-sm text-gray-500 mt-1">Receive direct annual cash distributions to fuel a flexible passive income stream.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start bg-white p-5 rounded-xl border-l-4 border-gray-400 shadow-sm">
+                    <div class="mr-4 text-2xl">🏦</div>
+                    <div>
+                        <h4 class="font-bold text-dark">Accumulation on Deposit</h4>
+                        <p class="text-sm text-gray-500 mt-1">Leave dividends with the carrier to gain stable interest rates similar to standard savings accounts.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <span class="text-2xl font-bold text-white">Insured618</span>
+            </div>
+            <p class="text-gray-400 mb-8">Protecting Today, Prospering Tomorrow</p>
+            <div class="flex justify-center gap-4 mb-8">
+                <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-bold transition text-sm">
+                    Connect with an Advisor Now
+                </a>
+            </div>
+            <div class="text-gray-500 text-xs space-y-2 max-w-2xl mx-auto">
+                <p>Disclaimer: Policy dividends are based on carrier performance and are not guaranteed. Past performance is not a guarantee of future outcomes. Specific terms are governed by contract.</p>
+                <p>© 2025 Insured618. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btn && menu) {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                menu.classList.toggle('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !btn.contains(e.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+
+</body>
+</html>

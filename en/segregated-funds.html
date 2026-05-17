@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segregated Funds Complete Guide - Insured618</title>
+    
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    
+    <meta name="description" content="Protect your wealth, invest in your future. Comprehensive guide to Canadian Segregated Funds, combining mutual fund growth potential with ultimate insurance guarantees.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4C8DFF', // Index Blue
+                        dark: '#1A1D21',
+                        light: '#F7F9FC',
+                        gold: '#D4AF37', // Wealth Gold
+                        goldlight: '#F9F1D8',
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans SC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .text-gold-gradient {
+            background: linear-gradient(to right, #D4AF37, #F2C94C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(26, 29, 33, 0.8), rgba(26, 29, 33, 0.9)), url('https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="../insured618_profile_option2.png" alt="Insured618 Logo" class="h-16 w-16 rounded-full object-cover hover:scale-105 transition-transform duration-200 shadow-md">
+                    </a>
+                </div>
+
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-primary focus:outline-none p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition">Home</a>
+                    <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary transition">Core Solutions</a>
+                    <a href="wealth.html" class="text-primary font-bold transition">Wealth</a>
+                    <a href="business.html" class="text-gray-600 hover:text-primary transition">Business</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary transition">About Us</a>
+                    <a href="https://calculator.frank-zhang.com" target="_blank" class="text-gray-600 hover:text-accent font-bold transition flex items-center">Smart Calculator <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                    <a href="../segregated-funds.html" class="text-sm font-bold text-gray-500 hover:text-primary border border-gray-300 px-3 py-1 rounded transition">中文</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg">Book Consultation</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white shadow-lg border-t border-gray-100">
+            <div class="flex flex-col px-4 py-4 space-y-4">
+                <a href="index.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Home</a>
+                <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Core Solutions</a>
+                <a href="wealth.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Wealth</a>
+                <a href="business.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Business</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">About Us</a>
+                <a href="https://calculator.frank-zhang.com" target="_blank" class="text-accent font-bold border-b border-gray-50 pb-2 flex items-center justify-between">Smart Calculator <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                <a href="../segregated-funds.html" class="text-gray-500 font-bold border-t border-gray-100 pt-2 mt-2 flex items-center">中文 &rarr;</a>
+                <a href="index.html#contact" class="text-primary font-bold">Book Consultation &rarr;</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-24 hero-bg overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block py-1 px-4 rounded-full bg-gold/20 border border-gold/40 text-gold text-sm font-bold mb-6 tracking-wide uppercase">
+                Canadian Segregated Funds Complete Guide
+            </span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                Protecting Your Wealth,<br><span class="text-gold-gradient">Investing in Your Future</span>
+            </h1>
+            <p class="max-w-3xl mx-auto text-xl md:text-2xl text-gray-300 mb-10 font-light leading-relaxed">
+                Combining the growth potential of mutual funds with the ultimate safety nets of insurance contracts.
+            </p>
+            <div class="flex justify-center">
+                <a href="#contact" class="bg-gold hover:bg-yellow-600 text-dark px-8 py-4 rounded-full font-bold text-lg transition shadow-xl shadow-yellow-600/20 transform hover:-translate-y-1">
+                    Begin Your Stable Financial Road
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- What are Segregated Funds -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-50 text-primary mb-6">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h2 class="text-3xl font-bold text-dark mb-8">🌟 What are Segregated Funds?</h2>
+            <p class="text-lg text-gray-600 leading-relaxed text-justify md:text-center">
+                Segregated Funds are unique investment structures provided exclusively by Canadian insurance companies. At their core, they operate similarly to standard Mutual Funds—pooling capital to diversify into professional equities and bonds. However, as an **individual variable insurance contract**, they build in powerful "safety nets," securing principal guarantees, probate bypass protections, and potential creditor shielding.
+            </p>
+        </div>
+    </section>
+
+    <!-- Core Strengths -->
+    <section class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">🛡️ Why Choose Segregated Funds?</h2>
+                <p class="text-gray-500">Four Core Advantages Protecting Your Capital</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Advantage 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition group">
+                    <div class="w-14 h-14 bg-green-50 text-green-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">💎</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">1. Uncompromising Principal Guarantees</h3>
+                    <p class="text-gray-500 text-sm font-medium mb-3">(Principal Guarantees)</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Regardless of market corrections, your investments secure a robust floor. Upon contract maturity or death, the carrier **guarantees to payout between 75% to 100% of your initial deposits** (net of withdrawals).
+                    </p>
+                </div>
+
+                <!-- Advantage 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition group">
+                    <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">📈</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">2. Profit Locking "Reset" Feature</h3>
+                    <p class="text-gray-500 text-sm font-medium mb-3">(Reset Option)</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Not just protecting base capital, but locking in your growth! Many contracts allow you to reset your guarantee values annually (typically until age 80). **When market valuations increase, you lock in those gains as your new base guarantee floor**.
+                    </p>
+                </div>
+
+                <!-- Advantage 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition group">
+                    <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">🕊️</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">3. Private and Rapid Wealth Transfer</h3>
+                    <p class="text-gray-500 text-sm font-medium mb-3">(Estate Bypass & Probate-Free)</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Unlike ordinary mutual funds, death benefits are **paid directly, quickly, and completely privately to your named beneficiaries**, bypassing complex and costly provincial probate courts.
+                    </p>
+                </div>
+
+                <!-- Advantage 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition group">
+                    <div class="w-14 h-14 bg-red-50 text-red-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">🏛️</div>
+                    <h3 class="text-xl font-bold text-dark mb-3">4. Potential Creditor Shielding</h3>
+                    <p class="text-gray-500 text-sm font-medium mb-3">(Potential Creditor Protection)</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        An invaluable armor for business owners, medical professionals, and self-employed consultants. By naming a qualified family member as beneficiary, contract assets **may be fully insulated from creditor claims or legal judgments**.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study -->
+    <section class="py-20 bg-dark text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">📊 Case Comparison: Segregated Funds vs Mutual Funds</h2>
+                <p class="text-gray-400 max-w-3xl mx-auto">
+                    Suppose Jim and Joan each invest **$250,000**. Both pass away during a 10% market downturn (reducing fund valuations to $225,000). See their families' final results:
+                </p>
+            </div>
+
+            <div class="bg-white/10 rounded-2xl backdrop-blur-md border border-white/10 overflow-hidden shadow-2xl">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="bg-black/40">
+                            <th class="p-6 font-bold text-gray-300 w-1/3">Criteria</th>
+                            <th class="p-6 font-bold text-red-400 w-1/3 border-l border-white/5">Jim's Mutual Funds<br><span class="text-sm font-normal text-gray-400">(Mutual Funds)</span></th>
+                            <th class="p-6 font-bold text-green-400 w-1/3 border-l border-white/5">Joan's Segregated Funds<br><span class="text-sm font-normal text-gray-400">(100% Death Guarantee)</span></th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-white/5">
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="p-6 font-medium text-gray-300">Market Value at Death</td>
+                            <td class="p-6 border-l border-white/5">$225,000</td>
+                            <td class="p-6 border-l border-white/5">$225,000</td>
+                        </tr>
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="p-6 font-medium text-gray-300">Carrier Top-Up Payout</td>
+                            <td class="p-6 border-l border-white/5 text-gray-500">Not Applicable</td>
+                            <td class="p-6 border-l border-white/5 text-green-400 font-bold">+$25,000</td>
+                        </tr>
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="p-6 font-medium text-gray-300">Probate & Legal Fees</td>
+                            <td class="p-6 border-l border-white/5 text-red-400">-$22,875 (Est. 5%-10%)</td>
+                            <td class="p-6 border-l border-white/5 text-green-400 font-bold">$0 <span class="text-sm text-gray-400 font-normal">(Estate Bypass)</span></td>
+                        </tr>
+                        <tr class="bg-white/5">
+                            <td class="p-6 font-bold text-lg">Net Payout to Beneficiaries</td>
+                            <td class="p-6 border-l border-white/5">
+                                <div class="text-xl font-bold text-red-400">$189,625</div>
+                                <div class="text-sm text-gray-400 mt-1">Takes months/years in court</div>
+                            </td>
+                            <td class="p-6 border-l border-white/5">
+                                <div class="text-xl font-bold text-green-400">$250,000</div>
+                                <div class="text-sm text-gray-400 mt-1">Paid directly in days</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-8 bg-gold/20 border border-gold/30 rounded-xl p-6 text-center shadow-lg">
+                <p class="text-gold text-lg md:text-xl font-bold">
+                    Result: Joan's family receives over <span class="text-2xl">$60,000 more</span> than Jim's due to guarantee backing and complete probate bypass!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Classes -->
+    <section class="py-20 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">🛠️ Tailored Guarantee Classes</h2>
+                <p class="text-gray-600">We offer three main structures depending on your life milestones:</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 75/75 -->
+                <div class="bg-gray-50 p-8 rounded-3xl border-t-8 border-gray-300 text-center hover:shadow-lg transition transform hover:-translate-y-2">
+                    <div class="inline-block px-4 py-1 bg-gray-200 text-gray-700 font-bold rounded-full text-sm mb-4">Investment Class</div>
+                    <div class="text-4xl font-black text-dark mb-2">75 / 75</div>
+                    <p class="text-gray-500 text-sm mb-6 pb-6 border-b border-gray-200">75% Maturity Floor | 75% Death Floor</p>
+                    <p class="text-gray-600 text-left">
+                        Lowest management expense ratios (MERs). Perfect for long-term investors prioritizing wealth growth while holding a secure 75% safety floor.
+                    </p>
+                </div>
+
+                <!-- 75/100 -->
+                <div class="bg-blue-50 p-8 rounded-3xl border-t-8 border-primary text-center hover:shadow-lg transition transform hover:-translate-y-2 shadow-md relative">
+                    <div class="absolute -top-4 right-8 bg-gold text-white text-xs font-bold px-3 py-1 rounded-full shadow">Most Popular</div>
+                    <div class="inline-block px-4 py-1 bg-blue-200 text-blue-800 font-bold rounded-full text-sm mb-4">Estate Class</div>
+                    <div class="text-4xl font-black text-primary mb-2">75 / 100</div>
+                    <p class="text-gray-500 text-sm mb-6 pb-6 border-b border-blue-200">75% Maturity Floor | 100% Death Floor</p>
+                    <p class="text-gray-700 text-left">
+                        100% guaranteed payout to heirs at death. Perfect for wealth preservation and transfer to children or grandchildren.
+                    </p>
+                </div>
+
+                <!-- 100/100 -->
+                <div class="bg-goldlight p-8 rounded-3xl border-t-8 border-gold text-center hover:shadow-lg transition transform hover:-translate-y-2">
+                    <div class="inline-block px-4 py-1 bg-yellow-200 text-yellow-800 font-bold rounded-full text-sm mb-4">Protection Class</div>
+                    <div class="text-4xl font-black text-yellow-700 mb-2">100 / 100</div>
+                    <p class="text-gray-500 text-sm mb-6 pb-6 border-b border-yellow-200">100% Maturity Floor | 100% Death Floor</p>
+                    <p class="text-gray-700 text-left">
+                        Ultimate safety. Features 100% maturity and 100% death guarantees. Best for preserving high net worth capital (e.g. home sales or inheritances).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Carriers -->
+    <section class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">🏆 Top Canadian Carriers & Unique Features</h2>
+                <p class="text-gray-600">We carefully curate segregated fund solutions from leading insurance companies in Canada</p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Equitable Life -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row items-start md:items-center gap-6 hover:shadow-md transition">
+                    <div class="w-16 h-16 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-2xl font-bold flex-shrink-0">EQ</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-dark mb-2">Equitable Life —— <span class="text-blue-600">Elite Householding Discounts</span></h3>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            Provides powerful **"Householding"** fee reductions. Address-linked household assets over $250,000 trigger automatic management fee discounts for the entire family. Features highly transparent 15-year guarantee clauses.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Canada Life -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row items-start md:items-center gap-6 hover:shadow-md transition">
+                    <div class="w-16 h-16 rounded-full bg-red-100 text-red-600 flex items-center justify-center text-2xl font-bold flex-shrink-0">CL</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-dark mb-2">Canada Life —— <span class="text-red-600">Excellent Liquidity Paths</span></h3>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            Features innovative **CB2 (2-Year) & CB4 (4-Year) Chargeback** structures. Enables zero front-end fee investment while drastically shortening capital lockup periods. High net worth structures unlock unbundled transparent pricing in the **N Series**.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- iA Financial -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row items-start md:items-center gap-6 hover:shadow-md transition">
+                    <div class="w-16 h-16 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-2xl font-bold flex-shrink-0">iA</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-dark mb-2">iA Financial Group —— <span class="text-green-600">Retirement Payout Leader</span></h3>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            The **FORLIFE** series generates stable lifetime retirement payouts with strong guaranteed backing. Features extensive access to **F-Class (fee-for-service)** structures with zero hidden sales charges.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sun Life -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row items-start md:items-center gap-6 hover:shadow-md transition">
+                    <div class="w-16 h-16 rounded-full bg-yellow-100 text-yellow-600 flex items-center justify-center text-2xl font-bold flex-shrink-0">SL</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-dark mb-2">Sun Life —— <span class="text-yellow-600">Lifecycle Solutions</span></h3>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            The flagship **Sun GIF Solutions** incorporates four main series (Investment, Income, Estate, Legacy), allowing clients to seamlessly transition between platforms as milestones change.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client-First Charges -->
+    <section class="py-20 bg-primary text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-2xl"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-3xl font-bold mb-8">💡 Highly Client-Friendly Fee Structures</h2>
+            <div class="text-lg leading-relaxed space-y-6 text-blue-50">
+                <p>We deeply respect your capital's liquidity. Utilizing specifically matched **Chargeback** models (such as EQ's CB3/CB5 or Canada Life's CB2/CB4):</p>
+                <div class="bg-white text-primary p-6 rounded-xl shadow-lg font-bold text-xl my-8">
+                    100% of your dollars are invested immediately in markets with ZERO early redemption penalties for clients!
+                </div>
+                <p>Any early extraction penalties are absorbed by the advisor, returning maximum freedom to you.</p>
+                <p class="bg-black/20 p-6 rounded-2xl text-base mt-6">
+                    For high net worth portfolios (> $300k-$500k CAD), we unlock specialized **F-Class** or **Preferred Pricing** paths, capturing ultra-low MERs comparable to traditional mutual funds.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Matches -->
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">🎯 Are Segregated Funds a Fit for You?</h2>
+                <p class="text-gray-600">Segregated Funds represent a gold standard choice if you match any profile below:</p>
+            </div>
+
+            <div class="space-y-6">
+                <div class="flex items-start bg-light p-6 rounded-2xl">
+                    <div class="flex-shrink-0 mt-1">
+                        <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="ml-4">
+                        <h4 class="text-lg font-bold text-dark">Pre-Retirees & Active Retirees</h4>
+                        <p class="text-gray-600 mt-1">Seeking to completely avoid market crash vulnerabilities that could wipe out retirement income.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start bg-light p-6 rounded-2xl">
+                    <div class="flex-shrink-0 mt-1">
+                        <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="ml-4">
+                        <h4 class="text-lg font-bold text-dark">Business Owners & Medical/Consulting Professionals</h4>
+                        <p class="text-gray-600 mt-1">Requiring stable portfolio wealth accumulation coupled with ironclad asset protection against legal claims.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start bg-light p-6 rounded-2xl">
+                    <div class="flex-shrink-0 mt-1">
+                        <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div class="ml-4">
+                        <h4 class="text-lg font-bold text-dark">Family Legacy Planners</h4>
+                        <p class="text-gray-500 mt-1">Prioritizing extremely fast, completely private, and cost-free estate transfers directly to heirs while bypassing public court blockages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact" class="py-24 bg-dark text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h2 class="text-4xl font-bold text-white mb-6">Begin Your Wealth Security Strategy</h2>
+            <p class="text-xl text-gray-300 mb-4 font-light">
+                Markets carry risk, but your retirement timeline shouldn't.
+            </p>
+            <p class="text-gray-400 mb-10 max-w-2xl mx-auto text-sm md:text-base">
+                Discover which carrier's Segregated Fund structures (75/100 or 100/100) match your family wealth goals. Find out if you qualify for elite Householding MER discounts.
+            </p>
+            <a href="index.html#contact" class="inline-flex items-center justify-center bg-gold hover:bg-yellow-600 text-dark px-10 py-5 rounded-full font-bold text-lg transition shadow-xl shadow-yellow-600/20 transform hover:-translate-y-1">
+                👉 Book a Free Wealth Consultation Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <span class="text-2xl font-bold text-white">Insured618</span>
+            </div>
+            <p class="text-gray-500 mb-8">Protecting Today, Prospering Tomorrow</p>
+            <div class="text-gray-600 text-xs space-y-2 max-w-2xl mx-auto">
+                <p>Disclaimer: Segregated fund operations are subject to individual insurance carrier policy terms. Information is for educational reference only and does not constitute formal investment advice. Guarantee levels require minimum maturity holding timelines.</p>
+                <p>© 2025 Insured618. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btn && menu) {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                menu.classList.toggle('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !btn.contains(e.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+
+</body>
+</html>

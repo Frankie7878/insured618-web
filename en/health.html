@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal & Replacement Health Insurance - Insured618</title>
+    
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00558C', // GMS Blue style
+                        secondary: '#7AB800', // GMS Green style
+                        dark: '#1A1D21',
+                        light: '#F4F7F6',
+                        accent: '#FF7A59',
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans SC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-bg {
+            background: linear-gradient(135deg, #00558C 0%, #0077BE 100%);
+        }
+        .tab-active {
+            background-color: #00558C;
+            color: white;
+            border-color: #00558C;
+        }
+        .tab-inactive {
+            background-color: white;
+            color: #4b5563;
+            border-color: #e5e7eb;
+        }
+        .tab-inactive:hover {
+            color: #00558C;
+            background-color: #f9fafb;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white">
+
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="../insured618_profile_option2.png" alt="Insured618 Logo" class="h-16 w-16 rounded-full object-cover hover:scale-105 transition-transform duration-200 shadow-md">
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition">Home</a>
+                    <a href="#" onclick="switchTab('personal')" class="text-gray-600 hover:text-primary transition">Personal Health</a>
+                    <a href="#" onclick="switchTab('replacement')" class="text-gray-600 hover:text-primary transition">Replacement Health</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary transition">About Us</a>
+                    <a href="../health.html" class="text-sm font-bold text-gray-500 hover:text-primary border border-gray-300 px-3 py-1 rounded transition">中文</a>
+                </div>
+                <div>
+                    <a href="index.html#contact" class="bg-secondary hover:bg-green-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-24 overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/40"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl text-white">
+                <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+                    Does Your Provincial Health Card<br>Cover All Medical Costs?
+                </h1>
+                <p class="text-xl mb-8 font-light text-gray-100">
+                    Prescription drugs, dental care, eye exams, and ambulances are typically not covered by provincial health programs in Canada. We build a comprehensive health net for you and your family.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button onclick="switchTab('personal'); scrollToProduct()" class="bg-secondary hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold transition shadow-lg text-left flex items-center">
+                        <span class="text-2xl mr-3">👨‍👩‍👧</span>
+                        <div>
+                            <span class="block text-xs opacity-90">I am an Individual / Family</span>
+                            <span class="block text-lg">Personal Health Insurance &rarr;</span>
+                        </div>
+                    </button>
+                    <button onclick="switchTab('replacement'); scrollToProduct()" class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-xl font-bold transition shadow-lg text-left flex items-center">
+                        <span class="text-2xl mr-3">💼</span>
+                        <div>
+                            <span class="block text-xs opacity-90 text-gray-500">I am Leaving My Job / Retiring</span>
+                            <span class="block text-lg">Replacement Health Insurance &rarr;</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-dark mb-4">Filling the Gaps in Public Healthcare</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-12">
+                While Canadian public health covers base doctor visits and emergency rooms, these major expenses are often paid <span class="text-red-500 font-bold">directly out of your pocket</span>:
+            </p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-4xl mb-2">💊</div>
+                    <h4 class="font-bold text-dark">Prescription Drugs</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-4xl mb-2">🦷</div>
+                    <h4 class="font-bold text-dark">Dental Care</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-4xl mb-2">👓</div>
+                    <h4 class="font-bold text-dark">Vision Care</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="text-4xl mb-2">🚑</div>
+                    <h4 class="font-bold text-dark">Ambulance Services</h4>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-blue-50 border border-blue-100 p-4 rounded-lg inline-block text-primary font-medium">
+                💡 Private health insurance protects both your physical wellness and your hard-earned wallet from sudden medical bills.
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-dark mb-6">Select the Plan that Fits You</h2>
+                
+                <div class="inline-flex rounded-md shadow-sm" role="group">
+                    <button type="button" id="btn-personal" onclick="switchTab('personal')" class="px-6 py-3 text-sm font-bold border rounded-l-lg tab-active transition-all">
+                        Personal Health <br><span class="text-xs font-normal opacity-80">(Self-Employed / No Group Benefits)</span>
+                    </button>
+                    <button type="button" id="btn-replacement" onclick="switchTab('replacement')" class="px-6 py-3 text-sm font-bold border rounded-r-lg tab-inactive transition-all">
+                        Replacement Health <br><span class="text-xs font-normal opacity-80">(Retired / Left Job within 90 days)</span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="content-personal" class="animate-fade-in block">
+                <div class="bg-blue-50 rounded-3xl p-8 mb-8 border border-blue-100">
+                    <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary mb-2">Personal Health Insurance</h3>
+                            <p class="text-gray-600">Highly flexible, requires medical underwriting. Best for self-employed individuals and families needing custom coverage.</p>
+                        </div>
+                        <div class="mt-4 md:mt-0">
+                             <span class="inline-block bg-white text-primary px-4 py-2 rounded-full text-sm font-bold shadow-sm">Simple Medical Questionnaire</span>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-gray-300">
+                            <h4 class="font-bold text-xl text-dark mb-2">BasicPlan</h4>
+                            <p class="text-xs text-gray-500 mb-4">Core Essentials</p>
+                            <ul class="text-sm space-y-2 text-gray-600">
+                                <li>✓ Base Prescription Drugs</li>
+                                <li>✓ Basic Dental (Optional add-on)</li>
+                                <li>✓ Ambulance Services</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-lg transform md:-translate-y-2 border-t-4 border-secondary relative">
+                            <div class="absolute top-0 right-0 bg-secondary text-white text-xs font-bold px-2 py-1 rounded-bl">Most Popular</div>
+                            <h4 class="font-bold text-xl text-dark mb-2">ExtendaPlan</h4>
+                            <p class="text-xs text-gray-500 mb-4">Comfort & Balance</p>
+                            <ul class="text-sm space-y-2 text-gray-600">
+                                <li>✓ <strong>Adds:</strong> Vision Care</li>
+                                <li>✓ <strong>Adds:</strong> Massage, Chiropractic</li>
+                                <li>✓ <strong>Adds:</strong> Medical Equipment</li>
+                                <li>✓ Enhanced Drug & Dental caps</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-primary">
+                            <h4 class="font-bold text-xl text-dark mb-2">OmniPlan</h4>
+                            <p class="text-xs text-gray-500 mb-4">Supreme Protection</p>
+                            <ul class="text-sm space-y-2 text-gray-600">
+                                <li>✓ Highest Reimbursement limits</li>
+                                <li>✓ Broadest scope of paramedical care</li>
+                                <li>✓ Lowest out-of-pocket expenses</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-replacement" class="hidden animate-fade-in">
+                <div class="bg-green-50 rounded-3xl p-8 mb-8 border border-green-100">
+                    <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                        <div>
+                            <h3 class="text-2xl font-bold text-secondary mb-2">Replacement Health Insurance</h3>
+                            <p class="text-gray-600">Seamless transition, <strong>Guaranteed Acceptance</strong>. Tailored for retirees or those who recently lost group benefit coverage.</p>
+                        </div>
+                        <div class="mt-4 md:mt-0">
+                             <span class="inline-block bg-secondary text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg animate-pulse">No Medical Exam Required</span>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-gray-300">
+                            <h4 class="font-bold text-xl text-dark mb-2">EssentialPlan</h4>
+                            <p class="text-xs text-gray-500 mb-4">Core Benefits</p>
+                            <ul class="text-sm space-y-2 text-gray-600">
+                                <li>✓ Guaranteed Acceptance</li>
+                                <li>✓ Prescription Drug Coverage</li>
+                                <li>✓ Basic Dental & Private Care</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-lg transform md:-translate-y-2 border-t-4 border-secondary relative">
+                            <div class="absolute top-0 right-0 bg-secondary text-white text-xs font-bold px-2 py-1 rounded-bl">Recommended</div>
+                            <h4 class="font-bold text-xl text-dark mb-2">ChoicePlan</h4>
+                            <p class="text-xs text-gray-500 mb-4">Enhanced Coverage + Travel</p>
+                            <ul class="text-sm space-y-2 text-gray-600">
+                                <li>✓ Higher Drug reimbursement caps</li>
+                                <li>✓ <strong>Includes:</strong> 15-day Travel Out-of-Country</li>
+                                <li>✓ Vision & Paramedical services</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-primary">
+                            <h4 class="font-bold text-xl text-dark mb-2">PremierPlan</h4>
+                            <p class="text-xs text-gray-500 mb-4">Supreme Prestige</p>
+                            <ul class="text-sm space-y-2 text-gray-600">
+                                <li>✓ Maximum Annual reimbursement limit</li>
+                                <li>✓ Maximum Dental & Vision caps</li>
+                                <li>✓ 15-day Travel Out-of-Country</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <p class="text-sm text-gray-500">⏳ Note: You must apply within <strong>90 days</strong> of your group benefit plan ending.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="index.html#contact" class="bg-primary hover:bg-blue-700 text-white px-10 py-4 rounded-full font-bold text-lg shadow-xl transition inline-flex items-center">
+                    Get Quote Now <span class="ml-2">→</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-20 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center">24/7 Health & Wellness Support</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/20">
+                    <div class="text-4xl mb-4">📱</div>
+                    <h4 class="font-bold text-xl mb-2">Telehealth Care</h4>
+                    <p class="text-sm text-gray-200">Connect with a Canadian licensed doctor anytime via phone or video. Acquire medical suggestions and prescriptions without waiting in long clinic lines.</p>
+                </div>
+                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/20">
+                    <div class="text-4xl mb-4">🧠</div>
+                    <h4 class="font-bold text-xl mb-2">Mental Health Services</h4>
+                    <p class="text-sm text-gray-200">Includes individual and couple psychological consultations, plus online Cognitive Behavioral Therapy (CBT) resources.</p>
+                </div>
+                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/20">
+                    <div class="text-4xl mb-4">⚖️</div>
+                    <h4 class="font-bold text-xl mb-2">Work-Life Services</h4>
+                    <p class="text-sm text-gray-200">Access completely confidential financial coaching, legal advisory support, nutritional suggestions, and career path consultations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-dark mb-10 text-center">Which is the Best Match? (Comparison Guide)</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-gray-200 rounded-lg shadow-sm">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="py-4 px-6 text-left text-sm font-bold text-gray-600">Features</th>
+                            <th class="py-4 px-6 text-left text-sm font-bold text-primary">Personal Health</th>
+                            <th class="py-4 px-6 text-left text-sm font-bold text-secondary">Replacement Health</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr>
+                            <td class="py-4 px-6 text-sm font-bold text-gray-800">Best Time to Apply</td>
+                            <td class="py-4 px-6 text-sm text-gray-600">Anytime</td>
+                            <td class="py-4 px-6 text-sm text-gray-600 font-bold text-red-500">Within 90 days after group benefits end</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-sm font-bold text-gray-800">Medical Questionnaire</td>
+                            <td class="py-4 px-6 text-sm text-gray-600">Required (Priced based on medical profile)</td>
+                            <td class="py-4 px-6 text-sm text-secondary font-bold">Not Required (Guaranteed acceptance)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-sm font-bold text-gray-800">Pre-existing Conditions</td>
+                            <td class="py-4 px-6 text-sm text-gray-600">May be restricted or trigger higher premiums</td>
+                            <td class="py-4 px-6 text-sm text-gray-600 font-bold text-green-600">Fully covered</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-sm font-bold text-gray-800">Plan Flexibility</td>
+                            <td class="py-4 px-6 text-sm text-gray-600">High (Mix and match custom add-on riders)</td>
+                            <td class="py-4 px-6 text-sm text-gray-600">Fixed (Pre-designed plan packages)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-sm font-bold text-gray-800">Ideal For</td>
+                            <td class="py-4 px-6 text-sm text-gray-600">Healthy self-employed individuals seeking optimal rates</td>
+                            <td class="py-4 px-6 text-sm text-gray-600">Those with pre-existing conditions, newly retired, or between jobs</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-light">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-dark mb-10 text-center">Frequently Asked Questions</h2>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h4 class="font-bold text-primary mb-2">Q: How much does private health insurance cost in Canada?</h4>
+                    <p class="text-sm text-gray-600">A: Rates depend heavily on your age, province of residence, selected plan level, and (for personal health plans) health history. You can obtain a free quote online anytime.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h4 class="font-bold text-primary mb-2">Q: Does the insurance carrier pay my clinic or pharmacy directly?</h4>
+                    <p class="text-sm text-gray-600">A: Yes. Your health card acts as a Pay-Direct Card. In-network pharmacists, dental clinics, and physiotherapists can bill the carrier directly, avoiding any manual claim submissions.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h4 class="font-bold text-primary mb-2">Q: Do I need separate insurance when traveling to other Canadian provinces?</h4>
+                    <p class="text-sm text-gray-600">A: Strongly recommended. While provincial health covers basic emergency doctor visits, ambulances, paramedical emergency services, and accidental dental are typically not covered out-of-province.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-12 border-t border-gray-800" id="contact">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <span class="text-2xl font-bold text-white">Insured618</span>
+            </div>
+            <p class="text-gray-400 mb-8">Protecting Today, Prospering Tomorrow</p>
+            <div class="flex justify-center gap-4 mb-8">
+                <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-bold transition text-sm">
+                    Get Quote Now
+                </a>
+            </div>
+            <div class="text-gray-500 text-xs space-y-2 max-w-2xl mx-auto">
+                <p>Disclaimer: Insured618 acts as an independent agent representing health insurance products from GMS (Group Medical Services). Specific terms are governed by contract.</p>
+                <p>© 2025 Insured618. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function switchTab(tab) {
+            const personalBtn = document.getElementById('btn-personal');
+            const replacementBtn = document.getElementById('btn-replacement');
+            const personalContent = document.getElementById('content-personal');
+            const replacementContent = document.getElementById('content-replacement');
+
+            if (tab === 'personal') {
+                personalBtn.classList.add('tab-active');
+                personalBtn.classList.remove('tab-inactive');
+                replacementBtn.classList.remove('tab-active');
+                replacementBtn.classList.add('tab-inactive');
+                
+                personalContent.classList.remove('hidden');
+                replacementContent.classList.add('hidden');
+            } else {
+                replacementBtn.classList.add('tab-active');
+                replacementBtn.classList.remove('tab-inactive');
+                personalBtn.classList.remove('tab-active');
+                personalBtn.classList.add('tab-inactive');
+
+                replacementContent.classList.remove('hidden');
+                personalContent.classList.add('hidden');
+            }
+        }
+
+        function scrollToProduct() {
+            document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

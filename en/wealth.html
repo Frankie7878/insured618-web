@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wealth & Retirement Planning - Insured618</title>
+    
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    
+    <meta name="description" content="Build guaranteed lifetime income streams. Insured618 provides payout annuities, segregated funds, and legacy configuration plans to balance inflation risks with capital preservation.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4C8DFF', // Index Blue
+                        dark: '#1A1D21',
+                        light: '#F7F9FC',
+                        gold: '#D4AF37', // Wealth Gold
+                        goldlight: '#F9F1D8',
+                        accent: '#FF7A59', // Warm Orange
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans SC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .text-gold-gradient {
+            background: linear-gradient(to right, #D4AF37, #F2C94C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white">
+
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="../insured618_profile_option2.png" alt="Insured618 Logo" class="h-16 w-16 rounded-full object-cover hover:scale-105 transition-transform duration-200 shadow-md">
+                    </a>
+                </div>
+
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-primary focus:outline-none p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition">Home</a>
+                    <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary transition">Core Solutions</a>
+                    <a href="#" class="text-primary font-bold transition">Wealth</a>
+                    <a href="business.html" class="text-gray-600 hover:text-primary transition">Business</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary transition">About</a>
+                    <a href="https://calculator.frank-zhang.com" target="_blank" class="text-gray-600 hover:text-accent font-bold transition flex items-center">Smart Calculator <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                    <a href="../wealth.html" class="text-sm font-bold text-gray-500 hover:text-primary border border-gray-300 px-3 py-1 rounded transition">中文</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg">Book Consultation</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white shadow-lg border-t border-gray-100">
+            <div class="flex flex-col px-4 py-4 space-y-4">
+                <a href="index.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Home</a>
+                <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Core Solutions</a>
+                <a href="wealth.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Wealth</a>
+                <a href="business.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Business</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">About</a>
+                <a href="https://calculator.frank-zhang.com" target="_blank" class="text-accent font-bold border-b border-gray-50 pb-2 flex items-center justify-between">Smart Calculator <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                <a href="../wealth.html" class="text-gray-500 font-bold border-t border-gray-100 pt-2 mt-2 flex items-center">中文 &rarr;</a>
+                <a href="index.html#contact" class="text-primary font-bold">Book Consultation &rarr;</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-24 bg-dark overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-gray-800 to-transparent opacity-30"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-gold/10 blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-gray-800 border border-gold/30 text-gold text-xs font-bold mb-6 tracking-wide uppercase">
+                Steer Your Future with Confidence
+            </span>
+            <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                Retirement is Not the End,<br>
+                But the <span class="text-gold-gradient">Beginning of a New Life</span>
+            </h1>
+            <p class="max-w-3xl mx-auto text-lg text-gray-400 mb-10 leading-relaxed">
+                Many worry about outliving their wealth. We help you construct durable, highly flexible financial portfolios to ensure core expenses are fully covered while pursuing robust, tax-sheltered capital growth and seamless legacy inheritance.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="index.html#contact" class="bg-gold hover:bg-yellow-600 text-dark px-8 py-4 rounded-xl font-bold transition shadow-lg shadow-yellow-500/20">
+                    Book Consultation Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl font-bold text-dark mb-6">1. Create a Guaranteed Lifetime "Private Pension"</h2>
+                    <p class="text-xl text-gray-500 mb-6 font-light">
+                        Core Philosophy: Your primary goal in retirement is to ensure essential living expenditures are covered by absolutely guaranteed income streams.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <a href="payout-annuities.html" class="flex items-start group hover:bg-gray-50 p-3 -m-3 rounded-2xl transition">
+                            <div class="w-12 h-12 bg-blue-50 text-primary rounded-xl flex items-center justify-center text-2xl mr-4 flex-shrink-0 group-hover:bg-primary group-hover:text-white transition">🗓️</div>
+                            <div>
+                                <h4 class="font-bold text-dark text-lg group-hover:text-primary transition">Payout Annuities</h4>
+                                <p class="text-gray-600 text-sm mt-1 mb-2">
+                                    Convert a portion of your hard-earned savings into immediate, continuous tax-efficient cash flow. Opt for a life annuity to receive stable, guaranteed monthly checks as long as you live—eliminating longevity risks completely.
+                                </p>
+                                <div class="text-sm font-bold text-primary flex items-center group-hover:text-blue-600">
+                                    <span>Explore your private pension</span>
+                                    <span class="transform group-hover:translate-x-1 transition ml-1">&rarr;</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-50 text-green-600 rounded-xl flex items-center justify-center text-2xl mr-4 flex-shrink-0">🛡️</div>
+                            <div>
+                                <h4 class="font-bold text-dark text-lg">Insulating Against Market Risks</h4>
+                                <p class="text-gray-600 text-sm mt-1">
+                                    Once determined, your payouts remain fully immune to stock market crashes or interest rate volatility, ensuring complete peace of mind.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 bg-light p-8 rounded-3xl border border-gray-100 shadow-xl">
+                    <div class="text-center mb-6">
+                        <span class="text-5xl">👴👵</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl mb-4 shadow-sm flex justify-between items-center">
+                        <span class="font-bold text-gray-600">Every Single Month in Retirement</span>
+                        <span class="font-bold text-green-600">+ Fixed Income ✅</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl mb-4 shadow-sm flex justify-between items-center">
+                        <span class="font-bold text-gray-600">Stock Market Crashes 30%</span>
+                        <span class="font-bold text-green-600">Payout Remains Intact ✅</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm flex justify-between items-center">
+                        <span class="font-bold text-gray-600">Live Beyond Age 100</span>
+                        <span class="font-bold text-green-600">Guaranteed Continuation ✅</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">2. Balancing Asset Growth with Core Protection</h2>
+                <p class="text-gray-600">Core Philosophy: Pursue market-linked capital growth to fight inflation while ensuring your primary principal remains legally protected.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <a href="segregated-funds.html" class="block bg-white p-8 rounded-2xl shadow-lg border-t-4 border-gold relative overflow-hidden group hover:-translate-y-2 hover:shadow-xl transition">
+                    <div class="absolute top-0 right-0 bg-gold/10 text-gold text-xs font-bold px-3 py-1 rounded-bl-lg group-hover:bg-gold group-hover:text-white transition">Popular Choice</div>
+                    <div class="text-4xl mb-4">📈</div>
+                    <h3 class="text-2xl font-bold text-dark mb-3 group-hover:text-primary transition">Segregated Funds</h3>
+                    <p class="text-gray-500 mb-6 text-sm">Combines the wealth accumulation potential of standard mutual funds with the robust security features of insurance contracts.</p>
+                    <ul class="space-y-4 text-gray-600 mb-6">
+                        <li class="flex items-start">
+                            <span class="text-gold mr-2 font-bold">✓</span>
+                            <span><strong>Principal Guarantees:</strong> Offers a guaranteed return of 75% to 100% of your principal upon contract maturity or death, shielding you from market downturns.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gold mr-2 font-bold">✓</span>
+                            <span><strong>Market Resets:</strong> Allows lock-in of market gains. As the market rises, your guaranteed value increases and locks in permanently.</span>
+                        </li>
+                    </ul>
+                    <div class="text-sm font-bold text-primary flex items-center group-hover:text-blue-600">
+                        <span>Explore Segregated Funds</span>
+                        <span class="transform group-hover:translate-x-1 transition ml-1">&rarr;</span>
+                    </div>
+                </a>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-gray-400 hover:-translate-y-2 transition">
+                    <div class="text-4xl mb-4">🔒</div>
+                    <h3 class="text-2xl font-bold text-dark mb-3">Insurance GICs</h3>
+                    <p class="text-gray-500 mb-6 text-sm">Provides 100% principal and interest guarantees, custom-made for risk-averse wealth preservation.</p>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="text-primary mr-2 font-bold">✓</span>
+                            <span><strong>Absolute Safety:</strong> Fully backed guarantees ensure your principal is safe regardless of any economic volatility.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-primary mr-2 font-bold">✓</span>
+                            <span><strong>Estate Advantages:</strong> Unlike bank GICs, insurance GICs bypass probate fees completely by naming direct beneficiaries.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-4 text-center">3. Tax Optimization & Seamless Estate Settlement</h2>
+            <p class="text-gray-400 text-center mb-12">It is not just about how much you make; it is about how much you keep and pass down.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/10">
+                    <div class="text-gold text-3xl mb-4">⚖️</div>
+                    <h4 class="text-xl font-bold mb-3">Bypassing Probate Fees</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        By nominating direct beneficiaries on your accounts, your assets transfer swiftly and privately to your heirs upon passing—bypassing lengthy, costly probate procedures and maintaining complete privacy.
+                    </p>
+                </div>
+
+                <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/10">
+                    <div class="text-gold text-3xl mb-4">📝</div>
+                    <h4 class="text-xl font-bold mb-3">Legacy Settlement Payouts</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        You retain full control over how heirs receive their funds (e.g. distributed gradually over 10 years rather than a lump sum), preventing rapid depletion. Perfect for blended families or special needs heirs.
+                    </p>
+                </div>
+
+                <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/10">
+                    <div class="text-gold text-3xl mb-4">🏢</div>
+                    <h4 class="text-xl font-bold mb-3">Corporate Owner Synergy</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Leverage Corporate Asset Transfer models to direct taxable corporate surplus into tax-sheltered contracts, utilizing the CDA (Capital Dividend Account) to flow profits out completely tax-free.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-dark mb-10 text-center">Why Partner with Us for Wealth Planning?</h2>
+            <p class="text-center text-gray-600 mb-12">We customize retirement strategies to manage longevity, liquidity, and inflation risks. A solid plan utilizes the <span class="text-primary font-bold">"Three-Bucket Strategy"</span>:</p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-end gap-4 md:gap-8">
+                <div class="w-full md:w-1/3 bg-gray-100 rounded-t-2xl p-6 text-center border-b-8 border-gray-400 h-48 flex flex-col justify-end">
+                    <div class="text-3xl mb-2">🏛️</div>
+                    <h4 class="font-bold text-gray-700">Government Bucket</h4>
+                    <p class="text-xs text-gray-500 mt-2">CPP / OAS</p>
+                    <p class="text-xs font-bold text-gray-600 mt-1">Foundation Security</p>
+                </div>
+
+                <div class="w-full md:w-1/3 bg-blue-50 rounded-t-2xl p-6 text-center border-b-8 border-primary h-64 flex flex-col justify-end shadow-lg transform md:-translate-y-2">
+                    <div class="text-3xl mb-2">💧</div>
+                    <h4 class="font-bold text-primary">Guaranteed Income Bucket</h4>
+                    <p class="text-xs text-gray-500 mt-2">Annuities / Insurance GIC</p>
+                    <p class="text-xs font-bold text-primary mt-1">Covers Essential Expenditures</p>
+                </div>
+
+                <div class="w-full md:w-1/3 bg-goldlight rounded-t-2xl p-6 text-center border-b-8 border-gold h-56 flex flex-col justify-end">
+                    <div class="text-3xl mb-2">🚀</div>
+                    <h4 class="font-bold text-yellow-800">Growth Bucket</h4>
+                    <p class="text-xs text-gray-600 mt-2">Segregated Funds / Active Equities</p>
+                    <p class="text-xs font-bold text-yellow-700 mt-1">Defeats Inflation & Funds Leisure</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-50 border-t border-gray-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <span class="text-2xl font-bold text-dark">Insured618</span>
+            </div>
+            <p class="text-gray-500 mb-8">Protecting Today, Prospering Tomorrow</p>
+            <div class="flex justify-center gap-4 mb-8">
+                <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-bold transition text-sm">
+                    Book Retirement Planning Consultation
+                </a>
+            </div>
+            <div class="text-gray-500 text-xs space-y-2 max-w-2xl mx-auto">
+                <p>Disclaimer: The exact terms and conditions of segregated funds and annuity contracts are governed by their respective insurance carriers. Past performance does not guarantee future results.</p>
+                <p>© 2025 Insured618. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btn && menu) {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                menu.classList.toggle('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !btn.contains(e.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+
+</body>
+</html>

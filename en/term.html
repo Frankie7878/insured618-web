@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Term Life Insurance - Insured618</title>
+    
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+    <meta name="description" content="Term Life Insurance provides high-leverage financial protection for your mortgage and family in Canada. Flexible term choices from 10 to 40 years with locked-in fixed premiums.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4C8DFF', // Soft Blue
+                        secondary: '#55D6A9', // Mint Green
+                        dark: '#1A1D21',
+                        light: '#F7F9FC',
+                        accent: '#FF7A59', // Warm Orange
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans SC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(to right, #4C8DFF, #55D6A9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white">
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="../insured618_profile_option2.png" alt="Insured618 Logo" class="h-16 w-16 rounded-full object-cover hover:scale-105 transition-transform duration-200 shadow-md">
+                    </a>
+                </div>
+
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-primary focus:outline-none p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition">Home</a>
+                    <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary transition">Core Solutions</a>
+                    <a href="wealth.html" class="text-gray-600 hover:text-primary transition">Wealth</a>
+                    <a href="business.html" class="text-gray-600 hover:text-primary transition">Business</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary transition">About</a>
+                    <a href="https://calculator.frank-zhang.com" target="_blank" class="text-gray-600 hover:text-accent font-bold transition flex items-center">Smart Calculator <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                    <a href="../term.html" class="text-sm font-bold text-gray-500 hover:text-primary border border-gray-300 px-3 py-1 rounded transition">中文</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg shadow-blue-500/30">Book Consultation</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white shadow-lg border-t border-gray-100">
+            <div class="flex flex-col px-4 py-4 space-y-4">
+                <a href="index.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Home</a>
+                <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Core Solutions</a>
+                <a href="wealth.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Wealth</a>
+                <a href="business.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Business</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">About</a>
+                <a href="https://calculator.frank-zhang.com" target="_blank" class="text-accent font-bold border-b border-gray-50 pb-2 flex items-center justify-between">Smart Calculator <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                <a href="../term.html" class="text-gray-500 font-bold border-t border-gray-100 pt-2 mt-2 flex items-center">中文 &rarr;</a>
+                <a href="index.html#contact" class="text-primary font-bold">Book Consultation &rarr;</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold text-dark mb-6">
+                Term Life Insurance <br>
+                <span class="gradient-text text-2xl md:text-4xl mt-2 block">Affordable Protection for Your Family's Future</span>
+            </h1>
+            <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-8">
+                High-leverage financial protection to secure your home mortgage, protect your business liabilities, and safeguard your children's future when they need it most.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="index.html#contact" class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-600 transition shadow-lg">Get a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-dark mb-6">What is Term Life Insurance?</h2>
+                    <p class="text-gray-600 mb-4 text-lg leading-relaxed">
+                        Term Life insurance is designed to provide robust financial security for a specific duration—typically 10, 20, or 30 years. If the insured passes away during the term, the nominated beneficiaries receive a completely tax-free lump sum benefit.
+                    </p>
+                    <div class="space-y-4 mt-8">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-primary mr-4 text-xl">💲</div>
+                            <div>
+                                <h4 class="font-bold text-dark">High Affordability</h4>
+                                <p class="text-sm text-gray-500">Initial premiums are a fraction of permanent insurance costs, maximizing your immediate leverage.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-secondary mr-4 text-xl">🔒</div>
+                            <div>
+                                <h4 class="font-bold text-dark">Locked-in Premiums</h4>
+                                <p class="text-sm text-gray-500">Your monthly or annual premium rate is 100% guaranteed to remain fixed throughout your selected term.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center text-accent mr-4 text-xl">⏳</div>
+                            <div>
+                                <h4 class="font-bold text-dark">Flexible Durations</h4>
+                                <p class="text-sm text-gray-500">Choose from comprehensive options spanning 10, 15, 20, 25, 30, or even 40 years.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-light rounded-3xl p-8 border border-gray-100 shadow-xl">
+                    <h3 class="text-xl font-bold text-dark mb-6">Why Do You Need It?</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-xl shadow-sm">
+                            <span class="text-2xl block mb-2">🏠</span>
+                            <h4 class="font-bold text-dark">Mortgage Protection</h4>
+                            <p class="text-xs text-gray-500 mt-1">Ensures your family can fully settle mortgages and keep their beloved home.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm">
+                            <span class="text-2xl block mb-2">💰</span>
+                            <h4 class="font-bold text-dark">Income Replacement</h4>
+                            <p class="text-xs text-gray-500 mt-1">Replaces key earner income to fund future living expenses and utilities.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm">
+                            <span class="text-2xl block mb-2">🏢</span>
+                            <h4 class="font-bold text-dark">Business Stability</h4>
+                            <p class="text-xs text-gray-500 mt-1">Offsets outstanding corporate loans or key person capital vulnerabilities.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm">
+                            <span class="text-2xl block mb-2">🎓</span>
+                            <h4 class="font-bold text-dark">Education Funds</h4>
+                            <p class="text-xs text-gray-500 mt-1">Locks in educational funding guarantees for your children's universities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-primary/5">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-dark mb-4">Calculate: How Much Coverage Do You Need?</h2>
+                <p class="text-gray-600">Take just 1 minute to estimate your family's exact financial security gap.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    
+                    <div class="p-8 space-y-6">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">1. Outstanding Mortgage ($)</label>
+                            <input type="number" id="mortgage" placeholder="e.g. 500000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateNeed()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">2. Other Liabilities (Car/Credit cards) ($)</label>
+                            <input type="number" id="debts" placeholder="e.g. 20000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateNeed()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">3. Desired Child Education Reserve ($)</label>
+                            <input type="number" id="education" placeholder="e.g. 100000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateNeed()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">4. Annual Income to Replace ($) x 10 Years</label>
+                            <div class="flex gap-2">
+                                <input type="number" id="income" placeholder="Annual Income" class="w-2/3 px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateNeed()">
+                                <div class="w-1/3 flex items-center justify-center bg-gray-100 rounded-lg text-gray-500 text-sm font-bold">x 10 Yrs</div>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">5. Existing Savings & Active Insurance (-)</label>
+                            <input type="number" id="savings" placeholder="e.g. 50000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateNeed()">
+                        </div>
+                    </div>
+
+                    <div class="bg-dark p-8 text-white flex flex-col justify-center items-center text-center relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-3xl"></div>
+                        <div class="absolute bottom-0 left-0 w-32 h-32 bg-secondary/20 rounded-full blur-3xl"></div>
+                        
+                        <p class="text-gray-400 text-sm uppercase tracking-widest mb-2 relative z-10">Recommended Coverage</p>
+                        <h3 class="text-5xl font-bold text-white mb-2 relative z-10" id="totalNeed">$0</h3>
+                        <p class="text-gray-400 text-xs mb-8 relative z-10">Estimated protection gap</p>
+                        
+                        <a href="#contact" class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-full font-bold transition shadow-lg w-full relative z-10">
+                            Request Quote for this Amount
+                        </a>
+                        
+                        <div class="mt-8 text-xs text-gray-500 text-left border-t border-gray-700 pt-4 w-full relative z-10">
+                            <p>Calculation Formula:</p>
+                            <p>Mortgage + Liabilities + Education + (Income x 10) - Existing assets = Security Gap</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function calculateNeed() {
+            let mortgage = parseFloat(document.getElementById('mortgage').value) || 0;
+            let debts = parseFloat(document.getElementById('debts').value) || 0;
+            let education = parseFloat(document.getElementById('education').value) || 0;
+            let income = parseFloat(document.getElementById('income').value) || 0;
+            let savings = parseFloat(document.getElementById('savings').value) || 0;
+
+            let total = (mortgage + debts + education + (income * 10)) - savings;
+            if (total < 0) total = 0;
+
+            document.getElementById('totalNeed').innerText = '$' + total.toLocaleString('en-US');
+        }
+    </script>
+
+    <section id="products" class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">Our Product Suites</h2>
+                <p class="text-gray-600">Flexible options tailored to your distinct financial demands (featuring Sun Life products)</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-t-4 border-primary">
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold text-dark">Sun Life Evolve</h3>
+                            <span class="bg-blue-100 text-primary px-3 py-1 rounded-full text-xs font-bold">Most Flexible</span>
+                        </div>
+                        <p class="text-gray-500 mb-6">Fully featured. Recommended if you anticipate converting or scaling policies in the future.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center text-gray-700"><span class="text-secondary mr-2">✓</span> Terms: 5 to 40 years available</li>
+                            <li class="flex items-center text-gray-700"><span class="text-secondary mr-2">✓</span> <strong>Convertible to Permanent Life</strong> (No medical exam before age 75)</li>
+                            <li class="flex items-center text-gray-700"><span class="text-secondary mr-2">✓</span> Renewable up to age 85</li>
+                            <li class="flex items-center text-gray-700"><span class="text-secondary mr-2">✓</span> Increase coverage during key milestones (marriage, child-birth)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-t-4 border-gray-400">
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold text-dark">Sun Life Essential</h3>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-bold">Most Economical</span>
+                        </div>
+                        <p class="text-gray-500 mb-6">Lowest cost base. Tailored for those who only need raw protection over fixed spans.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center text-gray-700"><span class="text-secondary mr-2">✓</span> Terms: 5 to 20 years available</li>
+                            <li class="flex items-center text-gray-300 mr-2"><span class="text-gray-300 mr-2">✕</span> Non-convertible to permanent policies</li>
+                            <li class="flex items-center text-gray-300 mr-2"><span class="text-gray-300 mr-2">✕</span> Non-renewable</li>
+                            <li class="flex items-center text-gray-700"><span class="text-secondary mr-2">✓</span> Highly competitive, industry-leading rates</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-blue-50 border border-blue-100 rounded-2xl p-8">
+                <h3 class="text-xl font-bold text-dark mb-4">🩺 Featured Solution: Term Insurance for Diabetes Patients</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <p class="text-gray-700 mb-2 font-medium">Sun Life Term Insurance for Diabetes</p>
+                        <p class="text-sm text-gray-600">Specifically engineered for diabetics with streamlined approvals, highly viable premiums, and free chronic management programs.</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-700 mb-2 font-medium">Achievers Rewards Program</p>
+                        <p class="text-sm text-gray-600">Incentivizes blood-sugar controls. Reaching healthy management targets locks in further rate discounts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-dark mb-8 text-center">Product Comparison Table</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="py-4 px-6 text-left text-sm font-bold text-gray-600">Features</th>
+                            <th class="py-4 px-6 text-left text-sm font-bold text-primary">Evolve Term Life</th>
+                            <th class="py-4 px-6 text-left text-sm font-bold text-gray-600">Essential Term Life</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr>
+                            <td class="py-4 px-6 text-sm font-medium text-gray-900">Best For</td>
+                            <td class="py-4 px-6 text-sm text-gray-600">High flexibility, future conversions planned</td>
+                            <td class="py-4 px-6 text-sm text-gray-600">Pure, low-cost short-term coverage</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-sm font-medium text-gray-900">Term Periods</td>
+                            <td class="py-4 px-6 text-sm text-gray-600">5 to 40 Years</td>
+                            <td class="py-4 px-6 text-sm text-gray-600">5 to 20 Years</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-sm font-medium text-gray-900">Conversion to Permanent</td>
+                            <td class="py-4 px-6 text-sm text-secondary font-bold">Yes (Before age 75)</td>
+                            <td class="py-4 px-6 text-sm text-gray-400">No</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-sm font-medium text-gray-900">Renewable</td>
+                            <td class="py-4 px-6 text-sm text-secondary font-bold">Yes (Up to age 85)</td>
+                            <td class="py-4 px-6 text-sm text-gray-400">No</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-sm font-medium text-gray-900">Optional Riders</td>
+                            <td class="py-4 px-6 text-sm text-gray-600">Fully Customizable (Child, accidental, waiver, etc.)</td>
+                            <td class="py-4 px-6 text-sm text-gray-400">Not Available</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-50 border-t border-gray-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <span class="text-2xl font-bold text-dark">Insured618</span>
+            </div>
+            <p class="text-gray-500 mb-8">Tailoring Financial Protection for You</p>
+            <div class="text-gray-500 text-xs space-y-2">
+                <p class="mt-4 max-w-2xl mx-auto">Disclaimer: This website content is for general information purposes only and does not constitute official legal or tax advice. Exact policy terms are governed strictly by individual carrier insurance contracts.</p>
+                <p class="mt-4">© 2025 Insured618. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btn && menu) {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                menu.classList.toggle('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !btn.contains(e.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+
+</body>
+</html>
