@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "text": "💡 什么是保本基金 (Segregated Funds)？它是加拿大保险公司独家提供的投资工具，结合了互惠基金的增长潜能与保险合约的安全性，提供75%或100%的本金保底承诺！了解更多：https://insured618.netlify.app/segregated-funds.html #保本基金 #加拿大理财",
+    "category": "segregated-funds"
+  },
+  {
+    "id": 2,
+    "text": "🛡️ 遗产规划小知识：在加拿大，人寿保险和保本基金 (Segregated Funds) 的赔偿金可以直接支付给指定受益人，完全避开耗时且昂贵的遗嘱认证费 (Probate Fee) 和法律程序。#财富传承 #加拿大生活",
+    "category": "estate-planning"
+  },
+  {
+    "id": 3,
+    "text": "🏢 企业主福利：利用“企业资产转移” (Corporate Asset Transfer) 策略，将公司的被动投资盈余转入免税的人寿保单中，不仅能降低高额的企业被动投资税，还能为后代留下一笔免税的资产。#企业主 #加拿大税务",
+    "category": "corporate-tax"
+  },
+  {
+    "id": 4,
+    "text": "🏥 重疾险不仅保健康，还能“没病返本”！选择 Critical Illness 的保费返还 (Return of Premium) 附加条款，如果几十年来一直保持健康未理赔，退保时可100%拿回所有已缴保费，做你的养老补充。#重疾险 #加拿大保险",
+    "category": "critical-illness"
+  },
+  {
+    "id": 5,
+    "text": "📈 退休无忧：给付年金 (Payout Annuities) 被称为“私人养老金”，它将你的一笔资金转化为终身有保证、源源不断的免税/低税收入流，完全无惧市场波动，伴随你直到终老。详情：https://insured618.netlify.app/payout-annuities.html #给付年金 #加拿大退休",
+    "category": "annuities"
+  },
+  {
+    "id": 6,
+    "text": "🍬 暖心消息：很多患有轻度糖尿病或三高的人士担心买不到人寿保险。Insured618 作为独立经纪，代理多家顶级保险公司，有专门通道和特殊费率，助您轻松锁定高杠杆的定期寿险！#健康保险 #定期寿险",
+    "category": "term-life"
+  },
+  {
+    "id": 7,
+    "text": "🦷 自雇人士、退休人员或公司没有团保？Health & Dental (健康与牙科险) 能够报销您的日常处方药、洗牙补牙、视力检查和物理治疗等费用，且保费可以作为企业支出进行抵税！#自雇人士 #牙医保险",
+    "category": "health-insurance"
+  },
+  {
+    "id": 8,
+    "text": "🔑 谁是企业最重要的人？中小企业主应考虑“关键人物保障” (Key Person Insurance)。为公司的核心技术人员或大股东投保重疾险或人寿险，能够防范因关键人物不幸离世或患病造成的财务灾难。#中小企业 #合伙人",
+    "category": "business-insurance"
+  },
+  {
+    "id": 9,
+    "text": "👨‍👩‍👧 为孩子锁定义务可保性：儿童重疾险费率极低且保障终身。如果在孩子健康时投保，即使未来不幸患有其他疾病，他们也能永久拥有这份高额的健康保障。爱孩子，从规划未来开始。#儿童保障 #重疾险",
+    "category": "child-insurance"
+  },
+  {
+    "id": 10,
+    "text": "⏳ 锁定终身保障的秘诀：年轻时预算有限可以先选择“高性价比”的定期寿险 (Term Life)，但一定要确保合同中包含“未来免体检转终身分红险”的转换权 (Convertibility Option)。#买保险 #理财干货",
+    "category": "term-life"
+  },
+  {
+    "id": 11,
+    "text": "💼 什么是 CDA (资本红利账户)？对加拿大公司而言，人寿保险的身故赔偿金扣除保单成本后的净额，可以通过资本红利账户 (Capital Dividend Account) 免税分发给公司股东，实现完美的税优传承！#加拿大公司 #税务规划",
+    "category": "corporate-tax"
+  },
+  {
+    "id": 12,
+    "text": "🛡️ 规避债务风险：保本基金 (Segregated Funds) 在符合特定条件（如指定直系亲属为受益人）时，可以提供强大的债权人保护 (Creditor Protection)。非常适合自雇专业人士、小企业主和高风险行业从业者。#债务规避 #资产安全",
+    "category": "asset-protection"
+  }
+]
