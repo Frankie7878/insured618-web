@@ -1,0 +1,6 @@
+# Local virtual environment
+.venv/
+__pycache__/
+
+# Private X login session and cookie cache (DO NOT COMMIT!)
+x_user_data/

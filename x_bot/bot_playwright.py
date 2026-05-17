@@ -89,15 +89,22 @@ def post_to_x(text, headful=True):
             
         time.sleep(random.uniform(1.5, 2.5))
         
-        # Locate the Post button
-        post_button = page.locator("[data-testid='tweetButtonInline']")
+        print("🚀 Sending tweet via keyboard shortcut (Control+Enter)...")
+        tweet_box.press("Control+Enter")
         
+        time.sleep(random.uniform(2.0, 3.0))
+        
+        # Locate the Post button for fallback
+        post_button = page.locator("[data-testid='tweetButtonInline']")
         if not post_button.is_visible():
-            # Backup locator using role
             post_button = page.get_by_role("button", name="Post")
             
-        print("🚀 Clicking 'Post' button...")
-        post_button.click()
+        if post_button.is_visible() and post_button.is_enabled():
+            print("🚀 Fallback: Clicking 'Post' button (force=True)...")
+            try:
+                post_button.click(force=True)
+            except Exception as e:
+                print(f"⚠️ Fallback click failed: {e}")
         
         # Wait to ensure the tweet goes through
         print("⏳ Waiting for publication to complete...")
