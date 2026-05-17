@@ -90,7 +90,7 @@ def handle_update():
     if not updated_files:
         print("ℹ️ No recent HTML updates detected in the last git commit.")
         print("Defaulting to a general site update announcement...")
-        tweet_text = "📢 Insured618 网站已更新！我们为您量身定制的加拿大财富管理与保险策略平台已经上线最新版。欢迎访问主页免费预约评估：https://insured618.netlify.app/ #加拿大理财 #资产规划"
+        tweet_text = "📢 Insured618 网站已更新！我们为您量身定制的加拿大财富管理与保险策略平台已经上线最新版。欢迎访问主页免费预约评估：https://insurance.frank-zhang.com/ #加拿大理财 #资产规划"
         post_tweet(tweet_text)
         return
 
@@ -118,7 +118,7 @@ def handle_update():
             items.append(filename.replace(".html", " 页面"))
 
     items_str = "、".join(items[:3])  # Limit to max 3 items in tweet text
-    tweet_text = f"📢 网站更新速递：我们的【{items_str}】已完成全新升级！量身定制保障，让您的财富更稳健。立即访问主页预约免费咨询：https://insured618.netlify.app/ #加拿大生活 #财务规划"
+    tweet_text = f"📢 网站更新速递：我们的【{items_str}】已完成全新升级！量身定制保障，让您的财富更稳健。立即访问主页预约免费咨询：https://insurance.frank-zhang.com/ #加拿大生活 #财务规划"
     post_tweet(tweet_text)
 
 def main():
