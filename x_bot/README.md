@@ -57,3 +57,27 @@ For example, to post a tip every day at 9:00 AM on Mac, open `crontab -e` and ad
 ```text
 0 9 * * * cd /Users/mac325/insured618_web/x_bot && python bot.py --tip
 ```
+
+---
+
+## 🤖 Playwright Browser Automation (100% Free & Unlimited Alternative)
+To completely bypass paid X Developer API charges (including the 2026 URL posting fee), you can use the browser automation poster (`bot_playwright.py`). 
+
+### 1. Install Playwright Dependencies
+```bash
+pip install playwright
+playwright install
+```
+
+### 2. First Run (Manual Login)
+Run the script in headful mode (browser visible) for the first time to log into your X account manually:
+```bash
+python bot_playwright.py
+```
+After you log in once, your session cookies and tokens are permanently saved securely in the local directory `x_user_data`. You will never have to type passwords or solve captchas again.
+
+### 3. Subsequent Headless Runs (Perfect for Cron)
+Once the login session is saved, you can run the bot in headless background mode:
+```bash
+python bot_playwright.py --headless
+```
