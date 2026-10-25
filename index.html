@@ -98,58 +98,37 @@
         </div>
     </nav>
 
-    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-light">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold text-dark mb-6 tracking-tight">
-                守护今天，<span class="gradient-text">富足未来</span>
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-500 mb-4 font-light">
-                Protecting Today, Prospering Tomorrow
-            </p>
-            <p class="max-w-2xl mx-auto text-lg text-gray-600 mb-10">
-                量身定制的财务安全网。从高性价比的定期寿险到终身分红资产，我们助您从容应对人生每个阶段。
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#contact" class="bg-primary text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-blue-600 transition shadow-xl shadow-blue-500/20">
-                    免费获取报价
-                </a>
-                <a href="par.html" class="bg-white text-primary border border-gray-200 px-8 py-4 rounded-xl text-lg font-bold hover:bg-gray-50 transition">
-                    了解分红保险
-                </a>
-            </div>
-        </div>
-        <div class="absolute top-0 left-0 -ml-20 mt-20 w-64 h-64 rounded-full bg-secondary/10 blur-3xl"></div>
-        <div class="absolute bottom-0 right-0 -mr-20 mb-20 w-80 h-80 rounded-full bg-primary/10 blur-3xl"></div>
-    </section>
-
-    <!-- 先选你的处境 (Situation Navigator) -->
-    <section class="py-16 bg-white border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <span class="text-xs font-bold text-primary uppercase tracking-widest bg-blue-50 py-1 px-3 rounded-full border border-blue-200">
-                    按处境规划 · 拒绝硬套产品
-                </span>
-                <h2 class="text-3xl md:text-4xl font-bold text-dark mt-3 mb-3">先选你的处境</h2>
-                <p class="text-gray-500 max-w-xl mx-auto text-base">
-                    不用先懂复杂的产品代码，从你当下的真实家庭阶段与现实缺口开始。
+    <!-- 第一屏：生活处境首屏 (Situation-First Hero) -->
+    <section id="home" class="relative pt-28 pb-14 lg:pt-32 lg:pb-16 bg-gradient-to-b from-blue-50/50 via-white to-white border-b border-gray-100 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- 品牌与主问 -->
+            <div class="text-center mb-8 lg:mb-10">
+                <p class="text-xs md:text-sm font-bold text-primary tracking-wider uppercase mb-2">
+                    Insured618 | 守护今天，富足未来
                 </p>
-                <div class="w-16 h-1 bg-secondary mx-auto rounded-full mt-4"></div>
+                <h1 class="text-3xl md:text-5xl font-extrabold text-dark tracking-tight mb-3">
+                    你现在最担心的是哪一种？
+                </h1>
+                <p class="text-base md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    不用先懂产品名，先从你的处境开始，看到缺口再看怎么补。
+                </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-8">
+            <!-- 四张处境卡片 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-8">
                 <!-- 年轻家庭卡片 -->
-                <div class="bg-gradient-to-br from-blue-50/50 via-white to-white p-8 rounded-2xl border border-blue-100 shadow-lg shadow-blue-500/5 hover:-translate-y-1.5 transition duration-300 flex flex-col justify-between">
+                <div class="bg-gradient-to-br from-blue-50/60 via-white to-white p-6 rounded-2xl border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center justify-between mb-3">
                             <span class="text-3xl">🏡</span>
-                            <span class="text-xs font-bold bg-primary text-white px-3 py-1 rounded-full">高频刚需</span>
+                            <span class="text-xs font-bold bg-primary text-white px-2.5 py-0.5 rounded-full">高频刚需</span>
                         </div>
-                        <h3 class="text-xl font-bold text-dark mb-3">
+                        <h2 class="text-lg font-bold text-dark mb-2">
                             <a href="family.html" class="hover:text-primary transition">
                                 年轻家庭（有房贷有孩子）&rarr;
                             </a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                        </h2>
+                        <p class="text-gray-600 text-xs md:text-sm mb-4 leading-relaxed">
                             房贷还没还完，孩子还小。万一一人倒下了，家里的月供和生活怎么办？先理清缺口，再看哪几块需要补。
                         </p>
                     </div>
@@ -161,18 +140,18 @@
                 </div>
 
                 <!-- 新移民卡片 -->
-                <div class="bg-gradient-to-br from-teal-50/40 via-white to-white p-8 rounded-2xl border border-teal-100 shadow-lg shadow-teal-500/5 hover:-translate-y-1.5 transition duration-300 flex flex-col justify-between">
+                <div class="bg-gradient-to-br from-teal-50/50 via-white to-white p-6 rounded-2xl border border-teal-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center justify-between mb-3">
                             <span class="text-3xl">🍁</span>
-                            <span class="text-xs font-bold bg-secondary text-dark px-3 py-1 rounded-full">落地过渡</span>
+                            <span class="text-xs font-bold bg-secondary text-dark px-2.5 py-0.5 rounded-full">落地过渡</span>
                         </div>
-                        <h3 class="text-xl font-bold text-dark mb-3">
+                        <h2 class="text-lg font-bold text-dark mb-2">
                             <a href="newcomers.html" class="hover:text-secondary transition">
                                 新移民（刚来加拿大）&rarr;
                             </a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                        </h2>
+                        <p class="text-gray-600 text-xs md:text-sm mb-4 leading-relaxed">
                             团体险还没着落，语言和流程不熟，生活刚起步。先理清加拿大保障衔接与缺口，不花冤枉钱。
                         </p>
                     </div>
@@ -184,18 +163,18 @@
                 </div>
 
                 <!-- 企业主与自雇卡片 -->
-                <div class="bg-gradient-to-br from-amber-50/40 via-white to-white p-8 rounded-2xl border border-amber-100 shadow-lg shadow-amber-500/5 hover:-translate-y-1.5 transition duration-300 flex flex-col justify-between">
+                <div class="bg-gradient-to-br from-amber-50/50 via-white to-white p-6 rounded-2xl border border-amber-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center justify-between mb-3">
                             <span class="text-3xl">🏢</span>
-                            <span class="text-xs font-bold bg-dark text-gold px-3 py-1 rounded-full">企业自雇</span>
+                            <span class="text-xs font-bold bg-dark text-gold px-2.5 py-0.5 rounded-full">企业自雇</span>
                         </div>
-                        <h3 class="text-xl font-bold text-dark mb-3">
+                        <h2 class="text-lg font-bold text-dark mb-2">
                             <a href="business.html" class="hover:text-primary transition">
                                 企业主与自雇（公司离不开你）&rarr;
                             </a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                        </h2>
+                        <p class="text-gray-600 text-xs md:text-sm mb-4 leading-relaxed">
                             公司离不开你，万一倒下了，公司、贷款和家人怎么办？分开厘清公司与家庭双重缺口，稳住业务大局。
                         </p>
                     </div>
@@ -207,18 +186,18 @@
                 </div>
 
                 <!-- 快退休与传承卡片 -->
-                <div class="bg-gradient-to-br from-purple-50/40 via-white to-white p-8 rounded-2xl border border-purple-100 shadow-lg shadow-purple-500/5 hover:-translate-y-1.5 transition duration-300 flex flex-col justify-between">
+                <div class="bg-gradient-to-br from-purple-50/50 via-white to-white p-6 rounded-2xl border border-purple-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center justify-between mb-3">
                             <span class="text-3xl">🌅</span>
-                            <span class="text-xs font-bold bg-purple-600 text-white px-3 py-1 rounded-full">退休传承</span>
+                            <span class="text-xs font-bold bg-purple-600 text-white px-2.5 py-0.5 rounded-full">退休传承</span>
                         </div>
-                        <h3 class="text-xl font-bold text-dark mb-3">
+                        <h2 class="text-lg font-bold text-dark mb-2">
                             <a href="wealth.html" class="hover:text-purple-600 transition">
                                 快退休（把钱稳稳传下去）&rarr;
                             </a>
-                        </h3>
-                        <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                        </h2>
+                        <p class="text-gray-600 text-xs md:text-sm mb-4 leading-relaxed">
                             攒了一辈子，怎么让钱既能用，又不被税吃掉太多，还能留给家人？先算清生活开销与传承心愿。
                         </p>
                     </div>
@@ -231,12 +210,12 @@
             </div>
 
             <!-- 底部 60 秒自测入口 -->
-            <div class="max-w-7xl mx-auto bg-gray-50 border border-gray-200 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <div class="flex items-center space-x-4">
-                    <span class="text-2xl">⏱️</span>
+            <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center space-x-3 text-left">
+                    <span class="text-2xl shrink-0">⏱️</span>
                     <div>
-                        <h4 class="font-bold text-dark text-base">不确定自己的处境适合什么？</h4>
-                        <p class="text-xs md:text-sm text-gray-500">回答 5 道现实生活问题，60 秒快速测算你的保障缺口与推荐思路。</p>
+                        <h3 class="font-bold text-dark text-sm sm:text-base">不确定自己属于哪一种？</h3>
+                        <p class="text-xs sm:text-sm text-gray-500">回答 5 道现实生活问题，60 秒快速测算你的保障缺口与推荐思路。</p>
                     </div>
                 </div>
                 <a href="https://calculator.frank-zhang.com" target="_blank" class="flex-shrink-0 bg-white border border-gray-300 hover:border-gray-400 text-dark font-bold text-sm px-5 py-2.5 rounded-xl transition shadow-sm hover:shadow flex items-center">
