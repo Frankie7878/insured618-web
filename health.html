@@ -73,33 +73,142 @@
         </div>
     </nav>
 
-    <section class="relative pt-32 pb-24 overflow-hidden">
-        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/40"></div>
+    <!-- 首屏：场景问句 -->
+    <section class="relative pt-32 pb-16 bg-light border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-dark mb-6 leading-snug">
+                这个月药费、孩子牙科、<br class="sm:hidden">配眼镜、按摩理疗的账单，<br>
+                你是自己掏，<br class="sm:hidden">还是有人帮你分担？
+            </h1>
+            <p class="max-w-3xl mx-auto text-base md:text-lg text-gray-600 mb-8 leading-relaxed">
+                省级医保一般管看医生和急诊，药、牙科、视力、救护车这些通常要自己承担，先看你每个月固定要花的这几项，再看哪档能对上。
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#products" class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-600 transition shadow-lg text-center">
+                    查看保障方案 &rarr;
+                </a>
+                <a href="index.html#contact" class="bg-white text-primary border border-gray-200 px-8 py-3 rounded-xl font-bold hover:bg-gray-50 transition text-center">
+                    预约顾问聊聊
+                </a>
+            </div>
+        </div>
+    </section>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="max-w-3xl text-white">
-                <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-                    您的省级医保卡<br>能覆盖所有费用吗？
-                </h1>
-                <p class="text-xl mb-8 font-light text-gray-100">
-                    处方药、牙科、视力检查和救护车费用通常不在政府医保范围内。我们为您和家人提供全面的健康保障网。
+    <!-- 四条自检 -->
+    <section class="py-16 bg-white border-b border-gray-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <span class="text-xs font-bold text-primary uppercase tracking-widest bg-blue-50 py-1 px-3 rounded-full border border-blue-200">
+                    现状自测
+                </span>
+                <h2 class="text-2xl md:text-3xl font-bold text-dark mt-3 mb-2">你是不是这样？</h2>
+                <div class="w-12 h-1 bg-secondary mx-auto rounded-full mt-3"></div>
+            </div>
+
+            <div class="space-y-3 mb-8">
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">你是自雇或没有团体险，药和牙科都是自己掏钱。</p>
+                </div>
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">家里有孩子，牙科、视力、处方药是每个月都有的固定开销。</p>
+                </div>
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">你刚离职或刚退休，团体险快断了，正在算 90 天这个时间。</p>
+                </div>
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">你经常要做按摩理疗、看心理咨询，或者经常去别的省、出国玩，担心省外那部分不报。</p>
+                </div>
+            </div>
+
+            <!-- 过渡导语 -->
+            <div class="bg-blue-50/70 border border-blue-100 rounded-xl p-4 text-center">
+                <p class="text-primary font-bold text-sm md:text-base">
+                    👉 点头两条以上，再往下看顾虑，不用先懂个人计划和替代计划的具体参数。
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <button onclick="switchTab('personal'); scrollToProduct()" class="bg-secondary hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold transition shadow-lg text-left flex items-center">
-                        <span class="text-2xl mr-3">👨‍👩‍👧</span>
-                        <div>
-                            <span class="block text-xs opacity-90">我是个人/家庭</span>
-                            <span class="block text-lg">个人健康保险 &rarr;</span>
-                        </div>
-                    </button>
-                    <button onclick="switchTab('replacement'); scrollToProduct()" class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-xl font-bold transition shadow-lg text-left flex items-center">
-                        <span class="text-2xl mr-3">💼</span>
-                        <div>
-                            <span class="block text-xs opacity-90 text-gray-500">我刚离职/退休</span>
-                            <span class="block text-lg">替代健康保险 &rarr;</span>
-                        </div>
-                    </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最常见的顾虑（单列卡片展开） -->
+    <section class="py-16 bg-gray-50 border-b border-gray-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold text-primary uppercase tracking-widest bg-blue-50 py-1 px-3 rounded-full border border-blue-200">
+                    打消顾虑
+                </span>
+                <h2 class="text-2xl md:text-3xl font-bold text-dark mt-3 mb-2">关于个人与替代健康保险，大家最常有的 6 个顾虑</h2>
+                <div class="w-12 h-1 bg-secondary mx-auto rounded-full mt-3"></div>
+            </div>
+
+            <div class="space-y-4">
+                <!-- 顾虑 1 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q1.</span>
+                        <span>有省级医保了，还需要私人健康险吗？</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        省级医保一般管看医生和急诊，页上原有的四项，处方药、牙科、视力检查、救护车，通常不在政府医保范围内。私人健康险补的是这几项，不是重复买看医生的保障。
+                    </p>
+                </div>
+
+                <!-- 顾虑 2 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q2.</span>
+                        <span>药和牙科是不是全报？</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        不是全报。按档次和额度报，基础档的牙科还要附加，全面档和顶级档的药和牙科额度更高、自付更少，具体哪项报多少、要不要自付，要看你选的那档的细则，不能按“有健康险就全报”去理解。
+                    </p>
+                </div>
+
+                <!-- 顾虑 3 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q3.</span>
+                        <span>身体不好、有既往症，会不会被拒或除外？</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        要看走哪条线。个人那条要回答健康问卷，按健康状况定价，既往症可能受限或保费更高；替代那条是保证承保、无既往症除外，但必须在原团体保险结束后 90 天内申请，而且是固定打包、灵活性低。不要自己先排除了，也不要把保证承保理解成随时都能申请。
+                    </p>
+                </div>
+
+                <!-- 顾虑 4 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q4.</span>
+                        <span>刚离职或退休，团体险断了怎么办？</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        不要拖。页上原有的说法是替代那条要在失去团体保险后 90 天内申请，过了这个时间就不是这个保证承保的通道了。先确认你原团体险的结束日期，再算 90 天，顾问会帮你对时间。
+                    </p>
+                </div>
+
+                <!-- 顾虑 5 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q5.</span>
+                        <span>多少钱，会不会买了用不上就亏了？</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        价格要看年龄、居住地、计划档次，个人那条还要看医疗史，页上原有的说法是可以在线获取免费报价。选档不要只看月费，要看你平时药、牙科、视力、按摩理疗这几项实际花多少，低档便宜但额度低，高档贵但自付少，具体按你的使用频率去对。
+                    </p>
+                </div>
+
+                <!-- 顾虑 6 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q6.</span>
+                        <span>看病要先自己垫钱再报销吗，省外旅游怎么办？</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        不一定。页上原有的说法是健康卡就是直接赔付卡，参与网络的药剂师、牙医、按摩师可以直接向保险公司结算，但不是所有服务商都在网络里，不在网络里的要先问清楚。省外那部分，页上原有的 FAQ 说救护车和意外牙科在省外通常不报销，所以去别的省也要留意，替代那条加强档和至尊档里含的 15 天境外旅游险是另一项，要跟省内省外缺口分开看。
+                    </p>
                 </div>
             </div>
         </div>
@@ -322,22 +431,44 @@
         </div>
     </section>
 
-    <section class="py-20 bg-light">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-dark mb-10 text-center">常见问题</h2>
-            <div class="space-y-6">
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <h4 class="font-bold text-primary mb-2">Q: 私人健康保险多少钱？</h4>
-                    <p class="text-sm text-gray-600">A: 价格取决于您的年龄、居住地、所选计划等级以及（对于个人健康险）您的医疗史。您可以随时在线获取免费报价。</p>
+    <!-- 处境页引导（小条版） -->
+    <section class="py-10 bg-blue-50/50 border-t border-blue-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-6">
+                <div class="inline-flex items-center space-x-2 text-primary font-bold text-sm">
+                    <span>🏡</span>
+                    <span>回到真实生活处境</span>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <h4 class="font-bold text-primary mb-2">Q: 我可以直接让保险公司付钱给医生吗？</h4>
-                    <p class="text-sm text-gray-600">A: 可以。您的健康卡也是一张直接赔付卡 (Pay-Direct Card)。参与网络的药剂师、牙医和按摩师等可以直接向我们将账单，省去您提交理赔的麻烦。</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <h4 class="font-bold text-primary mb-2">Q: 我有省级医保，去加拿大其他省份旅游需要保险吗？</h4>
-                    <p class="text-sm text-gray-600">A: 强烈建议购买。虽然省级医保覆盖基本医生费用，但救护车和意外牙科等费用在省外通常不报销。</p>
-                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <a href="family.html" class="group block p-4 bg-white rounded-xl border border-blue-100 hover:border-primary/60 hover:shadow-sm transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-dark group-hover:text-primary transition text-sm sm:text-base">年轻家庭（有房贷、有孩子）</span>
+                        <span class="text-primary font-bold text-sm group-hover:translate-x-0.5 transition-transform ml-2">&rarr;</span>
+                    </div>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-1.5 leading-relaxed">生病休养期间的房贷与固定开销如何维持？先看清家庭三大缺口，再规划康复基金。</p>
+                </a>
+                <a href="newcomers.html" class="group block p-4 bg-white rounded-xl border border-blue-100 hover:border-primary/60 hover:shadow-sm transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-dark group-hover:text-primary transition text-sm sm:text-base">新移民（刚来加拿大）</span>
+                        <span class="text-primary font-bold text-sm group-hover:translate-x-0.5 transition-transform ml-2">&rarr;</span>
+                    </div>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-1.5 leading-relaxed">刚来加拿大，生病了第一笔钱从哪来？先看清过渡期的缺口。</p>
+                </a>
+                <a href="business.html" class="group block p-4 bg-white rounded-xl border border-blue-100 hover:border-primary/60 hover:shadow-sm transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-dark group-hover:text-primary transition text-sm sm:text-base">企业主与自雇（公司离不开你）</span>
+                        <span class="text-primary font-bold text-sm group-hover:translate-x-0.5 transition-transform ml-2">&rarr;</span>
+                    </div>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-1.5 leading-relaxed">你病了或者走了，公司、贷款和家人怎么办？先分开公司和家庭缺口。</p>
+                </a>
+                <a href="wealth.html" class="group block p-4 bg-white rounded-xl border border-blue-100 hover:border-primary/60 hover:shadow-sm transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-dark group-hover:text-primary transition text-sm sm:text-base">快退休（把钱稳稳传下去）</span>
+                        <span class="text-primary font-bold text-sm group-hover:translate-x-0.5 transition-transform ml-2">&rarr;</span>
+                    </div>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-1.5 leading-relaxed">退休后生病、需要长期护理时，钱够不够、会不会拖垮家人？先看清健康和护理预留。</p>
+                </a>
             </div>
         </div>
     </section>

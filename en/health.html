@@ -72,33 +72,142 @@
         </div>
     </nav>
 
-    <section class="relative pt-32 pb-24 overflow-hidden">
-        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/40"></div>
+    <!-- Hero: Scenario Question -->
+    <section class="relative pt-32 pb-16 bg-light border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-dark mb-6 leading-snug">
+                Prescriptions, <br class="sm:hidden">Kids' Dental, <br class="sm:hidden">Glasses & Therapy:<br>
+                Paying Out of Pocket, <br class="sm:hidden">or Sharing the Cost?
+            </h1>
+            <p class="max-w-3xl mx-auto text-base md:text-lg text-gray-600 mb-8 leading-relaxed">
+                Provincial healthcare covers doctor visits and emergency rooms, but prescription drugs, dental, vision, and ambulance bills usually come out of your own pocket. Review your recurring routine healthcare costs first, then pick the tier that matches your family's needs.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#products" class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-600 transition shadow-lg text-center">
+                    Explore Coverage Plans &rarr;
+                </a>
+                <a href="index.html#contact" class="bg-white text-primary border border-gray-200 px-8 py-3 rounded-xl font-bold hover:bg-gray-50 transition text-center">
+                    Speak with an Advisor
+                </a>
+            </div>
+        </div>
+    </section>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="max-w-3xl text-white">
-                <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-                    Does Your Provincial Health Card<br>Cover All Medical Costs?
-                </h1>
-                <p class="text-xl mb-8 font-light text-gray-100">
-                    Prescription drugs, dental care, eye exams, and ambulances are typically not covered by provincial health programs in Canada. We build a comprehensive health net for you and your family.
+    <!-- 4 Self-Checks -->
+    <section class="py-16 bg-white border-b border-gray-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <span class="text-xs font-bold text-primary uppercase tracking-widest bg-blue-50 py-1 px-3 rounded-full border border-blue-200">
+                    Self-Assessment
+                </span>
+                <h2 class="text-2xl md:text-3xl font-bold text-dark mt-3 mb-2">Sound Familiar?</h2>
+                <div class="w-12 h-1 bg-secondary mx-auto rounded-full mt-3"></div>
+            </div>
+
+            <div class="space-y-3 mb-8">
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">You are self-employed or have no group benefits, paying 100% of prescription drugs and dental costs out-of-pocket.</p>
+                </div>
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">You have kids at home, and routine dental visits, eye exams, and prescription medicines are predictable monthly expenses.</p>
+                </div>
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">You recently left your job or retired, your group plan is ending, and you are tracking the 90-day application window.</p>
+                </div>
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">You frequently use massage or mental health therapy, or travel to other provinces or abroad, and worry about gaps in coverage.</p>
+                </div>
+            </div>
+
+            <!-- Transition Banner -->
+            <div class="bg-blue-50/70 border border-blue-100 rounded-xl p-4 text-center">
+                <p class="text-primary font-bold text-sm md:text-base">
+                    👉 Nodded along to 2 or more? Check out the common concerns below before diving into plan details.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <button onclick="switchTab('personal'); scrollToProduct()" class="bg-secondary hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold transition shadow-lg text-left flex items-center">
-                        <span class="text-2xl mr-3">👨‍👩‍👧</span>
-                        <div>
-                            <span class="block text-xs opacity-90">I am an Individual / Family</span>
-                            <span class="block text-lg">Personal Health Insurance &rarr;</span>
-                        </div>
-                    </button>
-                    <button onclick="switchTab('replacement'); scrollToProduct()" class="bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-xl font-bold transition shadow-lg text-left flex items-center">
-                        <span class="text-2xl mr-3">💼</span>
-                        <div>
-                            <span class="block text-xs opacity-90 text-gray-500">I am Leaving My Job / Retiring</span>
-                            <span class="block text-lg">Replacement Health Insurance &rarr;</span>
-                        </div>
-                    </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Objections (Single-Column Cards) -->
+    <section class="py-16 bg-gray-50 border-b border-gray-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold text-primary uppercase tracking-widest bg-blue-50 py-1 px-3 rounded-full border border-blue-200">
+                    Clarity First
+                </span>
+                <h2 class="text-2xl md:text-3xl font-bold text-dark mt-3 mb-2">6 Common Questions About Health Insurance</h2>
+                <div class="w-12 h-1 bg-secondary mx-auto rounded-full mt-3"></div>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Q1 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q1.</span>
+                        <span>I have provincial healthcare. Do I still need private health insurance?</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        Provincial healthcare primarily covers doctor appointments and hospital visits. The four key categories shown on this page — prescription drugs, dental care, vision exams, and ambulance services — are typically not covered by provincial plans. Private health insurance bridges these specific gaps rather than duplicating basic medical coverage.
+                    </p>
+                </div>
+
+                <!-- Q2 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q2.</span>
+                        <span>Does private insurance reimburse 100% of drug and dental expenses?</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        No. Coverage depends on the tier and annual maximums. Basic plans require adding dental riders, while comprehensive and premier tiers offer higher limits and lower co-pays. Exact percentages and co-pays are defined by the specific plan tier you select, rather than covering every bill in full.
+                    </p>
+                </div>
+
+                <!-- Q3 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q3.</span>
+                        <span>What if I have pre-existing conditions? Will I be declined or excluded?</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        It depends on the path you choose. Personal Health plans require a medical questionnaire, with pricing based on health status, and pre-existing conditions may have limited coverage or higher premiums. Replacement Health plans offer guaranteed acceptance with no pre-existing condition exclusions, provided you apply within 90 days of leaving your group benefits, though they come as fixed packages. Do not self-disqualify, but do not assume guaranteed acceptance is available outside that 90-day window.
+                    </p>
+                </div>
+
+                <!-- Q4 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q4.</span>
+                        <span>I just left my job or retired and lost my group benefits. What should I do?</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        Do not delay. Replacement Health plans require application within 90 days of your group coverage termination. Once this window closes, guaranteed acceptance is no longer available. Confirm your exact termination date, calculate the 90 days, and an advisor can verify eligibility.
+                    </p>
+                </div>
+
+                <!-- Q5 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q5.</span>
+                        <span>How much does it cost? What if I pay premiums but rarely use it?</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        Pricing depends on your age, province of residence, chosen plan tier, and (for Personal plans) health history. You can get an instant quote online. When choosing a tier, evaluate your actual annual spending on prescriptions, dental, vision, and therapy: lower tiers have modest monthly premiums but lower coverage caps, while higher tiers have higher premiums but significantly lower out-of-pocket costs.
+                    </p>
+                </div>
+
+                <!-- Q6 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q6.</span>
+                        <span>Do I have to pay upfront and file claims? What about travel outside my province?</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        Not always. Your health card doubles as a Pay-Direct Card, allowing participating in-network pharmacies, dentists, and massage therapists to bill the insurer directly. However, not all providers belong to the network, so verify before treatment. Regarding travel, ambulances and accidental dental emergencies are typically not covered out-of-province by public healthcare. Replacement plans at the Choice and Premier levels include 15-day out-of-province/country emergency travel coverage, which addresses a separate need from routine provincial healthcare gaps.
+                    </p>
                 </div>
             </div>
         </div>
@@ -321,22 +430,44 @@
         </div>
     </section>
 
-    <section class="py-20 bg-light">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-dark mb-10 text-center">Frequently Asked Questions</h2>
-            <div class="space-y-6">
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <h4 class="font-bold text-primary mb-2">Q: How much does private health insurance cost in Canada?</h4>
-                    <p class="text-sm text-gray-600">A: Rates depend heavily on your age, province of residence, selected plan level, and (for personal health plans) health history. You can obtain a free quote online anytime.</p>
+    <!-- Situation Navigator Backlink (Compact Strip Edition) -->
+    <section class="py-10 bg-blue-50/50 border-t border-blue-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-6">
+                <div class="inline-flex items-center space-x-2 text-primary font-bold text-sm">
+                    <span>🏡</span>
+                    <span>Back to Real-Life Situations</span>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <h4 class="font-bold text-primary mb-2">Q: Does the insurance carrier pay my clinic or pharmacy directly?</h4>
-                    <p class="text-sm text-gray-600">A: Yes. Your health card acts as a Pay-Direct Card. In-network pharmacists, dental clinics, and physiotherapists can bill the carrier directly, avoiding any manual claim submissions.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <h4 class="font-bold text-primary mb-2">Q: Do I need separate insurance when traveling to other Canadian provinces?</h4>
-                    <p class="text-sm text-gray-600">A: Strongly recommended. While provincial health covers basic emergency doctor visits, ambulances, paramedical emergency services, and accidental dental are typically not covered out-of-province.</p>
-                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <a href="family.html" class="group block p-4 bg-white rounded-xl border border-blue-100 hover:border-primary/60 hover:shadow-sm transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-dark group-hover:text-primary transition text-sm sm:text-base">Young Families (Mortgage & Kids)</span>
+                        <span class="text-primary font-bold text-sm group-hover:translate-x-0.5 transition-transform ml-2">&rarr;</span>
+                    </div>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-1.5 leading-relaxed">How would mortgage payments and fixed costs hold up while you recover? See the family's three gaps first, then plan the recovery fund.</p>
+                </a>
+                <a href="newcomers.html" class="group block p-4 bg-white rounded-xl border border-blue-100 hover:border-primary/60 hover:shadow-sm transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-dark group-hover:text-primary transition text-sm sm:text-base">Newcomers (Just Arrived)</span>
+                        <span class="text-primary font-bold text-sm group-hover:translate-x-0.5 transition-transform ml-2">&rarr;</span>
+                    </div>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-1.5 leading-relaxed">Just arrived in Canada. Where would the first money come from if you got sick? See the transition gap first.</p>
+                </a>
+                <a href="business.html" class="group block p-4 bg-white rounded-xl border border-blue-100 hover:border-primary/60 hover:shadow-sm transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-dark group-hover:text-primary transition text-sm sm:text-base">Business Owners & Self-Employed</span>
+                        <span class="text-primary font-bold text-sm group-hover:translate-x-0.5 transition-transform ml-2">&rarr;</span>
+                    </div>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-1.5 leading-relaxed">If you got sick or passed away, what happens to the company, its loans, and your family? Separate the business gap from the family gap first.</p>
+                </a>
+                <a href="wealth.html" class="group block p-4 bg-white rounded-xl border border-blue-100 hover:border-primary/60 hover:shadow-sm transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-dark group-hover:text-primary transition text-sm sm:text-base">Approaching Retirement</span>
+                        <span class="text-primary font-bold text-sm group-hover:translate-x-0.5 transition-transform ml-2">&rarr;</span>
+                    </div>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-1.5 leading-relaxed">In retirement, if illness or long-term care is needed, will the money be enough, and will it burden your family? See the health and care reserve first.</p>
+                </a>
             </div>
         </div>
     </section>
