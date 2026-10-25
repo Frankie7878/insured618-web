@@ -17,6 +17,7 @@
                 extend: {
                     colors: {
                         primary: '#4C8DFF', // Index Blue
+                        secondary: '#00AA6C',
                         dark: '#1A1D21',
                         light: '#F7F9FC',
                         gold: '#D4AF37', // Wealth Gold
@@ -92,152 +93,149 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="relative pt-32 pb-24 hero-bg overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <span class="inline-block py-1 px-4 rounded-full bg-gold/20 border border-gold/40 text-gold text-sm font-bold mb-6 tracking-wide uppercase">
-                Canadian Segregated Funds Complete Guide
-            </span>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Protecting Your Wealth,<br><span class="text-gold-gradient">Investing in Your Future</span>
+    <!-- Hero Section: Scenario Question -->
+    <section class="relative pt-32 pb-16 bg-light border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-xl sm:text-3xl md:text-4xl font-bold text-dark mb-6 leading-snug">
+                If Markets Drop, <br class="sm:hidden">Will Your Retirement Drop Too?<br>
+                For Your Family, <br class="sm:hidden">Can It Bypass Probate <br class="sm:hidden">Directly to Them?
             </h1>
-            <p class="max-w-3xl mx-auto text-xl md:text-2xl text-gray-300 mb-10 font-light leading-relaxed">
-                Combining the growth potential of mutual funds with the ultimate safety nets of insurance contracts.
+            <p class="max-w-3xl mx-auto text-base md:text-lg text-gray-600 mb-8 leading-relaxed">
+                Segregated funds—often called guaranteed investment funds—combine underlying mutual-fund-style investments with the contractual floor of an insurance policy. Guarantees apply at maturity or upon death according to contract terms rather than daily. Look first at whether your primary concern is market downside, estate delays, or creditor risk before choosing a tier.
             </p>
-            <div class="flex justify-center">
-                <a href="#contact" class="bg-gold hover:bg-yellow-600 text-dark px-8 py-4 rounded-full font-bold text-lg transition shadow-xl shadow-yellow-600/20 transform hover:-translate-y-1">
-                    Begin Your Stable Financial Road
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#tiers" class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-600 transition shadow-lg text-center">
+                    View Guarantee Tiers &rarr;
+                </a>
+                <a href="index.html#contact" class="bg-white text-primary border border-gray-200 px-8 py-3 rounded-xl font-bold hover:bg-gray-50 transition text-center">
+                    Talk to an Advisor
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- What are Segregated Funds -->
-    <section class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-50 text-primary mb-6">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            </div>
-            <h2 class="text-3xl font-bold text-dark mb-8">🌟 What are Segregated Funds?</h2>
-            <p class="text-lg text-gray-600 leading-relaxed text-justify md:text-center">
-                Segregated Funds are unique investment structures provided exclusively by Canadian insurance companies. At their core, they operate similarly to standard Mutual Funds—pooling capital to diversify into professional equities and bonds. However, as an **individual variable insurance contract**, they build in powerful "safety nets," securing principal guarantees, probate bypass protections, and potential creditor shielding.
-            </p>
-        </div>
-    </section>
-
-    <!-- Core Strengths -->
-    <section class="py-20 bg-light">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-dark mb-4">🛡️ Why Choose Segregated Funds?</h2>
-                <p class="text-gray-500">Four Core Advantages Protecting Your Capital</p>
+    <!-- 4 Self-Checks -->
+    <section class="py-16 bg-white border-b border-gray-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <span class="text-xs font-bold text-primary uppercase tracking-widest bg-blue-50 py-1 px-3 rounded-full border border-blue-200">
+                    Quick Self-Check
+                </span>
+                <h2 class="text-2xl md:text-3xl font-bold text-dark mt-3 mb-2">Does This Sound Like You?</h2>
+                <div class="w-12 h-1 bg-secondary mx-auto rounded-full mt-3"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Advantage 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition group">
-                    <div class="w-14 h-14 bg-green-50 text-green-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">💎</div>
-                    <h3 class="text-xl font-bold text-dark mb-3">1. Uncompromising Principal Guarantees</h3>
-                    <p class="text-gray-500 text-sm font-medium mb-3">(Principal Guarantees)</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Regardless of market corrections, your investments secure a robust floor. Upon contract maturity or death, the carrier **guarantees to payout between 75% to 100% of your initial deposits** (net of withdrawals).
-                    </p>
+            <div class="space-y-3 mb-8">
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">Approaching retirement or already retired, concerned about market downturns eroding capital, and seeking a guaranteed floor at maturity or death.</p>
                 </div>
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">A business owner, self-employed, or professional worried about potential litigation or bankruptcy, seeking to understand the conditions for creditor protection.</p>
+                </div>
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">Intending to leave wealth to a spouse or children and wishing it to transfer directly to beneficiaries upon death without going through probate.</p>
+                </div>
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">Eager to participate in market growth without absorbing the full downside, looking to lock in market gains as a higher reset floor.</p>
+                </div>
+            </div>
 
-                <!-- Advantage 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition group">
-                    <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">📈</div>
-                    <h3 class="text-xl font-bold text-dark mb-3">2. Profit Locking "Reset" Feature</h3>
-                    <p class="text-gray-500 text-sm font-medium mb-3">(Reset Option)</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Not just protecting base capital, but locking in your growth! Many contracts allow you to reset your guarantee values annually (typically until age 80). **When market valuations increase, you lock in those gains as your new base guarantee floor**.
-                    </p>
-                </div>
-
-                <!-- Advantage 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition group">
-                    <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">🕊️</div>
-                    <h3 class="text-xl font-bold text-dark mb-3">3. Private and Rapid Wealth Transfer</h3>
-                    <p class="text-gray-500 text-sm font-medium mb-3">(Estate Bypass & Probate-Free)</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Unlike ordinary mutual funds, death benefits are **paid directly, quickly, and completely privately to your named beneficiaries**, bypassing complex and costly provincial probate courts.
-                    </p>
-                </div>
-
-                <!-- Advantage 4 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition group">
-                    <div class="w-14 h-14 bg-red-50 text-red-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">🏛️</div>
-                    <h3 class="text-xl font-bold text-dark mb-3">4. Potential Creditor Shielding</h3>
-                    <p class="text-gray-500 text-sm font-medium mb-3">(Potential Creditor Protection)</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        An invaluable armor for business owners, medical professionals, and self-employed consultants. By naming a qualified family member as beneficiary, contract assets **may be fully insulated from creditor claims or legal judgments**.
-                    </p>
-                </div>
+            <!-- Transition Guidance -->
+            <div class="bg-blue-50/70 border border-blue-100 rounded-xl p-4 text-center">
+                <p class="text-primary font-bold text-sm md:text-base">
+                    👉 If you checked two or more, review the key questions below before choosing between 75/75, 75/100, or 100/100.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Case Study -->
-    <section class="py-20 bg-dark text-white relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold mb-4">📊 Case Comparison: Segregated Funds vs Mutual Funds</h2>
-                <p class="text-gray-400 max-w-3xl mx-auto">
-                    Suppose Jim and Joan each invest **$250,000**. Both pass away during a 10% market downturn (reducing fund valuations to $225,000). See their families' final results:
-                </p>
+    <!-- Top 6 Questions & Concerns (Single Column Cards) -->
+    <section class="py-16 bg-gray-50 border-b border-gray-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold text-primary uppercase tracking-widest bg-blue-50 py-1 px-3 rounded-full border border-blue-200">
+                    Clarifying Doubts
+                </span>
+                <h2 class="text-2xl md:text-3xl font-bold text-dark mt-3 mb-2">Top 6 Questions & Common Concerns About Segregated Funds</h2>
+                <div class="w-12 h-1 bg-secondary mx-auto rounded-full mt-3"></div>
             </div>
 
-            <div class="bg-white/10 rounded-2xl backdrop-blur-md border border-white/10 overflow-hidden shadow-2xl">
-                <table class="w-full text-left">
-                    <thead>
-                        <tr class="bg-black/40">
-                            <th class="p-6 font-bold text-gray-300 w-1/3">Criteria</th>
-                            <th class="p-6 font-bold text-red-400 w-1/3 border-l border-white/5">Jim's Mutual Funds<br><span class="text-sm font-normal text-gray-400">(Mutual Funds)</span></th>
-                            <th class="p-6 font-bold text-green-400 w-1/3 border-l border-white/5">Joan's Segregated Funds<br><span class="text-sm font-normal text-gray-400">(100% Death Guarantee)</span></th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-white/5">
-                        <tr class="hover:bg-white/5 transition">
-                            <td class="p-6 font-medium text-gray-300">Market Value at Death</td>
-                            <td class="p-6 border-l border-white/5">$225,000</td>
-                            <td class="p-6 border-l border-white/5">$225,000</td>
-                        </tr>
-                        <tr class="hover:bg-white/5 transition">
-                            <td class="p-6 font-medium text-gray-300">Carrier Top-Up Payout</td>
-                            <td class="p-6 border-l border-white/5 text-gray-500">Not Applicable</td>
-                            <td class="p-6 border-l border-white/5 text-green-400 font-bold">+$25,000</td>
-                        </tr>
-                        <tr class="hover:bg-white/5 transition">
-                            <td class="p-6 font-medium text-gray-300">Probate & Legal Fees</td>
-                            <td class="p-6 border-l border-white/5 text-red-400">-$22,875 (Est. 5%-10%)</td>
-                            <td class="p-6 border-l border-white/5 text-green-400 font-bold">$0 <span class="text-sm text-gray-400 font-normal">(Estate Bypass)</span></td>
-                        </tr>
-                        <tr class="bg-white/5">
-                            <td class="p-6 font-bold text-lg">Net Payout to Beneficiaries</td>
-                            <td class="p-6 border-l border-white/5">
-                                <div class="text-xl font-bold text-red-400">$189,625</div>
-                                <div class="text-sm text-gray-400 mt-1">Takes months/years in court</div>
-                            </td>
-                            <td class="p-6 border-l border-white/5">
-                                <div class="text-xl font-bold text-green-400">$250,000</div>
-                                <div class="text-sm text-gray-400 mt-1">Paid directly in days</div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <div class="space-y-4">
+                <!-- Q1 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q1.</span>
+                        <span>Is principal guaranteed at all times? Can I withdraw immediately during a drop and get 100% back?</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        No. The contractual guarantee of 75% to 100% (net of prior withdrawals) applies only upon contract maturity or death, subject to required holding periods. If you withdraw mid-term, the payout is calculated at prevailing market value where guarantees do not apply. Specific maturity dates and conditions are governed by individual contracts; it must not be mistaken for "daily capital protection."
+                    </p>
+                </div>
 
-            <div class="mt-8 bg-gold/20 border border-gold/30 rounded-xl p-6 text-center shadow-lg">
-                <p class="text-gold text-lg md:text-xl font-bold">
-                    Result: Joan's family receives over <span class="text-2xl">$60,000 more</span> than Jim's due to guarantee backing and complete probate bypass!
-                </p>
+                <!-- Q2 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q2.</span>
+                        <span>How should I choose between 75/75, 75/100, and 100/100 tiers?</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        These tiers reflect distinct priorities: Investment Class offers 75% maturity and 75% death protection; Estate Class offers 75% maturity and 100% death protection (frequently featured on comparison pages); Protection Class provides 100% maturity and 100% death protection. Your choice depends on whether maturity preservation or legacy transfer matters more. Higher guarantees affect fund expense ratios (MERs) and restrictions in the fund facts—decisions should align with personalized illustrations rather than popularity badges.
+                    </p>
+                </div>
+
+                <!-- Q3 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q3.</span>
+                        <span>Can the reset feature automatically lock in profits every year as a new guarantee floor?</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        Contracts generally allow policyholders to elect resets (commonly up to age 80) to lock market appreciation into a higher guaranteed principal base. However, reset frequencies, age caps, and whether resetting extends the maturity timeframe depend strictly on individual contract terms. Resets require meeting specific timeline rules and are not unconditional automatic annual locks.
+                    </p>
+                </div>
+
+                <!-- Q4 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q4.</span>
+                        <span>Does buying a segregated fund grant automatic and complete immunity from creditors?</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        No. Contracts state that assets "may be protected from creditor claims" when qualified family members are designated as beneficiaries. However, which relationships qualify and how rules apply depend on provincial legislation and contract terms, and protection never shields fraudulent conveyances made to evade existing debts. Always seek qualified legal advice rather than assuming automatic, universal immunity.
+                    </p>
+                </div>
+
+                <!-- Q5 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q5.</span>
+                        <span>Is probate truly bypassed completely, and are the cost savings guaranteed?</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        It depends on beneficiary designation. Death benefits are paid directly, swiftly, and privately to designated beneficiaries, bypassing provincial probate—provided the beneficiary is not the estate itself. Settlement procedures follow provincial law and policy terms. Any numerical case comparisons seen online are purely illustrative examples; they do not represent guaranteed fixed dollar savings for every household.
+                    </p>
+                </div>
+
+                <!-- Q6 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q6.</span>
+                        <span>Is it really zero penalty with every dollar working in the market?</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        It is not zero cost. The cost of guarantee protection is embedded within the fund's Management Expense Ratio (MER). The "chargeback" model means early redemption charges are absorbed by the advisor rather than deducted from client accounts, not that the investment carries zero management expense. Furthermore, F-Class or preferred pricing tiers require minimum investments of $300k to $500k+. Specific fee rates must be verified in the Fund Facts for your target fund.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Guarantee Classes -->
-    <section class="py-20 bg-white border-b border-gray-100">
+    <section id="tiers" class="py-20 bg-white border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-dark mb-4">🛠️ Tailored Guarantee Classes</h2>
@@ -412,6 +410,49 @@
         </div>
     </section>
 
+    <!-- Situation Guide (Backlinks) -->
+    <section class="py-16 bg-blue-50/50 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <span class="text-xs font-bold text-primary uppercase tracking-widest bg-blue-100/60 py-1 px-3 rounded-full border border-blue-200">
+                    Explore Your Situation
+                </span>
+                <h2 class="text-xl sm:text-2xl font-bold text-dark mt-3">Not Sure Where to Start? Explore by Your Life Stage</h2>
+                <div class="w-12 h-1 bg-secondary mx-auto rounded-full mt-3"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <a href="family.html" class="group block p-4 bg-white rounded-xl border border-blue-100 hover:border-primary/60 hover:shadow-sm transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-dark group-hover:text-primary transition text-sm sm:text-base">Young Families</span>
+                        <span class="text-primary font-bold text-sm group-hover:translate-x-0.5 transition-transform ml-2">&rarr;</span>
+                    </div>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-1.5 leading-relaxed">Mortgages and child-raising expenses. Identify core family protection gaps before planning recovery funds.</p>
+                </a>
+                <a href="newcomers.html" class="group block p-4 bg-white rounded-xl border border-blue-100 hover:border-primary/60 hover:shadow-sm transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-dark group-hover:text-primary transition text-sm sm:text-base">Newcomers to Canada</span>
+                        <span class="text-primary font-bold text-sm group-hover:translate-x-0.5 transition-transform ml-2">&rarr;</span>
+                    </div>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-1.5 leading-relaxed">New in Canada and exploring transitional healthcare and financial protection during the waiting period.</p>
+                </a>
+                <a href="business.html" class="group block p-4 bg-white rounded-xl border border-blue-100 hover:border-primary/60 hover:shadow-sm transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-dark group-hover:text-primary transition text-sm sm:text-base">Business Owners & Self-Employed</span>
+                        <span class="text-primary font-bold text-sm group-hover:translate-x-0.5 transition-transform ml-2">&rarr;</span>
+                    </div>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-1.5 leading-relaxed">Protect your business, commercial loans, and personal assets separately against operational risks.</p>
+                </a>
+                <a href="wealth.html" class="group block p-4 bg-white rounded-xl border border-blue-100 hover:border-primary/60 hover:shadow-sm transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-dark group-hover:text-primary transition text-sm sm:text-base">Retirement & Wealth Transfer</span>
+                        <span class="text-primary font-bold text-sm group-hover:translate-x-0.5 transition-transform ml-2">&rarr;</span>
+                    </div>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-1.5 leading-relaxed">Preserve retirement capital safely and plan smooth, private generational wealth transfer.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-gray-900 border-t border-gray-800 py-12 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -420,7 +461,7 @@
             </div>
             <p class="text-gray-500 mb-8">Protecting Today, Prospering Tomorrow</p>
             <div class="text-gray-600 text-xs space-y-2 max-w-2xl mx-auto">
-                <p>Disclaimer: Segregated fund operations are subject to individual insurance carrier policy terms. Information is for educational reference only and does not constitute formal investment advice. Guarantee levels require minimum maturity holding timelines.</p>
+                <p>Disclaimer: Segregated fund operations are subject to individual insurance carrier policy terms. Information is for educational reference only and does not constitute formal investment, legal, or tax advice. Guarantee and reset provisions require minimum maturity holding timelines. Creditor protection and estate planning involve legal and tax considerations; consult professional legal and accounting advisors for specific situations.</p>
                 <p>© 2025 Insured618. All rights reserved.</p>
             </div>
         </div>

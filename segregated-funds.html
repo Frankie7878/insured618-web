@@ -17,6 +17,7 @@
                 extend: {
                     colors: {
                         primary: '#4C8DFF', // Index Blue
+                        secondary: '#00AA6C', // Standard Green
                         dark: '#1A1D21',
                         light: '#F7F9FC',
                         gold: '#D4AF37', // Wealth Gold
@@ -99,152 +100,149 @@
         </div>
     </nav>
 
-    <!-- 英雄区块 (Hero Section) -->
-    <section class="relative pt-32 pb-24 hero-bg overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <span class="inline-block py-1 px-4 rounded-full bg-gold/20 border border-gold/40 text-gold text-sm font-bold mb-6 tracking-wide uppercase">
-                加拿大保本基金 (Segregated Funds) 全面解析
-            </span>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                守护您的财富，<br><span class="text-gold-gradient">投资您的未来</span>
+    <!-- 首屏：场景问句 -->
+    <section class="relative pt-32 pb-16 bg-light border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-dark mb-6 leading-snug">
+                股市跌了，<br class="sm:hidden">你的退休钱会不会跟着跌？<br>
+                留给家人的那笔，<br class="sm:hidden">能不能不经过遗嘱认证、<br class="sm:hidden">直接到他们手里？
             </h1>
-            <p class="max-w-3xl mx-auto text-xl md:text-2xl text-gray-300 mb-10 font-light leading-relaxed">
-                结合了互惠基金的增长潜力与保险合约的终极安全保障。
+            <p class="max-w-3xl mx-auto text-base md:text-lg text-gray-600 mb-8 leading-relaxed">
+                隔离基金，页上也叫保本基金，就是底层类似互惠基金、但带保险合约保底的安排，保底只在到期或身故时按合同算，不是每天都保本，先看你怕的是下跌、还是传承慢、还是债权风险，再看档次。
             </p>
-            <div class="flex justify-center">
-                <a href="#contact" class="bg-gold hover:bg-yellow-600 text-dark px-8 py-4 rounded-full font-bold text-lg transition shadow-xl shadow-yellow-600/20 transform hover:-translate-y-1">
-                    开始规划安稳未来
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#tiers" class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-600 transition shadow-lg text-center">
+                    查看保障级别 &rarr;
+                </a>
+                <a href="index.html#contact" class="bg-white text-primary border border-gray-200 px-8 py-3 rounded-xl font-bold hover:bg-gray-50 transition text-center">
+                    预约顾问聊聊
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- 什么是保本基金 -->
-    <section class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-50 text-primary mb-6">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            </div>
-            <h2 class="text-3xl font-bold text-dark mb-8">🌟 什么是保本基金？</h2>
-            <p class="text-lg text-gray-600 leading-relaxed text-justify md:text-center">
-                保本基金（Segregated Funds）是加拿大保险公司独家提供的一种特殊投资工具。它在底层运作上类似于互惠基金（Mutual Funds），资金由专业经理人分散投资于股票、债券等市场以获取增长。但作为一种<strong>个人可变保险合约</strong>，它内置了强大的“保险安全网”，为您提供本金保底、避开遗嘱认证以及潜在的债权人保护。
-            </p>
-        </div>
-    </section>
-
-    <!-- 四大核心优势 -->
-    <section class="py-20 bg-light">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-dark mb-4">🛡️ 为什么选择保本基金？</h2>
-                <p class="text-gray-500">四大核心优势为您保驾护航</p>
+    <!-- 四条自检 -->
+    <section class="py-16 bg-white border-b border-gray-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <span class="text-xs font-bold text-primary uppercase tracking-widest bg-blue-50 py-1 px-3 rounded-full border border-blue-200">
+                    现状自测
+                </span>
+                <h2 class="text-2xl md:text-3xl font-bold text-dark mt-3 mb-2">你是不是这样？</h2>
+                <div class="w-12 h-1 bg-secondary mx-auto rounded-full mt-3"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- 优势 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition group">
-                    <div class="w-14 h-14 bg-green-50 text-green-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">💎</div>
-                    <h3 class="text-xl font-bold text-dark mb-3">1. 绝不妥协的本金保障</h3>
-                    <p class="text-gray-500 text-sm font-medium mb-3">(Principal Guarantees)</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        无论市场如何动荡，您的投资始终拥有底线。当合约到期或投资者身故时，保险公司将<strong>保证赔付您初始投资本金的 75% 至 100%</strong>（扣除已提取部分）。
-                    </p>
+            <div class="space-y-3 mb-8">
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">快退休或已经退休了，怕市场下跌吃掉本金，想到期或身故有个保底。</p>
                 </div>
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">是企业主、自雇或专业人士，担心诉讼或破产，想了解债权隔离的条件。</p>
+                </div>
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">想留给配偶或子女，希望身故时直接给受益人，不走遗嘱认证。</p>
+                </div>
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">想参与市场增长，但不想全额承担下跌，想把涨上来的部分锁定成新的保底。</p>
+                </div>
+            </div>
 
-                <!-- 优势 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition group">
-                    <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">📈</div>
-                    <h3 class="text-xl font-bold text-dark mb-3">2. 锁定收益的“重置”功能</h3>
-                    <p class="text-gray-500 text-sm font-medium mb-3">(Reset Option)</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        不仅保本，还能保利润！许多保本基金允许您每年主动“重置”一次合约的保证价值（通常直至80岁）。<strong>当市场上涨时，您可以将赚到的利润锁定，变成新的保底本金</strong>。
-                    </p>
-                </div>
-
-                <!-- 优势 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition group">
-                    <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">🕊️</div>
-                    <h3 class="text-xl font-bold text-dark mb-3">3. 高效、私密的财富传承</h3>
-                    <p class="text-gray-500 text-sm font-medium mb-3">(Estate Bypass & Probate-Free)</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        与普通投资不同，保本基金的身故理赔金会<strong>直接、快速且私密地支付给您指定的受益人</strong>，完全绕过漫长且昂贵的遗嘱认证（Probate）程序，为您省下高昂的法律和会计费用。
-                    </p>
-                </div>
-
-                <!-- 优势 4 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition group">
-                    <div class="w-14 h-14 bg-red-50 text-red-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">🏛️</div>
-                    <h3 class="text-xl font-bold text-dark mb-3">4. 潜在的债权人保护</h3>
-                    <p class="text-gray-500 text-sm font-medium mb-3">(Potential Creditor Protection)</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        对于企业主、自雇人士和专业人士而言，这是一层无价的防护衣。只要您指定了合格的家庭成员作为受益人，您的保本基金资产在发生诉讼或破产时，<strong>可能完全免受债权人的追索</strong>。
-                    </p>
-                </div>
+            <!-- 过渡导语 -->
+            <div class="bg-blue-50/70 border border-blue-100 rounded-xl p-4 text-center">
+                <p class="text-primary font-bold text-sm md:text-base">
+                    👉 点头两条以上，再往下看顾虑，不用先纠结 75/75 还是 100/100。
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- 案例对比 -->
-    <section class="py-20 bg-dark text-white relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold mb-4">📊 真人案例对比：保本基金 vs 互惠基金</h2>
-                <p class="text-gray-400 max-w-3xl mx-auto">
-                    假设 Jim 和 Joan 各投资了 <strong>$250,000</strong>，两人都在投资下跌 10%（市场价值变为 $225,000）后不幸离世。看看他们家人的最终结果：
-                </p>
+    <!-- 最常见的顾虑（单列卡片展开） -->
+    <section class="py-16 bg-gray-50 border-b border-gray-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold text-primary uppercase tracking-widest bg-blue-50 py-1 px-3 rounded-full border border-blue-200">
+                    打消顾虑
+                </span>
+                <h2 class="text-2xl md:text-3xl font-bold text-dark mt-3 mb-2">关于隔离基金（保本基金），大家最常有的 6 个顾虑</h2>
+                <div class="w-12 h-1 bg-secondary mx-auto rounded-full mt-3"></div>
             </div>
 
-            <div class="bg-white/10 rounded-2xl backdrop-blur-md border border-white/10 overflow-hidden shadow-2xl">
-                <table class="w-full text-left">
-                    <thead>
-                        <tr class="bg-black/40">
-                            <th class="p-6 font-bold text-gray-300 w-1/3">对比项目</th>
-                            <th class="p-6 font-bold text-red-400 w-1/3 border-l border-white/5">Jim 的互惠基金<br><span class="text-sm font-normal text-gray-400">(Mutual Fund)</span></th>
-                            <th class="p-6 font-bold text-green-400 w-1/3 border-l border-white/5">Joan 的保本基金<br><span class="text-sm font-normal text-gray-400">(100%身故保证)</span></th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-white/5">
-                        <tr class="hover:bg-white/5 transition">
-                            <td class="p-6 font-medium text-gray-300">去世时的市场价值</td>
-                            <td class="p-6 border-l border-white/5">$225,000</td>
-                            <td class="p-6 border-l border-white/5">$225,000</td>
-                        </tr>
-                        <tr class="hover:bg-white/5 transition">
-                            <td class="p-6 font-medium text-gray-300">保险公司“补足金额”</td>
-                            <td class="p-6 border-l border-white/5 text-gray-500">不适用</td>
-                            <td class="p-6 border-l border-white/5 text-green-400 font-bold">+$25,000</td>
-                        </tr>
-                        <tr class="hover:bg-white/5 transition">
-                            <td class="p-6 font-medium text-gray-300">遗嘱认证与律师/会计费</td>
-                            <td class="p-6 border-l border-white/5 text-red-400">-$22,875</td>
-                            <td class="p-6 border-l border-white/5 text-green-400 font-bold">$0 <span class="text-sm text-gray-400 font-normal">(绕过遗嘱认证)</span></td>
-                        </tr>
-                        <tr class="bg-white/5">
-                            <td class="p-6 font-bold text-lg">最终支付给家人的金额</td>
-                            <td class="p-6 border-l border-white/5">
-                                <div class="text-xl font-bold text-red-400">$189,625</div>
-                                <div class="text-sm text-gray-400 mt-1">耗时数月至数年</div>
-                            </td>
-                            <td class="p-6 border-l border-white/5">
-                                <div class="text-xl font-bold text-green-400">$250,000</div>
-                                <div class="text-sm text-gray-400 mt-1">数日内直接支付</div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <div class="space-y-4">
+                <!-- 顾虑 1 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q1.</span>
+                        <span>保底是不是随时都保，跌了马上赎回也能拿回本金吗？</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        不是。页上原有的说法是到期或身故时保证 75% 至 100%，扣除已提取部分，而且要满足特定时间要求。中途按市价赎回，保底不适用，具体到期日和条件按合同定，不同合同不一样，不能按“随时保本”去理解。
+                    </p>
+                </div>
 
-            <div class="mt-8 bg-gold/20 border border-gold/30 rounded-xl p-6 text-center shadow-lg">
-                <p class="text-gold text-lg md:text-xl font-bold">
-                    结果：得益于 100% 保底和免除遗产费用，Joan 的家人比 Jim 的家人多拿了超过 <span class="text-2xl">$60,000</span>！
-                </p>
+                <!-- 顾虑 2 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q2.</span>
+                        <span>75/75、75/100、100/100 到底怎么选？</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        这三档是页上原有的级别，投资类是到期 75%、身故 75%，遗产类是到期 75%、身故 100%（页上标了最受欢迎标签），保障类是到期 100%、身故 100%。选哪档要看你更在意到期保底、还是身故传承，保底越高，费用和限制也要在建议书和基金资料里比，不能只看“最受欢迎”那个标签就选。
+                    </p>
+                </div>
+
+                <!-- 顾虑 3 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q3.</span>
+                        <span>重置是不是每年都能把利润锁定成新的保底？</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        页上原有的说法是每年可主动重置一次，通常直至 80 岁，把市场上涨利润锁定为新的保底本金。但重置的次数、年龄上限、会不会重置到期日计算时间，都要看具体合同条款，页脚也写了重置需满足特定时间要求，不能写成无条件每年自动锁定。
+                    </p>
+                </div>
+
+                <!-- 顾虑 4 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q4.</span>
+                        <span>债权隔离是不是只要买了就免追索？</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        不是。页上原有的说法是“可能完全免受债权人追索”，前提是指定合格的家庭成员作受益人，但具体哪些人算合格、怎么算，必须以所在省法律和合同为准，且不能用于欺诈转移，具体要以专业律师意见为准。不是所有债务、所有情况都免，也不是买了就自动有这层保护。
+                    </p>
+                </div>
+
+                <!-- 顾虑 5 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q5.</span>
+                        <span>遗嘱认证真的完全省掉、费用真的是零吗？</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        要看受益人怎么填。页上原有的说法是身故理赔金直接、快速、私密支付给指定受益人，绕过遗嘱认证，但前提是受益人不能是遗产（Estate）本身，具体流程和时间按合同和所在省规定走。页上原有的费用和差额数字仅为示意逻辑，不是每个家庭都会省下固定金额，不能当成确定承诺。
+                    </p>
+                </div>
+
+                <!-- 顾虑 6 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q6.</span>
+                        <span>费用是不是真的零罚金、每一分钱都投入？</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        不是零成本。保底成本是嵌在基金管理费（MER）里的。佣金回扣那句原有的说法是提前取款时客户零罚金、流动性惩罚由顾问承担，这个说的是免去客户的提前赎回费，而不是基金本身不收管理费。F-Class 和优惠定价那句原有的说法是高净值 30 万到 50 万以上才可接入，具体费率要看你要买的那只基金的基金资料，不能写成所有人都能拿到超低费率。
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- 保障级别 -->
-    <section class="py-20 bg-white border-b border-gray-100">
+    <section id="tiers" class="py-20 bg-white border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-dark mb-4">🛠️ 量身定制的保障级别</h2>
@@ -403,7 +401,7 @@
     </section>
 
     <!-- Call to Action -->
-    <section id="contact" class="py-24 bg-dark text-center relative overflow-hidden">
+    <section class="py-24 bg-dark text-center relative overflow-hidden">
         <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <h2 class="text-4xl font-bold text-white mb-6">开始规划您的安稳未来</h2>
@@ -419,6 +417,48 @@
         </div>
     </section>
 
+    <!-- 处境页引导（小条版） -->
+    <section class="py-10 bg-blue-50/50 border-t border-blue-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-6">
+                <div class="inline-flex items-center space-x-2 text-primary font-bold text-sm">
+                    <span>🏡</span>
+                    <span>回到真实生活处境</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <a href="family.html" class="group block p-4 bg-white rounded-xl border border-blue-100 hover:border-primary/60 hover:shadow-sm transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-dark group-hover:text-primary transition text-sm sm:text-base">年轻家庭（有房贷、有孩子）</span>
+                        <span class="text-primary font-bold text-sm group-hover:translate-x-0.5 transition-transform ml-2">&rarr;</span>
+                    </div>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-1.5 leading-relaxed">生病休养期间的房贷与固定开销如何维持？先看清家庭三大缺口，再规划康复基金。</p>
+                </a>
+                <a href="newcomers.html" class="group block p-4 bg-white rounded-xl border border-blue-100 hover:border-primary/60 hover:shadow-sm transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-dark group-hover:text-primary transition text-sm sm:text-base">新移民（刚来加拿大）</span>
+                        <span class="text-primary font-bold text-sm group-hover:translate-x-0.5 transition-transform ml-2">&rarr;</span>
+                    </div>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-1.5 leading-relaxed">刚来加拿大，生病了第一笔钱从哪来？先看清过渡期的缺口。</p>
+                </a>
+                <a href="business.html" class="group block p-4 bg-white rounded-xl border border-blue-100 hover:border-primary/60 hover:shadow-sm transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-dark group-hover:text-primary transition text-sm sm:text-base">企业主与自雇（公司离不开你）</span>
+                        <span class="text-primary font-bold text-sm group-hover:translate-x-0.5 transition-transform ml-2">&rarr;</span>
+                    </div>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-1.5 leading-relaxed">你病了或者走了，公司、贷款和家人怎么办？先分开公司和家庭缺口。</p>
+                </a>
+                <a href="wealth.html" class="group block p-4 bg-white rounded-xl border border-blue-100 hover:border-primary/60 hover:shadow-sm transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-dark group-hover:text-primary transition text-sm sm:text-base">快退休（把钱稳稳传下去）</span>
+                        <span class="text-primary font-bold text-sm group-hover:translate-x-0.5 transition-transform ml-2">&rarr;</span>
+                    </div>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-1.5 leading-relaxed">退休后生病、需要长期护理时，钱够不够、会不会拖垮家人？先看清健康和护理预留。</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- 底部 -->
     <footer class="bg-gray-900 border-t border-gray-800 py-12 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -427,7 +467,7 @@
             </div>
             <p class="text-gray-500 mb-8">守护今天，富足未来</p>
             <div class="text-gray-600 text-xs space-y-2 max-w-2xl mx-auto">
-                <p>免责声明：保本基金的运作受具体保单合约条款约束。本网页所列信息仅供参考，不构成具体的理财或投资建议。所有保底及收益重置功能需满足特定时间要求。</p>
+                <p>免责声明：保本基金的运作受具体保单合约条款约束。本网页所列信息仅供参考，不构成具体的理财或投资建议。所有保底及收益重置功能需满足特定时间要求。债权人保护和遗产规划涉及法律与税务，具体以专业律师和会计师意见为准。</p>
                 <p>© 2025 Insured618. All rights reserved.</p>
             </div>
         </div>
