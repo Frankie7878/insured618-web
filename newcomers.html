@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新移民保障指南 - Insured618</title>
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <meta name="description" content="专为刚来加拿大的新移民打造的保障规划指南。面对团体险空白、语言条款门槛与日常开销压力，从真实处境出发，算清保障缺口，稳步建立家庭财务安全网。">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4C8DFF',
+                        secondary: '#00C2CB',
+                        dark: '#1A1D21',
+                        light: '#F7F9FC',
+                        accent: '#FF7A59',
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans SC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(135deg, #4C8DFF 0%, #00C2CB 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white">
+
+    <!-- 顶部导航栏 -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="insured618_profile_option2.png" alt="Insured618 Logo" class="h-16 w-16 rounded-full object-cover hover:scale-105 transition-transform duration-200 shadow-md">
+                    </a>
+                </div>
+
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-primary focus:outline-none p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition">主页</a>
+                    <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary transition">核心保障</a>
+                    <a href="wealth.html" class="text-gray-600 hover:text-primary transition">财富积累</a>
+                    <a href="business.html" class="text-gray-600 hover:text-primary transition">企业方案</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary transition">关于我们</a>
+                    <a href="https://calculator.frank-zhang.com" target="_blank" class="text-gray-600 hover:text-accent font-bold transition flex items-center">智能计算器 <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                    
+                    <a href="en/newcomers.html" class="text-sm font-bold text-gray-500 hover:text-primary border border-gray-300 px-3 py-1 rounded transition">
+                        EN
+                    </a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg shadow-blue-500/30">预约咨询</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white shadow-lg border-t border-gray-100">
+            <div class="flex flex-col px-4 py-4 space-y-4">
+                <a href="index.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">主页</a>
+                <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">核心保障</a>
+                <a href="wealth.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">财富积累</a>
+                <a href="business.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">企业方案</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">关于我们</a>
+                <a href="https://calculator.frank-zhang.com" target="_blank" class="text-accent font-bold border-b border-gray-50 pb-2 flex items-center justify-between">智能计算器 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+
+                <a href="en/newcomers.html" class="text-gray-500 font-bold border-t border-gray-100 pt-2 mt-2 flex items-center">
+                    <span class="mr-2">🇺🇸</span> Switch to English
+                </a>
+
+                <a href="index.html#contact" class="text-primary font-bold">预约咨询 &rarr;</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首屏 Hero -->
+    <section class="relative pt-32 pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-gradient-to-b from-light to-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200 text-primary text-xs md:text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+                <span>🍁</span>
+                <span>处境导航 · 新移民篇</span>
+            </div>
+            
+            <h1 class="text-3xl md:text-5xl font-bold text-dark mb-6 tracking-tight leading-tight">
+                新移民，<span class="gradient-text">刚来加拿大</span>
+            </h1>
+            
+            <p class="text-lg md:text-2xl text-gray-700 font-medium mb-6">
+                团体险还没着落，语言和流程也不熟，生病了第一笔钱从哪来？
+            </p>
+            
+            <p class="max-w-2xl mx-auto text-base md:text-lg text-gray-500 mb-10 leading-relaxed">
+                先看清在加拿大保障从哪开始，再决定补什么。不用先懂产品名，从你的处境开始就行。
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://calculator.frank-zhang.com" target="_blank" class="w-full sm:w-auto bg-primary hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-base transition shadow-xl shadow-blue-500/20 flex items-center justify-center">
+                    做 60 秒测试
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+                <a href="#gap-calculator" class="w-full sm:w-auto bg-white text-gray-800 border border-gray-300 hover:border-gray-400 px-8 py-4 rounded-xl font-bold text-base transition shadow-sm flex items-center justify-center">
+                    先算一下缺口
+                </a>
+                <a href="index.html#contact" class="w-full sm:w-auto text-primary hover:text-blue-700 px-6 py-4 font-bold text-base transition flex items-center justify-center">
+                    约顾问聊聊 &rarr;
+                </a>
+            </div>
+        </div>
+        <div class="absolute top-0 left-0 -ml-20 mt-20 w-64 h-64 rounded-full bg-secondary/10 blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 -mr-20 mb-20 w-80 h-80 rounded-full bg-primary/10 blur-3xl"></div>
+    </section>
+
+    <!-- 你是不是这样 -->
+    <section class="py-16 bg-white border-y border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-dark mb-3">你是不是这样？</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl p-6 md:p-10 border border-gray-200">
+                <div class="space-y-4 text-gray-700 text-base md:text-lg">
+                    <div class="flex items-start">
+                        <span class="text-primary text-xl font-bold mr-3 mt-0.5">☐</span>
+                        <p>刚登陆不久，工作还在试用期，或者是自雇、合同工，团体险还没生效或者根本没有</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-primary text-xl font-bold mr-3 mt-0.5">☐</span>
+                        <p>对加拿大的保险流程、体检、英文条款不熟，怕买错，也怕沟通不清</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-primary text-xl font-bold mr-3 mt-0.5">☐</span>
+                        <p>家里有配偶、孩子要照顾，存款还不多，刚站稳脚跟</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-primary text-xl font-bold mr-3 mt-0.5">☐</span>
+                        <p>想过要补保障，但一看到产品名就不知道从哪下手</p>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-gray-200 text-center">
+                    <p class="text-primary font-bold text-lg md:text-xl">
+                        如果你点头了两条以上，这一页就是为你写的。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 这个阶段最常见的三个缺口 -->
+    <section class="py-20 bg-light">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl md:text-4xl font-bold text-dark mb-4">这个阶段最常见的三个缺口</h2>
+                <p class="text-gray-500 max-w-xl mx-auto">刚到一个新环境，生活节奏还在调整，最怕突如其来的不可测风险打乱阵脚。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 缺口 1 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">
+                        01
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">保障空白期</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                        工作、团体险、省医保的衔接不一定是同步的，中间生病或者出意外，第一笔钱从哪来，要先想清楚。
+                    </p>
+                </div>
+
+                <!-- 缺口 2 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">
+                        02
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">收入中断</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                        刚来的时候存款还不多，房租和生活费是按月来的，因病或者受伤没法工作一段时间，生活不能立刻停下来。
+                    </p>
+                </div>
+
+                <!-- 缺口 3 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-primary rounded-xl flex items-center justify-center font-bold text-xl mb-6">
+                        03
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">流程和语言门槛</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                        条款是英文的，申请要体检、要填表、要等核保，流程不熟很容易拖着不办，或者买了也不知道自己到底保了什么。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 通常会怎么搭配着看 -->
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-4xl font-bold text-dark mb-4">通常会怎么搭配着看？</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto rounded-full mb-6"></div>
+                <p class="text-sm md:text-base text-gray-500 max-w-2xl mx-auto bg-gray-50 py-3 px-4 rounded-xl border border-gray-200">
+                    💡 <strong>提示：</strong>这不是购买建议，只是帮你理解不同保障是解决不同问题的，顾问会按你的具体情况再做建议书：
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- 定期寿险 -->
+                <div class="p-6 md:p-8 rounded-2xl border border-gray-200 hover:border-primary transition bg-white shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="md:w-3/4">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="text-2xl">🛡️</span>
+                            <h3 class="text-xl font-bold text-dark">定期寿险 (Term Life)</h3>
+                            <span class="text-xs bg-blue-100 text-primary px-2.5 py-0.5 rounded-full font-semibold">家庭底线</span>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            家里有人依靠你时，人不在了，留一笔钱给家人，用来维持生活、照顾孩子。
+                        </p>
+                    </div>
+                    <div class="md:w-1/4 flex-shrink-0 text-left md:text-right">
+                        <a href="term.html" class="inline-flex items-center text-primary font-bold hover:text-blue-700 transition">
+                            了解定期寿险 &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 重疾保险 -->
+                <div class="p-6 md:p-8 rounded-2xl border border-gray-200 hover:border-primary transition bg-white shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="md:w-3/4">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="text-2xl">🏥</span>
+                            <h3 class="text-xl font-bold text-dark">重大疾病保险 (Critical Illness)</h3>
+                            <span class="text-xs bg-red-100 text-red-600 px-2.5 py-0.5 rounded-full font-semibold">安心康复金</span>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            得了合同里列明的重病，经过合同规定的等待期和生存期后，给一笔钱，让你安心休息和康复，不依赖团体险有没有。
+                        </p>
+                    </div>
+                    <div class="md:w-1/4 flex-shrink-0 text-left md:text-right">
+                        <a href="ci.html" class="inline-flex items-center text-primary font-bold hover:text-blue-700 transition">
+                            了解重疾保险 &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 伤残收入保险 -->
+                <div class="p-6 md:p-8 rounded-2xl border border-gray-200 hover:border-primary transition bg-white shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="md:w-3/4">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="text-2xl">💼</span>
+                            <h3 class="text-xl font-bold text-dark">伤残收入保险 (Disability Income)</h3>
+                            <span class="text-xs bg-amber-100 text-amber-700 px-2.5 py-0.5 rounded-full font-semibold">月度收入替代</span>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            因病或受伤没法工作时，按月补一部分收入，而不是一次性给完，守护日常现金流不断裂。
+                        </p>
+                    </div>
+                    <div class="md:w-1/4 flex-shrink-0 text-left md:text-right">
+                        <a href="https://calculator.frank-zhang.com" target="_blank" class="inline-flex items-center text-primary font-bold hover:text-blue-700 transition">
+                            在计算器中了解 &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 健康与牙科保险 -->
+                <div class="p-6 md:p-8 rounded-2xl border border-gray-200 hover:border-primary transition bg-white shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="md:w-3/4">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="text-2xl">🩺</span>
+                            <h3 class="text-xl font-bold text-dark">健康与牙科保险 (Health & Dental)</h3>
+                            <span class="text-xs bg-green-100 text-green-700 px-2.5 py-0.5 rounded-full font-semibold">日常补充报销</span>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            补团体险之外、或无团体险时的处方药、日常牙科、物理治疗和配镜开销。
+                        </p>
+                    </div>
+                    <div class="md:w-1/4 flex-shrink-0 text-left md:text-right">
+                        <a href="health.html" class="inline-flex items-center text-primary font-bold hover:text-blue-700 transition">
+                            了解健康牙科 &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 text-center text-gray-600 font-medium">
+                先把缺口算清楚，再看哪几块需要补，不用一次全买，也不用凭感觉买。
+            </div>
+        </div>
+    </section>
+
+    <!-- 算一下，大概缺口怎么想 -->
+    <section id="gap-calculator" class="py-20 bg-light border-y border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-primary font-bold text-sm tracking-widest uppercase">Methodology</span>
+                <h2 class="text-2xl md:text-4xl font-bold text-dark mt-2 mb-4">算一下，大概缺口怎么想？</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+
+            <!-- 公式展示卡片 -->
+            <div class="bg-white rounded-2xl p-6 md:p-8 border border-gray-200 shadow-md mb-8">
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">常用测算思路</p>
+                <div class="bg-blue-50/60 p-4 md:p-6 rounded-xl border border-blue-100 text-dark font-medium text-base md:text-lg leading-relaxed">
+                    <span class="text-primary font-bold">每月房租和家庭开销 × 你希望覆盖的月数</span> + 
+                    <span class="text-primary font-bold">其他固定开销预留</span> - 
+                    <span class="text-gray-500">已有的团体险和存款</span> = 
+                    <span class="text-accent font-bold">大概还需要考虑的缺口</span>
+                </div>
+
+                <!-- 假设示例框 (按规范修正版) -->
+                <div class="mt-6 bg-gray-50 p-5 rounded-xl border border-gray-200 text-sm md:text-base text-gray-600 leading-relaxed">
+                    <p class="font-bold text-dark mb-2 flex items-center">
+                        <span class="mr-2">📝</span> 假设示例（仅演示算式逻辑，不是额度建议）：
+                    </p>
+                    <p class="mb-2">
+                        假设每月房租与基本家庭开销为 <strong>$4,000</strong>，希望留出 12 个月（1 年）的适应过渡缓冲期即 <strong>$48,000</strong>，其他突发固定开销预留 <strong>$10,000</strong>；扣除手头现有流动周转金 <strong>$20,000</strong>，且暂无公司团体险：
+                    </p>
+                    <div class="font-mono text-dark font-semibold bg-white p-3 rounded-lg border border-gray-200 my-2">
+                        $48,000 + $10,000 - $20,000 = 约 $38,000 过渡期基础责任缺口
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">
+                        *注：此示例未计入家庭现有应急存款、配偶独立收入、子女教育金及其它债务。这只是算的思路，不是额度建议。具体买多少，要结合你的收入、已有保障和核保情况，顾问会通过正式财务需求分析（FNA）与保司建议书为你量身测算。
+                    </p>
+                </div>
+
+                <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://calculator.frank-zhang.com" target="_blank" class="bg-primary hover:bg-blue-600 text-white font-bold px-6 py-3.5 rounded-xl text-center transition shadow-md shadow-blue-500/20">
+                        去算定期寿险额度 &rarr;
+                    </a>
+                    <a href="https://calculator.frank-zhang.com" target="_blank" class="bg-white border border-gray-300 hover:border-gray-400 text-gray-800 font-bold px-6 py-3.5 rounded-xl text-center transition shadow-sm">
+                        去算重疾康复基金 &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户最常问的几道题 (FAQ) -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <h2 class="text-2xl md:text-4xl font-bold text-dark mb-3">客户最常问的几道题</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200">
+                    <h3 class="text-lg md:text-xl font-bold text-dark mb-3 flex items-start">
+                        <span class="text-primary font-bold mr-3">Q1</span>
+                        团体险还没生效，换工作又会变，怎么办？
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base pl-8">
+                        团体险是很好的起点，但有的要等试用期，有的换工作后就变了，重疾和伤残的覆盖也不一定全。很多人是把团体险当底，再看自己还缺多少，而不是二选一。具体要看你那份团体险的条款。
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200">
+                    <h3 class="text-lg md:text-xl font-bold text-dark mb-3 flex items-start">
+                        <span class="text-primary font-bold mr-3">Q2</span>
+                        省医保和私人保险有什么不一样？
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base pl-8">
+                        简单说，省医保主要管医院和医生这类必需医疗，私人保险管的是另一块：处方药、牙科、配镜、重病时的一笔钱、不能工作时的月收入。两者不是重复，是互补，具体资格和范围要看你所在省的规定和保单合同。
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200">
+                    <h3 class="text-lg md:text-xl font-bold text-dark mb-3 flex items-start">
+                        <span class="text-primary font-bold mr-3">Q3</span>
+                        身份、签证会不会影响能不能谈？
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base pl-8">
+                        不同身份、不同保司的要求不一样，别听通用说法，也别自己先排除。先聊清楚你的身份、在加拿大的计划和家庭情况，再以保司要求和核保结果为准。
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200">
+                    <h3 class="text-lg md:text-xl font-bold text-dark mb-3 flex items-start">
+                        <span class="text-primary font-bold mr-3">Q4</span>
+                        英文不好，流程怎么办？
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base pl-8">
+                        全程可以用中文聊，条款和流程顾问会用中文讲清楚，正式文件是英文的，签之前会逐条对给你看。约之前不用准备任何产品知识，带上你的处境来就行。
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200">
+                    <h3 class="text-lg md:text-xl font-bold text-dark mb-3 flex items-start">
+                        <span class="text-primary font-bold mr-3">Q5</span>
+                        父母来加拿大探亲，要不要另外考虑？
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base pl-8">
+                        探亲父母的保障和你自己的保障不是同一张单，通常要另外看访加类的安排，具体要看父母的年龄、健康和停留时间，这个可以约的时候一起聊，不用和你自己的保障混在一起算。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 约顾问聊聊，流程是这样的 -->
+    <section class="py-20 bg-light border-t border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <span class="text-primary font-bold text-sm tracking-widest uppercase">Process</span>
+                <h2 class="text-2xl md:text-4xl font-bold text-dark mt-2 mb-3">约顾问聊聊，流程是这样的</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto rounded-full mb-4"></div>
+                <p class="text-gray-500">透明、专业、不推销。带上你的处境来就行。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
+                    <div class="text-primary font-bold text-2xl mb-2">01</div>
+                    <h3 class="font-bold text-dark text-lg mb-2">聊处境</h3>
+                    <p class="text-gray-600 text-sm">刚来多久、工作情况、家里几口人、已有团体险，先把情况说清。</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
+                    <div class="text-primary font-bold text-2xl mb-2">02</div>
+                    <h3 class="font-bold text-dark text-lg mb-2">做需求分析</h3>
+                    <p class="text-gray-600 text-sm">一起算缺口，看看到底缺哪几块、缺多少。</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
+                    <div class="text-primary font-bold text-2xl mb-2">03</div>
+                    <h3 class="font-bold text-dark text-lg mb-2">拿建议书</h3>
+                    <p class="text-gray-600 text-sm">看到具体的保障、保费和条款，再决定。</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
+                    <div class="text-primary font-bold text-2xl mb-2">04</div>
+                    <h3 class="font-bold text-dark text-lg mb-2">跟进核保</h3>
+                    <p class="text-gray-600 text-sm">提交后跟进结果，有问题再调整确认。</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 border border-gray-200 text-center max-w-2xl mx-auto shadow-sm">
+                <p class="text-gray-700 text-base md:text-lg mb-6">
+                    全程不施压，中英文都可以。约之前不用准备任何产品知识，带上你的处境来就行。
+                </p>
+                <a href="index.html#contact" class="inline-block bg-primary hover:bg-blue-600 text-white font-bold px-10 py-4 rounded-xl text-lg transition shadow-xl shadow-blue-500/20">
+                    预约咨询
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 合规免责声明与页脚 -->
+    <footer class="bg-gray-50 border-t border-gray-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <span class="text-2xl font-bold text-dark">Insured618</span>
+            </div>
+            <p class="text-gray-500 mb-8">守护今天，富足未来</p>
+            <div class="text-gray-400 text-sm space-y-2">
+                <p class="max-w-3xl mx-auto text-xs leading-relaxed text-gray-500 bg-white p-4 rounded-xl border border-gray-200">
+                    本页仅供教育和参考，不构成保险合同、法律或税务建议。实际保障内容、保费和承保结果，以保险公司的正式建议书及核保结果为准，具体条款以保单合同为准。
+                </p>
+                <p class="mt-4">© 2025 Insured618. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 移动端导航脚本 -->
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btn && menu) {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                menu.classList.toggle('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !btn.contains(e.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+
+</body>
+</html>

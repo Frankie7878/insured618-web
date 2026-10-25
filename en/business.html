@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Solutions - Insured618</title>
+    <title>Business Owners & Self-Employed Protection Guide - Insured618</title>
     
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     
-    <meta name="description" content="Explore comprehensive tax optimization strategies for Canadian business owners. Learn how to shield active surplus, mitigate passive income tax, and transfer corporate wealth tax-free via CDA.">
+    <meta name="description" content="A practical protection planning guide for Canadian business owners and self-employed individuals. Unpack business and personal coverage gaps, key person protection, buy-sell funding, and debt liabilities.">
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,13 +16,12 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#4C8DFF', // Standard Blue
-                        dark: '#1A1D21',    // Dark Background
+                        primary: '#4C8DFF',
+                        secondary: '#00C2CB',
+                        dark: '#1A1D21',
                         light: '#F7F9FC',
-                        gold: '#D4AF37',    // Luxury Gold
-                        goldlight: '#F9F1D8',
-                        slate: '#334155',
-                        accent: '#FF7A59', // Warm Orange
+                        accent: '#FF7A59',
+                        gold: '#D4AF37',
                     },
                     fontFamily: {
                         sans: ['"Noto Sans SC"', 'sans-serif'],
@@ -33,18 +32,21 @@
     </script>
     <style>
         html { scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(135deg, #4C8DFF 0%, #00C2CB 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
         .text-gold-gradient {
             background: linear-gradient(to right, #D4AF37, #F2C94C);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .bg-gold-gradient {
-            background: linear-gradient(135deg, #D4AF37 0%, #B49018 100%);
-        }
     </style>
 </head>
 <body class="font-sans text-gray-700 bg-white">
 
+    <!-- Top Navigation Bar -->
     <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
@@ -69,10 +71,14 @@
                     <a href="#" class="text-primary font-bold transition">Business</a>
                     <a href="about.html" class="text-gray-600 hover:text-primary transition">About</a>
                     <a href="https://calculator.frank-zhang.com" target="_blank" class="text-gray-600 hover:text-accent font-bold transition flex items-center">Smart Calculator <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-                    <a href="../business.html" class="text-sm font-bold text-gray-500 hover:text-primary border border-gray-300 px-3 py-1 rounded transition">中文</a>
+                    
+                    <a href="../business.html" class="text-sm font-bold text-gray-500 hover:text-primary border border-gray-300 px-3 py-1 rounded transition">
+                        中文
+                    </a>
                 </div>
+
                 <div class="hidden md:block">
-                    <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg">Book Consultation</a>
+                    <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg shadow-blue-500/30">Book Consultation</a>
                 </div>
             </div>
         </div>
@@ -85,187 +91,506 @@
                 <a href="business.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Business</a>
                 <a href="about.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">About</a>
                 <a href="https://calculator.frank-zhang.com" target="_blank" class="text-accent font-bold border-b border-gray-50 pb-2 flex items-center justify-between">Smart Calculator <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
-                <a href="../business.html" class="text-gray-500 font-bold border-t border-gray-100 pt-2 mt-2 flex items-center">中文 &rarr;</a>
+
+                <a href="../business.html" class="text-gray-500 font-bold border-t border-gray-100 pt-2 mt-2 flex items-center">
+                    <span class="mr-2">🌏</span> Switch to 中文
+                </a>
+
                 <a href="index.html#contact" class="text-primary font-bold">Book Consultation &rarr;</a>
             </div>
         </div>
     </nav>
 
-    <section class="relative pt-32 pb-24 bg-dark overflow-hidden">
-        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center opacity-20"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/90 to-transparent"></div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <span class="inline-block py-1 px-3 rounded-full bg-gray-800 border border-gold/40 text-gold text-xs font-bold mb-6 tracking-wide uppercase">
-                Business Owner Zone
-            </span>
-            <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                Let Your Corporate Surplus<br>
-                Create <span class="text-gold-gradient">More Tax-Free Value</span>
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-gradient-to-b from-light to-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200 text-primary text-xs md:text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+                <span>🏢</span>
+                <span>Life Stage Navigator · Business Owners & Self-Employed</span>
+            </div>
+            
+            <h1 class="text-3xl md:text-5xl font-bold text-dark mb-6 tracking-tight leading-tight">
+                Business Owners & Self-Employed: <span class="gradient-text">The Company Depends on You</span>
             </h1>
-            <p class="max-w-3xl mx-auto text-lg text-gray-400 mb-10 leading-relaxed">
-                From mitigating passive investment tax loads to safeguarding your core team, we leverage the unique tax attributes of life insurance to build a solid fortress for your business.
+            
+            <p class="text-lg md:text-2xl text-gray-700 font-medium mb-6">
+                Your company cannot run without you. If you fall ill or pass away, what happens to operations, business debt, and your family?
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="index.html#contact" class="bg-gold-gradient hover:opacity-90 text-white px-8 py-4 rounded-xl font-bold transition shadow-lg shadow-yellow-500/20">
-                    Book Corporate Assessment
+            
+            <p class="max-w-2xl mx-auto text-base md:text-lg text-gray-500 mb-10 leading-relaxed">
+                First assess the separate gaps faced by your company and your household, then decide what to fill. You don't need to know complex product names—start from your real circumstances.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://calculator.frank-zhang.com" target="_blank" class="w-full sm:w-auto bg-primary hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-base transition shadow-xl shadow-blue-500/20 flex items-center justify-center">
+                    Take 60-Sec Assessment
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                 </a>
-                <a href="#strategies" class="bg-transparent border border-gray-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-dark transition">
-                    Explore Asset Transfer
+                <a href="#gap-calculator" class="w-full sm:w-auto bg-white text-gray-800 border border-gray-300 hover:border-gray-400 px-8 py-4 rounded-xl font-bold text-base transition shadow-sm flex items-center justify-center">
+                    Estimate Your Gap
                 </a>
+                <a href="index.html#contact" class="w-full sm:w-auto text-primary hover:text-blue-700 px-6 py-4 font-bold text-base transition flex items-center justify-center">
+                    Talk to an Advisor &rarr;
+                </a>
+            </div>
+        </div>
+        <div class="absolute top-0 left-0 -ml-20 mt-20 w-64 h-64 rounded-full bg-secondary/10 blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 -mr-20 mb-20 w-80 h-80 rounded-full bg-primary/10 blur-3xl"></div>
+    </section>
+
+    <!-- Sound Familiar Section -->
+    <section class="py-16 bg-white border-y border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-dark mb-3">Sound Familiar?</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl p-6 md:p-10 border border-gray-200">
+                <div class="space-y-4 text-gray-700 text-base md:text-lg">
+                    <div class="flex items-start">
+                        <span class="text-primary text-xl font-bold mr-3 mt-0.5">☐</span>
+                        <p>The company relies predominantly on you; key clients, critical decisions, and core relationships are in your hands.</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-primary text-xl font-bold mr-3 mt-0.5">☐</span>
+                        <p>You have business partners, or carry commercial bank loans, lease agreements, and supplier payment cycles.</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-primary text-xl font-bold mr-3 mt-0.5">☐</span>
+                        <p>Your family's living expenses depend on business income; if operations halt, household cash flow stops too.</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-primary text-xl font-bold mr-3 mt-0.5">☐</span>
+                        <p>You lack company group benefits, or the group plan only covers employees, excluding you as the owner.</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-primary text-xl font-bold mr-3 mt-0.5">☐</span>
+                        <p>You've thought about business succession, but haven't had the time to clarify legal agreements and funding mechanics.</p>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-gray-200 text-center">
+                    <p class="text-primary font-bold text-lg md:text-xl">
+                        If you nodded to two or more of these, this page was written for you.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-white">
+    <!-- The 3 Core Gaps -->
+    <section class="py-20 bg-light">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-light rounded-3xl p-8 md:p-12 border border-gray-100 shadow-sm flex flex-col md:flex-row items-center gap-8">
-                <div class="w-full md:w-1/3 text-center">
-                    <div class="text-6xl mb-4">⚖️</div>
-                    <h3 class="text-xl font-bold text-dark">Taxation Challenges</h3>
-                </div>
-                <div class="w-full md:w-2/3">
-                    <h2 class="text-2xl font-bold text-dark mb-4">Why Do Corporate Owners Need Specialized Planning?</h2>
-                    <p class="text-gray-600 mb-4">
-                        <strong>The Challenge:</strong> Following tax rule updates, excessive passive corporate investment income (e.g., rental yields, interest) will erode your Small Business Deduction (SBD) threshold, subjecting your active business to significantly higher tax brackets.
-                    </p>
-                    <p class="text-gray-600">
-                        <strong>The Opportunity:</strong> Life insurance is one of the very few vehicles recognized by the CRA that offers <span class="text-primary font-bold">tax-deferred growth</span> within the corporation, and allows the final death benefit to enter the <span class="text-gold font-bold">Capital Dividend Account (CDA) tax-free</span> for distribution to shareholders.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-dark mb-4">Core Protection & Risk Management</h2>
-                <p class="text-gray-500">Protecting your enterprise from sudden disruptions and ensuring seamless business continuity.</p>
+                <h2 class="text-2xl md:text-4xl font-bold text-dark mb-4">The 3 Most Common Gaps at This Stage</h2>
+                <p class="text-gray-500 max-w-xl mx-auto">Risks for business owners are rarely isolated; corporate obligations and household finances are deeply intertwined.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="group bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">🔑</div>
-                    <h3 class="text-xl font-bold text-dark mb-3">Key Person Protection</h3>
-                    <p class="text-gray-600 text-sm">If an essential employee or shareholder falls critically ill or passes away, the payout helps offset revenue losses, repay business loans, and fund recruitments to reassure creditors and clients.</p>
+                <!-- Gap 1 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">
+                        01
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">The Business Relies on You</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                        If you fall critically ill or pass away, the company might not close instantly, but clients, staff, and cash flow face immediate disruption. Household earnings stop simultaneously—a double blow.
+                    </p>
                 </div>
-                <div class="group bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="w-14 h-14 bg-goldlight rounded-xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">🤝</div>
-                    <h3 class="text-xl font-bold text-dark mb-3">Buy-Sell Agreement Funding</h3>
-                    <p class="text-gray-600 text-sm">Use tax-free insurance benefits to purchase the shares of a deceased partner. This preserves business control for active partners while providing fair, immediate cash liquidation to their family.</p>
+
+                <!-- Gap 2 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">
+                        02
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Partner & Debt Entanglements</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                        If a co-owner passes away, surviving partners and the deceased's heirs must navigate share transfers and buyout capital. Without predefined agreements, disputes easily arise. Lenders and landlords demand contractual payment, not good intentions.
+                    </p>
                 </div>
-                <div class="group bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="w-14 h-14 bg-gray-100 rounded-xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">🛡️</div>
-                    <h3 class="text-xl font-bold text-dark mb-3">Commercial Loan Protection</h3>
-                    <p class="text-gray-600 text-sm">Use term life or critical illness insurance as collateral for commercial bank loans. This ensures that any business liabilities will not overflow to drag down your family or assets.</p>
+
+                <!-- Gap 3 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-primary rounded-xl flex items-center justify-center font-bold text-xl mb-6">
+                        03
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Commingled Finances</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                        Many owners fund mortgages and kids' education via corporate salary or dividends. However, personal protection, retirement, and business succession must be calculated separately; blending them often leaves both unprotected.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="strategies" class="py-20 bg-dark text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold mb-4 text-center">Advanced Tax & Wealth Transfer Strategies</h2>
-            <p class="text-gray-400 text-center mb-16">Maximize your wealth by converting taxable corporate surplus into highly liquid tax-free assets.</p>
-
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                
-                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-gold/50 transition">
-                    <div class="text-gold text-sm font-bold uppercase tracking-wider mb-2">Foundation</div>
-                    <h3 class="text-2xl font-bold mb-4">A. Corporate Asset Transfer</h3>
-                    <p class="text-gray-300 text-sm mb-6">Reallocate highly taxed corporate passive investments (e.g. cash, GICs) into a participating permanent life policy.</p>
-                    <ul class="space-y-3 text-sm text-gray-400">
-                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>Tax-deferred Growth:</strong> Cash value accumulates within the policy completely tax-free.</li>
-                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>CDA Efficiency:</strong> Death benefit transfers to shareholder beneficiaries tax-free through the CDA, bypassing massive inheritance taxes.</li>
-                    </ul>
-                </div>
-
-                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-gold/50 transition">
-                    <div class="text-gold text-sm font-bold uppercase tracking-wider mb-2">Advancement</div>
-                    <h3 class="text-2xl font-bold mb-4">B. Corporate Retirement Strategy</h3>
-                    <p class="text-gray-300 text-sm mb-6">Fund corporate policies to build a stable asset class that can be collateralized at retirement to provide a tax-free cash stream.</p>
-                    <ul class="space-y-3 text-sm text-gray-400">
-                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>Higher Net Payout:</strong> Outperforms traditional corporate dividend extraction routes.</li>
-                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>Retain Security:</strong> The death benefit remains active as a powerful wealth legacy buffer.</li>
-                    </ul>
-                </div>
-
-                <div class="bg-gradient-to-br from-gold/20 to-transparent p-8 rounded-2xl border border-gold/40 relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-gold text-dark text-xs font-bold px-3 py-1 rounded-bl">HNW First Choice</div>
-                    <div class="text-gold text-sm font-bold uppercase tracking-wider mb-2">High Net Worth</div>
-                    <h3 class="text-2xl font-bold mb-4 text-white">C. Immediate Financing Arrangement (IFA)</h3>
-                    <p class="text-gray-200 text-sm mb-6">Obtain a large permanent policy and immediately secure a bank credit line against it to inject cash back into active business investments.</p>
-                    <ul class="space-y-3 text-sm text-gray-300">
-                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>Double Asset Leverage:</strong> Acquire robust death benefits while retaining maximum working capital liquidity.</li>
-                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>Tax Deductions:</strong> Loan interest may be eligible as a tax-deductible business expense.</li>
-                    </ul>
-                </div>
-
+    <!-- How Protections Typically Pair Together -->
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-4xl font-bold text-dark mb-4">How Protections Typically Pair Together</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto rounded-full mb-6"></div>
+                <p class="text-sm md:text-base text-gray-500 max-w-2xl mx-auto bg-gray-50 py-3 px-4 rounded-xl border border-gray-200">
+                    💡 <strong>Educational Note:</strong> This is not purchase advice. It illustrates how different protections solve distinct challenges. An advisor will prepare a formal proposal tailored to your situation; legal and tax elements must be reviewed alongside your lawyer and accountant:
+                </p>
             </div>
-        </div>
-    </section>
 
-    <section class="py-20 bg-light">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                
-                <div>
-                    <h2 class="text-2xl font-bold text-dark mb-6">Shareholder & Executive Benefits</h2>
-                    <div class="space-y-6">
-                        <div class="bg-white p-6 rounded-xl shadow-sm">
-                            <h4 class="font-bold text-primary mb-2">Shared Ownership Strategy</h4>
-                            <p class="text-sm text-gray-600">
-                                The corporation and a key executive split policy ownership. The company pays for the death benefit, while the executive owns and pays for the tax-deferred cash accumulator. A powerful, tax-efficient retention tool.
-                            </p>
+            <div class="space-y-6">
+                <!-- Key Person -->
+                <div class="p-6 md:p-8 rounded-2xl border border-gray-200 hover:border-primary transition bg-white shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="md:w-3/4">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="text-2xl">🔑</span>
+                            <h3 class="text-xl font-bold text-dark">Key Person Protection</h3>
+                            <span class="text-xs bg-blue-100 text-primary px-2.5 py-0.5 rounded-full font-semibold">Business Continuity</span>
                         </div>
-                        <div class="bg-white p-6 rounded-xl shadow-sm">
-                            <h4 class="font-bold text-primary mb-2">Corporate Critical Illness ROP</h4>
-                            <p class="text-sm text-gray-600">
-                                The company pays for the critical illness policy. If the business owner stays healthy and retires, the refund of premium (ROP) can be paid back to the business owner, serving as a highly tax-efficient surplus extraction tool.
-                            </p>
-                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            Provides liquid funds to the company upon the loss or illness of the founder or critical personnel, stabilizing operations, hiring replacement talent, and handling immediate overhead.
+                        </p>
+                    </div>
+                    <div class="md:w-1/4 flex-shrink-0 text-left md:text-right">
+                        <a href="index.html#contact" class="inline-flex items-center text-primary font-bold hover:text-blue-700 transition">
+                            Inquire Key Person &rarr;
+                        </a>
                     </div>
                 </div>
 
-                <div class="bg-white border-l-4 border-gold p-8 rounded-r-xl shadow-lg">
-                    <h3 class="text-xl font-bold text-dark mb-4">📂 Success Case: Anthony's Story</h3>
-                    <div class="space-y-4 text-sm">
-                        <p><strong class="text-gray-900">Scenario:</strong> Anthony, age 45, is an established business owner.</p>
-                        <p><strong class="text-gray-900">Challenge:</strong> Worried that a severe medical issue will stall his business income and severely drain his hard-earned retirement assets.</p>
-                        <p><strong class="text-gray-900">Solution:</strong> Acquired a corporate-owned Critical Illness policy with a Return of Premium (ROP) rider.</p>
-                        <div class="bg-gray-50 p-4 rounded-lg mt-4">
-                            <strong class="text-primary block mb-2">Outcome:</strong>
-                            <ul class="list-disc list-inside text-gray-600 space-y-1">
-                                <li><strong>If diagnosed:</strong> Receives a tax-free lump-sum payout to keep business operating and fund premium out-of-province medical trials.</li>
-                                <li><strong>If healthy at retirement:</strong> Reclaims 100% of all paid corporate premiums to fund his retirement, completely preserving corporate capital.</li>
-                            </ul>
+                <!-- Buy-Sell -->
+                <div class="p-6 md:p-8 rounded-2xl border border-gray-200 hover:border-primary transition bg-white shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="md:w-3/4">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="text-2xl">🤝</span>
+                            <h3 class="text-xl font-bold text-dark">Buy-Sell Agreement Funding</h3>
+                            <span class="text-xs bg-amber-100 text-amber-700 px-2.5 py-0.5 rounded-full font-semibold">Partnership Control</span>
                         </div>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            Partners establish formal buyout agreements funded by life or critical illness coverage. Surviving partners acquire shares smoothly, and the deceased partner's family receives fair liquid cash rather than unmarketable equity.
+                        </p>
+                    </div>
+                    <div class="md:w-1/4 flex-shrink-0 text-left md:text-right">
+                        <a href="index.html#contact" class="inline-flex items-center text-primary font-bold hover:text-blue-700 transition">
+                            Inquire Buy-Sell &rarr;
+                        </a>
                     </div>
                 </div>
 
+                <!-- Loan Protection -->
+                <div class="p-6 md:p-8 rounded-2xl border border-gray-200 hover:border-primary transition bg-white shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="md:w-3/4">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="text-2xl">🛡️</span>
+                            <h3 class="text-xl font-bold text-dark">Commercial Debt Protection</h3>
+                            <span class="text-xs bg-red-100 text-red-600 px-2.5 py-0.5 rounded-full font-semibold">Liability Shield</span>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            Covers commercial bank borrowings and lease commitments, ensuring lenders do not pursue your family personal assets or force liquidation during hardship.
+                        </p>
+                    </div>
+                    <div class="md:w-1/4 flex-shrink-0 text-left md:text-right">
+                        <a href="term.html" class="inline-flex items-center text-primary font-bold hover:text-blue-700 transition">
+                            Explore Term Solutions &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Personal Coverage -->
+                <div class="p-6 md:p-8 rounded-2xl border border-gray-200 hover:border-primary transition bg-white shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="md:w-3/4">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="text-2xl">👨‍👩‍👧‍👦</span>
+                            <h3 class="text-xl font-bold text-dark">Personal Suite (Life, CI & Disability)</h3>
+                            <span class="text-xs bg-green-100 text-green-700 px-2.5 py-0.5 rounded-full font-semibold">Household Floor</span>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            As an individual and breadwinner, calculate personal needs separately so household living expenses do not rely solely on business revenues.
+                        </p>
+                    </div>
+                    <div class="md:w-1/4 flex-shrink-0 text-left md:text-right">
+                        <a href="family.html" class="inline-flex items-center text-primary font-bold hover:text-blue-700 transition">
+                            View Family Guide &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Corporate Assets & Succession -->
+                <div class="p-6 md:p-8 rounded-2xl border border-gray-200 hover:border-primary transition bg-white shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="md:w-3/4">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="text-2xl">📈</span>
+                            <h3 class="text-xl font-bold text-dark">Corporate Assets & Succession</h3>
+                            <span class="text-xs bg-purple-100 text-purple-700 px-2.5 py-0.5 rounded-full font-semibold">Long-Term Wealth</span>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            Retained earnings and corporate succession must be evaluated distinctly from personal finances, with legal and tax structures guided by licensed professional advice.
+                        </p>
+                    </div>
+                    <div class="md:w-1/4 flex-shrink-0 text-left md:text-right">
+                        <a href="#advanced-strategies" class="inline-flex items-center text-primary font-bold hover:text-blue-700 transition">
+                            See Advanced Reference &darr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 text-center text-gray-600 font-medium">
+                Calculate corporate and household gaps separately before deciding what to fill. You don't need to purchase everything at once, nor buy based on guesswork.
             </div>
         </div>
     </section>
 
-    <footer class="bg-dark text-white py-12 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="mb-4">
-                <span class="text-2xl font-bold text-white">Insured618</span>
+    <!-- Gap Calculation Methodology -->
+    <section id="gap-calculator" class="py-20 bg-light border-y border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-primary font-bold text-sm tracking-widest uppercase">Methodology</span>
+                <h2 class="text-2xl md:text-4xl font-bold text-dark mt-2 mb-4">How to Think About Your Coverage Gap</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto rounded-full"></div>
             </div>
-            <p class="text-gray-400 mb-8">Your Corporate Wealth Partner</p>
-            <div class="flex justify-center gap-4 mb-8">
-                <a href="index.html#contact" class="bg-gold hover:opacity-90 text-dark px-6 py-2 rounded-full font-bold transition text-sm">
-                    Book Corporate Assessment
+
+            <!-- Formula Display Card -->
+            <div class="bg-white rounded-2xl p-6 md:p-8 border border-gray-200 shadow-md mb-8">
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Common Estimation Approach</p>
+                <div class="bg-blue-50/60 p-4 md:p-6 rounded-xl border border-blue-100 text-dark font-medium text-base md:text-lg leading-relaxed">
+                    <span class="text-primary font-bold">Business Debt & Leases</span> + 
+                    <span class="text-primary font-bold">Estimated Buy-Sell Amount</span> + 
+                    <span class="text-primary font-bold">Family Monthly Overhead × Target Months</span> - 
+                    <span class="text-gray-500">Existing Corporate & Personal Coverage</span> = 
+                    <span class="text-accent font-bold">Net Protection Gap to Consider</span>
+                </div>
+
+                <!-- Hypothetical Example Box -->
+                <div class="mt-6 bg-gray-50 p-5 rounded-xl border border-gray-200 text-sm md:text-base text-gray-600 leading-relaxed">
+                    <p class="font-bold text-dark mb-2 flex items-center">
+                        <span class="mr-2">📝</span> Hypothetical Example (Formula demonstration only, not coverage advice):
+                    </p>
+                    <p class="mb-2">
+                        Suppose a company has commercial debt and equipment lease balances of <strong>$300,000</strong>, an estimated shareholder agreement buyout requirement of <strong>$200,000</strong>, and household essential monthly expenses of <strong>$8,000</strong> with a target 12-month (<strong>$96,000</strong>) cushion; subtracting current corporate and personal coverage of <strong>$150,000</strong>:
+                    </p>
+                    <div class="font-mono text-dark font-semibold bg-white p-3 rounded-lg border border-gray-200 my-2">
+                        $300,000 + $200,000 + $96,000 - $150,000 = ~$446,000 Comprehensive Estimated Gap
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">
+                        *Note: This illustrative calculation does not factor in specific shareholder agreement valuation clauses, corporate retained earnings, accounts receivable liquidity, or personal assets. This is an estimation methodology, not coverage advice. Exact buyout figures and debt liabilities depend on actual legal agreements and bank contracts; an advisor will tailor recommendations via formal proposals.
+                    </p>
+                </div>
+
+                <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://calculator.frank-zhang.com" target="_blank" class="bg-primary hover:bg-blue-600 text-white font-bold px-6 py-3.5 rounded-xl text-center transition shadow-md shadow-blue-500/20">
+                        Calculate Term Life Coverage &rarr;
+                    </a>
+                    <a href="https://calculator.frank-zhang.com" target="_blank" class="bg-white border border-gray-300 hover:border-gray-400 text-gray-800 font-bold px-6 py-3.5 rounded-xl text-center transition shadow-sm">
+                        Calculate Critical Illness Fund &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Illustrative Scenario: Anthony's Planning Logic -->
+    <section class="py-16 bg-white border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-blue-50/60 via-white to-gray-50 border-l-4 border-primary p-6 md:p-8 rounded-r-2xl border-y border-r border-gray-200 shadow-sm">
+                <div class="flex items-center space-x-2 text-xs font-bold text-primary uppercase tracking-wider mb-2">
+                    <span>📂</span>
+                    <span>Illustrative Scenario (For logic demonstration only; not a client testimonial)</span>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold text-dark mb-4">Business Owner Anthony's Planning Logic</h3>
+                
+                <div class="space-y-3 text-sm md:text-base text-gray-700 leading-relaxed">
+                    <p><strong>Context Setting:</strong> Anthony, age 45, small business owner; daily business revenue relies primarily on his leadership and key customer relationships.</p>
+                    <p><strong>Primary Concern:</strong> Worried that a severe medical illness would halt business revenues while eroding his family's retirement savings.</p>
+                    <p><strong>Solution Logic:</strong> Secured a critical illness policy structured with a return-of-premium (ROP) feature upon advisor review:</p>
+                    <div class="bg-white p-4 rounded-xl border border-gray-200 mt-3 space-y-2">
+                        <div class="flex items-start">
+                            <span class="text-primary font-bold mr-2">✓</span>
+                            <p class="text-gray-600 text-sm"><strong>If Diagnosed During Career:</strong> Receives an immediate capital injection to support fixed corporate overhead or hire temporary managerial coverage, safeguarding cash flow.</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-secondary font-bold mr-2">✓</span>
+                            <p class="text-gray-600 text-sm"><strong>If Remaining Healthy to Retirement:</strong> Reclaims 100% of eligible paid premiums to supplement retirement assets, without forfeiting principal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <h2 class="text-2xl md:text-4xl font-bold text-dark mb-3">Frequently Asked Questions</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200">
+                    <h3 class="text-lg md:text-xl font-bold text-dark mb-3 flex items-start">
+                        <span class="text-primary font-bold mr-3">Q1</span>
+                        What is the difference between purchasing through a corporation vs personally?
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base pl-8">
+                        Policy ownership, beneficiary designations, and tax treatments differ significantly; decisions cannot be made solely on premium cost. Corporate and personal needs must be evaluated separately, and tax/legal elements should be verified with your accountant and lawyer based on contracts and professional advice.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200">
+                    <h3 class="text-lg md:text-xl font-bold text-dark mb-3 flex items-start">
+                        <span class="text-primary font-bold mr-3">Q2</span>
+                        If a partner passes away, will their family automatically become my co-owner?
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base pl-8">
+                        Without a pre-drafted shareholder buy-sell agreement and dedicated funding in place, such situations can occur. Coordinating legal agreements with life coverage ensures surviving partners can buy out shares smoothly while the family receives liquid capital, preventing management gridlock.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200">
+                    <h3 class="text-lg md:text-xl font-bold text-dark mb-3 flex items-start">
+                        <span class="text-primary font-bold mr-3">Q3</span>
+                        The commercial loan is in the company's name. Why must I consider personal implications?
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base pl-8">
+                        Lending contracts often require personal guarantees from business owners, or mandate life insurance assignment. You cannot assume corporate debts are entirely separate from personal exposure without reviewing the specific financing terms.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200">
+                    <h3 class="text-lg md:text-xl font-bold text-dark mb-3 flex items-start">
+                        <span class="text-primary font-bold mr-3">Q4</span>
+                        What if I am self-employed with no group benefits?
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base pl-8">
+                        Personal individual policies become your primary line of defense—similar to families or newcomers without group plans. First calculate household and business obligations, then assemble personal solutions without assuming corporate structures will automatically protect you.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200">
+                    <h3 class="text-lg md:text-xl font-bold text-dark mb-3 flex items-start">
+                        <span class="text-primary font-bold mr-3">Q5</span>
+                        What if a key non-owner employee leaves or becomes disabled?
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base pl-8">
+                        Key person coverage is not limited to founders. It can cover any indispensable staff member whose sudden absence would jeopardize operations. Designated individuals and coverage levels should match actual business operational risk.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Process -->
+    <section class="py-20 bg-light border-t border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <span class="text-primary font-bold text-sm tracking-widest uppercase">Process</span>
+                <h2 class="text-2xl md:text-4xl font-bold text-dark mt-2 mb-3">How Advisor Consultations Work</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto rounded-full mb-4"></div>
+                <p class="text-gray-500">Transparent, professional, and zero-pressure. Just bring your real circumstances.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
+                    <div class="text-primary font-bold text-2xl mb-2">01</div>
+                    <h3 class="font-bold text-dark text-lg mb-2">Understand Context</h3>
+                    <p class="text-gray-600 text-sm">Corporate structure, co-owners, debt, dependents, existing coverage (~15 minutes).</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
+                    <div class="text-primary font-bold text-2xl mb-2">02</div>
+                    <h3 class="font-bold text-dark text-lg mb-2">Needs Analysis</h3>
+                    <p class="text-gray-600 text-sm">Separate corporate debt and household living gaps to clearly determine capital needs.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
+                    <div class="text-primary font-bold text-2xl mb-2">03</div>
+                    <h3 class="font-bold text-dark text-lg mb-2">Review Proposals</h3>
+                    <p class="text-gray-600 text-sm">Evaluate exact benefits, premiums, and policy terms before deciding; coordinate tax/legal provisions with your lawyer and accountant.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
+                    <div class="text-primary font-bold text-2xl mb-2">04</div>
+                    <h3 class="font-bold text-dark text-lg mb-2">Underwriting</h3>
+                    <p class="text-gray-600 text-sm">We manage insurer follow-ups and assist in adjusting terms as underwriting concludes.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 border border-gray-200 text-center max-w-2xl mx-auto shadow-sm">
+                <p class="text-gray-700 text-base md:text-lg mb-6">
+                    Zero sales pressure, fully bilingual in English and Chinese. You don't need prior insurance expertise—just bring your situation.
+                </p>
+                <a href="index.html#contact" class="inline-block bg-primary hover:bg-blue-600 text-white font-bold px-10 py-4 rounded-xl text-lg transition shadow-xl shadow-blue-500/20">
+                    Book Free Consultation
                 </a>
             </div>
-            <div class="text-gray-500 text-xs space-y-2 max-w-2xl mx-auto">
-                <p>Disclaimer: Corporate tax strategies are complex and involve significant legal and financial consequences. Always consult with your accountant and legal counsel before implementing these solutions. This page is for general educational purposes only.</p>
-                <p>© 2025 Insured618. All rights reserved.</p>
+        </div>
+    </section>
+
+    <!-- Advanced Reference: Corporate Surplus & Succession Strategies (Bottom Block) -->
+    <section id="advanced-strategies" class="py-20 bg-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold text-gold uppercase tracking-widest bg-gray-800 py-1 px-3 rounded-full border border-gold/30">
+                    Advanced Reference · For In-Depth Exploration
+                </span>
+                <h2 class="text-3xl font-bold mt-4 mb-4">Corporate Surplus & Succession Strategies</h2>
+                <p class="text-gray-400 text-sm md:text-base max-w-2xl mx-auto">
+                    This section is for business owners who have clarified foundation protections and wish to optimize corporate retained earnings. Specific tax and legal arrangements must be governed by your licensed accountant and attorney.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Asset Transfer -->
+                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-gold/50 transition">
+                    <div class="text-gold text-sm font-bold uppercase tracking-wider mb-2">Surplus Optimization</div>
+                    <h3 class="text-2xl font-bold mb-4">A. Corporate Asset Transfer</h3>
+                    <p class="text-gray-300 text-sm mb-6">Evaluating reallocation of corporate taxable passive investments into long-term participating asset structures.</p>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>Tax-Sheltered Growth:</strong> Internal cash value builds without annual corporate taxation.</li>
+                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>Succession Efficiency:</strong> Death benefit distributions follow contractual and corporate terms, minimizing friction.</li>
+                    </ul>
+                </div>
+
+                <!-- Retirement Strategy -->
+                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-gold/50 transition">
+                    <div class="text-gold text-sm font-bold uppercase tracking-wider mb-2">Owner Retirement</div>
+                    <h3 class="text-2xl font-bold mb-4">B. Corporate Retirement Strategy</h3>
+                    <p class="text-gray-300 text-sm mb-6">Building long-term corporate asset reserves to explore structured income supplementation during retirement.</p>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>Income Supplementation:</strong> Structure retirement cash flow avenues compliant with tax guidelines.</li>
+                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>Asset Continuity:</strong> Retain core family protection while accessing liquidity.</li>
+                    </ul>
+                </div>
+
+                <!-- IFA -->
+                <div class="bg-gradient-to-br from-gold/20 to-transparent p-8 rounded-2xl border border-gold/40 relative overflow-hidden">
+                    <div class="text-gold text-sm font-bold uppercase tracking-wider mb-2">Liquidity Structures</div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">C. Immediate Financing Arrangements (IFA)</h3>
+                    <p class="text-gray-200 text-sm mb-6">Pledging policy values to authorized third-party lenders to maintain operational working capital alongside coverage.</p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>Retain Liquidity:</strong> Secure substantial coverage while keeping cash working in daily business operations.</li>
+                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>Compliance Rigor:</strong> Assessed case-by-case against lending terms, borrowing costs, and accounting advice.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Disclaimer -->
+    <footer class="bg-gray-50 border-t border-gray-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <span class="text-2xl font-bold text-dark">Insured618</span>
+            </div>
+            <p class="text-gray-500 mb-8">Protecting Today, Prospering Tomorrow</p>
+            <div class="text-gray-400 text-sm space-y-2">
+                <p class="max-w-3xl mx-auto text-xs leading-relaxed text-gray-500 bg-white p-4 rounded-xl border border-gray-200">
+                    Disclaimer: This page is for educational and reference purposes only and does not constitute an insurance contract, legal, or tax advice. Actual benefits, premiums, and underwriting outcomes are subject to formal insurance company proposals and binding policy contracts. Buy-sell agreements and corporate tax planning are governed by the professional opinions of your legal and accounting advisors.
+                </p>
+                <p class="mt-4">© 2025 Insured618. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Mobile Menu Script -->
     <script>
         const btn = document.getElementById('mobile-menu-button');
         const menu = document.getElementById('mobile-menu');

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>财富与退休规划 - Insured618</title>
+    <title>退休与传承规划 - Insured618</title>
     
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     
-    <meta name="description" content="财富与退休规划服务助您构建终身有保证的收入流。Insured618 提供年金、保本基金及遗产配置方案，平衡市场风险与资产增长，确保您拥有无忧的退休生活。">
+    <meta name="description" content="专为快退休、刚退休及关注资产稳健传承的加拿大朋友打造的规划指南。算清每月生活开销、健康护理预留与传承心愿，不用先懂复杂产品名，从您的真实处境稳步开始。">
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,11 +16,12 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#4C8DFF', // Index Blue
+                        primary: '#4C8DFF',
+                        secondary: '#00C2CB',
                         dark: '#1A1D21',
                         light: '#F7F9FC',
-                        gold: '#D4AF37', // Wealth Gold
-                        goldlight: '#F9F1D8',
+                        accent: '#FF7A59',
+                        gold: '#D4AF37',
                     },
                     fontFamily: {
                         sans: ['"Noto Sans SC"', 'sans-serif'],
@@ -31,8 +32,8 @@
     </script>
     <style>
         html { scroll-behavior: smooth; }
-        .text-gold-gradient {
-            background: linear-gradient(to right, #D4AF37, #F2C94C);
+        .gradient-text {
+            background: linear-gradient(135deg, #4C8DFF 0%, #00C2CB 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -40,6 +41,7 @@
 </head>
 <body class="font-sans text-gray-700 bg-white">
 
+    <!-- 顶部导航栏 -->
     <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
@@ -57,16 +59,21 @@
                     </button>
                 </div>
 
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-gray-600 hover:text-primary transition">首页</a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition">主页</a>
                     <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary transition">核心保障</a>
                     <a href="#" class="text-primary font-bold transition">财富积累</a>
                     <a href="business.html" class="text-gray-600 hover:text-primary transition">企业方案</a>
                     <a href="about.html" class="text-gray-600 hover:text-primary transition">关于我们</a>
                     <a href="https://calculator.frank-zhang.com" target="_blank" class="text-gray-600 hover:text-accent font-bold transition flex items-center">智能计算器 <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                    
+                    <a href="en/wealth.html" class="text-sm font-bold text-gray-500 hover:text-primary border border-gray-300 px-3 py-1 rounded transition">
+                        EN
+                    </a>
                 </div>
+
                 <div class="hidden md:block">
-                    <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg">预约咨询</a>
+                    <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg shadow-blue-500/30">预约咨询</a>
                 </div>
             </div>
         </div>
@@ -79,238 +86,522 @@
                 <a href="business.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">企业方案</a>
                 <a href="about.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">关于我们</a>
                 <a href="https://calculator.frank-zhang.com" target="_blank" class="text-accent font-bold border-b border-gray-50 pb-2 flex items-center justify-between">智能计算器 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+
+                <a href="en/wealth.html" class="text-gray-500 font-bold border-t border-gray-100 pt-2 mt-2 flex items-center">
+                    <span class="mr-2">🇺🇸</span> Switch to English
+                </a>
+
                 <a href="index.html#contact" class="text-primary font-bold">预约咨询 &rarr;</a>
             </div>
         </div>
     </nav>
 
-    <section class="relative pt-32 pb-24 bg-dark overflow-hidden">
-        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-gray-800 to-transparent opacity-30"></div>
-        <div class="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-gold/10 blur-3xl"></div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <span class="inline-block py-1 px-3 rounded-full bg-gray-800 border border-gold/30 text-gold text-xs font-bold mb-6 tracking-wide uppercase">
-                从容驾驭未来
-            </span>
-            <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                退休不是终点，<br>
-                而是 <span class="text-gold-gradient">新生活的起点</span>
+    <!-- 首屏 Hero -->
+    <section class="relative pt-32 pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-gradient-to-b from-light to-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200 text-primary text-xs md:text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+                <span>🌅</span>
+                <span>处境导航 · 快退休与传承篇</span>
+            </div>
+            
+            <h1 class="text-3xl md:text-5xl font-bold text-dark mb-6 tracking-tight leading-tight">
+                快退休，<span class="gradient-text">想把钱稳稳传下去</span>
             </h1>
-            <p class="max-w-3xl mx-auto text-lg text-gray-400 mb-10 leading-relaxed">
-                许多人担心退休后面临“人还在，钱没了”的风险。我们助您构建耐用且灵活的财务组合，确保基本生活无忧，同时实现资产的稳健增长与高效传承。
+            
+            <p class="text-lg md:text-2xl text-gray-700 font-medium mb-6">
+                攒了一辈子，怎么让钱既能用，又不被税吃掉太多，还能留给家人？
             </p>
-            <div class="flex justify-center gap-4">
-                <a href="index.html#contact" class="bg-gold hover:bg-yellow-600 text-dark px-8 py-4 rounded-xl font-bold transition shadow-lg shadow-yellow-500/20">
-                    立即预约咨询
+            
+            <p class="max-w-2xl mx-auto text-base md:text-lg text-gray-500 mb-10 leading-relaxed">
+                先看清退休后每月要花多少、想留多少，再决定怎么组合。不用先懂产品名，从你的处境开始就行。
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://calculator.frank-zhang.com" target="_blank" class="w-full sm:w-auto bg-primary hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-base transition shadow-xl shadow-blue-500/20 flex items-center justify-center">
+                    做 60 秒测试
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                 </a>
+                <a href="#gap-calculator" class="w-full sm:w-auto bg-white text-gray-800 border border-gray-300 hover:border-gray-400 px-8 py-4 rounded-xl font-bold text-base transition shadow-sm flex items-center justify-center">
+                    先算一下缺口
+                </a>
+                <a href="index.html#contact" class="w-full sm:w-auto text-primary hover:text-blue-700 px-6 py-4 font-bold text-base transition flex items-center justify-center">
+                    约顾问聊聊 &rarr;
+                </a>
+            </div>
+        </div>
+        <div class="absolute top-0 left-0 -ml-20 mt-20 w-64 h-64 rounded-full bg-secondary/10 blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 -mr-20 mb-20 w-80 h-80 rounded-full bg-primary/10 blur-3xl"></div>
+    </section>
+
+    <!-- 你是不是这样 -->
+    <section class="py-16 bg-white border-y border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-dark mb-3">你是不是这样？</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl p-6 md:p-10 border border-gray-200">
+                <div class="space-y-4 text-gray-700 text-base md:text-lg">
+                    <div class="flex items-start">
+                        <span class="text-primary text-xl font-bold mr-3 mt-0.5">☐</span>
+                        <p>快退休或者刚退休，工资要停了，以后要靠积蓄、退休金和政府福利生活</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-primary text-xl font-bold mr-3 mt-0.5">☐</span>
+                        <p>手上有 RRSP、公司养老金、房产或者其他积蓄，但不知道怎么拼成每月稳定的收入</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-primary text-xl font-bold mr-3 mt-0.5">☐</span>
+                        <p>想留一部分给配偶、孩子，不想被税吃掉太多，也不想留一堆手续和麻烦给家人</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-primary text-xl font-bold mr-3 mt-0.5">☐</span>
+                        <p>开始怕市场波动了，不想再像年轻时那样冒大风险，怕一跌就把退休钱跌没了</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-primary text-xl font-bold mr-3 mt-0.5">☐</span>
+                        <p>担心以后生病、需要长期护理时，钱够不够、会不会拖垮家人</p>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-gray-200 text-center">
+                    <p class="text-primary font-bold text-lg md:text-xl">
+                        如果你点头了两条以上，这一页就是为你写的。
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="order-2 md:order-1">
-                    <h2 class="text-3xl font-bold text-dark mb-6">1. 打造终身领取的“私人养老金”</h2>
-                    <p class="text-xl text-gray-500 mb-6 font-light">
-                        核心理念：退休后的首要任务是确保“基本生活开支”由“有保证的收入”来覆盖。
+    <!-- 这个阶段最常见的三个缺口 -->
+    <section class="py-20 bg-light">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl md:text-4xl font-bold text-dark mb-4">这个阶段最常见的三个缺口</h2>
+                <p class="text-gray-500 max-w-xl mx-auto">退休后生活节奏变了，更需要确定性来抵御未知的支出风险。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 缺口 1 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">
+                        01
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">收入断档</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                        工资停了，退休收入要自己拼，拼不好要么每月不够花，要么前面花太快、后面不够用，时间越长越怕。
                     </p>
-                    
-                    <div class="space-y-6">
-                        <a href="payout-annuities.html" class="flex items-start group hover:bg-gray-50 p-3 -m-3 rounded-2xl transition">
-                            <div class="w-12 h-12 bg-blue-50 text-primary rounded-xl flex items-center justify-center text-2xl mr-4 flex-shrink-0 group-hover:bg-primary group-hover:text-white transition">🗓️</div>
-                            <div>
-                                <h4 class="font-bold text-dark text-lg group-hover:text-primary transition">给付年金 (Payout Annuities)</h4>
-                                <p class="text-gray-600 text-sm mt-1 mb-2">
-                                    将您的积蓄转化为源源不断的现金流。您可以选择终身年金，保证每月收到固定支票，直到终老，哪怕活到 100 岁也不用担心没钱花。
-                                </p>
-                                <div class="text-sm font-bold text-primary flex items-center group-hover:text-blue-600">
-                                    <span>探索您的专属“私人养老金”</span>
-                                    <span class="transform group-hover:translate-x-1 transition ml-1">&rarr;</span>
-                                </div>
-                            </div>
+                </div>
+
+                <!-- 缺口 2 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">
+                        02
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">税和传承的连锁</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                        什么时候领、从哪个账户先领、留给谁、什么时候给，这些没理清，税和手续可能吃掉不少，也可能给家人留下一堆麻烦。领钱顺序这种事，没有一个适合所有人的答案。
+                    </p>
+                </div>
+
+                <!-- 缺口 3 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-primary rounded-xl flex items-center justify-center font-bold text-xl mb-6">
+                        03
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">健康和长期护理的不确定</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                        生病、需要人照顾时，费用和时间都不好估，家人既要照顾又要出钱，提前没准备，退休计划很容易被打乱。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 通常会怎么搭配着看 -->
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-4xl font-bold text-dark mb-4">通常会怎么搭配着看？</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto rounded-full mb-6"></div>
+                <p class="text-sm md:text-base text-gray-500 max-w-2xl mx-auto bg-gray-50 py-3 px-4 rounded-xl border border-gray-200">
+                    💡 <strong>提示：</strong>这不是购买建议，只是帮你理解不同安排是解决不同问题的，顾问会按你的具体情况再做建议书，涉及税务和遗产的部分还要和会计、律师一起看：
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- 给付年金 -->
+                <div class="p-6 md:p-8 rounded-2xl border border-gray-200 hover:border-primary transition bg-white shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="md:w-3/4">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="text-2xl">🗓️</span>
+                            <h3 class="text-xl font-bold text-dark">年金类保证收入 (Payout Annuities)</h3>
+                            <span class="text-xs bg-blue-100 text-primary px-2.5 py-0.5 rounded-full font-semibold">生活费打底</span>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            按合同每月给一笔钱，用来打底退休生活费，让基本开销不依赖市场涨跌，具体给多久、给多少以合同为准。
+                        </p>
+                    </div>
+                    <div class="md:w-1/4 flex-shrink-0 text-left md:text-right">
+                        <a href="payout-annuities.html" class="inline-flex items-center text-primary font-bold hover:text-blue-700 transition">
+                            了解给付年金细则 &rarr;
                         </a>
+                    </div>
+                </div>
+
+                <!-- 分红终身寿险 -->
+                <div class="p-6 md:p-8 rounded-2xl border border-gray-200 hover:border-primary transition bg-white shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="md:w-3/4">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="text-2xl">💰</span>
+                            <h3 class="text-xl font-bold text-dark">分红终身寿险 (Par Life)</h3>
+                            <span class="text-xs bg-amber-100 text-amber-700 px-2.5 py-0.5 rounded-full font-semibold">传承与免税资产</span>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            用来做传承和留给家人的一块，现金价值和保障是按合同来的，分红不是保证的，不能按分红一定有来算。
+                        </p>
+                    </div>
+                    <div class="md:w-1/4 flex-shrink-0 text-left md:text-right">
+                        <a href="par.html" class="inline-flex items-center text-primary font-bold hover:text-blue-700 transition">
+                            了解分红寿险细则 &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 保本类安排 -->
+                <div class="p-6 md:p-8 rounded-2xl border border-gray-200 hover:border-primary transition bg-white shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="md:w-3/4">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="text-2xl">🛡️</span>
+                            <h3 class="text-xl font-bold text-dark">保本类安排 (GIC 与保本基金)</h3>
+                            <span class="text-xs bg-green-100 text-green-700 px-2.5 py-0.5 rounded-full font-semibold">稳健防守</span>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            GIC、保本基金这类，适合不想再冒大风险的那部分钱，但保本的范围、期限和条件要看具体产品合同，不能一概而论。
+                        </p>
+                    </div>
+                    <div class="md:w-1/4 flex-shrink-0 text-left md:text-right">
+                        <a href="segregated-funds.html" class="inline-flex items-center text-primary font-bold hover:text-blue-700 transition">
+                            了解保本基金细则 &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 健康与长期护理 -->
+                <div class="p-6 md:p-8 rounded-2xl border border-gray-200 hover:border-primary transition bg-white shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="md:w-3/4">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="text-2xl">🩺</span>
+                            <h3 class="text-xl font-bold text-dark">健康与长期护理</h3>
+                            <span class="text-xs bg-red-100 text-red-600 px-2.5 py-0.5 rounded-full font-semibold">健康专项专款</span>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            退休后团体险没了，日常医疗、牙科和长期护理要单独算，重疾转长期护理这类权利也要看你那份合同有没有、条件是什么。
+                        </p>
+                    </div>
+                    <div class="md:w-1/4 flex-shrink-0 text-left md:text-right">
+                        <a href="health.html" class="inline-flex items-center text-primary font-bold hover:text-blue-700 transition">
+                            了解健康险细则 &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 遗产与传承安排 -->
+                <div class="p-6 md:p-8 rounded-2xl border border-gray-200 hover:border-primary transition bg-white shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="md:w-3/4">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="text-2xl">📜</span>
+                            <h3 class="text-xl font-bold text-dark">遗产与传承安排</h3>
+                            <span class="text-xs bg-purple-100 text-purple-700 px-2.5 py-0.5 rounded-full font-semibold">法律协同</span>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            受益人、遗嘱、留给谁、什么时候给，这些要和律师、会计一起定，保险只是其中一种工具，不是全部答案。
+                        </p>
+                    </div>
+                    <div class="md:w-1/4 flex-shrink-0 text-left md:text-right">
+                        <a href="#advanced-strategies" class="inline-flex items-center text-primary font-bold hover:text-blue-700 transition">
+                            看进阶参考 &darr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 text-center text-gray-600 font-medium">
+                先把每月要花的、想留的、怕不够的三笔账分开算，再看哪几块需要补，不用一次全买，也不用凭感觉买。
+            </div>
+        </div>
+    </section>
+
+    <!-- 算一下，大概缺口怎么想 -->
+    <section id="gap-calculator" class="py-20 bg-light border-y border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-primary font-bold text-sm tracking-widest uppercase">Methodology</span>
+                <h2 class="text-2xl md:text-4xl font-bold text-dark mt-2 mb-4">算一下，大概缺口怎么想？</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+
+            <!-- 公式展示卡片 -->
+            <div class="bg-white rounded-2xl p-6 md:p-8 border border-gray-200 shadow-md mb-8">
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">常用测算思路</p>
+                <div class="bg-blue-50/60 p-4 md:p-6 rounded-xl border border-blue-100 text-dark font-medium text-base md:text-lg leading-relaxed">
+                    <span class="text-primary font-bold">每月退休生活开销 × 你希望覆盖的年数</span> + 
+                    <span class="text-primary font-bold">健康和长期护理预留</span> + 
+                    <span class="text-primary font-bold">想留给家人的金额</span> - 
+                    <span class="text-gray-500">已有的政府福利、公司养老金、RRSP 和其他积蓄</span> = 
+                    <span class="text-accent font-bold">大概还需要考虑的缺口</span>
+                </div>
+
+                <!-- 假设示例框 (按规范修正版) -->
+                <div class="mt-6 bg-gray-50 p-5 rounded-xl border border-gray-200 text-sm md:text-base text-gray-600 leading-relaxed">
+                    <p class="font-bold text-dark mb-2 flex items-center">
+                        <span class="mr-2">📝</span> 假设示例（仅演示算式逻辑，不是额度建议）：
+                    </p>
+                    <p class="mb-2">
+                        假设某家庭退休后每月基本生活开销为 <strong>$5,000</strong>，规划覆盖 25 年（约 <strong>$1,500,000</strong>），健康与护理专款预留 <strong>$150,000</strong>，希望留给子女的金额为 <strong>$300,000</strong>；扣除预估政府福利（CPP/OAS）与公司养老金（示例按年金折算 <strong>$750,000</strong>，仅为推演演示），以及现有 RRSP、TFSA 与银行储蓄 <strong>$600,000</strong>：
+                    </p>
+                    <div class="font-mono text-dark font-semibold bg-white p-3 rounded-lg border border-gray-200 my-2">
+                        $1,500,000 + $150,000 + $300,000 - ($750,000 + $600,000) = 约 $600,000 综合缺口估算
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">
+                        *注：此示例未计入实际通胀率、投资回报波动、房屋净值变现及未来具体的税务扣减率。CPP 和 OAS 等政府福利实际能领取的具体金额因供款年限、领取年龄及在加居住时长等因素因人而异，具体以官方测算及个人实际情况为准。这只是算的思路，不是额度建议。具体领多少、从哪先领、税上怎么算，要看你的收入、账户结构和家庭情况，顾问会用正式建议书帮你算，税务和遗产部分以会计、律师的专业意见为准。
+                    </p>
+                </div>
+
+                <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://calculator.frank-zhang.com" target="_blank" class="bg-primary hover:bg-blue-600 text-white font-bold px-6 py-3.5 rounded-xl text-center transition shadow-md shadow-blue-500/20">
+                        去算退休收入缺口 &rarr;
+                    </a>
+                    <a href="https://calculator.frank-zhang.com" target="_blank" class="bg-white border border-gray-300 hover:border-gray-400 text-gray-800 font-bold px-6 py-3.5 rounded-xl text-center transition shadow-sm">
+                        去算传承预留 &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 示例情景：快退休人群的规划思路 (位置后移，标明示例情景) -->
+    <section class="py-16 bg-white border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-blue-50/60 via-white to-gray-50 border-l-4 border-primary p-6 md:p-8 rounded-r-2xl border-y border-r border-gray-200 shadow-sm">
+                <div class="flex items-center space-x-2 text-xs font-bold text-primary uppercase tracking-wider mb-2">
+                    <span>📂</span>
+                    <span>示例情景（仅供逻辑参考，非真实客户背书）</span>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold text-dark mb-4">快退休人群的规划思路</h3>
+                
+                <div class="space-y-3 text-sm md:text-base text-gray-700 leading-relaxed">
+                    <p><strong>情景设定：</strong> 60 岁准备退休，手上有积攒多年的 RRSP 与部分储蓄，担心未来市场波动影响退休金。</p>
+                    <p><strong>真实担忧：</strong> 害怕市场一旦大跌会侵蚀多年积攒的本金，又不知道每个月该从哪个账户先领钱，怕前面花太快、后面不够用。</p>
+                    <p><strong>方案思路：</strong> 在顾问建议下，将退休资金拆分为几笔不同的安排：</p>
+                    <div class="bg-white p-4 rounded-xl border border-gray-200 mt-3 space-y-2">
                         <div class="flex items-start">
-                            <div class="w-12 h-12 bg-green-50 text-green-600 rounded-xl flex items-center justify-center text-2xl mr-4 flex-shrink-0">🛡️</div>
-                            <div>
-                                <h4 class="font-bold text-dark text-lg">消除市场风险</h4>
-                                <p class="text-gray-600 text-sm mt-1">
-                                    您的收入一旦设定，就不会受股市下跌或利率波动的影响，为您提供真正的内心安宁。
-                                </p>
-                            </div>
+                            <span class="text-primary font-bold mr-2">✓</span>
+                            <p class="text-gray-600 text-sm"><strong>基础日常开销：</strong> 借助具有保证性质的年金安排打底，确保每月有一笔稳定的生活费，不用看市场脸色。</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-secondary font-bold mr-2">✓</span>
+                            <p class="text-gray-600 text-sm"><strong>传承与应急部分：</strong> 留出一部分通过分红寿险与保本基金稳稳持有，既兼顾保本与适度增长，又便于日后清晰交接给家人。</p>
                         </div>
                     </div>
                 </div>
-                <div class="order-1 md:order-2 bg-light p-8 rounded-3xl border border-gray-100 shadow-xl">
-                    <div class="text-center mb-6">
-                        <span class="text-5xl">👴👵</span>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl mb-4 shadow-sm flex justify-between items-center">
-                        <span class="font-bold text-gray-600">退休后的每一月</span>
-                        <span class="font-bold text-green-600">+ $ 固定收入 ✅</span>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl mb-4 shadow-sm flex justify-between items-center">
-                        <span class="font-bold text-gray-600">股市暴跌 30%</span>
-                        <span class="font-bold text-green-600">收入不变 ✅</span>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl shadow-sm flex justify-between items-center">
-                        <span class="font-bold text-gray-600">活到 105 岁</span>
-                        <span class="font-bold text-green-600">持续支付 ✅</span>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-light">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-dark mb-4">2. 增长与保障并重的资产配置</h2>
-                <p class="text-gray-600">核心理念：在确保本金安全的前提下，追求市场增长，以抵御通货膨胀。</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <a href="segregated-funds.html" class="block bg-white p-8 rounded-2xl shadow-lg border-t-4 border-gold relative overflow-hidden group hover:-translate-y-2 hover:shadow-xl transition">
-                    <div class="absolute top-0 right-0 bg-gold/10 text-gold text-xs font-bold px-3 py-1 rounded-bl-lg group-hover:bg-gold group-hover:text-white transition">热门选择</div>
-                    <div class="text-4xl mb-4">📈</div>
-                    <h3 class="text-2xl font-bold text-dark mb-3 group-hover:text-primary transition">保本基金 (Segregated Funds)</h3>
-                    <p class="text-gray-500 mb-6 text-sm">结合了共同基金的增长潜力和保险合同的保障功能。</p>
-                    <ul class="space-y-4 text-gray-600 mb-6">
-                        <li class="flex items-start">
-                            <span class="text-gold mr-2 font-bold">✓</span>
-                            <span><strong>本金保证：</strong>提供到期和身故时 75% 至 100% 的本金保证，让您敢于投资市场而无惧崩盘。</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-gold mr-2 font-bold">✓</span>
-                            <span><strong>锁定收益 (Resets)：</strong>部分产品允许每年锁定市场收益，如果市场上涨，您的保障额也随之提高，且终身不降。</span>
-                        </li>
-                    </ul>
-                    <div class="pt-4 border-t border-gray-100 flex justify-between items-center text-sm font-bold text-primary group-hover:text-blue-600">
-                        <span>全面解析与产品详情</span>
-                        <span class="transform group-hover:translate-x-1 transition">&rarr;</span>
-                    </div>
-                </a>
-
-                <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-gray-400 hover:-translate-y-2 transition">
-                    <div class="text-4xl mb-4">🔒</div>
-                    <h3 class="text-2xl font-bold text-dark mb-3">保险 GIC (Insurance GICs)</h3>
-                    <p class="text-gray-500 mb-6 text-sm">提供 100% 的本金和利息保证，适合风险厌恶型投资者。</p>
-                    <ul class="space-y-4 text-gray-600">
-                        <li class="flex items-start">
-                            <span class="text-primary mr-2 font-bold">✓</span>
-                            <span><strong>绝对安全：</strong>本金与利息完全受保，无视市场波动。</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-primary mr-2 font-bold">✓</span>
-                            <span><strong>遗产优势：</strong>与银行 GIC 不同，它允许指定受益人，从而保护资产免受遗嘱认证费用的影响。</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-20 bg-dark text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold mb-4 text-center">3. 税务优化与高效传承</h2>
-            <p class="text-gray-400 text-center mb-12">这是一个关于“留住多少”而非“赚了多少”的游戏。</p>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/10">
-                    <div class="text-gold text-3xl mb-4">⚖️</div>
-                    <h4 class="text-xl font-bold mb-3">绕过遗嘱认证 (Bypass Probate)</h4>
-                    <p class="text-gray-300 text-sm leading-relaxed">
-                        通过指定受益人，您的资产在身故后可直接、快速、私密地支付给家人，无需经过漫长昂贵的遗嘱认证程序 (Probate)，且无需公开遗嘱内容。
-                    </p>
-                </div>
-
-                <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/10">
-                    <div class="text-gold text-3xl mb-4">📝</div>
-                    <h4 class="text-xl font-bold mb-3">遗产配置方案 (Legacy Settlement)</h4>
-                    <p class="text-gray-300 text-sm leading-relaxed">
-                        您可以控制受益人如何领钱（例如：不一次性给付，而是分期 10 年领取），防止挥霍，特别适合复杂的混合家庭或有特殊需求的子女。
-                    </p>
-                </div>
-
-                <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/10">
-                    <div class="text-gold text-3xl mb-4">🏢</div>
-                    <h4 class="text-xl font-bold mb-3">企业主策略 (Corporate)</h4>
-                    <p class="text-gray-300 text-sm leading-relaxed">
-                        利用企业资产转移策略，将盈余转入免税保险。减少被动投资税负，并利用资本红利账户 (CDA) 将资产免税传给股东及家人。
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- 客户最常问的几道题 (FAQ) -->
     <section class="py-20 bg-white">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-dark mb-10 text-center">为什么需要专业的规划？</h2>
-            <p class="text-center text-gray-600 mb-12">我们为您定制策略，助您平衡流动性、通胀与长寿风险。一个完善的退休计划通常采用 <span class="text-primary font-bold">“分桶策略”</span>：</p>
-            
-            <div class="flex flex-col md:flex-row justify-center items-end gap-4 md:gap-8">
-                <div class="w-full md:w-1/3 bg-gray-100 rounded-t-2xl p-6 text-center border-b-8 border-gray-400 h-48 flex flex-col justify-end">
-                    <div class="text-3xl mb-2">🏛️</div>
-                    <h4 class="font-bold text-gray-700">政府福利桶</h4>
-                    <p class="text-xs text-gray-500 mt-2">CPP / OAS</p>
-                    <p class="text-xs font-bold text-gray-600 mt-1">基础保障</p>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <h2 class="text-2xl md:text-4xl font-bold text-dark mb-3">客户最常问的几道题</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200">
+                    <h3 class="text-lg md:text-xl font-bold text-dark mb-3 flex items-start">
+                        <span class="text-primary font-bold mr-3">Q1</span>
+                        退休后每月收入到底从哪来？
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base pl-8">
+                        工资停了以后，收入要靠几块拼：政府福利、公司养老金、自己的 RRSP 和积蓄，再加上按合同给的保证收入。关键不是某一块有多少，而是拼在一起每月够不够、能撑多久。
+                    </p>
                 </div>
 
-                <div class="w-full md:w-1/3 bg-blue-50 rounded-t-2xl p-6 text-center border-b-8 border-primary h-64 flex flex-col justify-end shadow-lg transform md:-translate-y-2">
-                    <div class="text-3xl mb-2">💧</div>
-                    <h4 class="font-bold text-primary">保证收入桶</h4>
-                    <p class="text-xs text-gray-500 mt-2">年金 / 保险 GIC</p>
-                    <p class="text-xs font-bold text-primary mt-1">覆盖刚需开支</p>
+                <div class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200">
+                    <h3 class="text-lg md:text-xl font-bold text-dark mb-3 flex items-start">
+                        <span class="text-primary font-bold mr-3">Q2</span>
+                        RRSP 到底什么时候领、怎么领税最少？
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base pl-8">
+                        没有一个适合所有人的领法，领的顺序、金额和年份不同，税上差别可能很大，具体要看你那几年的其他收入和账户情况，这个得和会计一起算，页上不能直接给一个领法。
+                    </p>
                 </div>
 
-                <div class="w-full md:w-1/3 bg-goldlight rounded-t-2xl p-6 text-center border-b-8 border-gold h-56 flex flex-col justify-end">
-                    <div class="text-3xl mb-2">🚀</div>
-                    <h4 class="font-bold text-yellow-800">增长桶</h4>
-                    <p class="text-xs text-gray-600 mt-2">保本基金 / 投资</p>
-                    <p class="text-xs font-bold text-yellow-700 mt-1">对抗通胀与享乐</p>
+                <div class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200">
+                    <h3 class="text-lg md:text-xl font-bold text-dark mb-3 flex items-start">
+                        <span class="text-primary font-bold mr-3">Q3</span>
+                        想留给孩子，怎么做才不麻烦？
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base pl-8">
+                        受益人写谁、遗嘱怎么写、什么时候给，这些要先定好，再看用什么工具来留。保险可以作为留给家人的一块，但它不能代替遗嘱和律师的安排，具体以律师意见为准。
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200">
+                    <h3 class="text-lg md:text-xl font-bold text-dark mb-3 flex items-start">
+                        <span class="text-primary font-bold mr-3">Q4</span>
+                        生病需要长期护理，钱够吗？
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base pl-8">
+                        长期护理的费用和时间因人而异，提前没预留，退休计划很容易被打乱。重疾转长期护理、健康保障这些权利，要看你那份合同有没有、条件是什么，不能默认都有。
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200">
+                    <h3 class="text-lg md:text-xl font-bold text-dark mb-3 flex items-start">
+                        <span class="text-primary font-bold mr-3">Q5</span>
+                        市场跌了，退休钱会不会缩水？
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base pl-8">
+                        越接近退休，越怕波动，这是正常的。所以退休这块常常会分开看：一部分求稳、一部分求增长，稳的那部分要看合同里的保证范围和条件，不能只听“保本”两个字就定。
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- 约顾问聊聊，流程是这样的 -->
+    <section class="py-20 bg-light border-t border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <span class="text-primary font-bold text-sm tracking-widest uppercase">Process</span>
+                <h2 class="text-2xl md:text-4xl font-bold text-dark mt-2 mb-3">约顾问聊聊，流程是这样的</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto rounded-full mb-4"></div>
+                <p class="text-gray-500">透明、专业、不推销。带上你的家庭处境来就行。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
+                    <div class="text-primary font-bold text-2xl mb-2">01</div>
+                    <h3 class="font-bold text-dark text-lg mb-2">聊处境</h3>
+                    <p class="text-gray-600 text-sm">快退休还是已退休、每月要花多少、想留多少、已有养老金和积蓄，先把情况说清。</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
+                    <div class="text-primary font-bold text-2xl mb-2">02</div>
+                    <h3 class="font-bold text-dark text-lg mb-2">做需求分析</h3>
+                    <p class="text-gray-600 text-sm">把每月收入、健康预留、传承预留三笔账分开算，看看到底缺哪几块、缺多少。</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
+                    <div class="text-primary font-bold text-2xl mb-2">03</div>
+                    <h3 class="font-bold text-dark text-lg mb-2">拿建议书</h3>
+                    <p class="text-gray-600 text-sm">看到具体的保障、收入安排和条款，再决定，涉及税务和遗产的部分再和会计、律师对接。</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
+                    <div class="text-primary font-bold text-2xl mb-2">04</div>
+                    <h3 class="font-bold text-dark text-lg mb-2">跟进核保</h3>
+                    <p class="text-gray-600 text-sm">提交后跟进结果，有问题再调整确认。</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 border border-gray-200 text-center max-w-2xl mx-auto shadow-sm">
+                <p class="text-gray-700 text-base md:text-lg mb-6">
+                    全程不施压，中英文都可以。约之前不用准备任何产品知识，带上你的处境来就行。
+                </p>
+                <a href="index.html#contact" class="inline-block bg-primary hover:bg-blue-600 text-white font-bold px-10 py-4 rounded-xl text-lg transition shadow-xl shadow-blue-500/20">
+                    预约咨询
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 进阶参考：资产与遗产相关安排 (垫底模块) -->
+    <section id="advanced-strategies" class="py-20 bg-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold text-gold uppercase tracking-widest bg-gray-800 py-1 px-3 rounded-full border border-gold/30">
+                    进阶参考 · 适合想深挖的家庭
+                </span>
+                <h2 class="text-3xl font-bold mt-4 mb-4">资产与遗产相关安排</h2>
+                <p class="text-gray-400 text-sm md:text-base max-w-2xl mx-auto">
+                    这部分适合已经理清退休生活现金流、希望进一步了解长线资产保全与手续简化的朋友。涉及具体法律和税务安排，请以会计师、律师的专业意见为准。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- 遗嘱认证相关安排 -->
+                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-gold/50 transition">
+                    <div class="text-gold text-sm font-bold uppercase tracking-wider mb-2">手续与流程</div>
+                    <h3 class="text-2xl font-bold mb-4">A. 遗嘱认证相关安排</h3>
+                    <p class="text-gray-300 text-sm mb-6">了解保单直接指定受益人与普通银行账户在资产移交程序上的差异。</p>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>直接指定受益人：</strong> 依据合同通常可直接赔付至受益人账户，不经过冗长认证。</li>
+                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>隐私与时间：</strong> 赔付过程保持家庭隐私，减轻家人初期的手续周折。</li>
+                    </ul>
+                </div>
+
+                <!-- 资产保全 -->
+                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-gold/50 transition">
+                    <div class="text-gold text-sm font-bold uppercase tracking-wider mb-2">资产隔离</div>
+                    <h3 class="text-2xl font-bold mb-4">B. 潜在债权隔离参考</h3>
+                    <p class="text-gray-300 text-sm mb-6">了解保本基金及年金在特定指定受益人结构下的法律属性与抗风险特征。</p>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>法律属性：</strong> 在满足特定法定直系亲属受益人要求时，或可具备一定资产防护作用。</li>
+                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>具体审查：</strong> 需排除恶意转移并经法律专业人士根据具体个案审查为准。</li>
+                    </ul>
+                </div>
+
+                <!-- 世代传承架构 -->
+                <div class="bg-gradient-to-br from-gold/20 to-transparent p-8 rounded-2xl border border-gold/40 relative overflow-hidden">
+                    <div class="text-gold text-sm font-bold uppercase tracking-wider mb-2">长线架构</div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">C. 跨代传承工具参考</h3>
+                    <p class="text-gray-200 text-sm mb-6">通过终身保单的分红现金值与保额机制，稳稳将父母积蓄转换为下一代确定的资金底气。</p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>确定留给家人：</strong> 身故赔付免税留给指定后代，不计入个人最终所得。</li>
+                        <li class="flex items-start"><span class="text-gold mr-2">✓</span> <strong>工具协同：</strong> 保险与信托、遗嘱相互配合，实现家庭心愿稳健落地。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 合规免责声明与页脚 -->
     <footer class="bg-gray-50 border-t border-gray-200 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="mb-4">
                 <span class="text-2xl font-bold text-dark">Insured618</span>
             </div>
             <p class="text-gray-500 mb-8">守护今天，富足未来</p>
-            <div class="flex justify-center gap-4 mb-8">
-                <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-bold transition text-sm">
-                    预约退休规划咨询
-                </a>
-            </div>
-            <div class="text-gray-500 text-xs space-y-2 max-w-2xl mx-auto">
-                <p>免责声明：保本基金与年金产品的具体条款以合同为准。过往表现不代表未来收益。</p>
-                <p>© 2025 Insured618. All rights reserved.</p>
+            <div class="text-gray-400 text-sm space-y-2">
+                <p class="max-w-3xl mx-auto text-xs leading-relaxed text-gray-500 bg-white p-4 rounded-xl border border-gray-200">
+                    本页仅供教育和参考，不构成保险合同、法律或税务建议。实际保障内容、保费和承保结果，以保险公司的正式建议书及核保结果为准，具体条款以保单合同为准，税务和遗产安排以会计、律师的专业意见为准。
+                </p>
+                <p class="mt-4">© 2025 Insured618. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <!-- 移动端导航脚本 -->
     <script>
         const btn = document.getElementById('mobile-menu-button');
         const menu = document.getElementById('mobile-menu');
 
         if (btn && menu) {
-            // 1. 点击按钮切换菜单显示状态
             btn.addEventListener('click', (e) => {
-                e.stopPropagation(); // 阻止点击事件冒泡到 document
+                e.stopPropagation();
                 menu.classList.toggle('hidden');
             });
 
-            // 2. 点击页面其他地方关闭菜单
             document.addEventListener('click', (e) => {
-                // 如果菜单是打开的，且点击的目标既不是菜单本身，也不是按钮，则关闭菜单
                 if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !btn.contains(e.target)) {
                     menu.classList.add('hidden');
                 }
             });
 
-            // 3. 点击菜单内部的链接后自动关闭
             menu.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => {
                     menu.classList.add('hidden');

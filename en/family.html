@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young Families Protection Guide - Insured618</title>
+    
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    
+    <meta name="description" content="A practical protection planning guide for Canadian young families with mortgages and children. Start from your real situation and financial gaps, not complicated product jargon.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4C8DFF',
+                        secondary: '#00C2CB',
+                        dark: '#1A1D21',
+                        light: '#F7F9FC',
+                        accent: '#FF7A59',
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans SC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(135deg, #4C8DFF 0%, #00C2CB 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="../insured618_profile_option2.png" alt="Insured618 Logo" class="h-16 w-16 rounded-full object-cover hover:scale-105 transition-transform duration-200 shadow-md">
+                    </a>
+                </div>
+
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-primary focus:outline-none p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition">Home</a>
+                    <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary transition">Core Solutions</a>
+                    <a href="wealth.html" class="text-gray-600 hover:text-primary transition">Wealth</a>
+                    <a href="business.html" class="text-gray-600 hover:text-primary transition">Business</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary transition">About</a>
+                    <a href="https://calculator.frank-zhang.com" target="_blank" class="text-gray-600 hover:text-accent font-bold transition flex items-center">Smart Calculator <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                    
+                    <a href="../family.html" class="text-sm font-bold text-gray-500 hover:text-primary border border-gray-300 px-3 py-1 rounded transition">
+                        中文
+                    </a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg shadow-blue-500/30">Book Consultation</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white shadow-lg border-t border-gray-100">
+            <div class="flex flex-col px-4 py-4 space-y-4">
+                <a href="index.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Home</a>
+                <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Core Solutions</a>
+                <a href="wealth.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Wealth</a>
+                <a href="business.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Business</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">About</a>
+                <a href="https://calculator.frank-zhang.com" target="_blank" class="text-accent font-bold border-b border-gray-50 pb-2 flex items-center justify-between">Smart Calculator <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+
+                <a href="../family.html" class="text-gray-500 font-bold border-t border-gray-100 pt-2 mt-2 flex items-center">
+                    <span class="mr-2">🌏</span> Switch to 中文
+                </a>
+
+                <a href="index.html#contact" class="text-primary font-bold">Book Consultation &rarr;</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-gradient-to-b from-light to-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200 text-primary text-xs md:text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+                <span>🏡</span>
+                <span>Life Stage Navigator · Young Families</span>
+            </div>
+            
+            <h1 class="text-3xl md:text-5xl font-bold text-dark mb-6 tracking-tight leading-tight">
+                Young Families, <span class="gradient-text">Mortgage & Kids</span>
+            </h1>
+            
+            <p class="text-lg md:text-2xl text-gray-700 font-medium mb-6">
+                The mortgage isn't paid off yet. If one parent suddenly can't work or passes away, how will monthly bills be covered and your children's future secured?
+            </p>
+            
+            <p class="max-w-2xl mx-auto text-base md:text-lg text-gray-500 mb-10 leading-relaxed">
+                First identify what gaps your household actually faces, then decide what to fill. You don't need to master product names—start from your real situation.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://calculator.frank-zhang.com" target="_blank" class="w-full sm:w-auto bg-primary hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-base transition shadow-xl shadow-blue-500/20 flex items-center justify-center">
+                    Take 60-Sec Assessment
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+                <a href="#gap-calculator" class="w-full sm:w-auto bg-white text-gray-800 border border-gray-300 hover:border-gray-400 px-8 py-4 rounded-xl font-bold text-base transition shadow-sm flex items-center justify-center">
+                    Estimate Your Gap
+                </a>
+                <a href="index.html#contact" class="w-full sm:w-auto text-primary hover:text-blue-700 px-6 py-4 font-bold text-base transition flex items-center justify-center">
+                    Talk to an Advisor &rarr;
+                </a>
+            </div>
+        </div>
+        <div class="absolute top-0 left-0 -ml-20 mt-20 w-64 h-64 rounded-full bg-secondary/10 blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 -mr-20 mb-20 w-80 h-80 rounded-full bg-primary/10 blur-3xl"></div>
+    </section>
+
+    <!-- Sound Familiar Section -->
+    <section class="py-16 bg-white border-y border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-dark mb-3">Sound Familiar?</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl p-6 md:p-10 border border-gray-200">
+                <div class="space-y-4 text-gray-700 text-base md:text-lg">
+                    <div class="flex items-start">
+                        <span class="text-primary text-xl font-bold mr-3 mt-0.5">☐</span>
+                        <p>The mortgage has many years left; household expenses rely mainly on one or two incomes.</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-primary text-xl font-bold mr-3 mt-0.5">☐</span>
+                        <p>Kids are young; their living costs and education still depend entirely on you.</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-primary text-xl font-bold mr-3 mt-0.5">☐</span>
+                        <p>You have employer group benefits, but aren't sure if coverage stays when changing jobs or if limits are adequate.</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-primary text-xl font-bold mr-3 mt-0.5">☐</span>
+                        <p>You've considered adding personal coverage, but get stuck the moment you see confusing insurance jargon.</p>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-gray-200 text-center">
+                    <p class="text-primary font-bold text-lg md:text-xl">
+                        If you nodded to two or more of these, this page was written for you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The 3 Core Gaps -->
+    <section class="py-20 bg-light">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl md:text-4xl font-bold text-dark mb-4">The 3 Most Common Gaps at This Stage</h2>
+                <p class="text-gray-500 max-w-xl mx-auto">When risks materialize, families don't face policy terminology—they face non-negotiable monthly expenses.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Gap 1 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">
+                        01
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Income Disruption</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                        If one breadwinner falls ill or passes away, the surviving partner must manage the family while continuing to cover bills and payments. Life cannot pause.
+                    </p>
+                </div>
+
+                <!-- Gap 2 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">
+                        02
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Mortgage & Fixed Overhead</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                        Mortgage, property taxes, auto loans, insurance, and utilities are charged monthly. They do not pause because a family experiences hardship.
+                    </p>
+                </div>
+
+                <!-- Gap 3 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-primary rounded-xl flex items-center justify-center font-bold text-xl mb-6">
+                        03
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Recovery & Time-Off Costs</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                        When diagnosed with a severe illness, you may be unable to work for months. Rehab, extra caregiving, and reducing workloads all require liquid cash.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Protections Typically Pair Together -->
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-4xl font-bold text-dark mb-4">How Protections Typically Pair Together</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto rounded-full mb-6"></div>
+                <p class="text-sm md:text-base text-gray-500 max-w-2xl mx-auto bg-gray-50 py-3 px-4 rounded-xl border border-gray-200">
+                    💡 <strong>Educational Note:</strong> This is not purchase advice. It illustrates how different protections solve distinct challenges. An advisor will prepare a formal proposal tailored to your situation:
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Term Life -->
+                <div class="p-6 md:p-8 rounded-2xl border border-gray-200 hover:border-primary transition bg-white shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="md:w-3/4">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="text-2xl">🛡️</span>
+                            <h3 class="text-xl font-bold text-dark">Term Life Insurance</h3>
+                            <span class="text-xs bg-blue-100 text-primary px-2.5 py-0.5 rounded-full font-semibold">Family Baseline</span>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            Provides a tax-free lump sum to your family if you pass away, allowing them to pay off the mortgage, maintain years of living expenses, and support your children's future.
+                        </p>
+                    </div>
+                    <div class="md:w-1/4 flex-shrink-0 text-left md:text-right">
+                        <a href="term.html" class="inline-flex items-center text-primary font-bold hover:text-blue-700 transition">
+                            Explore Term Life &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Critical Illness -->
+                <div class="p-6 md:p-8 rounded-2xl border border-gray-200 hover:border-primary transition bg-white shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="md:w-3/4">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="text-2xl">🏥</span>
+                            <h3 class="text-xl font-bold text-dark">Critical Illness Insurance</h3>
+                            <span class="text-xs bg-red-100 text-red-600 px-2.5 py-0.5 rounded-full font-semibold">Recovery Fund</span>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            Pays a lump sum upon surviving a specified critical illness diagnosis, giving you the financial freedom to rest, recover, and replace income loss without depleting savings.
+                        </p>
+                    </div>
+                    <div class="md:w-1/4 flex-shrink-0 text-left md:text-right">
+                        <a href="ci.html" class="inline-flex items-center text-primary font-bold hover:text-blue-700 transition">
+                            Explore Critical Illness &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Disability Income -->
+                <div class="p-6 md:p-8 rounded-2xl border border-gray-200 hover:border-primary transition bg-white shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="md:w-3/4">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="text-2xl">💼</span>
+                            <h3 class="text-xl font-bold text-dark">Disability Income Insurance</h3>
+                            <span class="text-xs bg-amber-100 text-amber-700 px-2.5 py-0.5 rounded-full font-semibold">Monthly Income Replacement</span>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            Provides ongoing monthly income if illness or accident prevents you from working, ensuring household cash flow remains uninterrupted.
+                        </p>
+                    </div>
+                    <div class="md:w-1/4 flex-shrink-0 text-left md:text-right">
+                        <a href="https://calculator.frank-zhang.com" target="_blank" class="inline-flex items-center text-primary font-bold hover:text-blue-700 transition">
+                            Learn via Calculator &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Health & Dental -->
+                <div class="p-6 md:p-8 rounded-2xl border border-gray-200 hover:border-primary transition bg-white shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="md:w-3/4">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="text-2xl">🩺</span>
+                            <h3 class="text-xl font-bold text-dark">Health & Dental Insurance</h3>
+                            <span class="text-xs bg-green-100 text-green-700 px-2.5 py-0.5 rounded-full font-semibold">Everyday Reimbursements</span>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                            Covers everyday prescription medications, routine dental care, physio/chiro therapies, and vision care beyond provincial health plans or for families without group benefits.
+                        </p>
+                    </div>
+                    <div class="md:w-1/4 flex-shrink-0 text-left md:text-right">
+                        <a href="health.html" class="inline-flex items-center text-primary font-bold hover:text-blue-700 transition">
+                            Explore Health & Dental &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 text-center text-gray-600 font-medium">
+                Calculate your gaps first, then evaluate what needs topping up. You don't need to buy everything at once, nor buy based on guesswork.
+            </div>
+        </div>
+    </section>
+
+    <!-- Gap Calculation Methodology -->
+    <section id="gap-calculator" class="py-20 bg-light border-y border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-primary font-bold text-sm tracking-widest uppercase">Methodology</span>
+                <h2 class="text-2xl md:text-4xl font-bold text-dark mt-2 mb-4">How to Think About Your Coverage Gap</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Formula Display Card -->
+            <div class="bg-white rounded-2xl p-6 md:p-8 border border-gray-200 shadow-md mb-8">
+                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Common Estimation Approach</p>
+                <div class="bg-blue-50/60 p-4 md:p-6 rounded-xl border border-blue-100 text-dark font-medium text-base md:text-lg leading-relaxed">
+                    <span class="text-primary font-bold">Mortgage Balance</span> + 
+                    <span class="text-primary font-bold">Monthly Expenses × Months to Cover</span> + 
+                    <span class="text-primary font-bold">Child Education Reserve</span> - 
+                    <span class="text-gray-500">Existing Group Benefits & Savings</span> = 
+                    <span class="text-accent font-bold">Net Protection Gap to Consider</span>
+                </div>
+
+                <!-- Hypothetical Example Box -->
+                <div class="mt-6 bg-gray-50 p-5 rounded-xl border border-gray-200 text-sm md:text-base text-gray-600 leading-relaxed">
+                    <p class="font-bold text-dark mb-2 flex items-center">
+                        <span class="mr-2">📝</span> Hypothetical Example (Formula demonstration only, not coverage advice):
+                    </p>
+                    <p class="mb-2">
+                        Suppose a household has a remaining mortgage of <strong>$600,000</strong>, monthly essential living expenses of <strong>$5,000</strong>, and wishes to secure a 3-year (36 months) transition cushion of <strong>$180,000</strong>; subtracting an existing employer group life coverage of <strong>$200,000</strong>:
+                    </p>
+                    <div class="font-mono text-dark font-semibold bg-white p-3 rounded-lg border border-gray-200 my-2">
+                        $600,000 + $180,000 - $200,000 = ~$580,000 Baseline Responsibility Gap
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">
+                        *Note: This simplified example does not factor in existing liquid savings, a spouse's independent income, post-secondary education funds, or existing personal policies. Exact coverage depends on your personal financial needs analysis (FNA) and underwriting.
+                    </p>
+                </div>
+
+                <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://calculator.frank-zhang.com" target="_blank" class="bg-primary hover:bg-blue-600 text-white font-bold px-6 py-3.5 rounded-xl text-center transition shadow-md shadow-blue-500/20">
+                        Calculate Term Life Coverage &rarr;
+                    </a>
+                    <a href="https://calculator.frank-zhang.com" target="_blank" class="bg-white border border-gray-300 hover:border-gray-400 text-gray-800 font-bold px-6 py-3.5 rounded-xl text-center transition shadow-sm">
+                        Calculate Critical Illness Fund &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <h2 class="text-2xl md:text-4xl font-bold text-dark mb-3">Frequently Asked Questions</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200">
+                    <h3 class="text-lg md:text-xl font-bold text-dark mb-3 flex items-start">
+                        <span class="text-primary font-bold mr-3">Q1</span>
+                        I have group benefits through work. Do I still need individual insurance?
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base pl-8">
+                        Group plans are an excellent foundation, but limits are typically tied to your salary (e.g. 1–2x annual pay) and may end or alter if you switch employers. Critical illness and disability coverage may also be limited. Most people use group insurance as a baseline and top up what's missing, rather than treating it as an either-or decision.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200">
+                    <h3 class="text-lg md:text-xl font-bold text-dark mb-3 flex items-start">
+                        <span class="text-primary font-bold mr-3">Q2</span>
+                        What is the core difference between Life Insurance and Critical Illness?
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base pl-8">
+                        Simply put: Life insurance provides funds to your loved ones if you pass away. Critical illness insurance provides funds to you while you are alive and recovering from a major illness. Disability income replaces a portion of earnings month-by-month if you cannot work. Because they address different financial problems, they are often reviewed together.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200">
+                    <h3 class="text-lg md:text-xl font-bold text-dark mb-3 flex items-start">
+                        <span class="text-primary font-bold mr-3">Q3</span>
+                        How much coverage is enough?
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base pl-8">
+                        There is no one-size-fits-all number. Key variables include your remaining mortgage, monthly fixed overhead, target years of coverage, kids' ages, and existing assets. Always calculate the gap first before evaluating products.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200">
+                    <h3 class="text-lg md:text-xl font-bold text-dark mb-3 flex items-start">
+                        <span class="text-primary font-bold mr-3">Q4</span>
+                        What if I have some health conditions? Can we still discuss options?
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-sm md:text-base pl-8">
+                        Health conditions impact underwriting, but they certainly do not preclude coverage. Many conditions qualify for standard rates or specific exclusions, while others require reviewing medical history. Don't rule yourself out beforehand—talk it through first, and base decisions on the underwriter's actual response.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Process -->
+    <section class="py-20 bg-light border-t border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <span class="text-primary font-bold text-sm tracking-widest uppercase">Process</span>
+                <h2 class="text-2xl md:text-4xl font-bold text-dark mt-2 mb-3">How Advisor Consultations Work</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto rounded-full mb-4"></div>
+                <p class="text-gray-500">Transparent, professional, and zero-pressure. Just bring your real situation.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
+                    <div class="text-primary font-bold text-2xl mb-2">01</div>
+                    <h3 class="font-bold text-dark text-lg mb-2">Understand Context</h3>
+                    <p class="text-gray-600 text-sm">Mortgage, income, children, existing group coverage (~15 minutes to clarify basics).</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
+                    <div class="text-primary font-bold text-2xl mb-2">02</div>
+                    <h3 class="font-bold text-dark text-lg mb-2">Needs Analysis</h3>
+                    <p class="text-gray-600 text-sm">Run real numbers together to see exactly where gaps exist and how much is needed.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
+                    <div class="text-primary font-bold text-2xl mb-2">03</div>
+                    <h3 class="font-bold text-dark text-lg mb-2">Review Proposals</h3>
+                    <p class="text-gray-600 text-sm">Review precise benefits, monthly premiums, and policy wording before deciding.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm relative">
+                    <div class="text-primary font-bold text-2xl mb-2">04</div>
+                    <h3 class="font-bold text-dark text-lg mb-2">Underwriting</h3>
+                    <p class="text-gray-600 text-sm">We handle application follow-ups with insurers and help adjust if any questions arise.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 border border-gray-200 text-center max-w-2xl mx-auto shadow-sm">
+                <p class="text-gray-700 text-base md:text-lg mb-6">
+                    Zero sales pressure, fully bilingual in English and Chinese. You don't need any prior insurance knowledge—just bring your circumstances.
+                </p>
+                <a href="index.html#contact" class="inline-block bg-primary hover:bg-blue-600 text-white font-bold px-10 py-4 rounded-xl text-lg transition shadow-xl shadow-blue-500/20">
+                    Book Free Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Disclaimer -->
+    <footer class="bg-gray-50 border-t border-gray-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <span class="text-2xl font-bold text-dark">Insured618</span>
+            </div>
+            <p class="text-gray-500 mb-8">Protecting Today, Prospering Tomorrow</p>
+            <div class="text-gray-400 text-sm space-y-2">
+                <p class="max-w-3xl mx-auto text-xs leading-relaxed text-gray-500 bg-white p-4 rounded-xl border border-gray-200">
+                    Disclaimer: This page is for educational and reference purposes only and does not constitute an insurance contract, legal, or tax advice. Actual benefits, premiums, and underwriting outcomes are subject to formal insurance company proposals and binding policy contracts.
+                </p>
+                <p class="mt-4">© 2025 Insured618. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btn && menu) {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                menu.classList.toggle('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !btn.contains(e.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+
+</body>
+</html>
