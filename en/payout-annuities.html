@@ -17,6 +17,7 @@
                 extend: {
                     colors: {
                         primary: '#4C8DFF', // Index Blue
+                        secondary: '#00AA6C', // Standard Green
                         dark: '#1A1D21',
                         light: '#F7F9FC',
                         gold: '#D4AF37', // Wealth Gold
@@ -98,54 +99,149 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="relative pt-32 pb-24 hero-bg overflow-hidden">
-        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <span class="inline-block py-1 px-4 rounded-full bg-primary/20 border border-primary/40 text-primary text-sm font-bold mb-6 tracking-wide uppercase">
-                Establish Your Private Pension
-            </span>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Payout Annuities <br><span class="text-primary text-4xl md:text-5xl lg:text-6xl">Secure Retirement Cash Flow</span>
+    <!-- Hero: Scenario Question -->
+    <section class="relative pt-32 pb-16 bg-light border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-dark mb-6 leading-snug">
+                Retirement Expenses, <br class="sm:hidden">Market-Independent:<br>
+                Can They Arrive on Time, <br class="sm:hidden">Just Like a Paycheck?
             </h1>
-            <p class="max-w-3xl mx-auto text-xl text-gray-300 mb-10 font-light leading-relaxed">
-                Eliminate stock market stresses and worries. Transfer accumulated capital into a reliable, predictable income stream to construct an absolutely peaceful, golden retirement.
+            <p class="max-w-3xl mx-auto text-base md:text-lg text-gray-600 mb-8 leading-relaxed">
+                A payout annuity turns accumulated savings into a contractually guaranteed cash flow. Once locked in, payments follow the contract. Determine your monthly need, duration, and spousal coverage first before choosing options.
             </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#config" class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-600 transition shadow-lg text-center">
+                    Explore Custom Plans &rarr;
+                </a>
+                <a href="index.html#contact" class="bg-white text-primary border border-gray-200 px-8 py-3 rounded-xl font-bold hover:bg-gray-50 transition text-center">
+                    Speak with an Advisor
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Why Annuities -->
-    <section class="py-20 bg-white bg-grid-pattern">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-dark mb-8">Free Up Your Mind, Experience True Living</h2>
-            <p class="text-lg text-gray-600 leading-relaxed mb-12">
-                Retirement shouldn't consist of daily portfolio monitoring or market panic. Payout Annuities convert your savings into competitive, highly secure income. **You secure a locked-in payout amount that is contractually guaranteed never to decrease**. With a life annuity, this cash flow accompanies you for as long as you live. It is the perfect cornerstone for your stress-free retirement plan.
-            </p>
-        </div>
+    <!-- 4 Self-Checks -->
+    <section class="py-16 bg-white border-b border-gray-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <span class="text-xs font-bold text-primary uppercase tracking-widest bg-blue-50 py-1 px-3 rounded-full border border-blue-200">
+                    Self-Assessment
+                </span>
+                <h2 class="text-2xl md:text-3xl font-bold text-dark mt-3 mb-2">Sound Familiar?</h2>
+                <div class="w-12 h-1 bg-secondary mx-auto rounded-full mt-3"></div>
+            </div>
 
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-light p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition text-center">
-                    <div class="w-16 h-16 bg-blue-100 text-primary rounded-full flex items-center justify-center text-3xl mx-auto mb-6">🛡️</div>
-                    <h3 class="text-xl font-bold text-dark mb-3">Absolute Security</h3>
-                    <p class="text-gray-600">Secure guaranteed income for life or a specified period, completely shielded from stock market crashes.</p>
+            <div class="space-y-3 mb-8">
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">Approaching or in retirement, worried about outliving your money, and wanting a guaranteed monthly "paycheck."</p>
                 </div>
-                <div class="bg-light p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition text-center">
-                    <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-6">☕</div>
-                    <h3 class="text-xl font-bold text-dark mb-3">Absolute Simplicity</h3>
-                    <p class="text-gray-600">Requires no active portfolio rebalancing, completely insulated from falling interest rates or volatile market conditions.</p>
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">As a couple, you want to ensure if one spouse passes away, the surviving spouse's income continues uninterrupted.</p>
                 </div>
-                <div class="bg-light p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition text-center">
-                    <div class="w-16 h-16 bg-goldlight text-gold rounded-full flex items-center justify-center text-3xl mx-auto mb-6">⚖️</div>
-                    <h3 class="text-xl font-bold text-dark mb-3">Stable Cash Flow</h3>
-                    <p class="text-gray-600">Enjoy "monthly paycheck" convenience, giving you 100% precision control over your household lifestyle budgets.</p>
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">You hold funds in RRSP, RRIF, TFSA, or non-registered accounts, and want to turn them into cash flow but aren't sure which is most tax-efficient.</p>
+                </div>
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">Concerned about inflation and wanting income to grow, or wanting higher cash flow before government benefits start, leveling out afterward.</p>
+                </div>
+            </div>
+
+            <!-- Transition Banner -->
+            <div class="bg-blue-50/70 border border-blue-100 rounded-xl p-4 text-center">
+                <p class="text-primary font-bold text-sm md:text-base">
+                    👉 Nodded along to 2 or more? Check out the common concerns below before diving into plan parameters.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Objections (Single-Column Cards) -->
+    <section class="py-16 bg-gray-50 border-b border-gray-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold text-primary uppercase tracking-widest bg-blue-50 py-1 px-3 rounded-full border border-blue-200">
+                    Clarity First
+                </span>
+                <h2 class="text-2xl md:text-3xl font-bold text-dark mt-3 mb-2">6 Common Questions About Payout Annuities</h2>
+                <div class="w-12 h-1 bg-secondary mx-auto rounded-full mt-3"></div>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Q1 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q1.</span>
+                        <span>Can I change my mind or cancel after purchasing?</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        As stated in the contract disclaimer, once annuity payouts are locked in, they are completely irrevocable, and legislative regulations may affect the types you can purchase. Therefore, never convert all of your savings into an annuity at once; you must retain emergency liquidity reserves. An advisor will help determine how much to convert based on your total assets and monthly budget shortfall.
+                    </p>
+                </div>
+
+                <!-- Q2 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q2.</span>
+                        <span>What if I pass away shortly after buying? Does my money disappear?</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        Not necessarily, depending on whether you add a guaranteed period. A life annuity can include a 10- or 15-year guaranteed period rider. If death occurs within the guaranteed period, beneficiaries receive remaining scheduled payments or a lump-sum death benefit according to funding source and contract terms. After the guaranteed period ends, no death benefit remains, and adding a guarantee period will lower the monthly payout amount—exact trade-offs must be evaluated via official quotes rather than assuming principal is unconditionally preserved.
+                    </p>
+                </div>
+
+                <!-- Q3 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q3.</span>
+                        <span>Are monthly payments guaranteed never to decrease?</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        It depends on the selected income mode. Level income stays constant each month; indexed income increases annually by a specified percentage (e.g., 2%); integrated income intentionally reduces the annuity payout portion once government benefits commence so total overall cash flow remains balanced. Saying "payments never decrease" is not a universal rule; your choice depends on whether you fear inflation more or monthly income adjustments.
+                    </p>
+                </div>
+
+                <!-- Q4 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q4.</span>
+                        <span>What about inflation? Will fixed payouts be enough in 20 years?</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        Fixed payments experience purchasing power erosion over time. An indexed income option scales payouts annually to help offset inflation, but initial starting payouts will be lower. The exact spread is determined in the carrier quote. It should not be framed as guaranteed to outpace inflation, nor that level income will definitely fall short—compare both against your anticipated living expense growth.
+                    </p>
+                </div>
+
+                <!-- Q5 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q5.</span>
+                        <span>Is it wise to buy at current interest rates? What if rates rise later?</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        Monthly payout rates depend on age, gender, premium volume, and prevailing market interest rates at issue. Payout rates lock in at contract signing; you cannot retroactively reset your contract if rates rise in the future. Understand this trade-off clearly before committing rather than assuming adjustments are possible later.
+                    </p>
+                </div>
+
+                <!-- Q6 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q6.</span>
+                        <span>How is taxation handled? Are RRSP, RRIF, TFSA, and Non-Registered treated the same?</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        No, tax treatment differs fundamentally by capital source. Net after-tax cash flow depends entirely on your account structure. After-tax illustrations provided by advisors are for demonstrative comparison only and do not constitute formal tax advice. Actual tax liabilities must be reviewed and finalized by a licensed professional accountant based on your personal financial profile.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Custom Plans -->
-    <section class="py-20 bg-dark text-white relative overflow-hidden">
+    <section id="config" class="py-20 bg-dark text-white relative overflow-hidden">
         <div class="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
         <div class="absolute bottom-0 left-0 w-64 h-64 bg-gold/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
         
@@ -229,7 +325,7 @@
                         If you pass away before the guaranteed period ends, the insurance carrier will **never** retain your capital! We continue monthly disbursements to your designated beneficiaries, or pay out the remaining discounted value as a lump-sum death benefit.
                     </p>
                     <div class="inline-flex items-center text-sm font-bold text-gray-800 bg-gray-100 px-4 py-2 rounded-lg">
-                        ✌️ Secure lifetime protection payouts while protecting your capital core for early passing scenarios.
+                        💡 Enjoy guaranteed lifetime cash flow while securing designated protection for early passing. Adding a guaranteed period will lower monthly payouts—see quote for exact figures.
                     </div>
                 </div>
             </div>
@@ -249,6 +345,48 @@
         </div>
     </section>
 
+    <!-- Situation Navigator Backlink (Compact Strip Edition) -->
+    <section class="py-10 bg-blue-50/50 border-t border-blue-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-6">
+                <div class="inline-flex items-center space-x-2 text-primary font-bold text-sm">
+                    <span>🏡</span>
+                    <span>Back to Real-Life Situations</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <a href="family.html" class="group block p-4 bg-white rounded-xl border border-blue-100 hover:border-primary/60 hover:shadow-sm transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-dark group-hover:text-primary transition text-sm sm:text-base">Young Families (Mortgage & Kids)</span>
+                        <span class="text-primary font-bold text-sm group-hover:translate-x-0.5 transition-transform ml-2">&rarr;</span>
+                    </div>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-1.5 leading-relaxed">How would mortgage payments and fixed costs hold up while you recover? See the family's three gaps first, then plan the recovery fund.</p>
+                </a>
+                <a href="newcomers.html" class="group block p-4 bg-white rounded-xl border border-blue-100 hover:border-primary/60 hover:shadow-sm transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-dark group-hover:text-primary transition text-sm sm:text-base">Newcomers (Just Arrived)</span>
+                        <span class="text-primary font-bold text-sm group-hover:translate-x-0.5 transition-transform ml-2">&rarr;</span>
+                    </div>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-1.5 leading-relaxed">Just arrived in Canada. Where would the first money come from if you got sick? See the transition gap first.</p>
+                </a>
+                <a href="business.html" class="group block p-4 bg-white rounded-xl border border-blue-100 hover:border-primary/60 hover:shadow-sm transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-dark group-hover:text-primary transition text-sm sm:text-base">Business Owners & Self-Employed</span>
+                        <span class="text-primary font-bold text-sm group-hover:translate-x-0.5 transition-transform ml-2">&rarr;</span>
+                    </div>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-1.5 leading-relaxed">If you got sick or passed away, what happens to the company, its loans, and your family? Separate the business gap from the family gap first.</p>
+                </a>
+                <a href="wealth.html" class="group block p-4 bg-white rounded-xl border border-blue-100 hover:border-primary/60 hover:shadow-sm transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-dark group-hover:text-primary transition text-sm sm:text-base">Approaching Retirement</span>
+                        <span class="text-primary font-bold text-sm group-hover:translate-x-0.5 transition-transform ml-2">&rarr;</span>
+                    </div>
+                    <p class="text-gray-600 text-xs sm:text-sm mt-1.5 leading-relaxed">In retirement, if illness or long-term care is needed, will the money be enough, and will it burden your family? See the health and care reserve first.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-gray-900 border-t border-gray-800 py-12 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -257,7 +395,7 @@
             </div>
             <p class="text-gray-400 mb-8">Protecting Today, Prospering Tomorrow</p>
             <div class="text-gray-600 text-xs space-y-2 max-w-2xl mx-auto">
-                <p>Disclaimer: Once locked in, annuity contracts are fully irrevocable. Specific provincial legislative regulations might limit the types of annuities available to you. Terms are governed by carrier contracts.</p>
+                <p>Disclaimer: Once locked in, annuity contracts are fully irrevocable. Specific provincial legislative regulations might limit the types of annuities available to you. Terms are governed by carrier contracts. Any tax illustrations are for demonstration purposes only and do not constitute tax advice; actual tax treatment must be determined by a licensed professional accountant.</p>
                 <p>© 2025 Insured618. All rights reserved.</p>
             </div>
         </div>
