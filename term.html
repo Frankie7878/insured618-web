@@ -7,7 +7,7 @@
     
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-    <meta name="description" content="定期人寿保险 (Term Life) 为您的房贷和家庭提供高性价比的财务保障。Insured618 提供 10-30 年灵活期限选择，保费固定，适合年轻家庭、房贷持有者及企业主。">
+    <meta name="description" content="定期人寿保险 (Term Life) 为您的房贷和家庭提供高杠杆的财务保障。提供 5-40 年灵活期限选择，在特定时期内锁定保费，适合年轻家庭、房贷持有者及企业主。">
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -57,13 +57,17 @@
                     </button>
                 </div>
 
-                <div class="hidden md:flex space-x-8">
+                <div class="hidden md:flex space-x-8 items-center">
                     <a href="index.html" class="text-gray-600 hover:text-primary transition">主页</a>
                     <a href="index.html#core-solutions" class="text-gray-600 hover:text-primary transition">核心保障</a>
                     <a href="wealth.html" class="text-gray-600 hover:text-primary transition">财富积累</a>
                     <a href="business.html" class="text-gray-600 hover:text-primary transition">企业方案</a>
                     <a href="about.html" class="text-gray-600 hover:text-primary transition">关于我们</a>
                     <a href="https://calculator.frank-zhang.com" target="_blank" class="text-gray-600 hover:text-accent font-bold transition flex items-center">智能计算器 <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                    
+                    <a href="en/term.html" class="text-sm font-bold text-gray-500 hover:text-primary border border-gray-300 px-3 py-1 rounded transition">
+                        EN
+                    </a>
                 </div>
                 <div class="hidden md:block">
                     <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg shadow-blue-500/30">预约咨询</a>
@@ -79,88 +83,157 @@
                 <a href="business.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">企业方案</a>
                 <a href="about.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">关于我们</a>
                 <a href="https://calculator.frank-zhang.com" target="_blank" class="text-accent font-bold border-b border-gray-50 pb-2 flex items-center justify-between">智能计算器 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                
+                <a href="en/term.html" class="text-gray-500 font-bold border-t border-gray-100 pt-2 mt-2 flex items-center">
+                    <span class="mr-2">🇺🇸</span> Switch to English
+                </a>
+
                 <a href="index.html#contact" class="text-primary font-bold">预约咨询 &rarr;</a>
             </div>
         </div>
     </nav>
 
-    <section class="relative pt-32 pb-20 bg-light">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-3xl md:text-5xl font-bold text-dark mb-6">
-                定期人寿保险 <br>
-                <span class="gradient-text text-2xl md:text-4xl mt-2 block">为您的未来提供经济实惠的保障</span>
+    <!-- 首屏：场景问句 -->
+    <section class="relative pt-32 pb-16 bg-light border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-dark mb-6 leading-snug">
+                万一你倒下了，<br>房贷、生活费、<br class="sm:hidden">孩子学费谁来付？
             </h1>
-            <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-8">
-                在您最需要的时候，为您的家人和企业提供高杠杆的财务保护。
+            <p class="max-w-3xl mx-auto text-base md:text-lg text-gray-600 mb-8 leading-relaxed">
+                定期寿险就是在一段你最需要保障的时间里，给家人一笔钱，不是终身储蓄，先看这段时间有多长、缺口有多大，再看保额和期限。
             </p>
-            <div class="flex justify-center gap-4">
-                <a href="index.html#contact" class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-600 transition shadow-lg">获取报价</a>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#calculator" class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-600 transition shadow-lg">
+                    先测算缺口 &rarr;
+                </a>
+                <a href="index.html#contact" class="bg-white text-primary border border-gray-200 px-8 py-3 rounded-xl font-bold hover:bg-gray-50 transition">
+                    预约顾问聊聊
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-3xl font-bold text-dark mb-6">什么是定期人寿保险 (Term Life)？</h2>
-                    <p class="text-gray-600 mb-4 text-lg leading-relaxed">
-                        定期人寿保险是一种在特定时间内（例如 10 年、20 年或 30 年）为您提供保障的产品。如果您在保单有效期内不幸身故，您的受益人将获得一笔免税的赔付金。
+    <!-- 四条自检 -->
+    <section class="py-16 bg-white border-b border-gray-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <span class="text-xs font-bold text-primary uppercase tracking-widest bg-blue-50 py-1 px-3 rounded-full border border-blue-200">
+                    现状自测
+                </span>
+                <h2 class="text-2xl md:text-3xl font-bold text-dark mt-3 mb-2">你是不是这样？</h2>
+                <div class="w-12 h-1 bg-secondary mx-auto rounded-full mt-3"></div>
+            </div>
+
+            <div class="space-y-3 mb-8">
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">房贷还没还完，万一你不在了，家人要不要卖房才能还上？</p>
+                </div>
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">你是家里主要收入来源，工资一停，家里每个月开销怎么办？</p>
+                </div>
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">公司有贷款，或者你是关键人物，你走了公司怎么办？</p>
+                </div>
+                <div class="flex items-start p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <span class="text-primary font-bold mr-3 text-lg leading-none">✓</span>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">孩子还小，学费和生活费还要供多少年？</p>
+                </div>
+            </div>
+
+            <!-- 过渡导语 -->
+            <div class="bg-blue-50/70 border border-blue-100 rounded-xl p-4 text-center">
+                <p class="text-primary font-bold text-sm md:text-base">
+                    👉 点头两条以上，再往下看顾虑，不用先懂 Evolve 和 Essential 的区别。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最常见的顾虑（单列卡片展开） -->
+    <section class="py-16 bg-gray-50 border-b border-gray-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold text-primary uppercase tracking-widest bg-blue-50 py-1 px-3 rounded-full border border-blue-200">
+                    打消顾虑
+                </span>
+                <h2 class="text-2xl md:text-3xl font-bold text-dark mt-3 mb-2">关于定期寿险，大家最常有的 6 个顾虑</h2>
+                <div class="w-12 h-1 bg-secondary mx-auto rounded-full mt-3"></div>
+            </div>
+
+            <div class="space-y-4">
+                <!-- 顾虑 1 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q1.</span>
+                        <span>怕太贵，买不起？</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        定期寿险的初始保费通常比终身低，因为它只保一段时间、不带储蓄。在你选定的期限内，保费按合同保持不变，期限到了、续保的话保费就不是原来那个数了，具体以合同为准。
                     </p>
-                    <div class="space-y-4 mt-8">
-                        <div class="flex items-start">
-                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-primary mr-4 text-xl">💲</div>
-                            <div>
-                                <h4 class="font-bold text-dark">经济实惠</h4>
-                                <p class="text-sm text-gray-500">初始保费通常远低于终身保险，用小钱换大保障。</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-secondary mr-4 text-xl">🔒</div>
-                            <div>
-                                <h4 class="font-bold text-dark">保费固定</h4>
-                                <p class="text-sm text-gray-500">在您选择的期限内，保费保证保持不变。</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center text-accent mr-4 text-xl">⏳</div>
-                            <div>
-                                <h4 class="font-bold text-dark">灵活期限</h4>
-                                <p class="text-sm text-gray-500">提供从 10 年到 40 年的多种期限选择。</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="bg-light rounded-3xl p-8 border border-gray-100 shadow-xl">
-                    <h3 class="text-xl font-bold text-dark mb-6">为什么您需要它？</h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="bg-white p-4 rounded-xl shadow-sm">
-                            <span class="text-2xl block mb-2">🏠</span>
-                            <h4 class="font-bold text-dark">房贷保障</h4>
-                            <p class="text-xs text-gray-500 mt-1">确保家人能偿还房贷，保住家园。</p>
-                        </div>
-                        <div class="bg-white p-4 rounded-xl shadow-sm">
-                            <span class="text-2xl block mb-2">💰</span>
-                            <h4 class="font-bold text-dark">收入替代</h4>
-                            <p class="text-xs text-gray-500 mt-1">替代您的收入，支付日常开支。</p>
-                        </div>
-                        <div class="bg-white p-4 rounded-xl shadow-sm">
-                            <span class="text-2xl block mb-2">🏢</span>
-                            <h4 class="font-bold text-dark">企业保护</h4>
-                            <p class="text-xs text-gray-500 mt-1">偿还商业贷款或关键人物保障。</p>
-                        </div>
-                        <div class="bg-white p-4 rounded-xl shadow-sm">
-                            <span class="text-2xl block mb-2">🎓</span>
-                            <h4 class="font-bold text-dark">子女教育</h4>
-                            <p class="text-xs text-gray-500 mt-1">保障孩子的教育基金。</p>
-                        </div>
-                    </div>
+
+                <!-- 顾虑 2 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q2.</span>
+                        <span>已经有团体险了，还需要自己买吗？</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        团体险常常只有一两倍年薪左右，而且换工作就没了，房贷和孩子教育年限不一定能覆盖。先算团体险能覆盖多少、缺口还有多少，再看个人定期要补多少，不是非要二选一。
+                    </p>
+                </div>
+
+                <!-- 顾虑 3 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q3.</span>
+                        <span>买多久才对，怕买错期限？</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        看缺口要覆盖到什么时候：房贷还剩多少年、孩子还要供多少年。页上现有的例子就是 10 年、20 年、30 年，Evolve 是 5 到 40 年可选，Essential 是 5 到 20 年可选，期限是按需要定的，不是按便宜定的。
+                    </p>
+                </div>
+
+                <!-- 顾虑 4 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q4.</span>
+                        <span>以后想改成终身，怕现在锁死了怎么办？</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        这个要在一开始就问清楚，因为两张卡不一样：Evolve 在 75 岁前可以无体检转终身寿险，还可以续保到 85 岁；Essential 不能转终身、也不能续保。不是所有定期都能转，选的时候就要把以后会不会改考虑进去。
+                    </p>
+                </div>
+
+                <!-- 顾虑 5 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q5.</span>
+                        <span>身体不好、有糖尿病，怕直接被拒？</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        页上已经有糖尿病专区，写的是更易获批、保费合理、还有糖尿病管理资源和 Achievers 奖励计划，达到健康目标可以维持优惠保费。但更易获批不是保证获批，最后还是以核保为准，不要因为担心就自己先排除了，先让顾问帮你问。
+                    </p>
+                </div>
+
+                <!-- 顾虑 6 -->
+                <div class="bg-white p-5 md:p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-lg font-bold text-dark mb-2 flex items-start">
+                        <span class="text-primary font-bold mr-2 text-lg">Q6.</span>
+                        <span>到期没出事，钱是不是白交了？</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
+                        定期寿险就是纯保障，期限内没出事就没有赔付，这也是它保费低的原因。它买的是那段时间的安全，不是储蓄。如果你想要到期拿回钱或者终身保障，那是另外一种产品的目的，顾问会按目的分开讲，不会只比价格。
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-primary/5">
+    <section id="calculator" class="py-20 bg-primary/5">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-10">
                 <h2 class="text-3xl font-bold text-dark mb-4">算一算：您需要多少保障？</h2>
@@ -336,7 +409,7 @@
                     </tbody>
                 </table>
             </div>
-            <p class="text-right text-xs text-gray-400 mt-4">[参考来源: 2314, 2300, 2301, 2312]</p>
+            <p class="text-right text-xs text-gray-500 mt-4">实际保障、保费和承保结果以正式建议书和保单合同为准。</p>
         </div>
     </section>
 
