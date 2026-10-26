@@ -70,7 +70,7 @@
                     </a>
                 </div>
                 <div class="hidden md:block">
-                    <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg shadow-blue-500/30">预约咨询</a>
+                    <a href="index.html?interest=%E9%87%8D%E7%96%BE%E9%99%A9&message=%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E9%87%8D%E7%96%BE%E9%99%A9%E4%BF%9D%E9%99%A9%E6%96%B9%E6%A1%88%E4%B8%8E%E6%8A%A5%E4%BB%B7%E3%80%82#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg shadow-blue-500/30">预约咨询</a>
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@
                     <span class="mr-2">🇺🇸</span> Switch to English
                 </a>
 
-                <a href="index.html#contact" class="text-primary font-bold">预约咨询 &rarr;</a>
+                <a href="index.html?interest=%E9%87%8D%E7%96%BE%E9%99%A9&message=%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E9%87%8D%E7%96%BE%E9%99%A9%E4%BF%9D%E9%99%A9%E6%96%B9%E6%A1%88%E4%B8%8E%E6%8A%A5%E4%BB%B7%E3%80%82#contact" class="text-primary font-bold">预约咨询 &rarr;</a>
             </div>
         </div>
     </nav>
@@ -106,7 +106,7 @@
                 <a href="#coverage" class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-600 transition shadow-lg text-center">
                     查看核心保障 &rarr;
                 </a>
-                <a href="index.html#contact" class="bg-white text-primary border border-gray-200 px-8 py-3 rounded-xl font-bold hover:bg-gray-50 transition text-center">
+                <a href="index.html?interest=%E9%87%8D%E7%96%BE%E9%99%A9&message=%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E9%87%8D%E7%96%BE%E9%99%A9%E4%BF%9D%E9%99%A9%E6%96%B9%E6%A1%88%E4%B8%8E%E6%8A%A5%E4%BB%B7%E3%80%82#contact" class="bg-white text-primary border border-gray-200 px-8 py-3 rounded-xl font-bold hover:bg-gray-50 transition text-center">
                     预约顾问聊聊
                 </a>
             </div>
@@ -228,6 +228,73 @@
                     <p class="text-gray-600 text-sm md:text-base leading-relaxed pl-7">
                         这是页上原来就有的 FAQ，要保留：定期是身故后留给家人的钱，重疾是生病时自己用的钱，两个目的不一样。最完善的计划通常是两者组合，这句话是页上原有的教育性说法，不是针对个人的购买建议，具体组合要按你的缺口和预算由顾问帮你算。
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 重疾保障缺口测算 -->
+    <section id="calculator" class="py-20 bg-primary/5">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold text-primary uppercase tracking-widest bg-blue-50 py-1 px-3 rounded-full border border-blue-200">
+                    保障测算
+                </span>
+                <h2 class="text-3xl font-bold text-dark mt-3 mb-4">算一算：您需要多少重疾保障？</h2>
+                <p class="text-gray-600">重疾险是康复期间活着用的钱。只需 1 分钟，估算生病休养期间的资金缺口。</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    
+                    <div class="p-8 space-y-6">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">1. 每月家庭开销 ($)</label>
+                            <span class="block text-xs text-gray-500 mb-2">含房贷月供和生活费在内，请勿重复加计房贷余额</span>
+                            <input type="number" id="ciMonthly" placeholder="例如: 5000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateCiNeed()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">2. 预计收入中断月数</label>
+                            <span class="block text-xs text-gray-500 mb-2">根据恢复期自行预估（非医学预测与等待期）</span>
+                            <input type="number" id="ciMonths" placeholder="例如: 24" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateCiNeed()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">3. 自费医疗、康复、护理预留 ($)</label>
+                            <span class="block text-xs text-gray-500 mb-2">省级医保不报销部分，自行预估的一笔费用</span>
+                            <input type="number" id="ciMedical" placeholder="例如: 50000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateCiNeed()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">4. 减去：已有应急储蓄 ($)</label>
+                            <input type="number" id="ciSavings" placeholder="例如: 30000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateCiNeed()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">5. 减去：已有重疾保额 ($)</label>
+                            <input type="number" id="ciExisting" placeholder="例如: 100000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition" oninput="calculateCiNeed()">
+                        </div>
+                    </div>
+
+                    <div class="bg-dark p-8 text-white flex flex-col justify-center items-center text-center relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-3xl"></div>
+                        <div class="absolute bottom-0 left-0 w-32 h-32 bg-secondary/20 rounded-full blur-3xl"></div>
+                        
+                        <p class="text-gray-400 text-sm uppercase tracking-widest mb-2 relative z-10">建议的重疾保额</p>
+                        <h3 class="text-5xl font-bold text-white mb-2 relative z-10" id="ciTotalNeed">$0</h3>
+                        <p class="text-gray-400 text-xs mb-8 relative z-10">这是估算值，不是保额建议。</p>
+                        
+                        <a href="index.html#contact" id="ciQuoteBtn" class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-full font-bold transition shadow-lg w-full relative z-10 text-center">
+                            获取此额度的报价
+                        </a>
+                        
+                        <div class="mt-8 text-xs text-gray-400 text-left border-t border-gray-700 pt-4 w-full relative z-10 space-y-2">
+                            <p class="font-bold text-gray-300">计算公式：</p>
+                            <p>每月开销 × 月数 + 自费预留 − 储蓄 − 已有重疾保额 = 保障缺口</p>
+                            <div class="border-t border-gray-800 pt-2 space-y-1 text-gray-400">
+                                <p>• 这是估算值，不是保额建议。</p>
+                                <p>• 恢复月数是你自己估的，不是医学预测，也不是合同里的等待期和生存期。</p>
+                                <p>• 实际赔付、等待期、生存期、26 种全额病种、8 种早期部分理赔以合同为准；早期部分理赔（15%，最高 $50,000）不放进算式，算式只算全额那笔钱。</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -360,7 +427,7 @@
             </div>
             <p class="text-gray-400 mb-8">守护今天，富足未来</p>
             <div class="flex justify-center gap-4 mb-8">
-                <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-bold transition text-sm">
+                <a href="index.html?interest=%E9%87%8D%E7%96%BE%E9%99%A9&message=%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E9%87%8D%E7%96%BE%E9%99%A9%E4%BF%9D%E9%99%A9%E6%96%B9%E6%A1%88%E4%B8%8E%E6%8A%A5%E4%BB%B7%E3%80%82#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-bold transition text-sm">
                     立即联系顾问
                 </a>
             </div>
@@ -397,6 +464,57 @@
                 });
             });
         }
+
+        // CI 缺口测算逻辑
+        function calculateCiNeed() {
+            const monthlyEl = document.getElementById('ciMonthly');
+            const monthsEl = document.getElementById('ciMonths');
+            const medicalEl = document.getElementById('ciMedical');
+            const savingsEl = document.getElementById('ciSavings');
+            const existingEl = document.getElementById('ciExisting');
+
+            const monthlyVal = monthlyEl ? monthlyEl.value.trim() : '';
+            const monthsVal = monthsEl ? monthsEl.value.trim() : '';
+            const medicalVal = medicalEl ? medicalEl.value.trim() : '';
+            const savingsVal = savingsEl ? savingsEl.value.trim() : '';
+            const existingVal = existingEl ? existingEl.value.trim() : '';
+
+            const hasInput = monthlyVal !== '' || monthsVal !== '' || medicalVal !== '' || savingsVal !== '' || existingVal !== '';
+
+            const monthly = parseFloat(monthlyVal) || 0;
+            const months = parseFloat(monthsVal) || 0;
+            const medical = parseFloat(medicalVal) || 0;
+            const savings = parseFloat(savingsVal) || 0;
+            const existing = parseFloat(existingVal) || 0;
+
+            // 公式：每月开销 × 月数 + 自费预留 − 储蓄 − 已有重疾保额，结果小于 0 按 0 算
+            let total = (monthly * months + medical) - savings - existing;
+            if (total < 0) total = 0;
+
+            const totalNeedEl = document.getElementById('ciTotalNeed');
+            if (totalNeedEl) {
+                totalNeedEl.innerText = '$' + total.toLocaleString('en-US');
+            }
+
+            const btn = document.getElementById('ciQuoteBtn');
+            if (btn) {
+                try {
+                    const interest = '重疾险';
+                    let message = '';
+                    if (!hasInput || total === 0) {
+                        message = '我刚做了缺口测算，想请顾问帮我确认额度并报价。';
+                    } else {
+                        message = `通过重疾险缺口测算，我的保障缺口约为 $${total.toLocaleString('en-US')}（每月开销 $${monthly.toLocaleString('en-US')}、预计中断 ${months} 个月、自费医疗与护理预留 $${medical.toLocaleString('en-US')}，减去已有储蓄 $${savings.toLocaleString('en-US')}、已有重疾保额 $${existing.toLocaleString('en-US')}）。请帮我按这个额度做报价。`;
+                    }
+                    btn.href = `index.html?interest=${encodeURIComponent(interest)}&message=${encodeURIComponent(message)}#contact`;
+                } catch (e) {
+                    btn.href = 'index.html#contact';
+                }
+            }
+        }
+
+        // 初始化 CI 报价按钮
+        calculateCiNeed();
     </script>
 
 </body>

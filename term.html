@@ -70,7 +70,7 @@
                     </a>
                 </div>
                 <div class="hidden md:block">
-                    <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg shadow-blue-500/30">预约咨询</a>
+                    <a href="index.html?interest=%E5%AE%9A%E6%9C%9F%E5%AF%BF%E9%99%A9&message=%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E5%AE%9A%E6%9C%9F%E5%AF%BF%E9%99%A9%E4%BF%9D%E9%9A%9C%E6%96%B9%E6%A1%88%E4%B8%8E%E6%8A%A5%E4%BB%B7%E3%80%82#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg shadow-blue-500/30">预约咨询</a>
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@
                     <span class="mr-2">🇺🇸</span> Switch to English
                 </a>
 
-                <a href="index.html#contact" class="text-primary font-bold">预约咨询 &rarr;</a>
+                <a href="index.html?interest=%E5%AE%9A%E6%9C%9F%E5%AF%BF%E9%99%A9&message=%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E5%AE%9A%E6%9C%9F%E5%AF%BF%E9%99%A9%E4%BF%9D%E9%9A%9C%E6%96%B9%E6%A1%88%E4%B8%8E%E6%8A%A5%E4%BB%B7%E3%80%82#contact" class="text-primary font-bold">预约咨询 &rarr;</a>
             </div>
         </div>
     </nav>
@@ -106,7 +106,7 @@
                 <a href="#calculator" class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-600 transition shadow-lg">
                     先测算缺口 &rarr;
                 </a>
-                <a href="index.html#contact" class="bg-white text-primary border border-gray-200 px-8 py-3 rounded-xl font-bold hover:bg-gray-50 transition">
+                <a href="index.html?interest=%E5%AE%9A%E6%9C%9F%E5%AF%BF%E9%99%A9&message=%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E5%AE%9A%E6%9C%9F%E5%AF%BF%E9%99%A9%E4%BF%9D%E9%9A%9C%E6%96%B9%E6%A1%88%E4%B8%8E%E6%8A%A5%E4%BB%B7%E3%80%82#contact" class="bg-white text-primary border border-gray-200 px-8 py-3 rounded-xl font-bold hover:bg-gray-50 transition">
                     预约顾问聊聊
                 </a>
             </div>
@@ -277,7 +277,7 @@
                         <h3 class="text-5xl font-bold text-white mb-2 relative z-10" id="totalNeed">$0</h3>
                         <p class="text-gray-400 text-xs mb-8 relative z-10">这是一个估算值，具体需根据通胀调整</p>
                         
-                        <a href="#contact" class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-full font-bold transition shadow-lg w-full relative z-10">
+                        <a href="index.html#contact" id="termQuoteBtn" class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-full font-bold transition shadow-lg w-full relative z-10 text-center">
                             获取此额度的报价
                         </a>
                         
@@ -293,22 +293,54 @@
 
     <script>
         function calculateNeed() {
-            // 获取输入值，如果为空则默认为0
-            let mortgage = parseFloat(document.getElementById('mortgage').value) || 0;
-            let debts = parseFloat(document.getElementById('debts').value) || 0;
-            let education = parseFloat(document.getElementById('education').value) || 0;
-            let income = parseFloat(document.getElementById('income').value) || 0;
-            let savings = parseFloat(document.getElementById('savings').value) || 0;
+            const mortgageEl = document.getElementById('mortgage');
+            const debtsEl = document.getElementById('debts');
+            const educationEl = document.getElementById('education');
+            const incomeEl = document.getElementById('income');
+            const savingsEl = document.getElementById('savings');
+
+            const mortgageVal = mortgageEl ? mortgageEl.value.trim() : '';
+            const debtsVal = debtsEl ? debtsEl.value.trim() : '';
+            const educationVal = educationEl ? educationEl.value.trim() : '';
+            const incomeVal = incomeEl ? incomeEl.value.trim() : '';
+            const savingsVal = savingsEl ? savingsEl.value.trim() : '';
+
+            const hasInput = mortgageVal !== '' || debtsVal !== '' || educationVal !== '' || incomeVal !== '' || savingsVal !== '';
+
+            const mortgage = parseFloat(mortgageVal) || 0;
+            const debts = parseFloat(debtsVal) || 0;
+            const education = parseFloat(educationVal) || 0;
+            const income = parseFloat(incomeVal) || 0;
+            const savings = parseFloat(savingsVal) || 0;
 
             // 计算逻辑: (负债 + 教育 + 10年收入) - 存款
             let total = (mortgage + debts + education + (income * 10)) - savings;
-
-            // 结果不能小于0
             if (total < 0) total = 0;
 
-            // 格式化数字 (例如 1,000,000)
-            document.getElementById('totalNeed').innerText = '$' + total.toLocaleString('en-US');
+            const totalNeedEl = document.getElementById('totalNeed');
+            if (totalNeedEl) {
+                totalNeedEl.innerText = '$' + total.toLocaleString('en-US');
+            }
+
+            const btn = document.getElementById('termQuoteBtn');
+            if (btn) {
+                try {
+                    const interest = '定期寿险';
+                    let message = '';
+                    if (!hasInput || total === 0) {
+                        message = '我刚做了缺口测算，想请顾问帮我确认额度并报价。';
+                    } else {
+                        message = `通过定期寿险缺口测算，我的保障缺口约为 $${total.toLocaleString('en-US')}（房贷 $${mortgage.toLocaleString('en-US')}、其他债务 $${debts.toLocaleString('en-US')}、子女教育 $${education.toLocaleString('en-US')}、收入替代 $${(income * 10).toLocaleString('en-US')}，年收入乘 10 年，减去已有储蓄 $${savings.toLocaleString('en-US')}）。请帮我按这个额度做报价。`;
+                    }
+                    btn.href = `index.html?interest=${encodeURIComponent(interest)}&message=${encodeURIComponent(message)}#contact`;
+                } catch (e) {
+                    btn.href = 'index.html#contact';
+                }
+            }
         }
+
+        // 初始化按钮链接
+        calculateNeed();
     </script>
 
     <section id="products" class="py-20 bg-light">

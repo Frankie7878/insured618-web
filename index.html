@@ -527,6 +527,36 @@
                 });
             });
         }
+
+        // 页面加载时读取 URL 参数并预填预约表单
+        (function() {
+            try {
+                const params = new URLSearchParams(window.location.search);
+                const interest = params.get('interest');
+                const message = params.get('message');
+
+                if (interest) {
+                    const select = document.querySelector('select[name="interest"]');
+                    if (select) {
+                        for (let i = 0; i < select.options.length; i++) {
+                            if (select.options[i].text.trim() === interest.trim()) {
+                                select.selectedIndex = i;
+                                break;
+                            }
+                        }
+                    }
+                }
+
+                if (message) {
+                    const textarea = document.querySelector('textarea[name="message"]');
+                    if (textarea) {
+                        textarea.value = message;
+                    }
+                }
+            } catch (e) {
+                console.error('Error pre-filling form:', e);
+            }
+        })();
     </script>
 
 </body>

@@ -67,7 +67,7 @@
                     <a href="../term.html" class="text-sm font-bold text-gray-500 hover:text-primary border border-gray-300 px-3 py-1 rounded transition">中文</a>
                 </div>
                 <div class="hidden md:block">
-                    <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg shadow-blue-500/30">Book Consultation</a>
+                    <a href="index.html?interest=Term%20Life%20Insurance&message=I%20would%20like%20to%20inquire%20about%20term%20life%20insurance%20options%20and%20quotes.#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg shadow-blue-500/30">Book Consultation</a>
                 </div>
             </div>
         </div>
@@ -81,7 +81,7 @@
                 <a href="about.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">About</a>
                 <a href="https://calculator.frank-zhang.com" target="_blank" class="text-accent font-bold border-b border-gray-50 pb-2 flex items-center justify-between">Smart Calculator <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
                 <a href="../term.html" class="text-gray-500 font-bold border-t border-gray-100 pt-2 mt-2 flex items-center">中文 &rarr;</a>
-                <a href="index.html#contact" class="text-primary font-bold">Book Consultation &rarr;</a>
+                <a href="index.html?interest=Term%20Life%20Insurance&message=I%20would%20like%20to%20inquire%20about%20term%20life%20insurance%20options%20and%20quotes.#contact" class="text-primary font-bold">Book Consultation &rarr;</a>
             </div>
         </div>
     </nav>
@@ -99,7 +99,7 @@
                 <a href="#calculator" class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-600 transition shadow-lg">
                     Calculate Gap First &rarr;
                 </a>
-                <a href="index.html#contact" class="bg-white text-primary border border-gray-200 px-8 py-3 rounded-xl font-bold hover:bg-gray-50 transition">
+                <a href="index.html?interest=Term%20Life%20Insurance&message=I%20would%20like%20to%20inquire%20about%20term%20life%20insurance%20options%20and%20quotes.#contact" class="bg-white text-primary border border-gray-200 px-8 py-3 rounded-xl font-bold hover:bg-gray-50 transition">
                     Talk to an Advisor
                 </a>
             </div>
@@ -270,7 +270,7 @@
                         <h3 class="text-5xl font-bold text-white mb-2 relative z-10" id="totalNeed">$0</h3>
                         <p class="text-gray-400 text-xs mb-8 relative z-10">Estimated protection gap</p>
                         
-                        <a href="#contact" class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-full font-bold transition shadow-lg w-full relative z-10">
+                        <a href="index.html#contact" id="termQuoteBtn" class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-full font-bold transition shadow-lg w-full relative z-10 text-center">
                             Request Quote for this Amount
                         </a>
                         
@@ -286,17 +286,53 @@
 
     <script>
         function calculateNeed() {
-            let mortgage = parseFloat(document.getElementById('mortgage').value) || 0;
-            let debts = parseFloat(document.getElementById('debts').value) || 0;
-            let education = parseFloat(document.getElementById('education').value) || 0;
-            let income = parseFloat(document.getElementById('income').value) || 0;
-            let savings = parseFloat(document.getElementById('savings').value) || 0;
+            const mortgageEl = document.getElementById('mortgage');
+            const debtsEl = document.getElementById('debts');
+            const educationEl = document.getElementById('education');
+            const incomeEl = document.getElementById('income');
+            const savingsEl = document.getElementById('savings');
+
+            const mortgageVal = mortgageEl ? mortgageEl.value.trim() : '';
+            const debtsVal = debtsEl ? debtsEl.value.trim() : '';
+            const educationVal = educationEl ? educationEl.value.trim() : '';
+            const incomeVal = incomeEl ? incomeEl.value.trim() : '';
+            const savingsVal = savingsEl ? savingsEl.value.trim() : '';
+
+            const hasInput = mortgageVal !== '' || debtsVal !== '' || educationVal !== '' || incomeVal !== '' || savingsVal !== '';
+
+            const mortgage = parseFloat(mortgageVal) || 0;
+            const debts = parseFloat(debtsVal) || 0;
+            const education = parseFloat(educationVal) || 0;
+            const income = parseFloat(incomeVal) || 0;
+            const savings = parseFloat(savingsVal) || 0;
 
             let total = (mortgage + debts + education + (income * 10)) - savings;
             if (total < 0) total = 0;
 
-            document.getElementById('totalNeed').innerText = '$' + total.toLocaleString('en-US');
+            const totalNeedEl = document.getElementById('totalNeed');
+            if (totalNeedEl) {
+                totalNeedEl.innerText = '$' + total.toLocaleString('en-US');
+            }
+
+            const btn = document.getElementById('termQuoteBtn');
+            if (btn) {
+                try {
+                    const interest = 'Term Life Insurance';
+                    let message = '';
+                    if (!hasInput || total === 0) {
+                        message = 'I just ran the gap estimate and would like an advisor to confirm the amount and provide a quote.';
+                    } else {
+                        message = `Based on the term life insurance gap estimate, my coverage gap is approximately $${total.toLocaleString('en-US')} (Mortgage: $${mortgage.toLocaleString('en-US')}, Other Liabilities: $${debts.toLocaleString('en-US')}, Education: $${education.toLocaleString('en-US')}, Income Replacement: $${(income * 10).toLocaleString('en-US')} [annual income x 10], less existing savings: $${savings.toLocaleString('en-US')}). Please help provide a quote based on this amount.`;
+                    }
+                    btn.href = `index.html?interest=${encodeURIComponent(interest)}&message=${encodeURIComponent(message)}#contact`;
+                } catch (e) {
+                    btn.href = 'index.html#contact';
+                }
+            }
         }
+
+        // Initialize quote button link
+        calculateNeed();
     </script>
 
     <section id="products" class="py-20 bg-light">
