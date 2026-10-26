@@ -290,6 +290,47 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Direct Lead Mini-Form -->
+            <div class="mt-8 bg-white rounded-2xl shadow-lg border border-gray-100 p-6 sm:p-8">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h3 class="text-xl sm:text-2xl font-bold text-dark mb-2">Send me this calculation</h3>
+                    <p class="text-sm text-gray-500 mb-6">Leave your contact details and an advisor will verify your coverage and send your quote</p>
+                    
+                    <form name="calculator-lead" method="POST" data-netlify="true" action="../success.html" class="space-y-4" onsubmit="return validateCalcLead(this)">
+                        <input type="hidden" name="form-name" value="calculator-lead">
+                        <input type="hidden" name="interest" value="Critical Illness Insurance">
+                        <input type="hidden" name="message" id="calcLeadMessage" value="I just ran the gap estimate and would like an advisor to confirm the amount and provide a quote.">
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-left">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 mb-1">Your Name (Optional)</label>
+                                <input type="text" name="name" placeholder="e.g. John Doe" class="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-sm transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 mb-1">Phone Number <span class="text-gray-400 font-normal">(Either required)</span></label>
+                                <input type="tel" name="phone" placeholder="e.g. 647-123-4567" class="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-sm transition" oninput="clearLeadError()">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 mb-1">Email Address <span class="text-gray-400 font-normal">(Either required)</span></label>
+                                <input type="email" name="email" placeholder="e.g. name@email.com" class="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-sm transition" oninput="clearLeadError()">
+                            </div>
+                        </div>
+                        
+                        <div id="calcLeadError" class="hidden text-xs text-red-600 font-medium text-left">
+                            Please provide at least a phone number or email address so we can send your estimate.
+                        </div>
+
+                        <div class="pt-2">
+                            <button type="submit" class="w-full sm:w-auto bg-primary hover:bg-blue-600 text-white font-bold px-8 py-3 rounded-xl transition shadow-md hover:shadow-lg text-base">
+                                Send My Calculation
+                            </button>
+                        </div>
+                        
+                        <p class="text-xs text-gray-400 mt-2">Used solely to send your estimate and contact you. No spam.</p>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -412,7 +453,7 @@
         </div>
     </section>
 
-    <footer class="bg-dark text-white py-12 border-t border-gray-800">
+    <footer class="bg-dark text-white py-12 pb-24 md:pb-12 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="mb-4">
                 <span class="text-2xl font-bold text-white">Insured618</span>
@@ -499,11 +540,84 @@
                     btn.href = 'index.html#contact';
                 }
             }
+
+            const leadMsgEl = document.getElementById('calcLeadMessage');
+            if (leadMsgEl) {
+                let leadMsg = '';
+                if (!hasInput || total === 0) {
+                    leadMsg = 'I just ran the gap estimate and would like an advisor to confirm the amount and provide a quote.';
+                } else {
+                    leadMsg = `Based on the critical illness gap estimate, my coverage gap is approximately $${total.toLocaleString('en-US')} (Monthly expenses: $${monthly.toLocaleString('en-US')}, Interruption: ${months} months, Care reserve: $${medical.toLocaleString('en-US')}, less savings: $${savings.toLocaleString('en-US')}, existing CI: $${existing.toLocaleString('en-US')}). Please provide a quote based on this amount.`;
+                }
+                leadMsgEl.value = leadMsg;
+            }
+        }
+
+        function validateCalcLead(form) {
+            const phone = form.phone ? form.phone.value.trim() : '';
+            const email = form.email ? form.email.value.trim() : '';
+            const errEl = document.getElementById('calcLeadError');
+            if (!phone && !email) {
+                if (errEl) errEl.classList.remove('hidden');
+                if (form.phone && typeof form.phone.focus === 'function') form.phone.focus();
+                return false;
+            }
+            if (errEl) errEl.classList.add('hidden');
+            return true;
+        }
+
+        function clearLeadError() {
+            const errEl = document.getElementById('calcLeadError');
+            if (errEl) errEl.classList.add('hidden');
         }
 
         // Initialize CI quote button
         calculateCiNeed();
+
+        // Mobile Sticky Bar Control
+        let stickyBarDismissed = false;
+        function dismissStickyBar() {
+            stickyBarDismissed = true;
+            const bar = document.getElementById('mobileStickyBar');
+            if (bar) bar.style.display = 'none';
+        }
+        window.addEventListener('scroll', function() {
+            if (stickyBarDismissed) return;
+            const bar = document.getElementById('mobileStickyBar');
+            if (!bar) return;
+            const scrollY = window.scrollY || window.pageYOffset;
+            const docHeight = document.documentElement.scrollHeight;
+            const winHeight = window.innerHeight;
+            const distFromBottom = docHeight - (scrollY + winHeight);
+
+            if (scrollY > 300 && distFromBottom > 380) {
+                bar.classList.remove('translate-y-full');
+            } else {
+                bar.classList.add('translate-y-full');
+            }
+        }, { passive: true });
     </script>
+
+    <!-- Mobile Sticky Action Bar -->
+    <div id="mobileStickyBar" class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur border-t border-gray-200 shadow-[0_-4px_16px_rgba(0,0,0,0.08)] transform translate-y-full transition-transform duration-300 md:hidden pb-[env(safe-area-inset-bottom,0px)]">
+        <div class="px-3 py-2.5 relative flex items-center justify-between gap-2">
+            <button type="button" onclick="dismissStickyBar()" aria-label="Close" class="absolute -top-2.5 right-2 w-5 h-5 bg-gray-500 hover:bg-gray-700 text-white rounded-full flex items-center justify-center text-xs shadow">
+                &times;
+            </button>
+            <div class="flex-1 min-w-0 pr-1">
+                <p class="text-xs font-bold text-gray-800 truncate">Need CI coverage?</p>
+                <p class="text-[11px] text-gray-500 truncate">Advisor sends your quote</p>
+            </div>
+            <div class="flex items-center gap-1.5 shrink-0">
+                <a href="#calculator" class="bg-primary hover:bg-blue-600 text-white text-xs font-bold px-3 py-2 rounded-lg transition shadow-sm whitespace-nowrap">
+                    Get Quote
+                </a>
+                <a href="index.html?interest=Critical%20Illness%20Insurance&message=I%20would%20like%20to%20inquire%20about%20critical%20illness%20insurance%20options%20and%20quotes.#contact" class="bg-blue-50 hover:bg-blue-100 text-primary border border-primary/20 text-xs font-bold px-2.5 py-2 rounded-lg transition whitespace-nowrap">
+                    Book Call
+                </a>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

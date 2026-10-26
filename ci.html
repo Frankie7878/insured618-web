@@ -297,6 +297,47 @@
                     </div>
                 </div>
             </div>
+
+            <!-- 计算器直接留资迷你表单 -->
+            <div class="mt-8 bg-white rounded-2xl shadow-lg border border-gray-100 p-6 sm:p-8">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h3 class="text-xl sm:text-2xl font-bold text-dark mb-2">把这份测算发给我</h3>
+                    <p class="text-sm text-gray-500 mb-6">留下您的联系方式，顾问为您核实额度并将详细报价发给您</p>
+                    
+                    <form name="calculator-lead" method="POST" data-netlify="true" action="success.html" class="space-y-4" onsubmit="return validateCalcLead(this)">
+                        <input type="hidden" name="form-name" value="calculator-lead">
+                        <input type="hidden" name="interest" value="重疾险">
+                        <input type="hidden" name="message" id="calcLeadMessage" value="我刚做了缺口测算，想请顾问帮我确认额度并报价。">
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-left">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 mb-1">您的姓名 (选填)</label>
+                                <input type="text" name="name" placeholder="例如: 张先生" class="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-sm transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 mb-1">联系电话 <span class="text-gray-400 font-normal">(二选一)</span></label>
+                                <input type="tel" name="phone" placeholder="例如: 647-123-4567" class="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-sm transition" oninput="clearLeadError()">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 mb-1">电子邮箱 <span class="text-gray-400 font-normal">(二选一)</span></label>
+                                <input type="email" name="email" placeholder="例如: name@email.com" class="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-sm transition" oninput="clearLeadError()">
+                            </div>
+                        </div>
+                        
+                        <div id="calcLeadError" class="hidden text-xs text-red-600 font-medium text-left">
+                            请至少填写电话或邮箱中的一项，以便向您发送测算结果。
+                        </div>
+
+                        <div class="pt-2">
+                            <button type="submit" class="w-full sm:w-auto bg-primary hover:bg-blue-600 text-white font-bold px-8 py-3 rounded-xl transition shadow-md hover:shadow-lg text-base">
+                                发送测算方案
+                            </button>
+                        </div>
+                        
+                        <p class="text-xs text-gray-400 mt-2">只用于发送测算结果和联系你，不做其他用途。</p>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -420,7 +461,7 @@
         </div>
     </section>
 
-    <footer class="bg-dark text-white py-12 border-t border-gray-800">
+    <footer class="bg-dark text-white py-12 pb-24 md:pb-12 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="mb-4">
                 <span class="text-2xl font-bold text-white">Insured618</span>
@@ -511,11 +552,84 @@
                     btn.href = 'index.html#contact';
                 }
             }
+
+            const leadMsgEl = document.getElementById('calcLeadMessage');
+            if (leadMsgEl) {
+                let leadMsg = '';
+                if (!hasInput || total === 0) {
+                    leadMsg = '我刚做了缺口测算，想请顾问帮我确认额度并报价。';
+                } else {
+                    leadMsg = `通过重疾险缺口测算，我的保障缺口约为 $${total.toLocaleString('en-US')}（每月开销 $${monthly.toLocaleString('en-US')}、预计中断 ${months} 个月、自费医疗与护理预留 $${medical.toLocaleString('en-US')}，减去已有储蓄 $${savings.toLocaleString('en-US')}、已有重疾保额 $${existing.toLocaleString('en-US')}）。请帮我按这个额度做报价。`;
+                }
+                leadMsgEl.value = leadMsg;
+            }
+        }
+
+        function validateCalcLead(form) {
+            const phone = form.phone ? form.phone.value.trim() : '';
+            const email = form.email ? form.email.value.trim() : '';
+            const errEl = document.getElementById('calcLeadError');
+            if (!phone && !email) {
+                if (errEl) errEl.classList.remove('hidden');
+                if (form.phone && typeof form.phone.focus === 'function') form.phone.focus();
+                return false;
+            }
+            if (errEl) errEl.classList.add('hidden');
+            return true;
+        }
+
+        function clearLeadError() {
+            const errEl = document.getElementById('calcLeadError');
+            if (errEl) errEl.classList.add('hidden');
         }
 
         // 初始化 CI 报价按钮
         calculateCiNeed();
+
+        // 移动端底部常驻条控制
+        let stickyBarDismissed = false;
+        function dismissStickyBar() {
+            stickyBarDismissed = true;
+            const bar = document.getElementById('mobileStickyBar');
+            if (bar) bar.style.display = 'none';
+        }
+        window.addEventListener('scroll', function() {
+            if (stickyBarDismissed) return;
+            const bar = document.getElementById('mobileStickyBar');
+            if (!bar) return;
+            const scrollY = window.scrollY || window.pageYOffset;
+            const docHeight = document.documentElement.scrollHeight;
+            const winHeight = window.innerHeight;
+            const distFromBottom = docHeight - (scrollY + winHeight);
+
+            if (scrollY > 300 && distFromBottom > 380) {
+                bar.classList.remove('translate-y-full');
+            } else {
+                bar.classList.add('translate-y-full');
+            }
+        }, { passive: true });
     </script>
+
+    <!-- 移动端底部常驻预约条 (仅手机端显示) -->
+    <div id="mobileStickyBar" class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur border-t border-gray-200 shadow-[0_-4px_16px_rgba(0,0,0,0.08)] transform translate-y-full transition-transform duration-300 md:hidden pb-[env(safe-area-inset-bottom,0px)]">
+        <div class="px-3 py-2.5 relative flex items-center justify-between gap-2">
+            <button type="button" onclick="dismissStickyBar()" aria-label="关闭" class="absolute -top-2.5 right-2 w-5 h-5 bg-gray-500 hover:bg-gray-700 text-white rounded-full flex items-center justify-center text-xs shadow">
+                &times;
+            </button>
+            <div class="flex-1 min-w-0 pr-1">
+                <p class="text-xs font-bold text-gray-800 truncate">算出重疾缺口了？</p>
+                <p class="text-[11px] text-gray-500 truncate">顾问把报价发您</p>
+            </div>
+            <div class="flex items-center gap-1.5 shrink-0">
+                <a href="#calculator" class="bg-primary hover:bg-blue-600 text-white text-xs font-bold px-3 py-2 rounded-lg transition shadow-sm whitespace-nowrap">
+                    获取报价
+                </a>
+                <a href="index.html?interest=%E9%87%8D%E7%96%BE%E9%99%A9&message=%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E9%87%8D%E7%96%BE%E9%99%A9%E4%BF%9D%E9%9A%9C%E6%96%B9%E6%A1%88%E4%B8%8E%E6%8A%A5%E4%BB%B7%E3%80%82#contact" class="bg-blue-50 hover:bg-blue-100 text-primary border border-primary/20 text-xs font-bold px-2.5 py-2 rounded-lg transition whitespace-nowrap">
+                    预约咨询
+                </a>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

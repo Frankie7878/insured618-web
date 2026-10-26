@@ -570,7 +570,7 @@
     </section>
 
     <!-- Footer & Disclaimer -->
-    <footer class="bg-gray-50 border-t border-gray-200 py-12">
+    <footer class="bg-gray-50 border-t border-gray-200 py-12 pb-24 md:pb-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="mb-4">
                 <span class="text-2xl font-bold text-dark">Insured618</span>
@@ -608,7 +608,51 @@
                 });
             });
         }
+
+        // Mobile Sticky Bar Control
+        let stickyBarDismissed = false;
+        function dismissStickyBar() {
+            stickyBarDismissed = true;
+            const bar = document.getElementById('mobileStickyBar');
+            if (bar) bar.style.display = 'none';
+        }
+        window.addEventListener('scroll', function() {
+            if (stickyBarDismissed) return;
+            const bar = document.getElementById('mobileStickyBar');
+            if (!bar) return;
+            const scrollY = window.scrollY || window.pageYOffset;
+            const docHeight = document.documentElement.scrollHeight;
+            const winHeight = window.innerHeight;
+            const distFromBottom = docHeight - (scrollY + winHeight);
+
+            if (scrollY > 300 && distFromBottom > 380) {
+                bar.classList.remove('translate-y-full');
+            } else {
+                bar.classList.add('translate-y-full');
+            }
+        }, { passive: true });
     </script>
+
+    <!-- Mobile Sticky Action Bar -->
+    <div id="mobileStickyBar" class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur border-t border-gray-200 shadow-[0_-4px_16px_rgba(0,0,0,0.08)] transform translate-y-full transition-transform duration-300 md:hidden pb-[env(safe-area-inset-bottom,0px)]">
+        <div class="px-3 py-2.5 relative flex items-center justify-between gap-2">
+            <button type="button" onclick="dismissStickyBar()" aria-label="Close" class="absolute -top-2.5 right-2 w-5 h-5 bg-gray-500 hover:bg-gray-700 text-white rounded-full flex items-center justify-center text-xs shadow">
+                &times;
+            </button>
+            <div class="flex-1 min-w-0 pr-1">
+                <p class="text-xs font-bold text-gray-800 truncate">Wealth & Estate</p>
+                <p class="text-[11px] text-gray-500 truncate">Preserve & transfer capital</p>
+            </div>
+            <div class="flex items-center gap-1.5 shrink-0">
+                <a href="#gap-calculator" class="bg-primary hover:bg-blue-600 text-white text-xs font-bold px-3 py-2 rounded-lg transition shadow-sm whitespace-nowrap">
+                    Calculate Gap
+                </a>
+                <a href="index.html#contact" class="bg-blue-50 hover:bg-blue-100 text-primary border border-primary/20 text-xs font-bold px-2.5 py-2 rounded-lg transition whitespace-nowrap">
+                    Book Call
+                </a>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

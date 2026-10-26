@@ -473,7 +473,7 @@
         </div>
     </section>
 
-    <footer class="bg-dark text-white py-12 border-t border-gray-800" id="contact">
+    <footer class="bg-dark text-white py-12 pb-24 md:pb-12 border-t border-gray-800" id="contact">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="mb-4">
                 <span class="text-2xl font-bold text-white">Insured618</span>
@@ -526,6 +526,50 @@
         function scrollToProduct() {
             document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
         }
+
+        // 移动端底部常驻条控制
+        let stickyBarDismissed = false;
+        function dismissStickyBar() {
+            stickyBarDismissed = true;
+            const bar = document.getElementById('mobileStickyBar');
+            if (bar) bar.style.display = 'none';
+        }
+        window.addEventListener('scroll', function() {
+            if (stickyBarDismissed) return;
+            const bar = document.getElementById('mobileStickyBar');
+            if (!bar) return;
+            const scrollY = window.scrollY || window.pageYOffset;
+            const docHeight = document.documentElement.scrollHeight;
+            const winHeight = window.innerHeight;
+            const distFromBottom = docHeight - (scrollY + winHeight);
+
+            if (scrollY > 300 && distFromBottom > 380) {
+                bar.classList.remove('translate-y-full');
+            } else {
+                bar.classList.add('translate-y-full');
+            }
+        }, { passive: true });
     </script>
+
+    <!-- 移动端底部常驻预约条 (仅手机端显示) -->
+    <div id="mobileStickyBar" class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur border-t border-gray-200 shadow-[0_-4px_16px_rgba(0,0,0,0.08)] transform translate-y-full transition-transform duration-300 md:hidden pb-[env(safe-area-inset-bottom,0px)]">
+        <div class="px-3 py-2.5 relative flex items-center justify-between gap-2">
+            <button type="button" onclick="dismissStickyBar()" aria-label="关闭" class="absolute -top-2.5 right-2 w-5 h-5 bg-gray-500 hover:bg-gray-700 text-white rounded-full flex items-center justify-center text-xs shadow">
+                &times;
+            </button>
+            <div class="flex-1 min-w-0 pr-1">
+                <p class="text-xs font-bold text-gray-800 truncate">个人健康险方案</p>
+                <p class="text-[11px] text-gray-500 truncate">按需定制，快捷报价</p>
+            </div>
+            <div class="flex items-center gap-1.5 shrink-0">
+                <a href="index.html?interest=%E4%B8%AA%E4%BA%BA%E5%81%A5%E5%BA%B7%E9%99%A9&message=%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E4%B8%AA%E4%BA%BA%E5%8F%8A%E5%AE%B6%E5%BA%AD%E5%81%A5%E5%BA%B7%E4%B8%8E%E7%89%99%E5%8C%BB%E4%BF%9D%E9%99%A9%E6%96%B9%E6%A1%88%E5%B9%B6%E8%8E%B7%E5%8F%96%E6%8A%A5%E4%BB%B7%E3%80%82#contact" class="bg-primary hover:bg-blue-600 text-white text-xs font-bold px-3 py-2 rounded-lg transition shadow-sm whitespace-nowrap">
+                    获取报价
+                </a>
+                <a href="index.html?interest=%E4%B8%AA%E4%BA%BA%E5%81%A5%E5%BA%B7%E9%99%A9&message=%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E4%B8%AA%E4%BA%BA%E5%8F%8A%E5%AE%B6%E5%BA%AD%E5%81%A5%E5%BA%B7%E4%B8%8E%E7%89%99%E5%8C%BB%E4%BF%9D%E9%99%A9%E6%96%B9%E6%A1%88%E5%B9%B6%E8%8E%B7%E5%8F%96%E6%8A%A5%E4%BB%B7%E3%80%82#contact" class="bg-blue-50 hover:bg-blue-100 text-primary border border-primary/20 text-xs font-bold px-2.5 py-2 rounded-lg transition whitespace-nowrap">
+                    预约咨询
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
