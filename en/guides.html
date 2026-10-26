@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Guides & Frequently Asked Questions | Insured618</title>
+
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <meta name="description" content="Insured618 Decision Guides & FAQs: 10 core financial questions covering Young Families, Newcomers, Business Owners, and Pre-Retirees in Canada.">
+    <meta name="keywords" content="Canada Insurance Guides, Term Life Calculator, Newcomer Health, Business Owner Planning, Retirement Annuities, Insured618">
+    <link rel="canonical" href="https://insurance.frank-zhang.com/en/guides.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Decision Guides & FAQs | Insured618">
+    <meta property="og:description" content="Clear answers and practical math for Canadian families and business owners across 10 life stages.">
+    <meta property="og:image" content="https://insurance.frank-zhang.com/insured618_profile_option2.png">
+    <meta property="og:url" content="https://insurance.frank-zhang.com/en/guides.html">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4C8DFF',
+                        secondary: '#55D6A9',
+                        dark: '#1A1D21',
+                        light: '#F7F9FC',
+                        accent: '#FF7A59',
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans SC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(to right, #4C8DFF, #55D6A9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="../insured618_profile_option2.png" alt="Insured618 Logo" class="h-16 w-16 rounded-full object-cover hover:scale-105 transition-transform duration-200 shadow-md">
+                    </a>
+                </div>
+
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-primary focus:outline-none p-2" aria-label="Toggle navigation">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition">Home</a>
+                    <a href="family.html" class="text-gray-600 hover:text-primary transition">Solutions</a>
+                    <a href="wealth.html" class="text-gray-600 hover:text-primary transition">Wealth</a>
+                    <a href="business.html" class="text-gray-600 hover:text-primary transition">Business</a>
+                    <a href="guides.html" class="text-primary font-bold border-b-2 border-primary pb-1">Guides</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary transition">About</a>
+                    <a href="https://calculator.frank-zhang.com" target="_blank" class="text-gray-600 hover:text-accent font-bold transition flex items-center">Calculator <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                    
+                    <a href="../guides.html" class="text-sm font-bold text-gray-500 hover:text-primary border border-gray-300 px-3 py-1 rounded transition">
+                        中文
+                    </a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition shadow-lg shadow-blue-500/30">Book Consultation</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white shadow-lg border-t border-gray-100">
+            <div class="flex flex-col px-4 py-4 space-y-4">
+                <a href="index.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Home</a>
+                <a href="family.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Solutions</a>
+                <a href="wealth.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Wealth</a>
+                <a href="business.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">Business</a>
+                <a href="guides.html" class="text-primary font-bold border-b border-gray-50 pb-2">Guides</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary font-medium border-b border-gray-50 pb-2">About</a>
+                <a href="https://calculator.frank-zhang.com" target="_blank" class="text-accent font-bold border-b border-gray-50 pb-2 flex items-center justify-between">Smart Calculator <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+
+                <a href="../guides.html" class="text-gray-500 font-bold border-t border-gray-100 pt-2 mt-2 flex items-center">
+                    <span class="mr-2">🌏</span> Switch to 中文
+                </a>
+
+                <a href="index.html#contact" class="text-primary font-bold">Book Consultation &rarr;</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="pt-32 pb-16 bg-gradient-to-b from-blue-50/60 via-white to-white border-b border-gray-100 text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200 text-primary text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+                <span>📚</span>
+                <span>Insured618 · Decision Guides & FAQs</span>
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-bold text-dark mb-6 leading-tight">
+                Searchable, Transparent, <span class="gradient-text">Math You Can Verify</span>
+            </h1>
+            <p class="text-base sm:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                Insurance is never about product names—it is about covering real balance sheet vacuums. 10 structured guides categorized by real-life stages.
+            </p>
+        </div>
+    </header>
+
+    <!-- 10 Guides -->
+    <main class="py-16 bg-light">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex items-center justify-between mb-8">
+                <div>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-dark">Core Decision Guides (10 Topics)</h2>
+                    <p class="text-sm text-gray-500 mt-1">Families (3) · Newcomers (3) · Business Owners (2) · Pre-Retirees (2)</p>
+                </div>
+            </div>
+
+            <!-- Family Section -->
+            <div class="mb-12">
+                <div class="flex items-center space-x-2 mb-4">
+                    <span class="text-lg">🏡</span>
+                    <h3 class="text-xl font-bold text-dark">Family Series (3 Guides)</h3>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- Guide 1: Published -->
+                    <article class="bg-white rounded-2xl border-2 border-primary/40 shadow-md hover:border-primary transition p-6 sm:p-8 relative">
+                        <div class="flex flex-wrap items-center gap-2 mb-2">
+                            <span class="bg-primary text-white text-xs font-bold px-2.5 py-0.5 rounded-full">Guide 01 · Published</span>
+                            <span class="text-xs text-gray-400">4 min read</span>
+                        </div>
+                        <h4 class="text-xl sm:text-2xl font-bold text-dark mb-3 hover:text-primary transition">
+                            <a href="guides/young-family-mortgage-gap.html">
+                                Young Family with a Mortgage: If the Breadwinner Falls, Where Does Next Month's Income Come From?
+                            </a>
+                        </h4>
+                        <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-4">
+                            Lei (34, tech engineer) and Xiao (32, clinic reception) have two kids and a $600k mortgage. Mapping mandatory liabilities against group coverage revealed a $580k uncovered vacuum.
+                        </p>
+                        <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-gray-100">
+                            <span class="text-xs text-gray-500">Tool: Term Life Gap Calculator</span>
+                            <a href="guides/young-family-mortgage-gap.html" class="inline-flex items-center text-primary font-bold text-sm hover:underline">
+                                Read Full Guide & Math &rarr;
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Guide 2 -->
+                    <article class="bg-white rounded-2xl border border-gray-200 p-6 hover:border-gray-300 transition">
+                        <div class="flex flex-wrap items-center gap-2 mb-2">
+                            <span class="bg-blue-50 text-primary text-xs font-bold px-2.5 py-0.5 rounded">Guide 02</span>
+                            <span class="text-xs text-amber-700 bg-amber-50 px-2 py-0.5 rounded font-medium">Coming Soon</span>
+                        </div>
+                        <h4 class="text-lg sm:text-xl font-bold text-dark mb-2">
+                            Kids Are Young & Mortgage Unpaid: Exactly How Much Term Life Is Enough?
+                        </h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            How to calibrate the exact bracket based on remaining mortgage, dependents' living years, and net income replacement.
+                        </p>
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-3 border-t border-gray-100">
+                            <span>Tool: Term Life Calculator</span>
+                            <a href="term.html#calculator" class="text-primary hover:underline font-bold">Open Term Life Calculator &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Guide 3 -->
+                    <article class="bg-white rounded-2xl border border-gray-200 p-6 hover:border-gray-300 transition">
+                        <div class="flex flex-wrap items-center gap-2 mb-2">
+                            <span class="bg-blue-50 text-primary text-xs font-bold px-2.5 py-0.5 rounded">Guide 03</span>
+                            <span class="text-xs text-amber-700 bg-amber-50 px-2 py-0.5 rounded font-medium">Coming Soon</span>
+                        </div>
+                        <h4 class="text-lg sm:text-xl font-bold text-dark mb-2">
+                            Group Benefits Only Cover 1-2x Salary: Is It Truly Enough to Sustain a Family?
+                        </h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Analyzing the stark reality of employer benefits vs heavy debts, and the critical risk of portability loss upon job change.
+                        </p>
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-3 border-t border-gray-100">
+                            <span>Tool: Term Life Calculator</span>
+                            <a href="term.html#calculator" class="text-primary hover:underline font-bold">Open Term Life Calculator &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Newcomers Section -->
+            <div class="mb-12">
+                <div class="flex items-center space-x-2 mb-4">
+                    <span class="text-lg">🍁</span>
+                    <h3 class="text-xl font-bold text-dark">Newcomers Series (3 Guides)</h3>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- Guide 4 -->
+                    <article class="bg-white rounded-2xl border border-gray-200 p-6 hover:border-gray-300 transition">
+                        <div class="flex flex-wrap items-center gap-2 mb-2">
+                            <span class="bg-purple-50 text-purple-700 text-xs font-bold px-2.5 py-0.5 rounded">Guide 04</span>
+                            <span class="text-xs text-amber-700 bg-amber-50 px-2 py-0.5 rounded font-medium">Coming Soon</span>
+                        </div>
+                        <h4 class="text-lg sm:text-xl font-bold text-dark mb-2">
+                            Just Arrived in Canada Without Group Benefits: Where Does the First Emergency Medical Fund Come From?
+                        </h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Without employer benefits during probation or self-employment, how a Critical Illness policy provides immediate lump-sum cash if severe illness hits.
+                        </p>
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-3 border-t border-gray-100">
+                            <span>Tool: CI Calculator</span>
+                            <a href="ci.html#calculator" class="text-purple-600 hover:underline font-bold">Explore Critical Illness Calculator &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Guide 5 -->
+                    <article class="bg-white rounded-2xl border border-gray-200 p-6 hover:border-gray-300 transition">
+                        <div class="flex flex-wrap items-center gap-2 mb-2">
+                            <span class="bg-purple-50 text-purple-700 text-xs font-bold px-2.5 py-0.5 rounded">Guide 05</span>
+                            <span class="text-xs text-amber-700 bg-amber-50 px-2 py-0.5 rounded font-medium">Coming Soon</span>
+                        </div>
+                        <h4 class="text-lg sm:text-xl font-bold text-dark mb-2">
+                            Seeing a Doctor in Canada: What About Prescription Drugs, Dental, Glasses, and Ambulance Fees Not Covered by Provincial Health?
+                        </h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Provincial health does not cover dental visits or routine prescription medication. How personal health plans bridge recurring expenses.
+                        </p>
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-3 border-t border-gray-100">
+                            <span>Tool: Health & Dental Consultation</span>
+                            <a href="health.html" class="text-purple-600 hover:underline font-bold">Explore Health & Dental Plans &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Guide 6 -->
+                    <article class="bg-white rounded-2xl border border-gray-200 p-6 hover:border-gray-300 transition">
+                        <div class="flex flex-wrap items-center gap-2 mb-2">
+                            <span class="bg-purple-50 text-purple-700 text-xs font-bold px-2.5 py-0.5 rounded">Guide 06</span>
+                            <span class="text-xs text-amber-700 bg-amber-50 px-2 py-0.5 rounded font-medium">Coming Soon</span>
+                        </div>
+                        <h4 class="text-lg sm:text-xl font-bold text-dark mb-2">
+                            Newly Landed in Canada: Should You Prioritize Child Education Savings (RESP) or Household Protection First?
+                        </h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Navigating tight initial budgets: how to sequence government grant optimization and parental baseline security.
+                        </p>
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-3 border-t border-gray-100">
+                            <span>Destination: Young Family Solutions</span>
+                            <a href="family.html" class="text-purple-600 hover:underline font-bold">View Family Strategy &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Business Owners Section -->
+            <div class="mb-12">
+                <div class="flex items-center space-x-2 mb-4">
+                    <span class="text-lg">🏢</span>
+                    <h3 class="text-xl font-bold text-dark">Business Owner Series (2 Guides)</h3>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- Guide 7 -->
+                    <article class="bg-white rounded-2xl border border-gray-200 p-6 hover:border-gray-300 transition">
+                        <div class="flex flex-wrap items-center gap-2 mb-2">
+                            <span class="bg-amber-50 text-amber-800 text-xs font-bold px-2.5 py-0.5 rounded">Guide 07</span>
+                            <span class="text-xs text-amber-700 bg-amber-50 px-2 py-0.5 rounded font-medium">Coming Soon</span>
+                        </div>
+                        <h4 class="text-lg sm:text-xl font-bold text-dark mb-2">
+                            If a Self-Employed Professional Falls Ill, What Happens to Commercial Loans, Payroll, and Family Expenses?
+                        </h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Without corporate safety nets, a founder's illness halts operations. How CI and Term Life inject liquidity to sustain debts and wages.
+                        </p>
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-3 border-t border-gray-100">
+                            <span>Tool: CI & Term Calculators</span>
+                            <a href="ci.html" class="text-amber-800 hover:underline font-bold">Review Critical Illness Protection &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Guide 8 -->
+                    <article class="bg-white rounded-2xl border border-gray-200 p-6 hover:border-gray-300 transition">
+                        <div class="flex flex-wrap items-center gap-2 mb-2">
+                            <span class="bg-amber-50 text-amber-800 text-xs font-bold px-2.5 py-0.5 rounded">Guide 08</span>
+                            <span class="text-xs text-amber-700 bg-amber-50 px-2 py-0.5 rounded font-medium">Coming Soon</span>
+                        </div>
+                        <h4 class="text-lg sm:text-xl font-bold text-dark mb-2">
+                            Business Owners Looking to Transfer Corporate Wealth to Family: What Structural Pathways Exist?
+                        </h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Exploring avenues for retained corporate earnings, corporate insurance structures, and Capital Dividend Account (CDA) mechanics. Tax conclusions subject to CPA advice.
+                        </p>
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-3 border-t border-gray-100">
+                            <span>Destination: Business Solutions</span>
+                            <a href="business.html" class="text-amber-800 hover:underline font-bold">Explore Business Owner Solutions &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Pre-Retirees Section -->
+            <div class="mb-12">
+                <div class="flex items-center space-x-2 mb-4">
+                    <span class="text-lg">🏖️</span>
+                    <h3 class="text-xl font-bold text-dark">Pre-Retiree Series (2 Guides)</h3>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- Guide 9 -->
+                    <article class="bg-white rounded-2xl border border-gray-200 p-6 hover:border-gray-300 transition">
+                        <div class="flex flex-wrap items-center gap-2 mb-2">
+                            <span class="bg-indigo-50 text-indigo-700 text-xs font-bold px-2.5 py-0.5 rounded">Guide 09</span>
+                            <span class="text-xs text-amber-700 bg-amber-50 px-2 py-0.5 rounded font-medium">Coming Soon</span>
+                        </div>
+                        <h4 class="text-lg sm:text-xl font-bold text-dark mb-2">
+                            Approaching Retirement: How to Draw Down RRSPs and TFSAs Without Getting Punished by High Tax Brackets, While Leaving a Legacy?
+                        </h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Decumulation sequencing concepts and financial tool allocation to avoid bracket spikes. Formal tax advice rests with your professional accountant.
+                        </p>
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-3 border-t border-gray-100">
+                            <span>Destination: Wealth & Retirement</span>
+                            <a href="wealth.html" class="text-indigo-600 hover:underline font-bold">Explore Wealth & Retirement &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Guide 10 -->
+                    <article class="bg-white rounded-2xl border border-gray-200 p-6 hover:border-gray-300 transition">
+                        <div class="flex flex-wrap items-center gap-2 mb-2">
+                            <span class="bg-indigo-50 text-indigo-700 text-xs font-bold px-2.5 py-0.5 rounded">Guide 10</span>
+                            <span class="text-xs text-amber-700 bg-amber-50 px-2 py-0.5 rounded font-medium">Coming Soon</span>
+                        </div>
+                        <h4 class="text-lg sm:text-xl font-bold text-dark mb-2">
+                            Retirement Monthly Income: Can You Receive Clockwork Paychecks Without Depending on Market Volatility?
+                        </h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Understanding Payout Annuities: turning personal capital into a guaranteed lifelong income stream unaffected by market downturns.
+                        </p>
+                        <div class="flex items-center justify-between text-xs text-gray-500 pt-3 border-t border-gray-100">
+                            <span>Destination: Payout Annuities</span>
+                            <a href="payout-annuities.html" class="text-indigo-600 hover:underline font-bold">Learn About Payout Annuities &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-16 bg-white rounded-2xl border border-gray-200 p-8 sm:p-12 text-center shadow-sm">
+                <h3 class="text-2xl font-bold text-dark mb-4">Have Specific Questions or Need an Independent Assessment?</h3>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-8">
+                    We broker with Canada's tier-one carriers to provide objective multi-carrier comparisons without pressure.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="index.html#contact" class="bg-primary hover:bg-blue-600 text-white font-bold px-8 py-3.5 rounded-xl transition shadow-lg shadow-blue-500/20">
+                        Book a Free Consultation
+                    </a>
+                    <a href="term.html#calculator" class="bg-gray-100 hover:bg-gray-200 text-dark font-bold px-8 py-3.5 rounded-xl transition">
+                        Open Term Life Calculator
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t border-gray-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <span class="text-2xl font-bold text-dark">Insured618</span>
+            </div>
+            <p class="text-gray-500 mb-4">Protecting Today, Securing Tomorrow</p>
+            <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-600 mb-8">
+                <a href="index.html" class="hover:text-primary">Home</a>
+                <a href="family.html" class="hover:text-primary">Family</a>
+                <a href="guides.html" class="hover:text-primary font-bold text-primary">Guides & FAQs</a>
+                <a href="term.html" class="hover:text-primary">Term Life</a>
+                <a href="wealth.html" class="hover:text-primary">Wealth</a>
+                <a href="business.html" class="hover:text-primary">Business</a>
+                <a href="about.html" class="hover:text-primary">About</a>
+                <a href="index.html#contact" class="hover:text-primary">Book Consultation</a>
+            </div>
+            <div class="text-gray-400 text-sm space-y-2">
+                <p class="max-w-3xl mx-auto text-xs leading-relaxed text-gray-500 bg-white p-4 rounded-xl border border-gray-200">
+                    Disclaimer: These guides are for educational and conceptual discussion purposes only and do not constitute formal legal, tax, or underwriting commitments. Contractual provisions from the insurer govern.
+                </p>
+                <p class="mt-4">© 2025 Insured618. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        if (btn && menu) {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                menu.classList.toggle('hidden');
+            });
+            document.addEventListener('click', (e) => {
+                if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !btn.contains(e.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
